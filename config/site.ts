@@ -15,12 +15,7 @@ export const siteConfig: SiteConfig = {
   name: "Next.js",
   description:
     "Beautifully designed components built with Radix UI and Tailwind CSS.",
-  mainNav: [
-    {
-      title: "Home",
-      href: "/",
-    },
-  ],
+  mainNav: [],
   links: {
     twitter: "https://twitter.com/shadcn",
     github: "https://github.com/shadcn/ui",

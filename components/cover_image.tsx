@@ -1,18 +1,19 @@
 "use client"
 
 import Image from "next/image"
-import Copia_de_Cagando from '../public/Copia_de_Cagando.png'
+import Copia_de_Cagando_lg from '../public/Copia_de_Cagando_lg.png'
+import sin_cabeza from '../public/sin_cabeza.png'
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 
 export function CoverImage() {
   return (
-    <AspectRatio ratio={9 / 16} className="bg-slate-50 dark:bg-slate-800">
+    <AspectRatio ratio={9 / 16} className="bg-dracula-aro-50 dark:bg-dracula-light-50 sm:-mt-16 md:-mt-36 mr-40">
       <Image
-        src={Copia_de_Cagando}
+        src={sin_cabeza}
         alt="Photo by Alvaro Pinot"
-        fill
+        layout={"fill"}
         className="rounded-md object-cover"
       />
     </AspectRatio>
-  )
+    )
 }
