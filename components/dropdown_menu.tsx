@@ -18,7 +18,7 @@ import {
     UserPlus,
     Users,
   } from "lucide-react"
-  
+
 import { Button } from "@/components/ui/button"
 
 import {
@@ -42,7 +42,7 @@ export function Dropdown_menu(){
     return(
         <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <Button variant="ghost" className="-mr-6">Open</Button>
+          <Button variant="ghost" className="-mr-6 hidden md:block">Open</Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent className="w-56">
           <DropdownMenuLabel>My Account</DropdownMenuLabel>

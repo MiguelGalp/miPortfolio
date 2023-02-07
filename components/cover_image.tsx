@@ -7,7 +7,7 @@ import { AspectRatio } from "@/components/ui/aspect-ratio"
 
 export function CoverImage() {
   return (
-    <AspectRatio ratio={9 / 16} className="bg-dracula-aro-50 dark:bg-dracula-light-50 sm:-mt-16 md:-mt-36 mr-40">
+    <AspectRatio ratio={9 / 16} className="bg-dracula-aro-50 dark:bg-dracula-light-50 sm:-mt-16 md:-mt-36 md:mr-40">
       <Image
         src={sin_cabeza}
         alt="Photo by Alvaro Pinot"
