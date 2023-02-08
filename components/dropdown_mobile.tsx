@@ -9,7 +9,6 @@ import {
     Keyboard,
     LifeBuoy,
     LogOut,
-    LogIn,
     Mail,
     MessageSquare,
     Plus,
@@ -18,8 +17,6 @@ import {
     User,
     UserPlus,
     Users,
-    ArrowBigRight,
-    Croissant,
     CupSoda
   } from "lucide-react"
 
@@ -42,11 +39,11 @@ import {
 
 import { siteConfig } from "@/config/site"
 
-export function Dropdown_menu(){
+export function Dropdown_mobile(){
     return(
         <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <Button variant="ghost" className="hidden md:flex md:mt-1 md:mb-0.5 hover:bg-slate-200"><CupSoda className="mr-2 mb-1 h-6 w-6" />MIGUEL G.</Button>
+          <Button variant="ghost" className="-mr-6 md:hidden"><CupSoda className="mr-2 mb-1 h-6 w-6" />MIGUEL G.</Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent className="w-56">
           <DropdownMenuLabel>Mi trabajo</DropdownMenuLabel>
