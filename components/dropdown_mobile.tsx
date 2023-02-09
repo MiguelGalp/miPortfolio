@@ -17,10 +17,12 @@ import {
     User,
     UserPlus,
     Users,
-    CupSoda
+    CupSoda,
+    Clock
   } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
+import { Icons } from "@/components/icons"
 
 import {
   DropdownMenu,
@@ -45,57 +47,39 @@ export function Dropdown_mobile(){
         <DropdownMenuTrigger asChild>
           <Button variant="ghost" className="-mr-6 md:hidden"><CupSoda className="mr-2 mb-1 h-6 w-6" />MIGUEL G.</Button>
         </DropdownMenuTrigger>
-        <DropdownMenuContent className="w-56">
-          <DropdownMenuLabel>Mi trabajo</DropdownMenuLabel>
+        <DropdownMenuContent className="w-40">
+          <DropdownMenuLabel className="flex">Mis trabajos</DropdownMenuLabel>
+          <DropdownMenuSeparator />
+          
           <DropdownMenuSeparator />
           <DropdownMenuGroup>
-            <DropdownMenuItem>
-              <User className="mr-2 h-4 w-4" />
-              <span>Profile</span>
-              <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
-            </DropdownMenuItem>
-            <DropdownMenuItem>
-              <CreditCard className="mr-2 h-4 w-4" />
-              <span>Billing</span>
-              <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
-            </DropdownMenuItem>
-            <DropdownMenuItem>
-              <Settings className="mr-2 h-4 w-4" />
-              <span>Settings</span>
-              <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
-            </DropdownMenuItem>
-            <DropdownMenuItem>
-              <Keyboard className="mr-2 h-4 w-4" />
-              <span>Keyboard shortcuts</span>
-              <DropdownMenuShortcut>⌘K</DropdownMenuShortcut>
-            </DropdownMenuItem>
-          </DropdownMenuGroup>
-          <DropdownMenuSeparator />
-          <DropdownMenuGroup>
-            <DropdownMenuItem>
-              <Users className="mr-2 h-4 w-4" />
-              <span>Team</span>
-            </DropdownMenuItem>
             <DropdownMenuSub>
               <DropdownMenuSubTrigger>
                 <UserPlus className="mr-2 h-4 w-4" />
                 <span>Invite users</span>
               </DropdownMenuSubTrigger>
-              <DropdownMenuPortal>
-                <DropdownMenuSubContent>
-                  <DropdownMenuItem>
-                    <Mail className="mr-2 h-4 w-4" />
-                    <span>Email</span>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem>
-                    <MessageSquare className="mr-2 h-4 w-4" />
-                    <span>Message</span>
-                  </DropdownMenuItem>
-                  <DropdownMenuSeparator />
-                  <DropdownMenuItem>
-                    <PlusCircle className="mr-2 h-4 w-4" />
-                    <span>More...</span>
-                  </DropdownMenuItem>
+              <DropdownMenuPortal className="">
+                <DropdownMenuSubContent className="">
+                <ul className="grid">
+                <li className="bg-cover bg-center" style={{backgroundImage: "url('/NuevoScreenShot_Atlanticx.png')"}}>
+
+                
+                  <a
+                    className="flex h-[400px] w-[200px] select-none flex-col justify-end rounded-md p-6 no-underline outline-none focus:shadow-md"
+                    href="https://atlanticx.org"
+                  >
+                    <Icons.logo className="h-6 w-6 text-slate-900" />
+                    <div className="mt-4 mb-2 text-lg font-medium text-slate-900">
+                      Sitio Atlanticx
+                    </div>
+                    <p className="text-sm leading-tight text-slate-900">
+                      CMS desde Notion.so
+                    </p>
+                  </a>
+                
+              </li>
+            
+            </ul>
                 </DropdownMenuSubContent>
               </DropdownMenuPortal>
             </DropdownMenuSub>
