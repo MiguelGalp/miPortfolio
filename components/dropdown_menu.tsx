@@ -20,7 +20,11 @@ import {
     Users,
     ArrowBigRight,
     Croissant,
-    CupSoda
+    CupSoda,
+    RadioIcon,
+    WifiIcon,
+    Rotate3dIcon,
+    WrenchIcon
   } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
@@ -67,14 +71,10 @@ export function Dropdown_menu(){
           <DropdownMenuLabel>Mi trabajo</DropdownMenuLabel>
           <DropdownMenuSeparator />
           <DropdownMenuGroup>
-            <DropdownMenuItem>
-              <Users className="mr-2 h-4 w-4" />
-              <span>Team</span>
-            </DropdownMenuItem>
             <DropdownMenuSub>
               <DropdownMenuSubTrigger>
-                <UserPlus className="mr-2 h-4 w-4" />
-                <span>Invite users</span>
+                <WifiIcon className="mr-2 h-4 w-4" />
+                <span>Web</span>
               </DropdownMenuSubTrigger>
               <DropdownMenuPortal>
               <DropdownMenuSubContent className="overflow-visible">
@@ -82,7 +82,7 @@ export function Dropdown_menu(){
                 <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem className="overflow-visible">
-          <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
+          <NavigationMenuTrigger>Audio inmersivo junto a SuperUber</NavigationMenuTrigger>
           <NavigationMenuContent className="overflow-visible">
           
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
@@ -123,11 +123,117 @@ export function Dropdown_menu(){
               </DropdownMenuSubContent>
             </DropdownMenuPortal>
             </DropdownMenuSub>
-            <DropdownMenuItem>
-              <Plus className="mr-2 h-4 w-4" />
-              <span>New Team</span>
-              <DropdownMenuShortcut>⌘+T</DropdownMenuShortcut>
-            </DropdownMenuItem>
+          
+          </DropdownMenuGroup>
+          <DropdownMenuGroup>
+            <DropdownMenuSub>
+              <DropdownMenuSubTrigger>
+                <Rotate3dIcon className="mr-2 h-4 w-4" />
+                <span>Inmersivo</span>
+              </DropdownMenuSubTrigger>
+              <DropdownMenuPortal>
+              <DropdownMenuSubContent className="overflow-visible">
+                <DropdownMenuItem className="overflow-visible">
+                <NavigationMenu>
+      <NavigationMenuList>
+        <NavigationMenuItem className="overflow-visible">
+          <NavigationMenuTrigger>Audio espacial junto a SuperUber</NavigationMenuTrigger>
+          <NavigationMenuContent className="overflow-visible">
+          
+            <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+              <li className="row-span-3">
+                <NavigationMenuLink>
+                  <a
+                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-rose-500 to-indigo-700 p-6 no-underline outline-none focus:shadow-md"
+                    href="/"
+                  >
+                    <Icons.logo className="h-6 w-6 text-white" />
+                    <div className="mt-4 mb-2 text-lg font-medium text-white">
+                      shadcn/ui
+                    </div>
+                    <p className="text-sm leading-tight text-white/90">
+                      Beautifully designed components built with Radix UI and
+                      Tailwind CSS.
+                    </p>
+                  </a>
+                </NavigationMenuLink>
+              </li>
+              <ListItem href="/docs" title="Introduction">
+                Re-usable components built using Radix UI and Tailwind CSS.
+              </ListItem>
+              <ListItem href="/docs/installation" title="Installation">
+                How to install dependencies and structure your app.
+              </ListItem>
+              <ListItem href="/docs/primitives/typography" title="Typography">
+                Styles for headings, paragraphs, lists...etc
+              </ListItem>
+            </ul>
+           
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+        </NavigationMenuList>
+    </NavigationMenu>
+                </DropdownMenuItem>
+               
+              </DropdownMenuSubContent>
+            </DropdownMenuPortal>
+            </DropdownMenuSub>
+          
+          </DropdownMenuGroup>
+          <DropdownMenuGroup>
+            <DropdownMenuSub>
+              <DropdownMenuSubTrigger>
+                <WrenchIcon className="mr-2 h-4 w-4" />
+                <span>Proyectos</span>
+              </DropdownMenuSubTrigger>
+              <DropdownMenuPortal>
+              <DropdownMenuSubContent className="overflow-visible">
+                <DropdownMenuItem className="overflow-visible">
+                <NavigationMenu>
+      <NavigationMenuList>
+        <NavigationMenuItem className="overflow-visible">
+          <NavigationMenuTrigger>Audio espacial junto a SuperUber</NavigationMenuTrigger>
+          <NavigationMenuContent className="overflow-visible">
+          
+            <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+              <li className="row-span-3">
+                <NavigationMenuLink>
+                  <a
+                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-rose-500 to-indigo-700 p-6 no-underline outline-none focus:shadow-md"
+                    href="/"
+                  >
+                    <Icons.logo className="h-6 w-6 text-white" />
+                    <div className="mt-4 mb-2 text-lg font-medium text-white">
+                      shadcn/ui
+                    </div>
+                    <p className="text-sm leading-tight text-white/90">
+                      Beautifully designed components built with Radix UI and
+                      Tailwind CSS.
+                    </p>
+                  </a>
+                </NavigationMenuLink>
+              </li>
+              <ListItem href="/docs" title="Introduction">
+                Re-usable components built using Radix UI and Tailwind CSS.
+              </ListItem>
+              <ListItem href="/docs/installation" title="Installation">
+                How to install dependencies and structure your app.
+              </ListItem>
+              <ListItem href="/docs/primitives/typography" title="Typography">
+                Styles for headings, paragraphs, lists...etc
+              </ListItem>
+            </ul>
+           
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+        </NavigationMenuList>
+    </NavigationMenu>
+                </DropdownMenuItem>
+               
+              </DropdownMenuSubContent>
+            </DropdownMenuPortal>
+            </DropdownMenuSub>
+          
           </DropdownMenuGroup>
           <DropdownMenuSeparator />
           <DropdownMenuItem>
