@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import Copia_de_Cagando_lg from '../public/Copia_de_Cagando_lg.png'
-import sin_cabeza from '../public/sin_cabeza.png'
+import sin_cabeza from '../public/sin_cabeza_blanco.png'
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 
 export function CoverImage() {

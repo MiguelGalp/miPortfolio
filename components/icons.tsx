@@ -22,6 +22,15 @@ export const Icons = {
       />
     </svg>
   ),
+  logo_migue: (props: LucideProps) => (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="11.5" cy="16" r="4" stroke="#3B425A" stroke-width="2"/>
+<circle cx="11.5" cy="11.5" r="8.5" stroke="#44475A" stroke-width="2"/>
+<path d="M5.63604 4.67171C4.07394 6.2338 4.07394 8.76646 5.63604 10.3286C7.19814 11.8907 9.7308 11.8907 11.2929 10.3286C12.855 8.76646 12.855 6.2338 11.2929 4.67171C9.7308 3.10961 7.19814 3.10961 5.63604 4.67171ZM15.5355 6.75013L8.46447 6.75013L8.46447 8.25013L15.5355 8.25013L15.5355 6.75013Z" fill="#44475A"/>
+</svg>
+
+
+  ),
   gitHub: (props: LucideProps) => (
     <svg viewBox="0 0 438.549 438.549" {...props}>
       <path

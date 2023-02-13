@@ -89,10 +89,10 @@ export function Dropdown_menu(){
               <li className="row-span-3">
                 <NavigationMenuLink>
                   <a
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-rose-500 to-indigo-700 p-6 no-underline outline-none focus:shadow-md"
-                    href="/"
+                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-cover bg-[url('/Light3.jpg')] p-10 no-underline outline-none focus:shadow-md"
+                    href="https://superuber.com/light-energy-museum-2/"
                   >
-                    <Icons.logo className="h-6 w-6 text-white" />
+                    <Icons.logo_migue className="h-6 w-6 text-white" />
                     <div className="mt-4 mb-2 text-lg font-medium text-white">
                       shadcn/ui
                     </div>
