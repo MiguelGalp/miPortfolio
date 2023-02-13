@@ -47,8 +47,8 @@ import { Button } from "@/components/ui/button"
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-40 w-full bg-dracula-aro-50 md:bg-transparent">
-      <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-2">
+    <header className="sticky top-0 z-40 max-w-[1320px] bg-dracula-aro-50 md:bg-transparent">
+      <div className="container flex h-16 items-center space-x-2 sm:justify-between sm:space-x-2">
         <MainNav items={siteConfig.mainNav}/>
         <Dropdown_menu/>
       
