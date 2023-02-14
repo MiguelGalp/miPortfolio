@@ -166,12 +166,13 @@ export function Dropdown_menu() {
                                   href="/"
                                 >
                                   <Icons.logo className="h-6 w-6 text-white" />
-                                  <div className="mt-4 mb-2 text-lg font-medium text-dark">
-                                    shadcn/ui
+                                  <div className="mt-4 mb-2 text-lg font-medium text-white">
+                                    Atlanticx
                                   </div>
                                   <p className="text-sm leading-tight text-white/90">
-                                    Beautifully designed components built with
-                                    Radix UI and Tailwind CSS.
+                                    Sitio responsivo.
+                                    Notion como gerenciador CMS para un 
+                                    fácil manejo de los contenidos
                                   </p>
                                 </a>
                               </NavigationMenuLink>
@@ -179,16 +180,17 @@ export function Dropdown_menu() {
                             <li className="row-span-3">
                               <NavigationMenuLink>
                                 <a
-                                  className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-rose-500 to-indigo-700 p-6 no-underline outline-none focus:shadow-md"
+                                  className="flex h-full w-full select-none flex-col justify-end rounded-md bg-cover bg-[url('/miss_mockup.png')] p-5 no-underline outline-none focus:shadow-md"
                                   href="/"
                                 >
-                                  <Icons.logo className="h-6 w-6 text-white" />
-                                  <div className="mt-4 mb-2 text-lg font-medium text-white">
-                                    shadcn/ui
+                                  <Icons.logo className="h-6 w-6  text-slate-600" />
+                                  <div className="mt-4 mb-2 text-lg font-medium  text-slate-600">
+                                    Miss-Subtítulos
                                   </div>
-                                  <p className="text-sm leading-tight text-white/90">
-                                    Beautifully designed components built with
-                                    Radix UI and Tailwind CSS.
+                                  <p className="text-sm leading-tight  text-slate-600">
+                                    Generación de subtítulos
+                                    automatizado con IA, desarrollo de
+                                    Front y Backend
                                   </p>
                                 </a>
                               </NavigationMenuLink>
