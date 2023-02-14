@@ -73,8 +73,8 @@ export function Dropdown_menu(){
           <DropdownMenuGroup>
             <DropdownMenuSub>
               <DropdownMenuSubTrigger>
-                <WifiIcon className="mr-2 h-4 w-4" />
-                <span>Web</span>
+                <Rotate3dIcon className="mr-2 h-4 w-4" />
+                <span>Inmersivo</span>
               </DropdownMenuSubTrigger>
               <DropdownMenuPortal>
               <DropdownMenuSubContent className="overflow-visible">
@@ -88,29 +88,28 @@ export function Dropdown_menu(){
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
                 <NavigationMenuLink>
-                  <a
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-cover bg-[url('/Light3.jpg')] p-10 no-underline outline-none focus:shadow-md"
-                    href="https://superuber.com/light-energy-museum-2/"
-                  >
+                  <Link href="https://superuber.com/light-energy-museum-2/" className="flex h-full w-full select-none flex-col justify-end rounded-md bg-cover bg-[url('/Light4.png')] p-5 no-underline outline-none focus:shadow-md" rel="noopener noreferrer" target="_blank">
+                    
                     <Icons.logo_migue className="h-6 w-6 text-white" />
+                   
                     <div className="mt-4 mb-2 text-lg font-medium text-white">
-                      shadcn/ui
+                      Museo Light (BR)
                     </div>
                     <p className="text-sm leading-tight text-white/90">
-                      Beautifully designed components built with Radix UI and
-                      Tailwind CSS.
+                      Diseño de sonido, espacialización e interacción del "Túnel" del Museo Light (Rio, Brasil)
                     </p>
-                  </a>
+                    
+                  </Link>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/docs" title="Introduction">
-                Re-usable components built using Radix UI and Tailwind CSS.
+              <ListItem href="/docs" title="Stack">
+                Integración con Unity desde el entorno de creación de sonido "SuperCollider" (junto a Leandro Yabcowski)
               </ListItem>
-              <ListItem href="/docs/installation" title="Installation">
-                How to install dependencies and structure your app.
+              <ListItem href="/docs/installation" title="Proyecto">
+                Diseño de sonido e interactividad trackeando hasta 5 usarios en simultáneo
               </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Typography">
-                Styles for headings, paragraphs, lists...etc
+              <ListItem href="/docs/primitives/typography" title="¿Quiénes?">
+                Lo hicimos junto a SuperUber, uno de los mayores estudios interactivos de Brasil
               </ListItem>
             </ul>
            
@@ -128,8 +127,8 @@ export function Dropdown_menu(){
           <DropdownMenuGroup>
             <DropdownMenuSub>
               <DropdownMenuSubTrigger>
-                <Rotate3dIcon className="mr-2 h-4 w-4" />
-                <span>Inmersivo</span>
+                <WifiIcon className="mr-2 h-4 w-4" />
+                <span>Para la Web</span>
               </DropdownMenuSubTrigger>
               <DropdownMenuPortal>
               <DropdownMenuSubContent className="overflow-visible">
