@@ -12,7 +12,7 @@ interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-  name: "Tu nueva app con",
+  name: "Galperin Dev ⤑",
   description:
     "Beautifully designed components built with Radix UI and Tailwind CSS.",
   mainNav: [],

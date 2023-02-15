@@ -57,16 +57,23 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+
+
 export function Dropdown_menu() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button
           variant="ghost"
-          className="hidden md:flex md:mt-1 md:mb-0.5 hover:bg-slate-200"
+          className="hidden md:flex md:mt-1 md:mb-0.5 hover:bg-slate-200 relative right-2 bottom-1"
         >
-          <CupSoda className="mr-2 mb-1 h-6 w-6" />
-          MIGUEL G.
+          <Avatar>
+  <AvatarImage src="/AvatarMaker (1).png" className="" />
+  <AvatarFallback>CN</AvatarFallback>
+</Avatar>
+
+         
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">
