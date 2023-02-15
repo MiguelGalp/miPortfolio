@@ -32,6 +32,6 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), require('tailwind-dracula')('dracula', true)],
- 
+  plugins: [require("tailwindcss-animate"), require('tailwind-dracula')('dracula', true), require("tailwind-gradient-mask-image") ],
+  
 }

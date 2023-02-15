@@ -85,7 +85,7 @@ export function Dropdown_menu() {
                     <NavigationMenuList>
                       <NavigationMenuItem className="overflow-visible">
                         <NavigationMenuTrigger>
-                          Audio inmersivo junto a SuperUber
+                          Túnel de partículas junto a SuperUber
                         </NavigationMenuTrigger>
                         <NavigationMenuContent className="overflow-visible">
                           <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
