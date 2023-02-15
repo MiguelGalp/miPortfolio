@@ -3,6 +3,8 @@ import axios from "axios";
 import { useForm } from "react-hook-form";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Icons } from "./icons";
+import { CheckCircleIcon } from "lucide-react";
 
 export default function ContactForm() {
   const {
@@ -18,7 +20,7 @@ export default function ContactForm() {
       .post("https://eonc5oqjzkckuua.m.pipedream.net", data)
       .then((response) => {
         setSuccessMessage(
-          `Thanks for signing up! Check your inbox for updates 😊`
+          `Gracias por tu contacto! Chequeá tu correo para continuar la charla 😊`
         );
         setSubmitted(true);
       })
@@ -26,7 +28,12 @@ export default function ContactForm() {
   }
 
   if (submitted) {
-    return <p>{successMessage}</p>;
+    return (
+      <div className="flex items-center space-x-2 bg-green-100 p-2 rounded-md">
+        <CheckCircleIcon className="h-6 w-6 text-green-600" />
+        <p className="text-green-800">{successMessage}</p>
+      </div>
+    );
   }
 
   return (
@@ -34,7 +41,7 @@ export default function ContactForm() {
       <div className="flex w-full max-w-sm items-center space-x-2">
         <Input {...register("email")} defaultValue="me@gmail.com"></Input>
         <Button type="submit" role="submit">
-          {isSubmitting ? "Submitting" : "Submit"}
+          {isSubmitting ? "Submitting" : "Contacto"}
         </Button>
       </div>
     </form>
