@@ -32,6 +32,7 @@ import {
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 import { Icons } from "@/components/icons"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
@@ -56,8 +57,6 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
-
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { DemoIndicator } from "./demo_indicator"
 
 export function Dropdown_menu() {
@@ -66,14 +65,14 @@ export function Dropdown_menu() {
       <DropdownMenuTrigger asChild>
         <Button
           variant="ghost"
-          className="hidden p-1 md:flex md:mt-1 md:mb-0.5 hover:bg-slate-200 relative right-1 bottom-1"
+          className="relative right-1 bottom-1 hidden p-1 hover:bg-slate-200 md:mt-1 md:mb-0.5 md:flex"
         >
           <Avatar>
-  <AvatarImage src="/AvatarMaker (1).png" className="" />
-  <AvatarFallback>CN</AvatarFallback>
-</Avatar>
+            <AvatarImage src="/AvatarMaker (1).png" className="" />
+            <AvatarFallback>CN</AvatarFallback>
+          </Avatar>
 
-<DemoIndicator className="left-10 -mt-3" />
+          <DemoIndicator className="left-10 -mt-3" />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">
@@ -100,7 +99,7 @@ export function Dropdown_menu() {
                               <NavigationMenuLink>
                                 <Link
                                   href="https://superuber.com/light-energy-museum-2/"
-                                  className="flex h-full w-full select-none flex-col justify-end rounded-md bg-cover bg-[url('/Light4.png')] p-5 no-underline outline-none focus:shadow-md"
+                                  className="flex h-full w-full select-none flex-col justify-end rounded-md bg-[url('/Light4.png')] bg-cover p-5 no-underline outline-none focus:shadow-md"
                                   rel="noopener noreferrer"
                                   target="_blank"
                                 >
@@ -169,7 +168,7 @@ export function Dropdown_menu() {
                             <li className="row-span-3">
                               <NavigationMenuLink>
                                 <a
-                                  className="flex h-full w-full select-none flex-col justify-end rounded-md bg-cover bg-[url('/atx_mockup.png')] p-5 no-underline outline-none focus:shadow-md"
+                                  className="flex h-full w-full select-none flex-col justify-end rounded-md bg-[url('/atx_mockup.png')] bg-cover p-5 no-underline outline-none focus:shadow-md"
                                   href="/"
                                 >
                                   <Icons.logo className="h-6 w-6 text-white" />
@@ -177,9 +176,8 @@ export function Dropdown_menu() {
                                     Atlanticx
                                   </div>
                                   <p className="text-sm leading-tight text-white/90">
-                                    Sitio responsivo.
-                                    Notion como gerenciador CMS para un 
-                                    fácil manejo de los contenidos
+                                    Sitio responsivo. Notion como gerenciador
+                                    CMS para un fácil manejo de los contenidos
                                   </p>
                                 </a>
                               </NavigationMenuLink>
@@ -187,7 +185,7 @@ export function Dropdown_menu() {
                             <li className="row-span-3">
                               <NavigationMenuLink>
                                 <a
-                                  className="flex h-full w-full select-none flex-col justify-end rounded-md bg-cover bg-[url('/miss_mockup.png')] p-5 no-underline outline-none focus:shadow-md"
+                                  className="flex h-full w-full select-none flex-col justify-end rounded-md bg-[url('/miss_mockup.png')] bg-cover p-5 no-underline outline-none focus:shadow-md"
                                   href="/"
                                 >
                                   <Icons.logo className="h-6 w-6  text-slate-600" />
@@ -195,9 +193,8 @@ export function Dropdown_menu() {
                                     Miss-Subtítulos
                                   </div>
                                   <p className="text-sm leading-tight  text-slate-600">
-                                    SaaS para subtítulos
-                                    automatizados con IA, desarrollo de
-                                    Front y Backend
+                                    SaaS para subtítulos automatizados con IA,
+                                    desarrollo de Front y Backend
                                   </p>
                                 </a>
                               </NavigationMenuLink>
@@ -337,7 +334,7 @@ const ListItem = React.forwardRef<
 >(({ className, title, children, ...props }, ref) => {
   return (
     <li>
-      <NavigationMenuLink asChild >
+      <NavigationMenuLink asChild>
         <a
           rel="noopener noreferrer"
           target="_blank"
@@ -349,7 +346,7 @@ const ListItem = React.forwardRef<
           {...props}
         >
           <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="text-sm leading-snug text-slate-500 line-clamp-2 dark:text-slate-400">
+          <p className="line-clamp-2 text-sm leading-snug text-slate-500 dark:text-slate-400">
             {children}
           </p>
         </a>
