@@ -66,7 +66,7 @@ export function Dropdown_menu() {
       <DropdownMenuTrigger asChild>
         <Button
           variant="ghost"
-          className="hidden md:flex md:mt-1 md:mb-0.5 hover:bg-slate-200 relative right-2 bottom-1"
+          className="hidden p-1 md:flex md:mt-1 md:mb-0.5 hover:bg-slate-200 relative right-1 bottom-1"
         >
           <Avatar>
   <AvatarImage src="/AvatarMaker (1).png" className="" />

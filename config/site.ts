@@ -12,12 +12,12 @@ interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-  name: "Galperin Dev ⤑",
+  name: "Galperin (Dev) ⤑",
   description:
     "Beautifully designed components built with Radix UI and Tailwind CSS.",
   mainNav: [],
   links: {
-    twitter: "https://twitter.com/shadcn",
+    twitter: "https://twitter.com/miguel_galperin",
     github: "https://github.com/shadcn/ui",
     docs: "https://ui.shadcn.com",
   },
