@@ -1,19 +1,15 @@
 import Image from "next/image"
 
 import { AspectRatio } from "@/components/ui/aspect-ratio"
-import sin_cabeza from "../public/sin_cabeza_blanco.png"
+import sin_cabeza from "../public/ipad_new.png"
 
 export function CoverImage() {
   return (
-    <AspectRatio
-      ratio={9 / 16}
-      className="md:mr-50 max-w-[1104px] bg-dracula-aro-50 dark:bg-dracula-aro-900 md:-mt-36 lg:mr-56"
-    >
+    <AspectRatio ratio={9 / 16} className="">
       <Image
         src={sin_cabeza}
         alt="Foto de Galperin"
-        fill
-        className="rounded-md object-cover"
+        className="ml-[140px] mt-10 rounded-md object-cover"
       />
     </AspectRatio>
   )

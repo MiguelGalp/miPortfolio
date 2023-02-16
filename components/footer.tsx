@@ -11,7 +11,7 @@ export function SiteFooter() {
         <div className="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
           <Icons.logo className="h-8 w-8 md:h-6" />
           <p className="text-center text-[10px] leading-normal text-slate-900 dark:text-slate-100 md:text-left md:text-sm">
-            Desarrollado por{" "}
+            Portfolio de software de{" "}
             <a
               href={siteConfig.links.twitter}
               target="_blank"
@@ -27,7 +27,7 @@ export function SiteFooter() {
               rel="noreferrer"
               className="font-medium underline underline-offset-4"
             >
-              shadcn
+              SHADCN
             </a>
             . &copy; {currentYear}
           </p>
