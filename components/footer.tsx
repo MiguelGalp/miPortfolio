@@ -1,15 +1,16 @@
 "use client"
+
 import { siteConfig } from "@/config/site"
 import { Icons } from "@/components/icons"
 
 export function SiteFooter() {
   const currentYear = new Date().getFullYear()
   return (
-    <footer className="container fixed bottom-0 right-0 w-full">
-      <div className="flex  flex-col items-center justify-between gap-4 md:h-24 md:flex-row md:py-0">
+    <footer className="container fixed bottom-0 w-full max-w-[1104px]">
+      <div className="flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row md:py-0">
         <div className="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
-          <Icons.logo className="h-8 w-8 md:h-6 md:h-6" />
-          <p className="text-center text-[10px] leading-normal md:text-sm text-slate-900 dark:text-slate-100 md:text-left">
+          <Icons.logo className="h-8 w-8 md:h-6" />
+          <p className="text-center text-[10px] leading-normal text-slate-900 dark:text-slate-100 md:text-left md:text-sm">
             Desarrollado por{" "}
             <a
               href={siteConfig.links.twitter}
