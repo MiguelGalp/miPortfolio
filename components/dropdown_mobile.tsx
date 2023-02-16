@@ -40,13 +40,25 @@ import {
 } from "@/components/ui/dropdown-menu"
 
 import { siteConfig } from "@/config/site"
+import { DemoIndicator } from "./demo_indicator"
+import { Avatar, AvatarImage, AvatarFallback } from "./ui/avatar"
 
 export function Dropdown_mobile(){
     return(
         <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <Button variant="ghost" className="-mr-6 md:hidden"><CupSoda className="mr-2 mb-1 h-6 w-6" />MIGUEL G.</Button>
-        </DropdownMenuTrigger>
+        <Button
+          variant="ghost"
+          className="p-2 relative right-1 bottom-0"
+        >
+          <Avatar>
+  <AvatarImage src="/AvatarMaker (1).png" className="" />
+  <AvatarFallback>CN</AvatarFallback>
+</Avatar>
+
+<DemoIndicator className="left-10 -mt-2" />
+        </Button>
+      </DropdownMenuTrigger>
         <DropdownMenuContent className="w-40">
           <DropdownMenuLabel className="flex">Mis trabajos</DropdownMenuLabel>
           <DropdownMenuSeparator />

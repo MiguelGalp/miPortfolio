@@ -46,11 +46,12 @@ import {
 } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
+import { DemoIndicator } from "./demo_indicator"
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-2 z-40 max-w-[1320px] md:bg-transparent">
-      <div className="container flex h-16 items-center space-x-2 sm:justify-between sm:space-x-2">
+    <header className="sticky md:top-2 z-40 max-w-[1320px] md:bg-transparent sm:bg-slate-100">
+      <div className="container flex h-16 items-center space-x-2 sm:justify-between sm:space-x-2 md:bg-transparent bg-[#f7f7fb]">
         <MainNav items={siteConfig.mainNav}/>
         <Dropdown_menu/>
       
@@ -65,7 +66,7 @@ export function SiteHeader() {
                 className={buttonVariants({
                   size: "sm",
                   variant: "ghost",
-                  className: "text-slate-700 dark:text-slate-400",
+                  className: "text-slate-700 dark:text-slate-200",
                 })}
               >
                 <Icons.gitHub className="h-5 w-5" />
@@ -81,7 +82,7 @@ export function SiteHeader() {
                 className={buttonVariants({
                   size: "sm",
                   variant: "ghost",
-                  className: "text-slate-700 dark:text-slate-400",
+                  className: "text-slate-700 dark:text-slate-200",
                 })}
               >
                 <Icons.twitter className="h-5 w-5 fill-current" />
@@ -92,7 +93,7 @@ export function SiteHeader() {
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="sm">
-                  <Mail className="hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100" />
+                  <Mail className="hover:text-slate-900 dark:text-slate-200 dark:hover:text-slate-100" />
                   <span className="sr-only">Toggle theme</span>
                 </Button>
               </DropdownMenuTrigger>

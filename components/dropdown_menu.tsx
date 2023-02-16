@@ -58,7 +58,7 @@ import {
 } from "@/components/ui/navigation-menu"
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-
+import { DemoIndicator } from "./demo_indicator"
 
 export function Dropdown_menu() {
   return (
@@ -73,7 +73,7 @@ export function Dropdown_menu() {
   <AvatarFallback>CN</AvatarFallback>
 </Avatar>
 
-         
+<DemoIndicator className="left-10 -mt-3" />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">
@@ -195,8 +195,8 @@ export function Dropdown_menu() {
                                     Miss-Subtítulos
                                   </div>
                                   <p className="text-sm leading-tight  text-slate-600">
-                                    Generación de subtítulos
-                                    automatizado con IA, desarrollo de
+                                    SaaS para subtítulos
+                                    automatizados con IA, desarrollo de
                                     Front y Backend
                                   </p>
                                 </a>
