@@ -110,8 +110,8 @@ export function Dropdown_menu() {
                                   </div>
                                   <p className="text-sm leading-tight text-white/90">
                                     Diseño de sonido, espacialización e
-                                    interacción del "Túnel" del Museo Light
-                                    (Rio, Brasil)
+                                    interacción del Túnel del Museo Light (Rio,
+                                    Brasil)
                                   </p>
                                 </Link>
                               </NavigationMenuLink>
@@ -121,7 +121,7 @@ export function Dropdown_menu() {
                               title="Stack"
                             >
                               Integración con Unity desde el entorno de creación
-                              de sonido "SuperCollider" (junto a Leandro
+                              de sonido SuperCollider (junto a Leandro
                               Yabcowski)
                             </ListItem>
                             <ListItem
