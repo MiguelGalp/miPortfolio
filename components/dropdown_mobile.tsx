@@ -49,7 +49,7 @@ export function Dropdown_mobile(){
         <DropdownMenuTrigger asChild>
         <Button
           variant="ghost"
-          className="p-2 relative right-1 bottom-0"
+          className="p-2 relative right-1 bottom-0 md:hidden"
         >
           <Avatar>
   <AvatarImage src="/AvatarMaker (1).png" className="" />

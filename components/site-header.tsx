@@ -51,7 +51,7 @@ import { DemoIndicator } from "./demo_indicator"
 export function SiteHeader() {
   return (
     <header className="sticky md:top-2 z-40 max-w-[1320px] md:bg-transparent sm:bg-slate-100">
-      <div className="container flex h-16 items-center space-x-2 sm:justify-between sm:space-x-2 md:bg-transparent bg-[#f7f7fb]">
+      <div className="container flex h-16 items-center space-x-2 sm:justify-between sm:space-x-2 md:bg-transparent bg-[#f7f7fb] dark:bg-transparent">
         <MainNav items={siteConfig.mainNav}/>
         <Dropdown_menu/>
       
