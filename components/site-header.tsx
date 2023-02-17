@@ -1,33 +1,4 @@
 import Link from "next/link"
-import { siteConfig } from "@/config/site"
-
-import { Icons } from "@/components/icons"
-import { MainNav } from "@/components/main-nav"
-import { ThemeToggle } from "@/components/theme-toggle"
-import { buttonVariants } from "@/components/ui/button"
-
-import { Dropdown_menu } from "./dropdown_menu"
-
-import ContactForm from "@/components/contact_form"
-
-import {
-  DropdownMenu,
-  DropdownMenuTrigger,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuCheckboxItem,
-  DropdownMenuRadioItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuShortcut,
-  DropdownMenuGroup,
-  DropdownMenuPortal,
-  DropdownMenuSub,
-  DropdownMenuSubContent,
-  DropdownMenuSubTrigger,
-  DropdownMenuRadioGroup,
-} from "@/components/ui/dropdown-menu"
-
 import {
   Cloud,
   CreditCard,
@@ -45,16 +16,39 @@ import {
   Users,
 } from "lucide-react"
 
-import { Button } from "@/components/ui/button"
+import { siteConfig } from "@/config/site"
+import ContactForm from "@/components/contact_form"
+import { Icons } from "@/components/icons"
+import { MainNav } from "@/components/main-nav"
+import { ThemeToggle } from "@/components/theme-toggle"
+import { Button, buttonVariants } from "@/components/ui/button"
+import {
+  DropdownMenu,
+  DropdownMenuCheckboxItem,
+  DropdownMenuContent,
+  DropdownMenuGroup,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuPortal,
+  DropdownMenuRadioGroup,
+  DropdownMenuRadioItem,
+  DropdownMenuSeparator,
+  DropdownMenuShortcut,
+  DropdownMenuSub,
+  DropdownMenuSubContent,
+  DropdownMenuSubTrigger,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 import { DemoIndicator } from "./demo_indicator"
+import { Dropdown_menu } from "./dropdown_menu"
 
 export function SiteHeader() {
   return (
-    <header className="sticky md:top-2 z-40 max-w-[1320px] md:bg-transparent sm:bg-slate-100">
-      <div className="container flex h-16 items-center space-x-2 sm:justify-between sm:space-x-2 md:bg-transparent bg-[#f7f7fb] dark:bg-transparent">
-        <MainNav items={siteConfig.mainNav}/>
-        <Dropdown_menu/>
-      
+    <header className="sticky z-40 max-w-[1320px] sm:bg-transparent md:top-2 md:bg-transparent">
+      <div className="container flex h-16 items-center space-x-2 bg-transparent sm:justify-between sm:space-x-2">
+        <MainNav items={siteConfig.mainNav} />
+        <Dropdown_menu />
+
         <div className="flex flex-1 items-center justify-end space-x-4">
           <nav className="flex items-center space-x-1">
             <Link
@@ -99,8 +93,8 @@ export function SiteHeader() {
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" forceMount>
                 <DropdownMenuItem asChild>
-                <ContactForm />
-              </DropdownMenuItem>
+                  <ContactForm />
+                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
           </nav>
