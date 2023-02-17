@@ -19,7 +19,7 @@ export function CoverImage() {
           src={sin_cabeza_mobile}
           alt="Foto de Galperin"
           fill
-          className="-mt-3 rounded-md transition-all duration-500 ease-in-out"
+          className="mt-10 rounded-md transition-all duration-500 ease-in-out"
         />
       </div>
     </>
