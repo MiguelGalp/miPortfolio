@@ -1,7 +1,7 @@
 import Image from "next/image"
 
 import { AspectRatio } from "@/components/ui/aspect-ratio"
-import sin_cabeza_mobile from "../public/iPhone SE - 1.png"
+import sin_cabeza_mobile from "../public/iPhone_13_mobile.png"
 import sin_cabeza from "../public/ipad_new.png"
 
 export function CoverImage() {
@@ -19,7 +19,7 @@ export function CoverImage() {
           src={sin_cabeza_mobile}
           alt="Foto de Galperin"
           fill
-          className="-mt-6 rounded-md transition-all duration-500 ease-in-out"
+          className="-mt-3 rounded-md transition-all duration-500 ease-in-out"
         />
       </div>
     </>
