@@ -99,21 +99,10 @@ export function Dropdown_menu() {
                               <NavigationMenuLink>
                                 <Link
                                   href="https://superuber.com/light-energy-museum-2/"
-                                  className="flex h-full w-full select-none flex-col justify-end rounded-md bg-[url('/Light4.png')] bg-cover p-5 no-underline outline-none focus:shadow-md"
+                                  className="relative flex h-full w-full select-none flex-col justify-end rounded-md bg-[url('/Light4.png')] bg-cover p-5 no-underline outline-none focus:shadow-md"
                                   rel="noopener noreferrer"
                                   target="_blank"
-                                >
-                                  <Icons.logo_migue className="h-6 w-6 text-white" />
-
-                                  <div className="mt-4 mb-2 text-lg font-medium text-white">
-                                    Museo Light (BR)
-                                  </div>
-                                  <p className="text-sm leading-tight text-white/90">
-                                    Diseño de sonido, espacialización e
-                                    interacción del Túnel del Museo Light (Rio,
-                                    Brasil)
-                                  </p>
-                                </Link>
+                                ></Link>
                               </NavigationMenuLink>
                             </li>
                             <ListItem
