@@ -99,7 +99,7 @@ export function Dropdown_menu() {
                               <NavigationMenuLink>
                                 <Link
                                   href="https://superuber.com/light-energy-museum-2/"
-                                  className="relative flex h-full w-full select-none flex-col justify-end rounded-md bg-[url('/Light4.png')] bg-cover p-5 no-underline outline-none focus:shadow-md"
+                                  className="relative flex h-full min-h-[250px] w-full select-none flex-col justify-end rounded-md bg-[url('/Light4.png')] bg-cover p-5 no-underline outline-none focus:shadow-md"
                                   rel="noopener noreferrer"
                                   target="_blank"
                                 ></Link>

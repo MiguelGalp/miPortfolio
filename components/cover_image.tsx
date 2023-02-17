@@ -7,8 +7,8 @@ import sin_cabeza from "../public/ipad_new.png"
 export function CoverImage() {
   return (
     <>
-      <div className="flex h-full items-center justify-center md:mt-10 md:ml-[110px] lg:ml-[160px] xl:ml-[280px]">
-        <AspectRatio ratio={16 / 9} className="hidden p-0 md:block">
+      <div className="flex h-full max-w-[1000px] items-center justify-center md:mt-6 md:ml-[110px] lg:ml-[160px] xl:ml-[280px] ">
+        <AspectRatio ratio={4 / 3} className="hidden p-0 md:block">
           <Image
             src={sin_cabeza}
             alt="Foto de Galperin"
