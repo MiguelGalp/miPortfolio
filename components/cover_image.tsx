@@ -7,7 +7,7 @@ import sin_cabeza from "../public/ipad_new.png"
 export function CoverImage() {
   return (
     <>
-      <div className="flex h-full max-w-[1000px] items-center justify-center md:mt-6 md:ml-[110px] lg:ml-[160px] xl:ml-[280px] ">
+      <div className="flex h-full max-w-[1000px] items-center justify-center md:-mt-2 md:ml-[130px] lg:ml-[230px] xl:ml-[350px] ">
         <AspectRatio ratio={4 / 3} className="hidden p-0 md:block">
           <Image
             src={sin_cabeza}
