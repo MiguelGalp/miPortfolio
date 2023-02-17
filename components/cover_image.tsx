@@ -9,7 +9,7 @@ export function CoverImage() {
       <Image
         src={sin_cabeza}
         alt="Foto de Galperin"
-        className="ml-[140px] mt-10 rounded-md object-cover"
+        className="mt-10 rounded-md object-cover transition-all duration-500 ease-in-out md:ml-[120px] lg:ml-[180px] xl:ml-[280px]"
       />
     </AspectRatio>
   )
