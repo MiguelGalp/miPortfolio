@@ -1,36 +1,44 @@
 import Image from "next/image"
 
 import { AspectRatio } from "@/components/ui/aspect-ratio"
-import sin_cabeza_mobile from "../public/iPhone_13_mobile.png"
-import sin_cabeza from "../public/ipad_new.png"
+import smallImage from "../public/smallImage.png"
+import mediumImage from "../public/mediumImage.png"
+import largeImage from "../public/largeImage_2.png"
+import extraLargeImage from "../public/extraLargeImage.png"
 
 export function CoverImage() {
   return (
     <>
-      <div className="flex h-full max-w-[1000px] items-center justify-center md:-mt-2 md:ml-[130px] lg:ml-[230px] xl:ml-[350px] ">
-        <AspectRatio ratio={4 / 3} className="hidden p-0 md:block">
+      <div className="flex h-full max-w-[1000px] max-h-[55vh] items-center justify-center md:-mt-8 md:ml-[120px] lg:ml-[200px] xl:ml-[290px] ">
+        <AspectRatio ratio={16 / 9} className="hidden p-0 md:block">
           <Image
-            src={sin_cabeza}
+            src={largeImage}
             alt="Foto de Galperin"
             className="mt-12 antialiased transition-all duration-500 ease-in-out first-line:rounded-md"
-            fill
+            layout="responsive"
+            sizes="(min-width: 1024px) 500px, 50vw"
+            width={largeImage.width}
+            height={largeImage.height}
           />
         </AspectRatio>
       </div>
       <div className="md:hidden">
         <Image
-          src={sin_cabeza_mobile}
+          src={smallImage}
           alt="Foto de Galperin"
-          fill
+          layout="responsive"
+          width={smallImage.width}
+          height={smallImage.height}
           className="mt-10 rounded-md antialiased transition-all duration-500 ease-in-out"
         />
       </div>
       <style jsx>{`
         @media (min-height: 768px) and (orientation: portrait) {
-          .md\:mt-10 {
-            margin-top: 30%;
-            transform: scale(1.5);
-            margin-left: 20%;
+          .md\:-mt-8 {
+            margin-top: 17%;
+            position: relative;
+            left: 5%;
+            transform: scale(1.2);
           }
         }
       `}</style>
