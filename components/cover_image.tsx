@@ -3,7 +3,7 @@ import Image from "next/image"
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 import smallImage from "../public/smallImage.png"
 import mediumImage from "../public/mediumImage.png"
-import largeImage from "../public/revista_super_3.svg"
+import largeImage from "../public/coderGIF.svg"
 import extraLargeImage from "../public/extraLargeImage.png"
 
 export function CoverImage() {
