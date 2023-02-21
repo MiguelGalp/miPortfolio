@@ -8,40 +8,26 @@ import extraLargeImage from "../public/extraLargeImage.png"
 
 export function CoverImage() {
   return (
-    <>
-      <div className="flex h-full max-w-[1000px] max-h-[55vh] items-center justify-center md:-mt-8 md:ml-[120px] lg:ml-[200px] xl:ml-[290px] ">
-        <AspectRatio ratio={16 / 9} className="hidden p-0 md:block">
-          <Image
-            src={largeImage}
-            alt="Foto de Galperin"
-            className="mt-12 antialiased transition-all duration-500 ease-in-out first-line:rounded-md"
-            layout="responsive"
-            sizes="(min-width: 1024px) 500px, 50vw"
-            width={largeImage.width}
-            height={largeImage.height}
-          />
-        </AspectRatio>
+    <div className="flex min-h-screen bg-transparent relative bottom-[100px]">
+  <div className="flex flex-1 flex-col justify-center px-8 py-8 md:px-12 lg:flex-none lg:px-24">
+    <div className="mx-auto w-full lg:max-w-6xl">
+      <div className="mx-auto max-w-xl text-center lg:p-10 lg:text-left">
+        <div>
+          <span className="inline-flex items-center text-black"> <span className="font-mono text-sm" aria-hidden="true">MG</span><span className="ml-3 h-3.5 w-px bg-black"></span><span className="ml-3 text-base font-medium tracking-tight">Desarrollador</span> </span>
+          <p className="font-display mt-8 text-4xl tracking-tighter text-black lg:text-5xl">Apps y webs, juntos</p>
+          <p className="mt-4 max-w-xl text-lg tracking-tight text-gray-600">Escribime para pensar tu nueva herramienta. La hago en React, Next.js, Tailwind y en contextos que piensan en el usuario y las APIs.</p>
+        </div>
+        <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+        </div>
       </div>
-      <div className="md:hidden">
-        <Image
-          src={smallImage}
-          alt="Foto de Galperin"
-          layout="responsive"
-          width={smallImage.width}
-          height={smallImage.height}
-          className="mt-10 rounded-md antialiased transition-all duration-500 ease-in-out"
-        />
-      </div>
-      <style jsx>{`
-        @media (min-height: 768px) and (orientation: portrait) {
-          .md\:-mt-8 {
-            margin-top: 17%;
-            position: relative;
-            left: 5%;
-            transform: scale(1.2);
-          }
-        }
-      `}</style>
-    </>
+    </div>
+  </div>
+  <div className="relative order-first hidden w-0 flex-1 bg-transparent lg:block">
+    <div>
+      <img className="absolute inset-0 h-full w-full object-cover scale-75" src="/coderGIF.svg" alt="" />
+    </div>
+  </div>
+</div>
+
   )
 }
