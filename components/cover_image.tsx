@@ -120,7 +120,9 @@ export function CoverImage() {
       </div>
       <div className="relative order-first hidden w-0 max-w-[650px] flex-1  bg-transparent lg:block">
         <div>
-          <img
+          <Image
+            width={500}
+            height={500}
             className="absolute bottom-5 left-8 h-full w-full scale-125 object-contain"
             src="/coderGIF.svg"
             alt=""
