@@ -87,23 +87,18 @@ export function CoverImage() {
                     <DialogDescription>
                       Me encanta saber más sobre tu proyecto, ideas y sobretodo
                       me interesa que estemos en contacto. La seguimos por
-                      email.
+                      email?
                     </DialogDescription>
                   </DialogHeader>
                   <div className="grid gap-4 py-4">
                     <div className="grid grid-cols-1 items-center gap-4">
                       <Label htmlFor="name" className="text-left">
-                        Por favor completá tus datos
+                        Por favor completá tus datos:
                       </Label>
-                      <Input
-                        id="name"
-                        value="Tu nombre"
-                        className="col-span-3"
-                      />
                     </div>
 
                     <DialogFooter className="sm:justify-content-start flex">
-                      <div className="w-full max-w-xs">
+                      <div className="-ml[1px] w-full">
                         <ContactForm />
                       </div>
                     </DialogFooter>

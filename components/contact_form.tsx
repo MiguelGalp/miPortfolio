@@ -40,6 +40,7 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div className="justify-content-start flex w-full max-w-sm space-x-2">
+        <Input {...register("nombre")} defaultValue="Tu nombre"></Input>
         <Input {...register("email")} defaultValue="Tu email"></Input>
         <Button type="submit" role="submit">
           {isSubmitting ? "Submitting" : "Enviar"}
