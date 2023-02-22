@@ -16,7 +16,6 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "@/components/ui/hover-card"
-
 import ContactForm from "./contact_form"
 import { Button } from "./ui/button"
 import { Input } from "./ui/input"
@@ -24,8 +23,8 @@ import { Label } from "./ui/label"
 
 export function CoverImage() {
   return (
-    <div className="relative bottom-[65px] lg:bottom-[80px] flex min-h-screen lg:bg-none bg-gradient-to-r from-white to-slate-200">
-      <div className="flex flex-1 flex-col justify-center px-8 py-8 md:px-12 lg:flex-none lg:px-24 lg:py-36">
+    <div className="relative bottom-[65px] flex min-h-screen bg-gradient-to-b from-blue-200 to-white lg:bottom-[80px] lg:bg-none">
+      <div className="flex flex-1 flex-col justify-center p-8 md:px-12 lg:flex-none lg:px-24 lg:py-36">
         <div className="mx-auto w-full lg:max-w-6xl">
           <div className="mx-auto max-w-xl text-center lg:p-1 lg:text-left">
             <div>
@@ -79,7 +78,9 @@ export function CoverImage() {
                   <DialogHeader>
                     <DialogTitle>GENIAL!</DialogTitle>
                     <DialogDescription>
-                      Me encanta saber más sobre tu proyecto, ideas y sobretodo me interesa que estemos en contacto. La seguimos por email.
+                      Me encanta saber más sobre tu proyecto, ideas y sobretodo
+                      me interesa que estemos en contacto. La seguimos por
+                      email.
                     </DialogDescription>
                   </DialogHeader>
                   <div className="grid gap-4 py-4">
