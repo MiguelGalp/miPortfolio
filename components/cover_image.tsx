@@ -23,10 +23,10 @@ import { Label } from "./ui/label"
 
 export function CoverImage() {
   return (
-    <div className="flex min-h-screen bg-gradient-to-b from-blue-200 to-white lg:bottom-[80px] lg:bg-none">
+    <div className="flex min-h-screen max-w-[1600px] bg-gradient-to-b from-blue-200 to-white lg:relative lg:bottom-[80px] lg:bg-none">
       <div className="flex flex-1 flex-col justify-center p-8 md:px-12 lg:flex-none lg:px-24 lg:py-36">
-        <div className="mx-auto w-full lg:max-w-6xl">
-          <div className="mx-auto max-w-xl text-center lg:p-1 lg:text-left">
+        <div className="mx-auto w-full lg:max-w-6xl xl:-ml-10">
+          <div className="mx-auto max-w-lg text-center lg:p-1 lg:text-left">
             <div>
               <span className="inline-flex items-center text-black dark:text-dracula-aro-100">
                 {" "}
