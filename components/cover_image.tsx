@@ -20,6 +20,7 @@ import largeImage from "../public/coderGIF.svg"
 import extraLargeImage from "../public/extraLargeImage.png"
 import mediumImage from "../public/mediumImage.png"
 import smallImage from "../public/smallImage.png"
+import ContactForm from "./contact_form"
 import { Button } from "./ui/button"
 import { Input } from "./ui/input"
 import { Label } from "./ui/label"
@@ -77,41 +78,36 @@ export function CoverImage() {
             </div>
             <div className="mt-10 flex flex-col gap-3 sm:flex-row">
               <Dialog>
-                <DialogTrigger>
+                <DialogTrigger className="z-50">
                   <Button>Contacto</Button>
                 </DialogTrigger>
                 <DialogContent className="sm:max-w-[425px]">
                   <DialogHeader>
-                    <DialogTitle>Edit profile</DialogTitle>
+                    <DialogTitle>GENIAL!</DialogTitle>
                     <DialogDescription>
-                      Make changes to your profile here. Click save when done.
+                      Me encanta saber más sobre tu proyecto, ideas y sobretodo
+                      me interesa que estemos en contacto. La seguimos por
+                      email.
                     </DialogDescription>
                   </DialogHeader>
                   <div className="grid gap-4 py-4">
-                    <div className="grid grid-cols-4 items-center gap-4">
-                      <Label htmlFor="name" className="text-right">
-                        Name
+                    <div className="grid grid-cols-1 items-center gap-4">
+                      <Label htmlFor="name" className="text-left">
+                        Por favor completá tus datos
                       </Label>
                       <Input
                         id="name"
-                        value="Pedro Duarte"
+                        value="Tu nombre"
                         className="col-span-3"
                       />
                     </div>
-                    <div className="grid grid-cols-4 items-center gap-4">
-                      <Label htmlFor="username" className="text-right">
-                        Username
-                      </Label>
-                      <Input
-                        id="username"
-                        value="@peduarte"
-                        className="col-span-3"
-                      />
-                    </div>
+
+                    <DialogFooter className="sm:justify-content-start flex">
+                      <div className="w-full max-w-xs">
+                        <ContactForm />
+                      </div>
+                    </DialogFooter>
                   </div>
-                  <DialogFooter>
-                    <Button type="submit">Save changes</Button>
-                  </DialogFooter>
                 </DialogContent>
               </Dialog>
             </div>
