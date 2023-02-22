@@ -6,7 +6,7 @@ import { Icons } from "@/components/icons"
 export function SiteFooter() {
   const currentYear = new Date().getFullYear()
   return (
-    <footer className="container mb-10 w-full max-w-[1104px] lg:fixed lg:bottom-0">
+    <footer className="container mb-10 w-full max-w-[1104px] lg:fixed lg:bottom-0 lg:mb-0">
       <div className="flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row md:py-0">
         <div className="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
           <Icons.logo className="h-8 w-8 md:h-6" />
