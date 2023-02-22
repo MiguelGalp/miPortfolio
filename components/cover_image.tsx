@@ -35,18 +35,21 @@ export function CoverImage() {
             <div>
               <span className="inline-flex items-center text-black">
                 {" "}
-                <span className="font-mono text-sm" aria-hidden="true">
+                <span
+                  className="font-mono text-sm dark:text-dracula-aro-100"
+                  aria-hidden="true"
+                >
                   MG
                 </span>
                 <span className="ml-3 h-3.5 w-px bg-black"></span>
-                <span className="ml-3 text-base font-medium tracking-tight">
+                <span className="ml-3 text-base font-medium tracking-tight dark:text-dracula-aro-100">
                   Desarrollador
                 </span>{" "}
               </span>
-              <p className="font-display mt-8 text-4xl tracking-tighter text-black lg:text-5xl">
+              <p className="font-display mt-8 text-4xl tracking-tighter text-black dark:text-dracula-aro-50 lg:text-5xl">
                 Cultura digital, juntos
               </p>
-              <p className="mt-4 max-w-xl text-lg tracking-tight text-gray-600">
+              <p className="mt-4 max-w-xl text-lg tracking-tight text-gray-600 dark:text-dracula-aro-200">
                 Me especializo en dar vida a aplicaciones y sitios web centrados
                 en el usuario. Desde frontends hasta plataformas micro SaaS,
                 podemos hacer realidad tu visión utilizando

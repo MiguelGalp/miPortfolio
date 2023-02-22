@@ -1,8 +1,6 @@
 import * as React from "react"
 import Link from "next/link"
 
-import { Dropdown_mobile } from "./dropdown_mobile"
-
 import { NavItem } from "@/types/nav"
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
@@ -16,6 +14,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+import { Dropdown_mobile } from "./dropdown_mobile"
 
 interface MainNavProps {
   items?: NavItem[]
@@ -39,7 +38,7 @@ export function MainNav({ items }: MainNavProps) {
                   key={index}
                   href={item.href}
                   className={cn(
-                    "flex items-center text-lg font-semibold text-black hover:text-slate-900 dark:text-dracula-aro-50 sm:text-sm",
+                    "flex items-center text-lg font-semibold text-slate-600 hover:text-slate-900 dark:text-slate-100 sm:text-sm",
                     item.disabled && "cursor-not-allowed opacity-80"
                   )}
                 >
@@ -49,7 +48,7 @@ export function MainNav({ items }: MainNavProps) {
           )}
         </nav>
       ) : null}
-      <Dropdown_mobile/>
+      <Dropdown_mobile />
     </div>
   )
 }
