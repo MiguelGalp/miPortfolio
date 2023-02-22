@@ -60,7 +60,7 @@ export function SiteHeader() {
                 className={buttonVariants({
                   size: "sm",
                   variant: "ghost",
-                  className: "text-slate-700 dark:text-slate-200",
+                  className: "text-slate-700 dark:text-dracula-aro-50",
                 })}
               >
                 <Icons.gitHub className="h-5 w-5" />
@@ -76,7 +76,7 @@ export function SiteHeader() {
                 className={buttonVariants({
                   size: "sm",
                   variant: "ghost",
-                  className: "text-slate-700 dark:text-slate-200",
+                  className: "text-slate-700 dark:text-dracula-aro-50",
                 })}
               >
                 <Icons.twitter className="h-5 w-5 fill-current" />
