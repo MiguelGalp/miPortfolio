@@ -1,6 +1,8 @@
 import Image from "next/image"
 import Link from "next/link"
+import { CalendarDays } from "lucide-react"
 
+import { AspectRatio } from "@/components/ui/aspect-ratio"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import {
   Dialog,
@@ -16,19 +18,22 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "@/components/ui/hover-card"
-import ContactForm from "./contact_form"
+import largeImage from "../public/coderGIF.svg"
+import extraLargeImage from "../public/extraLargeImage.png"
+import mediumImage from "../public/mediumImage.png"
+import smallImage from "../public/smallImage.png"
 import { Button } from "./ui/button"
 import { Input } from "./ui/input"
 import { Label } from "./ui/label"
 
 export function CoverImage() {
   return (
-    <div className="flex min-h-screen max-w-[1600px] bg-gradient-to-b from-blue-200 to-white lg:relative lg:bottom-[80px] lg:bg-none">
-      <div className="flex flex-1 flex-col justify-center p-8 md:px-12 lg:flex-none lg:px-24 lg:py-36">
-        <div className="mx-auto w-full lg:max-w-6xl xl:-ml-10">
+    <div className="relative top-20 z-0 mx-auto flex min-h-screen justify-center bg-transparent lg:min-h-full">
+      <div className="flex flex-1 flex-col justify-center px-8 py-8 md:px-12 lg:flex-none">
+        <div className="mx-auto w-full lg:max-w-xl">
           <div className="mx-auto max-w-lg text-center lg:p-1 lg:text-left">
             <div>
-              <span className="inline-flex items-center text-black dark:text-dracula-aro-100">
+              <span className="inline-flex items-center text-black">
                 {" "}
                 <span className="font-mono text-sm" aria-hidden="true">
                   MG
@@ -38,10 +43,10 @@ export function CoverImage() {
                   Desarrollador
                 </span>{" "}
               </span>
-              <p className="font-display mt-8 text-4xl tracking-tighter text-black dark:text-dracula-aro-50 lg:text-5xl">
+              <p className="font-display mt-8 text-4xl tracking-tighter text-black lg:text-5xl">
                 Cultura digital, juntos
               </p>
-              <p className="mt-4 max-w-xl text-lg tracking-tight text-gray-600 dark:text-dracula-aro-50">
+              <p className="mt-4 max-w-xl text-lg tracking-tight text-gray-600">
                 Me especializo en dar vida a aplicaciones y sitios web centrados
                 en el usuario. Desde frontends hasta plataformas micro SaaS,
                 podemos hacer realidad tu visión utilizando
@@ -66,7 +71,7 @@ export function CoverImage() {
                   </HoverCardContent>
                 </HoverCard>
                 , Pipedream y Tailwind. Trabajemos juntos para construir la
-                herramienta que querés. Escribime hoy para contarme tu proyecto!
+                herramienta que querés. Escribime hoy para discutir tu proyecto!
               </p>
             </div>
             <div className="mt-10 flex flex-col gap-3 sm:flex-row">
@@ -76,41 +81,47 @@ export function CoverImage() {
                 </DialogTrigger>
                 <DialogContent className="sm:max-w-[425px]">
                   <DialogHeader>
-                    <DialogTitle>GENIAL!</DialogTitle>
+                    <DialogTitle>Edit profile</DialogTitle>
                     <DialogDescription>
-                      Me encanta saber más sobre tu proyecto, ideas y sobretodo
-                      me interesa que estemos en contacto. La seguimos por
-                      email.
+                      Make changes to your profile here. Click save when you're
+                      done.
                     </DialogDescription>
                   </DialogHeader>
                   <div className="grid gap-4 py-4">
-                    <div className="grid grid-cols-1 items-center gap-4">
-                      <Label htmlFor="name" className="text-left">
-                        Por favor completá tus datos
+                    <div className="grid grid-cols-4 items-center gap-4">
+                      <Label htmlFor="name" className="text-right">
+                        Name
                       </Label>
                       <Input
                         id="name"
-                        value="Tu nombre"
+                        value="Pedro Duarte"
                         className="col-span-3"
                       />
                     </div>
-
-                    <DialogFooter className="sm:justify-content-start flex">
-                      <div className="w-full max-w-xs">
-                        <ContactForm />
-                      </div>
-                    </DialogFooter>
+                    <div className="grid grid-cols-4 items-center gap-4">
+                      <Label htmlFor="username" className="text-right">
+                        Username
+                      </Label>
+                      <Input
+                        id="username"
+                        value="@peduarte"
+                        className="col-span-3"
+                      />
+                    </div>
                   </div>
+                  <DialogFooter>
+                    <Button type="submit">Save changes</Button>
+                  </DialogFooter>
                 </DialogContent>
               </Dialog>
             </div>
           </div>
         </div>
       </div>
-      <div className="relative order-first hidden w-0 flex-1 bg-transparent lg:block">
+      <div className="relative order-first hidden w-0 max-w-[650px] flex-1  bg-transparent lg:block">
         <div>
           <img
-            className="absolute bottom-5 h-full w-full scale-[0.7] object-cover md:-ml-[50px] lg:ml-24 xl:ml-[100px]"
+            className="absolute bottom-5 left-8 h-full w-full object-contain"
             src="/coderGIF.svg"
             alt=""
           />
