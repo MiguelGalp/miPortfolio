@@ -38,10 +38,10 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <div className="flex w-full max-w-sm items-center space-x-2">
-        <Input {...register("email")} defaultValue="me@gmail.com"></Input>
+      <div className="flex w-full max-w-sm justify-content-start space-x-2">
+        <Input {...register("email")} defaultValue="Tu email"></Input>
         <Button type="submit" role="submit">
-          {isSubmitting ? "Submitting" : "Contacto"}
+          {isSubmitting ? "Submitting" : "Enviar"}
         </Button>
       </div>
     </form>

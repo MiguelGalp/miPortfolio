@@ -84,19 +84,6 @@ export function SiteHeader() {
               </div>
             </Link>
             <ThemeToggle />
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="sm">
-                  <Mail className="hover:text-slate-900 dark:text-slate-200 dark:hover:text-slate-100" />
-                  <span className="sr-only">Toggle theme</span>
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" forceMount>
-                <DropdownMenuItem asChild>
-                  <ContactForm />
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
           </nav>
         </div>
       </div>
