@@ -79,7 +79,7 @@ export function CoverImage() {
             <div className="mt-10 flex flex-col gap-3 sm:flex-row">
               <Dialog>
                 <DialogTrigger className="z-50">
-                  <Button>Contacto</Button>
+                  <Button className="dark:bg-dracula-aro-50">Contacto</Button>
                 </DialogTrigger>
                 <DialogContent className="sm:max-w-[425px]">
                   <DialogHeader>
