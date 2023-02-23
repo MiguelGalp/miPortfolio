@@ -160,7 +160,7 @@ export function Dropdown_menu() {
                             <NavigationMenu>
                               <NavigationMenuLink>
                                 <a
-                                  className="flex h-full w-full select-none flex-col justify-end rounded-md bg-[url('/logo_atx.png')] bg-cover p-[5rem] p-5 no-underline outline-none focus:shadow-md"
+                                  className="flex h-full w-full select-none flex-col justify-end rounded-md bg-[url('/logo_atx.png')] bg-cover p-[5rem] no-underline outline-none focus:shadow-md"
                                   href="/"
                                 ></a>
                               </NavigationMenuLink>
@@ -179,7 +179,7 @@ export function Dropdown_menu() {
                             <NavigationMenu>
                               <NavigationMenuLink>
                                 <a
-                                  className="flex h-full w-full select-none flex-col justify-end rounded-md bg-[url('/logo_atx.png')] bg-cover p-[5rem] p-5 no-underline outline-none focus:shadow-md"
+                                  className="flex h-full w-full select-none flex-col justify-end rounded-md bg-[url('/logo_atx.png')] bg-cover p-[5rem] no-underline outline-none focus:shadow-md"
                                   href="/"
                                 ></a>
                               </NavigationMenuLink>
@@ -198,7 +198,7 @@ export function Dropdown_menu() {
                             <NavigationMenu>
                               <NavigationMenuLink>
                                 <a
-                                  className=" flex h-full w-full select-none flex-col justify-end rounded-md bg-[url('/atx_new_web.png')] bg-cover p-[5rem] p-5 no-underline outline-none focus:shadow-md"
+                                  className=" flex h-full w-full select-none flex-col justify-end rounded-md bg-[url('/atx_new_web.png')] bg-cover p-[5rem] no-underline outline-none focus:shadow-md"
                                   href="/"
                                 ></a>
                               </NavigationMenuLink>
@@ -218,7 +218,7 @@ export function Dropdown_menu() {
                             <NavigationMenu>
                               <NavigationMenuLink>
                                 <a
-                                  className="flex h-full w-full select-none flex-col justify-end rounded-md bg-[url('/new_muro_web.png')] bg-cover p-[5rem] p-5 no-underline outline-none focus:shadow-md"
+                                  className="flex h-full w-full select-none flex-col justify-end rounded-md bg-[url('/new_muro_web.png')] bg-cover p-[5rem] no-underline outline-none focus:shadow-md"
                                   href="/"
                                 ></a>
                               </NavigationMenuLink>
