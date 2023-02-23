@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import { Separator } from "@radix-ui/react-dropdown-menu"
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import {
@@ -81,29 +82,35 @@ export function CoverImage() {
                 <DialogTrigger className="z-50">
                   <Button className="dark:bg-dracula-aro-50">Contacto</Button>
                 </DialogTrigger>
-                <DialogContent className="sm:max-w-[425px]">
-                  <DialogHeader>
-                    <DialogTitle>GENIAL!</DialogTitle>
-                    <DialogDescription>
-                      Me encanta saber más sobre tu proyecto, ideas y sobretodo
-                      me interesa que estemos en contacto. La seguimos por
-                      email?
-                    </DialogDescription>
-                  </DialogHeader>
-                  <div className="grid gap-4 py-4">
-                    <div className="grid grid-cols-1 items-center gap-4">
-                      <Label htmlFor="name" className="text-left">
-                        Por favor completá tus datos:
-                      </Label>
-                    </div>
-
-                    <DialogFooter className="sm:justify-content-start flex">
-                      <div className="-ml[1px] w-full">
-                        <ContactForm />
+                <div className="flex items-center justify-center bg-white">
+                  <DialogContent className="sm:max-w-[425px]">
+                    <div className="flex space-x-6">
+                      <div className="space-y-1">
+                        <h4 className="text-sm font-medium leading-none">
+                          Miguel Galperin
+                        </h4>
+                        <p className="text-sm text-slate-500 dark:text-slate-400">
+                          Desarrollador
+                        </p>
                       </div>
-                    </DialogFooter>
-                  </div>
-                </DialogContent>
+                      <Avatar className="bottom-[2px]">
+                        <AvatarImage src="/Avatar_Darker.png" className="" />
+                        <AvatarFallback>MG</AvatarFallback>
+                      </Avatar>
+                    </div>
+                    <Separator className="text-black" />
+                    <div className="grid gap-4">
+                      <div className="grid grid-cols-1 items-center gap-4">
+                        <Label htmlFor="name" className=""></Label>
+                      </div>
+                      <div className="-ml[1px] mb-16 w-full">
+                        <div className="rounded-md bg-gray-100 p-6">
+                          <ContactForm />
+                        </div>
+                      </div>
+                    </div>
+                  </DialogContent>
+                </div>
               </Dialog>
             </div>
           </div>

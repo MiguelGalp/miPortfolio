@@ -75,7 +75,7 @@ export function Dropdown_menu() {
         >
           <Avatar>
             <AvatarImage src="/Avatar_Darker.png" className="" />
-            <AvatarFallback>CN</AvatarFallback>
+            <AvatarFallback>MG</AvatarFallback>
           </Avatar>
 
           <DemoIndicator className="left-10 -mt-3" />
@@ -152,7 +152,7 @@ export function Dropdown_menu() {
             <DropdownMenuPortal>
               <DropdownMenuSubContent className="overflow-visible">
                 <DropdownMenuItem className="overflow-visible">
-                  <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[1fr_1fr]">
+                  <ul className="grid gap-3 p-6 lg:w-[500px] lg:grid-cols-[1fr_1fr]">
                     <li className="row-span-3 min-h-[150px] grayscale transition-all ease-in-out hover:grayscale-0 ">
                       <TooltipProvider>
                         <Tooltip>
@@ -174,7 +174,7 @@ export function Dropdown_menu() {
                     </li>
                     <li className="row-span-3 min-h-[150px] grayscale transition-all ease-in-out hover:grayscale-0 ">
                       <TooltipProvider>
-                        <Tooltip>
+                        <Tooltip asChild>
                           <TooltipTrigger asChild>
                             <NavigationMenu>
                               <NavigationMenuLink>
