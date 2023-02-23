@@ -152,88 +152,85 @@ export function Dropdown_menu() {
             <DropdownMenuPortal>
               <DropdownMenuSubContent className="overflow-visible">
                 <DropdownMenuItem className="overflow-visible">
-                  <NavigationMenu>
-                    <NavigationMenuList>
-                      <NavigationMenuItem className="overflow-visible">
-                        <NavigationMenuTrigger>
-                          Apps en vivo
-                        </NavigationMenuTrigger>
-                        <NavigationMenuContent className="overflow-visible">
-                          <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[1fr_1fr]">
-                            <li className="row-span-3 min-h-[150px] ">
-                              <TooltipProvider>
-                                <Tooltip>
-                                  <TooltipTrigger asChild>
-                                    <NavigationMenuLink>
-                                      <a
-                                        className="flex h-full w-full select-none flex-col justify-end rounded-md bg-[url('/logo_miss.png')] bg-cover p-5 no-underline outline-none focus:shadow-md"
-                                        href="/"
-                                      ></a>
-                                    </NavigationMenuLink>
-                                  </TooltipTrigger>
-                                  <TooltipContent>
-                                    <p>Servicio de reservas</p>
-                                  </TooltipContent>
-                                </Tooltip>
-                              </TooltipProvider>
-                            </li>
-                            <li className="row-span-3 min-h-[150px] grayscale transition-all ease-in-out hover:grayscale-0 ">
-                              <TooltipProvider>
-                                <Tooltip>
-                                  <TooltipTrigger asChild>
-                                    <NavigationMenuLink>
-                                      <a
-                                        className="flex h-full w-full select-none flex-col justify-end rounded-md bg-[url('/logo_atx.png')] bg-cover p-5 no-underline outline-none focus:shadow-md"
-                                        href="/"
-                                      ></a>
-                                    </NavigationMenuLink>
-                                  </TooltipTrigger>
-                                  <TooltipContent>
-                                    <p>Servicio de reservas</p>
-                                  </TooltipContent>
-                                </Tooltip>
-                              </TooltipProvider>
-                            </li>
-                            <li className="row-span-3 min-h-[150px]">
-                              <TooltipProvider>
-                                <Tooltip>
-                                  <TooltipTrigger asChild>
-                                    <NavigationMenuLink>
-                                      <a
-                                        className="flex h-full w-full select-none flex-col justify-end rounded-md bg-[url('/atx_new_web.png')] bg-cover p-5 no-underline outline-none focus:shadow-md"
-                                        href="/"
-                                      ></a>
-                                    </NavigationMenuLink>
-                                  </TooltipTrigger>
-                                  <TooltipContent>
-                                    <p>Servicio de reservas</p>
-                                  </TooltipContent>
-                                </Tooltip>
-                              </TooltipProvider>
-                            </li>
+                  <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[1fr_1fr]">
+                    <li className="row-span-3 min-h-[150px] grayscale transition-all ease-in-out hover:grayscale-0 ">
+                      <TooltipProvider>
+                        <Tooltip>
+                          <TooltipTrigger asChild>
+                            <NavigationMenu>
+                              <NavigationMenuLink>
+                                <a
+                                  className="flex h-full w-full select-none flex-col justify-end rounded-md bg-[url('/logo_atx.png')] bg-cover p-[5rem] p-5 no-underline outline-none focus:shadow-md"
+                                  href="/"
+                                ></a>
+                              </NavigationMenuLink>
+                            </NavigationMenu>
+                          </TooltipTrigger>
+                          <TooltipContent>
+                            <p>Servicio de reservas</p>
+                          </TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
+                    </li>
+                    <li className="row-span-3 min-h-[150px] grayscale transition-all ease-in-out hover:grayscale-0 ">
+                      <TooltipProvider>
+                        <Tooltip>
+                          <TooltipTrigger asChild>
+                            <NavigationMenu>
+                              <NavigationMenuLink>
+                                <a
+                                  className="flex h-full w-full select-none flex-col justify-end rounded-md bg-[url('/logo_atx.png')] bg-cover p-[5rem] p-5 no-underline outline-none focus:shadow-md"
+                                  href="/"
+                                ></a>
+                              </NavigationMenuLink>
+                            </NavigationMenu>
+                          </TooltipTrigger>
+                          <TooltipContent>
+                            <p>Servicio de reservas</p>
+                          </TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
+                    </li>
+                    <li className="row-span-3 min-h-[150px]">
+                      <TooltipProvider>
+                        <Tooltip>
+                          <TooltipTrigger asChild>
+                            <NavigationMenu>
+                              <NavigationMenuLink>
+                                <a
+                                  className=" flex h-full w-full select-none flex-col justify-end rounded-md bg-[url('/atx_new_web.png')] bg-cover p-[5rem] p-5 no-underline outline-none focus:shadow-md"
+                                  href="/"
+                                ></a>
+                              </NavigationMenuLink>
+                            </NavigationMenu>
+                          </TooltipTrigger>
+                          <TooltipContent>
+                            <p>Servicio de reservas</p>
+                          </TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
+                    </li>
 
-                            <li className="row-span-3 min-h-[150px]">
-                              <TooltipProvider>
-                                <Tooltip>
-                                  <TooltipTrigger asChild>
-                                    <NavigationMenuLink>
-                                      <a
-                                        className="flex h-full w-full select-none flex-col justify-end rounded-md bg-[url('/new_muro_web.png')] bg-cover p-5 no-underline outline-none focus:shadow-md"
-                                        href="/"
-                                      ></a>
-                                    </NavigationMenuLink>
-                                  </TooltipTrigger>
-                                  <TooltipContent>
-                                    <p>Servicio de reservas</p>
-                                  </TooltipContent>
-                                </Tooltip>
-                              </TooltipProvider>
-                            </li>
-                          </ul>
-                        </NavigationMenuContent>
-                      </NavigationMenuItem>
-                    </NavigationMenuList>
-                  </NavigationMenu>
+                    <li className="row-span-3 min-h-[150px]">
+                      <TooltipProvider>
+                        <Tooltip>
+                          <TooltipTrigger asChild>
+                            <NavigationMenu>
+                              <NavigationMenuLink>
+                                <a
+                                  className="flex h-full w-full select-none flex-col justify-end rounded-md bg-[url('/new_muro_web.png')] bg-cover p-[5rem] p-5 no-underline outline-none focus:shadow-md"
+                                  href="/"
+                                ></a>
+                              </NavigationMenuLink>
+                            </NavigationMenu>
+                          </TooltipTrigger>
+                          <TooltipContent>
+                            <p>Servicio de reservas</p>
+                          </TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
+                    </li>
+                  </ul>
                 </DropdownMenuItem>
               </DropdownMenuSubContent>
             </DropdownMenuPortal>
