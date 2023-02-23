@@ -96,8 +96,8 @@ export function Dropdown_menu() {
                   <NavigationMenu>
                     <NavigationMenuList>
                       <NavigationMenuItem className="overflow-visible">
-                        <NavigationMenuTrigger>
-                          Túnel de partículas junto a SuperUber
+                        <NavigationMenuTrigger className="dark:text-dracula-aro-200">
+                          Stack, objetivos y más...
                         </NavigationMenuTrigger>
                         <NavigationMenuContent className="overflow-visible">
                           <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
@@ -155,7 +155,7 @@ export function Dropdown_menu() {
                   <NavigationMenu>
                     <NavigationMenuList>
                       <NavigationMenuItem className="overflow-visible">
-                        <NavigationMenuTrigger>
+                        <NavigationMenuTrigger className="dark:text-dracula-aro-200">
                           Apps en vivo
                         </NavigationMenuTrigger>
                         <NavigationMenuContent className="overflow-visible">
@@ -251,7 +251,7 @@ export function Dropdown_menu() {
                   <NavigationMenu>
                     <NavigationMenuList>
                       <NavigationMenuItem className="overflow-visible">
-                        <NavigationMenuTrigger>
+                        <NavigationMenuTrigger className="dark:text-dracula-aro-200">
                           Audio espacial junto a SuperUber
                         </NavigationMenuTrigger>
                         <NavigationMenuContent className="overflow-visible">

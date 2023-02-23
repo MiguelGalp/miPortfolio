@@ -18,7 +18,7 @@ const NavigationMenu = React.forwardRef<
     {...props}
   >
     {children}
-    <NavigationMenuViewport/>
+    <NavigationMenuViewport />
   </NavigationMenuPrimitive.Root>
 ))
 NavigationMenu.displayName = NavigationMenuPrimitive.Root.displayName
@@ -54,10 +54,13 @@ const NavigationMenuTrigger = React.forwardRef<
     {...props}
   >
     {children}{" "}
-    <ChevronDown
-      className="relative top-[1px] ml-1 h-3 w-3 transition duration-200 group-data-[state=open]:rotate-180"
-      aria-hidden="true"
-    />
+    <div className="relative inline-block">
+      <div className="absolute left-2 z-0 rounded-full bg-gray-700"></div>
+      <ChevronDown
+        className="relative z-10 ml-3 h-4 w-4 scale-110 rounded-full bg-slate-300 bg-opacity-50 transition duration-200 group-data-[state=open]:rotate-180 dark:text-dracula-aro-100"
+        aria-hidden="true"
+      />
+    </div>
   </NavigationMenuPrimitive.Trigger>
 ))
 NavigationMenuTrigger.displayName = NavigationMenuPrimitive.Trigger.displayName
