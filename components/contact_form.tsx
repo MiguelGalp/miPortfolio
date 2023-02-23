@@ -21,7 +21,7 @@ export default function ContactForm() {
       .post("https://eonc5oqjzkckuua.m.pipedream.net", data)
       .then((response) => {
         setSuccessMessage(
-          `Gracias por tu contacto! Chequeá tu correo para continuar la charla 😊`
+          `Gracias! Continuamos por correo`
         )
         setSubmitted(true)
       })
@@ -30,11 +30,11 @@ export default function ContactForm() {
 
   if (submitted) {
     return (
-      <div className="flex items-center space-x-2 rounded-md bg-green-100 p-2">
-        <CheckCircleIcon className="h-6 w-6 text-green-600" />
-        <p className="text-green-800">{successMessage}</p>
+      <div className="flex flex-col items-center space-y-2 rounded-md bg-green-100 p-4">
+        <CheckCircleIcon className="h-16 w-16 text-green-600" />
+        <p className="text-green-800 text-lg text-center">{successMessage}</p>
       </div>
-    )
+    )    
   }
 
   return (
