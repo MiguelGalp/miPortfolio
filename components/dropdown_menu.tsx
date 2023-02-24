@@ -120,6 +120,7 @@ export function Dropdown_menu() {
           layout="fill"
           objectFit="cover"
           className="rounded-md"
+          loading="eager"
           priority={true}
         />
       </div>

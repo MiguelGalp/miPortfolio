@@ -124,6 +124,7 @@ export function CoverImage() {
             className="absolute bottom-5 left-8 h-full w-full scale-125 object-contain"
             src="/coderGIF.svg"
             alt=""
+            loading="eager"
           />
         </div>
       </div>
