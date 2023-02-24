@@ -141,6 +141,7 @@ export function Dropdown_menu() {
                             <ListItem
                               href="https://superuber.com/light-energy-museum-2/"
                               title="¿Quiénes y cómo?"
+                              className="pointer-events-none"
                             >
                               Trabajo en un contexto interdisciplinario que
                               incluye diseño, editores y colegas Devs
@@ -185,6 +186,7 @@ export function Dropdown_menu() {
                             <ListItem
                               href="https://superuber.com/light-energy-museum-2/"
                               title="Stack"
+                              className="pointer-events-none"
                             >
                               Integración con Unity desde el entorno de creación
                               de sonido SuperCollider.
@@ -192,6 +194,7 @@ export function Dropdown_menu() {
                             <ListItem
                               href="https://superuber.com/light-energy-museum-2/"
                               title="Objetivos"
+                              className="pointer-events-none"
                             >
                               Diseño de sonido e interactividad para eventos y
                               espacios que incluyen centralmente al usuario.
@@ -199,6 +202,7 @@ export function Dropdown_menu() {
                             <ListItem
                               href="https://superuber.com/light-energy-museum-2/"
                               title="¿Quiénes?"
+                              className="pointer-events-none"
                             >
                               Trabajo junto a colegas y a estudios como
                               SuperUber, uno de los mayores compañías de diseño
