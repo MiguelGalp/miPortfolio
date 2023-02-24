@@ -125,6 +125,7 @@ export function CoverImage() {
             src="/coderGIF.svg"
             alt=""
             loading="eager"
+            priority={true}
           />
         </div>
       </div>

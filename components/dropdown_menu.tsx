@@ -117,6 +117,8 @@ export function Dropdown_menu() {
         <Image
           src="/love_hero.svg"
           alt="Love hero image"
+          width={500}
+          height={500}
           layout="fill"
           objectFit="cover"
           className="rounded-md"
