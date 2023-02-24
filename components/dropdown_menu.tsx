@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link"
+import Image from "next/image"
 import * as NavigationMenuPrimitive from "@radix-ui/react-navigation-menu"
 import { cva } from "class-variance-authority"
 import {
@@ -103,16 +104,29 @@ export function Dropdown_menu() {
                         </NavigationMenuTrigger>
                         <NavigationMenuContent className="overflow-visible">
                           <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                            <li className="row-span-3">
-                              <NavigationMenuLink>
-                                <Link
-                                  href=""
-                                  className="pointer-events-none relative top-12 flex h-full min-h-[250px] w-full select-none rounded-md bg-[url('/love_hero.svg')] bg-cover no-underline outline-none focus:shadow-md"
-                                  rel="noopener noreferrer"
-                                  target="_blank"
-                                ></Link>
-                              </NavigationMenuLink>
-                            </li>
+                          <li className="row-span-3">
+  <NavigationMenuLink>
+    <Link
+      href=""
+      className="pointer-events-none relative top-12 flex h-full min-h-[250px] w-full select-none rounded-md no-underline outline-none focus:shadow-md"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div className="bg-transparent absolute inset-0 opacity-30 rounded-md"></div>
+      <div className="absolute inset-0">
+        <Image
+          src="/love_hero.svg"
+          alt="Love hero image"
+          layout="fill"
+          objectFit="cover"
+          className="rounded-md"
+          priority={true}
+        />
+      </div>
+    </Link>
+  </NavigationMenuLink>
+</li>
+
                             <ListItem
                               href="https://superuber.com/light-energy-museum-2/"
                               title="Micro-servicios"
