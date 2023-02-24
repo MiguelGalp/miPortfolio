@@ -6,6 +6,7 @@ import * as NavigationMenuPrimitive from "@radix-ui/react-navigation-menu"
 import { cva } from "class-variance-authority"
 import {
   ArrowBigRight,
+  BoxIcon,
   Cloud,
   CreditCard,
   Croissant,
@@ -84,6 +85,76 @@ export function Dropdown_menu() {
       <DropdownMenuContent className="w-56">
         <DropdownMenuLabel>Mi trabajo</DropdownMenuLabel>
         <DropdownMenuSeparator />
+
+        <DropdownMenuGroup>
+          <DropdownMenuSub>
+            <DropdownMenuSubTrigger>
+              <BoxIcon className="mr-2 h-4 w-4" />
+              <span>Aplicaciones</span>
+            </DropdownMenuSubTrigger>
+            <DropdownMenuPortal>
+              <DropdownMenuSubContent className="overflow-visible">
+                <DropdownMenuItem className="overflow-visible">
+                  <NavigationMenu>
+                    <NavigationMenuList>
+                      <NavigationMenuItem className="overflow-visible">
+                        <NavigationMenuTrigger className="dark:text-dracula-aro-200">
+                          SaaS, E-commerce, Web...
+                        </NavigationMenuTrigger>
+                        <NavigationMenuContent className="overflow-visible">
+                          <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                            <li className="row-span-3">
+                              <NavigationMenuLink>
+                                <Link
+                                  href=""
+                                  className="pointer-events-none relative top-12 flex h-full min-h-[250px] w-full select-none rounded-md bg-[url('/love_hero.svg')] bg-cover no-underline outline-none focus:shadow-md"
+                                  rel="noopener noreferrer"
+                                  target="_blank"
+                                ></Link>
+                              </NavigationMenuLink>
+                            </li>
+                            <ListItem
+                              href="https://superuber.com/light-energy-museum-2/"
+                              title="Micro-servicios"
+                            >
+                              SaaS a la medida de tu idea. Tu proyecto puede
+                              incluir backend y dar servicios →
+                            </ListItem>
+                            <ListItem
+                              href="https://superuber.com/light-energy-museum-2/"
+                              title="E-commerce"
+                            >
+                              Ejemplo de diseño de UI e integración con
+                              plataforma de pagos para tu proyecto online →
+                            </ListItem>
+                            <ListItem
+                              href="https://superuber.com/light-energy-museum-2/"
+                              title="Contenidos"
+                            >
+                              Un caso de integración con gerenciadores de
+                              contenidos (CMS) rápidos y económicos →
+                            </ListItem>
+                            <ListItem
+                              href="https://superuber.com/light-energy-museum-2/"
+                              title=""
+                            ></ListItem>
+                            <ListItem
+                              href="https://superuber.com/light-energy-museum-2/"
+                              title="¿Quiénes y cómo?"
+                            >
+                              Trabajo en un contexto interdisciplinario que
+                              incluye diseño, editores y colegas Devs
+                            </ListItem>
+                          </ul>
+                        </NavigationMenuContent>
+                      </NavigationMenuItem>
+                    </NavigationMenuList>
+                  </NavigationMenu>
+                </DropdownMenuItem>
+              </DropdownMenuSubContent>
+            </DropdownMenuPortal>
+          </DropdownMenuSub>
+        </DropdownMenuGroup>
         <DropdownMenuGroup>
           <DropdownMenuSub>
             <DropdownMenuSubTrigger>
@@ -97,7 +168,7 @@ export function Dropdown_menu() {
                     <NavigationMenuList>
                       <NavigationMenuItem className="overflow-visible">
                         <NavigationMenuTrigger className="dark:text-dracula-aro-200">
-                          Stack, objetivos y más...
+                          Stack, objetivos, equipo...
                         </NavigationMenuTrigger>
                         <NavigationMenuContent className="overflow-visible">
                           <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
@@ -116,119 +187,23 @@ export function Dropdown_menu() {
                               title="Stack"
                             >
                               Integración con Unity desde el entorno de creación
-                              de sonido SuperCollider (junto a Leandro
-                              Yabcowski)
+                              de sonido SuperCollider.
                             </ListItem>
                             <ListItem
                               href="https://superuber.com/light-energy-museum-2/"
-                              title="Proyecto"
+                              title="Objetivos"
                             >
-                              Diseño de sonido e interactividad trackeando hasta
-                              5 usarios en simultáneo
+                              Diseño de sonido e interactividad para eventos y
+                              espacios que incluyen centralmente al usuario.
                             </ListItem>
                             <ListItem
                               href="https://superuber.com/light-energy-museum-2/"
                               title="¿Quiénes?"
                             >
-                              Lo hicimos junto a SuperUber, uno de los mayores
-                              estudios de diseño interactivo de Brasil
+                              Trabajo junto a colegas y a estudios como
+                              SuperUber, uno de los mayores compañías de diseño
+                              interactivo en Brasil
                             </ListItem>
-                          </ul>
-                        </NavigationMenuContent>
-                      </NavigationMenuItem>
-                    </NavigationMenuList>
-                  </NavigationMenu>
-                </DropdownMenuItem>
-              </DropdownMenuSubContent>
-            </DropdownMenuPortal>
-          </DropdownMenuSub>
-        </DropdownMenuGroup>
-        <DropdownMenuGroup>
-          <DropdownMenuSub>
-            <DropdownMenuSubTrigger>
-              <WifiIcon className="mr-2 h-4 w-4" />
-              <span>Para la Web</span>
-            </DropdownMenuSubTrigger>
-            <DropdownMenuPortal>
-              <DropdownMenuSubContent className="overflow-visible">
-                <DropdownMenuItem className="overflow-visible">
-                  <NavigationMenu>
-                    <NavigationMenuList>
-                      <NavigationMenuItem className="overflow-visible">
-                        <NavigationMenuTrigger className="dark:text-dracula-aro-200">
-                          Apps en vivo
-                        </NavigationMenuTrigger>
-                        <NavigationMenuContent className="overflow-visible">
-                          <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[1fr_1fr]">
-                            <li className="row-span-3 min-h-[150px] ">
-                              <TooltipProvider>
-                                <Tooltip>
-                                  <TooltipTrigger asChild>
-                                    <NavigationMenuLink>
-                                      <a
-                                        className="flex h-full w-full select-none flex-col justify-end rounded-md bg-[url('/logo_miss.png')] bg-cover p-5 no-underline outline-none focus:shadow-md"
-                                        href="/"
-                                      ></a>
-                                    </NavigationMenuLink>
-                                  </TooltipTrigger>
-                                  <TooltipContent>
-                                    <p>Servicio de reservas</p>
-                                  </TooltipContent>
-                                </Tooltip>
-                              </TooltipProvider>
-                            </li>
-                            <li className="row-span-3 min-h-[150px] grayscale transition-all ease-in-out hover:grayscale-0 ">
-                              <TooltipProvider>
-                                <Tooltip>
-                                  <TooltipTrigger asChild>
-                                    <NavigationMenuLink>
-                                      <a
-                                        className="flex h-full w-full select-none flex-col justify-end rounded-md bg-[url('/logo_atx.png')] bg-cover p-5 no-underline outline-none focus:shadow-md"
-                                        href="/"
-                                      ></a>
-                                    </NavigationMenuLink>
-                                  </TooltipTrigger>
-                                  <TooltipContent>
-                                    <p>Servicio de reservas</p>
-                                  </TooltipContent>
-                                </Tooltip>
-                              </TooltipProvider>
-                            </li>
-                            <li className="row-span-3 min-h-[150px]">
-                              <TooltipProvider>
-                                <Tooltip>
-                                  <TooltipTrigger asChild>
-                                    <NavigationMenuLink>
-                                      <a
-                                        className="flex h-full w-full select-none flex-col justify-end rounded-md bg-[url('/atx_new_web.png')] bg-cover p-5 no-underline outline-none focus:shadow-md"
-                                        href="/"
-                                      ></a>
-                                    </NavigationMenuLink>
-                                  </TooltipTrigger>
-                                  <TooltipContent>
-                                    <p>Servicio de reservas</p>
-                                  </TooltipContent>
-                                </Tooltip>
-                              </TooltipProvider>
-                            </li>
-
-                            <li className="row-span-3 min-h-[150px]">
-                              <TooltipProvider>
-                                <Tooltip>
-                                  <TooltipTrigger asChild>
-                                    <NavigationMenuLink>
-                                      <a
-                                        className="flex h-full w-full select-none flex-col justify-end rounded-md bg-[url('/new_muro_web.png')] bg-cover p-5 no-underline outline-none focus:shadow-md"
-                                        href="/"
-                                      ></a>
-                                    </NavigationMenuLink>
-                                  </TooltipTrigger>
-                                  <TooltipContent>
-                                    <p>Servicio de reservas</p>
-                                  </TooltipContent>
-                                </Tooltip>
-                              </TooltipProvider>
-                            </li>
                           </ul>
                         </NavigationMenuContent>
                       </NavigationMenuItem>
@@ -273,23 +248,6 @@ export function Dropdown_menu() {
                                 </a>
                               </NavigationMenuLink>
                             </li>
-                            <ListItem href="/docs" title="Introduction">
-                              Re-usable components built using Radix UI and
-                              Tailwind CSS.
-                            </ListItem>
-                            <ListItem
-                              href="/docs/installation"
-                              title="Installation"
-                            >
-                              How to install dependencies and structure your
-                              app.
-                            </ListItem>
-                            <ListItem
-                              href="/docs/primitives/typography"
-                              title="Typography"
-                            >
-                              Styles for headings, paragraphs, lists...etc
-                            </ListItem>
                           </ul>
                         </NavigationMenuContent>
                       </NavigationMenuItem>
