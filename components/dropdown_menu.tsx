@@ -3,6 +3,8 @@
 import * as React from "react"
 import Link from "next/link"
 import Image from "next/image"
+import ImageComponent from "./imagecomponent"
+
 import * as NavigationMenuPrimitive from "@radix-ui/react-navigation-menu"
 import { cva } from "class-variance-authority"
 import {
@@ -67,6 +69,8 @@ import {
 } from "@/components/ui/tooltip"
 import { DemoIndicator } from "./demo_indicator"
 
+
+
 export function Dropdown_menu() {
   return (
     <DropdownMenu>
@@ -114,16 +118,7 @@ export function Dropdown_menu() {
     >
       <div className="bg-transparent absolute inset-0 opacity-30 rounded-md"></div>
       <div className="absolute inset-0">
-        <Image
-          src="/love_hero.svg"
-          alt="Love hero image"
-          width={500}
-          height={500}
-          layout="fill"
-          objectFit="cover"
-          className="rounded-md"
-          priority={true}
-        />
+        <ImageComponent src="/love_hero.svg" alt="web apps" loading="eager" />
       </div>
     </Link>
   </NavigationMenuLink>
