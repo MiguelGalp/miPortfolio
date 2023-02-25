@@ -118,7 +118,7 @@ export function Dropdown_menu() {
     >
       <div className="bg-transparent absolute inset-0 opacity-30 rounded-md"></div>
       <div className="absolute inset-0">
-        <ImageComponent src="/love_hero.svg" alt="web apps" loading="eager" />
+        <ImageComponent src="/love_hero.svg"/>
       </div>
     </Link>
   </NavigationMenuLink>
