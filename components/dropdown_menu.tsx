@@ -66,6 +66,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip"
 import { DemoIndicator } from "./demo_indicator"
+import ImageComponent from "./imagecomponent"
 
 export function Dropdown_menu() {
   return (
@@ -114,15 +115,7 @@ export function Dropdown_menu() {
                                 >
                                   <div className="absolute inset-0 rounded-md bg-transparent opacity-30"></div>
                                   <div className="absolute inset-0">
-                                    <Image
-                                      src="/love_hero.png"
-                                      alt="Love hero image"
-                                      layout="fill"
-                                      loading="eager"
-                                      objectFit="cover"
-                                      className="rounded-md"
-                                      priority={true}
-                                    />
+                                    <ImageComponent/>
                                   </div>
                                 </Link>
                               </NavigationMenuLink>
