@@ -30,7 +30,7 @@ import {
   WifiIcon,
   WrenchIcon,
 } from "lucide-react"
-
+import VideoComponent from "./videocomponent"
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 import { Icons } from "@/components/icons"
@@ -189,13 +189,7 @@ export function Dropdown_menu() {
                                   rel="noopener noreferrer"
                                   target="_blank"
                                 >
-                                  <video
-                                    className="absolute inset-0 h-full w-full rounded-md object-cover"
-                                    src="/video_cropped.mp4"
-                                    autoPlay
-                                    muted
-                                    loop
-                                  ></video>
+                                  <VideoComponent />
                                 </Link>
                               </NavigationMenuLink>
                             </li>
