@@ -10,7 +10,7 @@ const ImageComponent = () => {
         layout="fill"
         objectFit="cover"
         className="rounded-md"
-        loading="lazy"
+        loading="eager"
       />
     </div>
   )
