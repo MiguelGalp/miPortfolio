@@ -126,7 +126,7 @@ export function CoverImage() {
                         <Label htmlFor="name" className=""></Label>
                       </div>
                       <div className="-ml[1px] mb-16 w-full">
-                        <div className="rounded-md bg-gray-100 p-6">
+                        <div className="rounded-md bg-gray-100 p-6 dark:bg-dracula-aro-100">
                           <ContactForm />
                         </div>
                       </div>

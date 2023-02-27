@@ -22,7 +22,7 @@ const ImageComponent = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            backgroundColor: "rgba(0, 0, 0, 0.1)",
+            backgroundColor: "rgba(0, 0, 0, 0)",
           }}
         >
           <ClipLoader />
@@ -42,4 +42,3 @@ const ImageComponent = () => {
 }
 
 export default ImageComponent
-
