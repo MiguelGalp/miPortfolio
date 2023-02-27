@@ -79,7 +79,7 @@ export function SiteHeader() {
                   className: "text-slate-700 dark:text-dracula-aro-50",
                 })}
               >
-                <Icons.twitter className="relative left-[3px] h-5 w-5 fill-current" />
+                <Icons.twitter className="relative left-[1.5px] h-5 w-5 fill-current" />
                 <span className="sr-only">Twitter</span>
               </div>
             </Link>

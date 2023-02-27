@@ -49,6 +49,7 @@
     "react-hook-form": "^7.43.1",
     "react-ion-icon": "^4.0.0",
     "react-spinners": "^0.13.8",
+    "react-wrap-balancer": "^0.4.0",
     "sharp": "^0.31.1",
     "tailwind-gradient-mask-image": "^1.0.0",
     "tailwind-merge": "^1.8.0",

@@ -126,7 +126,7 @@ export function CoverImage() {
                         <Label htmlFor="name" className=""></Label>
                       </div>
                       <div className="-ml[1px] mb-16 w-full">
-                        <div className="rounded-md bg-gray-100 p-6 dark:bg-dracula-aro-100">
+                        <div className="rounded-md bg-gray-100 p-6 dark:bg-dracula-aro-200">
                           <ContactForm />
                         </div>
                       </div>
@@ -138,12 +138,12 @@ export function CoverImage() {
           </div>
         </div>
       </div>
-      <div className="relative order-first hidden w-0 max-w-[650px] flex-1  bg-transparent lg:block">
+      <div className="relative order-first hidden w-0 max-w-[690px] flex-1  bg-transparent lg:block">
         <div>
           <Image
             width={500}
             height={500}
-            className="absolute bottom-5 left-8 h-full w-full scale-125 object-contain"
+            className="scale-115 absolute bottom-5 left-8 h-full w-full object-contain"
             src="/coderGIF.svg"
             alt=""
           />

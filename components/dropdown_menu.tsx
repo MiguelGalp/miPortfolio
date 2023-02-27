@@ -30,7 +30,8 @@ import {
   WifiIcon,
   WrenchIcon,
 } from "lucide-react"
-import VideoComponent from "./videocomponent"
+import Balancer from "react-wrap-balancer"
+
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 import { Icons } from "@/components/icons"
@@ -67,6 +68,7 @@ import {
 } from "@/components/ui/tooltip"
 import { DemoIndicator } from "./demo_indicator"
 import ImageComponent from "./imagecomponent"
+import VideoComponent from "./videocomponent"
 
 export function Dropdown_menu() {
   return (
@@ -74,7 +76,7 @@ export function Dropdown_menu() {
       <DropdownMenuTrigger asChild>
         <Button
           variant="ghost"
-          className="relative right-1 bottom-[2.5px] hidden scale-110 p-1 hover:bg-slate-200 md:mt-1 md:mb-0.5 md:flex"
+          className="relative bottom-[2.5px] hidden scale-110 p-1 hover:bg-slate-200 focus:ring-1 md:mt-1 md:mb-0.5 md:flex"
         >
           <Avatar>
             <AvatarImage src="/Avatar_Darker.png" className="" />
@@ -115,7 +117,7 @@ export function Dropdown_menu() {
                                 >
                                   <div className="absolute inset-0 rounded-md bg-transparent opacity-30"></div>
                                   <div className="absolute inset-0">
-                                    <ImageComponent/>
+                                    <ImageComponent />
                                   </div>
                                 </Link>
                               </NavigationMenuLink>
@@ -248,16 +250,40 @@ export function Dropdown_menu() {
                             <li className="row-span-3">
                               <NavigationMenuLink>
                                 <a
-                                  className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-rose-500 to-indigo-700 p-6 no-underline outline-none focus:shadow-md"
-                                  href="/"
+                                  className="flex h-full w-full select-none flex-col justify-end rounded-md bg-dracula-aro-100 p-6 no-underline outline-none focus:shadow-md dark:bg-dracula-aro-500 dark:text-dracula-aro-50"
+                                  href="https://proyecto-firebase-ctl8u7jln-miguelgalp.vercel.app/"
                                 >
-                                  <Icons.logo className="h-6 w-6 text-white" />
-                                  <div className="mt-4 mb-2 text-lg font-medium text-white">
-                                    shadcn/ui
+                                  <Icons.logo className="h-6 w-6 text-slate-600" />
+                                  <div className="mt-4 mb-2 text-lg font-medium text-slate-600  dark:text-slate-100">
+                                    Twitter Tóxico{" "}
                                   </div>
-                                  <p className="text-sm leading-tight text-white/90">
-                                    Beautifully designed components built with
-                                    Radix UI and Tailwind CSS.
+                                  <p className="text-sm leading-tight text-slate-600 dark:text-slate-100">
+                                    Trackeo del nivel de toxicidad a través de
+                                    Firebase, Pipedream y Next.js.
+                                  </p>
+                                  <p className="mt-2 dark:text-slate-300">
+                                    Escribime para más información
+                                  </p>
+                                </a>
+                              </NavigationMenuLink>
+                            </li>
+                            <li className="row-span-3">
+                              <NavigationMenuLink>
+                                <a
+                                  className="flex h-full w-full select-none flex-col justify-end rounded-md bg-dracula-aro-100 p-6 no-underline outline-none focus:shadow-md dark:bg-dracula-aro-500 dark:text-dracula-aro-50"
+                                  href="https://www.semanticscholar.org/paper/Designing-Creative-AI-Partners-with-COFI%3A-A-for-in-Rezwana-Maher/864b8521239d722f4fb8ffe17e32abf2cef6f202"
+                                >
+                                  <Icons.logo className="h-6 w-6 text-slate-600" />
+                                  <div className="mt-4 mb-2 text-lg font-medium text-slate-600  dark:text-slate-100">
+                                    Narrativas inmersivas
+                                  </div>
+                                  <p className="text-sm leading-tight text-slate-600 dark:text-slate-100">
+                                    Herramienta online para realizar análisis
+                                    colaborativos e inmersivos de estructuras
+                                    narrativas.
+                                  </p>
+                                  <p className="mt-2 dark:text-slate-300">
+                                    Escribime para más información
                                   </p>
                                 </a>
                               </NavigationMenuLink>
