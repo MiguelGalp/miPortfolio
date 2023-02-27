@@ -99,10 +99,10 @@ export function CoverImage() {
                 Escribime hoy para discutir tu proyecto!
               </p>
             </div>
-            <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+            <div className="mt-10 flex flex-col gap-3 md:max-md:flex-row lg:flex-row">
               <Dialog>
                 <DialogTrigger className="z-50">
-                  <Button className="dark:bg-dracula-aro-50">Contacto</Button>
+                  <Button className=" dark:bg-dracula-aro-50">Contacto</Button>
                 </DialogTrigger>
                 <div className="flex items-center justify-center bg-white">
                   <DialogContent className="sm:max-w-[425px]">
