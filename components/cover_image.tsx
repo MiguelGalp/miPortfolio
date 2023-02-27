@@ -28,7 +28,7 @@ import { Label } from "./ui/label"
 
 export function CoverImage() {
   return (
-    <div className="relative z-0 mx-auto flex min-h-screen justify-center bg-transparent bg-gradient-to-b from-blue-200 to-white lg:relative lg:top-[2.5rem] lg:min-h-full lg:bg-none">
+    <div className="relative z-0 mx-auto flex min-h-screen justify-center bg-gradient-to-b from-blue-200 to-white dark:bg-none lg:relative lg:top-[2.5rem] lg:min-h-full lg:bg-none">
       <div className="flex flex-1 flex-col justify-center p-8 md:px-12 lg:flex-none">
         <div className="mx-auto w-full lg:max-w-xl">
           <div className="mx-auto max-w-lg text-center lg:p-1 lg:text-left">
@@ -124,7 +124,6 @@ export function CoverImage() {
             className="absolute bottom-5 left-8 h-full w-full scale-125 object-contain"
             src="/coderGIF.svg"
             alt=""
-            priority={true}
           />
         </div>
       </div>
