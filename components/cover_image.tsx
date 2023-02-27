@@ -50,12 +50,15 @@ export function CoverImage() {
                 Cultura digital, juntos
               </p>
               <p className="mt-4 max-w-xl text-lg tracking-tight text-gray-600 dark:text-dracula-aro-200">
-                Me especializo en dar vida a aplicaciones y sitios web centrados
-                en el usuario. Desde frontends hasta plataformas micro SaaS,
-                podemos hacer realidad tu visión utilizando
+                Integremos tus redes a un workflow inteligente y colaborativo.
+                Demos mejores servicios y contenidos para tus usuarios.
+                Impulsemos tus proyectos y comunidades{" "}
+                <p className="relative top-[1.5px] inline text-xl">⇢</p> Trabajo
+                desarrollando arquitecturas de micro-servicios y utilizando un
+                stack centrado en
                 <HoverCard>
                   <HoverCardTrigger asChild>
-                    <Link href="/"> Next.js</Link>
+                    <Link href="https://nextjs.org/"> Next.js </Link>
                   </HoverCardTrigger>
                   <HoverCardContent className="w-80">
                     <div className="flex justify-between space-x-4">
@@ -73,8 +76,27 @@ export function CoverImage() {
                     </div>
                   </HoverCardContent>
                 </HoverCard>
-                , Pipedream y Tailwind. Trabajemos juntos para construir la
-                herramienta que querés. Escribime hoy para discutir tu proyecto!
+                <HoverCard>
+                  <HoverCardTrigger asChild>
+                    <Link href="https://tana.inc/">y Tana. </Link>
+                  </HoverCardTrigger>
+                  <HoverCardContent className="w-80">
+                    <div className="flex justify-between space-x-4">
+                      <Avatar>
+                        <AvatarImage src="https://github.com/tanainc.png" />
+                        <AvatarFallback>T.</AvatarFallback>
+                      </Avatar>
+                      <div className="space-y-1">
+                        <h4 className="text-sm font-semibold">@tana_inc</h4>
+                        <p className="text-sm">
+                          Tana is a Knowledge Graph for you & your team
+                        </p>
+                      </div>
+                    </div>
+                  </HoverCardContent>
+                </HoverCard>
+                Trabajemos juntos para construir la herramienta que querés.
+                Escribime hoy para discutir tu proyecto!
               </p>
             </div>
             <div className="mt-10 flex flex-col gap-3 sm:flex-row">
