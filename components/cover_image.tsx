@@ -23,7 +23,7 @@ import extraLargeImage from "../public/extraLargeImage.png"
 import mediumImage from "../public/mediumImage.png"
 import smallImage from "../public/smallImage.png"
 import ContactForm from "./contact_form"
-import MyImageComponent from "./myImageComponent"
+import MyImage from "./myImageComponent"
 import { Button } from "./ui/button"
 import { Input } from "./ui/input"
 import { Label } from "./ui/label"
@@ -140,7 +140,7 @@ export function CoverImage() {
           </div>
         </div>
       </div>
-      <MyImageComponent />
+      <MyImage />
     </div>
   )
 }
