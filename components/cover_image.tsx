@@ -145,7 +145,7 @@ export function CoverImage() {
             width={500}
             height={500}
             className="scale-115 absolute bottom-5 left-8 h-full w-full object-contain"
-            src="/copia_de_cagando.png"
+            src="/Copia_de_Cagando.png"
             alt=""
           />
         </div>
