@@ -29,7 +29,7 @@ import { Label } from "./ui/label"
 
 export function CoverImage() {
   return (
-    <div className="relative z-0 mx-auto flex min-h-screen justify-center bg-gradient-to-b from-blue-200 to-white dark:bg-none lg:relative lg:top-[1rem] lg:min-h-full lg:bg-none">
+    <div className="relative z-0 mx-auto flex min-h-screen justify-center bg-gradient-to-b from-blue-200 to-white dark:bg-none lg:relative lg:right-[60px] lg:top-[1rem] lg:min-h-full lg:bg-none">
       <div className="flex flex-1 flex-col p-8 md:px-12 lg:flex-none">
         <div className="mx-auto w-full scale-90 lg:max-w-xl">
           <div className="mx-auto max-w-lg text-center lg:p-1 lg:text-left">
@@ -54,9 +54,9 @@ export function CoverImage() {
                 Integremos tus redes a un workflow inteligente y colaborativo.
                 Demos mejores servicios y contenidos para tus usuarios.
                 Impulsemos tus proyectos y comunidades{" "}
-                <p className="relative top-[1.5px] inline text-xl">⇢</p> Trabajo
-                desarrollando arquitecturas de micro-servicios y utilizando un
-                stack centrado en
+                <p className="relative top-[1.5px] inline text-xl">⇢</p>{" "}
+                Desarrollo arquitecturas de micro-servicios utilizando un stack
+                centrado en
                 <HoverCard>
                   <HoverCardTrigger asChild>
                     <Link href="https://nextjs.org/"> Next.js </Link>
@@ -139,13 +139,16 @@ export function CoverImage() {
           </div>
         </div>
       </div>
-      <div className="relative order-first hidden w-0 max-w-[690px] flex-1  bg-transparent lg:block">
-        <div>
+      <div className="relative order-first hidden max-h-[400px] w-0 max-w-[500px] flex-1 bg-transparent lg:top-16 lg:block">
+        <div
+          style={{ borderRight: "2px solid black", height: "35%" }}
+          className="relative top-24 flex items-center"
+        >
           <Image
             width={500}
             height={500}
-            className="scale-115 absolute bottom-5 left-8 h-full w-full object-contain"
-            src="/Miguel.png"
+            className="absolute bottom-5 left-8 top-5 h-full w-full scale-[210%] object-contain"
+            src="/Miguel_Dos.png"
             alt=""
             priority
           />
