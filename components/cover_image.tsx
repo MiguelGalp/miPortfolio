@@ -29,9 +29,9 @@ import { Label } from "./ui/label"
 
 export function CoverImage() {
   return (
-    <div className="relative z-0 mx-auto flex min-h-screen justify-center bg-gradient-to-b from-blue-200 to-white dark:bg-none lg:relative lg:top-[1.5rem] lg:min-h-full lg:bg-none">
+    <div className="relative z-0 mx-auto flex min-h-screen justify-center bg-gradient-to-b from-blue-200 to-white dark:bg-none lg:relative lg:top-[1rem] lg:min-h-full lg:bg-none">
       <div className="flex flex-1 flex-col p-8 md:px-12 lg:flex-none">
-        <div className="mx-auto w-full scale-95 lg:max-w-xl">
+        <div className="mx-auto w-full scale-90 lg:max-w-xl">
           <div className="mx-auto max-w-lg text-center lg:p-1 lg:text-left">
             <div>
               <span className="inline-flex items-center text-black">
@@ -145,8 +145,9 @@ export function CoverImage() {
             width={500}
             height={500}
             className="scale-115 absolute bottom-5 left-8 h-full w-full object-contain"
-            src="/Copia_de_Cagando.png"
+            src="/Miguel.png"
             alt=""
+            priority
           />
         </div>
       </div>
