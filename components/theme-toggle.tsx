@@ -1,4 +1,3 @@
-/* eslint-disable tailwindcss/classnames-order */
 import * as React from "react"
 import { useTheme } from "next-themes"
 
@@ -18,20 +17,29 @@ export function ThemeToggle() {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" size="sm">
-          <Icons.sun className=" hover:text-slate-900 dark:text-dracula-aro-50 dark:hover:text-slate-200" />
+          <Icons.sun className="hover:text-slate-900 dark:text-dracula-aro-50 dark:hover:text-slate-400" />
           <span className="sr-only">Toggle theme</span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" forceMount>
-        <DropdownMenuItem onClick={() => setTheme("light")}>
+        <DropdownMenuItem
+          className="rounded-md my-1 hover:bg-gray-100 dark:hover:bg-gray-900 focus:pointer-events-auto"
+          onClick={() => setTheme("light")}
+        >
           <Icons.sun className="mr-2 h-4 w-4" />
           <span>Light</span>
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("dark")}>
+        <DropdownMenuItem
+          className="rounded-md my-1 hover:bg-gray-100 dark:hover:bg-gray-900 focus:pointer-events-auto"
+          onClick={() => setTheme("dark")}
+        >
           <Icons.moon className="mr-2 h-4 w-4" />
           <span>Dark</span>
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("system")}>
+        <DropdownMenuItem
+          className="rounded-md my-1 hover:bg-gray-100 dark:hover:bg-gray-900 focus:pointer-events-auto"
+          onClick={() => setTheme("system")}
+        >
           <Icons.laptop className="mr-2 h-4 w-4" />
           <span>System</span>
         </DropdownMenuItem>
