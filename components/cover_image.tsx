@@ -23,13 +23,14 @@ import extraLargeImage from "../public/extraLargeImage.png"
 import mediumImage from "../public/mediumImage.png"
 import smallImage from "../public/smallImage.png"
 import ContactForm from "./contact_form"
+import MyImageComponent from "./myImageComponent"
 import { Button } from "./ui/button"
 import { Input } from "./ui/input"
 import { Label } from "./ui/label"
 
 export function CoverImage() {
   return (
-    <div className="relative z-0 mx-auto flex min-h-screen justify-center bg-gradient-to-b from-blue-200 to-white dark:bg-none lg:relative lg:right-[60px] lg:top-[1rem] lg:min-h-full lg:bg-none">
+    <div className="relative z-0 mx-auto flex min-h-screen justify-center bg-gradient-to-b from-blue-200 to-white dark:bg-none lg:relative lg:right-[50px] lg:top-[1rem] lg:min-h-full lg:bg-none">
       <div className="flex flex-1 flex-col p-8 md:px-12 lg:flex-none">
         <div className="mx-auto w-full scale-90 lg:max-w-xl">
           <div className="mx-auto max-w-lg text-center lg:p-1 lg:text-left">
@@ -139,21 +140,7 @@ export function CoverImage() {
           </div>
         </div>
       </div>
-      <div className="relative order-first hidden max-h-[400px] w-0 max-w-[500px] flex-1 bg-transparent lg:top-16 lg:block">
-        <div
-          style={{ borderRight: "2px solid black", height: "35%" }}
-          className="relative top-24 flex items-center"
-        >
-          <Image
-            width={500}
-            height={500}
-            className="absolute bottom-5 left-8 top-5 h-full w-full scale-[210%] object-contain"
-            src="/Miguel_Dos.png"
-            alt=""
-            priority
-          />
-        </div>
-      </div>
+      <MyImageComponent />
     </div>
   )
 }
