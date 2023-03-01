@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Separator } from "@radix-ui/react-dropdown-menu"
+import Balancer from "react-wrap-balancer"
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import {
@@ -28,9 +29,9 @@ import { Label } from "./ui/label"
 
 export function CoverImage() {
   return (
-    <div className="relative z-0 mx-auto flex min-h-screen justify-center bg-gradient-to-b from-blue-200 to-white dark:bg-none lg:relative lg:top-[2.5rem] lg:min-h-full lg:bg-none">
-      <div className="flex flex-1 flex-col justify-center p-8 md:px-12 lg:flex-none">
-        <div className="mx-auto w-full lg:max-w-xl">
+    <div className="relative z-0 mx-auto flex min-h-screen justify-center bg-gradient-to-b from-blue-200 to-white dark:bg-none lg:relative lg:top-[1.5rem] lg:min-h-full lg:bg-none">
+      <div className="flex flex-1 flex-col p-8 md:px-12 lg:flex-none">
+        <div className="mx-auto w-full scale-95 lg:max-w-xl">
           <div className="mx-auto max-w-lg text-center lg:p-1 lg:text-left">
             <div>
               <span className="inline-flex items-center text-black">
@@ -49,7 +50,7 @@ export function CoverImage() {
               <p className="font-display mt-8 text-4xl tracking-tighter text-black dark:text-dracula-aro-50 lg:text-5xl">
                 Cultura digital, juntos
               </p>
-              <p className="mt-4 max-w-xl text-lg tracking-tight text-gray-600 dark:text-dracula-aro-200">
+              <Balancer className="mt-4 max-w-xl text-lg tracking-tight text-gray-600 dark:text-dracula-aro-200">
                 Integremos tus redes a un workflow inteligente y colaborativo.
                 Demos mejores servicios y contenidos para tus usuarios.
                 Impulsemos tus proyectos y comunidades{" "}
@@ -97,7 +98,7 @@ export function CoverImage() {
                 </HoverCard>
                 Trabajemos juntos para construir la herramienta que querés.
                 Escribime hoy para discutir tu proyecto!
-              </p>
+              </Balancer>
             </div>
             <div className="mt-10 flex flex-col gap-3 md:max-md:flex-row lg:flex-row">
               <Dialog>
@@ -144,7 +145,7 @@ export function CoverImage() {
             width={500}
             height={500}
             className="scale-115 absolute bottom-5 left-8 h-full w-full object-contain"
-            src="/coderGIF.svg"
+            src="/copia_de_cagando.png"
             alt=""
           />
         </div>
