@@ -243,7 +243,7 @@ export function Dropdown_menu() {
                     <NavigationMenuList>
                       <NavigationMenuItem className="overflow-visible">
                         <NavigationMenuTrigger className="dark:text-dracula-aro-200">
-                          Audio espacial junto a SuperUber
+                          Lo que tengo más activo en GitHub
                         </NavigationMenuTrigger>
                         <NavigationMenuContent className="overflow-visible">
                           <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
@@ -253,9 +253,9 @@ export function Dropdown_menu() {
                                   className="flex h-full w-full select-none flex-col justify-end rounded-md bg-dracula-aro-100 p-6 no-underline outline-none focus:shadow-md dark:bg-dracula-aro-500 dark:text-dracula-aro-50"
                                   href="https://proyecto-firebase-ctl8u7jln-miguelgalp.vercel.app/"
                                 >
-                                  <Icons.logo className="h-6 w-6 text-slate-600" />
+                                  <Icons.gitHub className="h-6 w-6 text-slate-600" />
                                   <div className="mt-4 mb-2 text-lg font-medium text-slate-600  dark:text-slate-100">
-                                    Twitter Tóxico{" "}
+                                    Según la API...{" "}
                                   </div>
                                   <p className="text-sm leading-tight text-slate-600 dark:text-slate-100">
                                     Trackeo del nivel de toxicidad a través de
