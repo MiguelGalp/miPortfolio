@@ -68,6 +68,7 @@ import {
 } from "@/components/ui/tooltip"
 import { DemoIndicator } from "./demo_indicator"
 import ImageComponent from "./imagecomponent"
+import LatestRepo from "./latestRepo"
 import VideoComponent from "./videocomponent"
 
 export function Dropdown_menu() {
@@ -250,41 +251,22 @@ export function Dropdown_menu() {
                             <li className="row-span-3">
                               <NavigationMenuLink>
                                 <a
-                                  className="flex h-full w-full select-none flex-col justify-end rounded-md bg-dracula-aro-100 p-6 no-underline outline-none focus:shadow-md dark:bg-dracula-aro-500 dark:text-dracula-aro-50"
+                                  className="flex h-full w-full select-none flex-col justify-end rounded-md bg-[url('/coderGIF.svg')] bg-contain bg-no-repeat p-6 no-underline outline-none focus:shadow-md"
                                   href="https://proyecto-firebase-ctl8u7jln-miguelgalp.vercel.app/"
-                                >
-                                  <Icons.gitHub className="h-6 w-6 text-slate-600" />
-                                  <div className="mt-4 mb-2 text-lg font-medium text-slate-600  dark:text-slate-100">
-                                    Según la API...{" "}
-                                  </div>
-                                  <p className="text-sm leading-tight text-slate-600 dark:text-slate-100">
-                                    Trackeo del nivel de toxicidad a través de
-                                    Firebase, Pipedream y Next.js.
-                                  </p>
-                                  <p className="mt-2 dark:text-slate-300">
-                                    Escribime para más información
-                                  </p>
-                                </a>
+                                ></a>
                               </NavigationMenuLink>
                             </li>
                             <li className="row-span-3">
                               <NavigationMenuLink>
                                 <a
-                                  className="flex h-full w-full select-none flex-col justify-end rounded-md bg-dracula-aro-100 p-6 no-underline outline-none focus:shadow-md dark:bg-dracula-aro-500 dark:text-dracula-aro-50"
+                                  className="flex h-full w-full select-none flex-col justify-end rounded-md p-6 no-underline outline-none focus:shadow-md"
                                   href="https://www.semanticscholar.org/paper/Designing-Creative-AI-Partners-with-COFI%3A-A-for-in-Rezwana-Maher/864b8521239d722f4fb8ffe17e32abf2cef6f202"
                                 >
-                                  <Icons.logo className="h-6 w-6 text-slate-600" />
-                                  <div className="mt-4 mb-2 text-lg font-medium text-slate-600  dark:text-slate-100">
-                                    Narrativas inmersivas
+                                  <Icons.gitHub className="h-6 w-6 text-slate-600" />
+                                  <div className="mt-4 mb-2 text-lg font-medium">
+                                    Según la API...{" "}
                                   </div>
-                                  <p className="text-sm leading-tight text-slate-600 dark:text-slate-100">
-                                    Herramienta online para realizar análisis
-                                    colaborativos e inmersivos de estructuras
-                                    narrativas.
-                                  </p>
-                                  <p className="mt-2 dark:text-slate-300">
-                                    Escribime para más información
-                                  </p>
+                                  <LatestRepo />
                                 </a>
                               </NavigationMenuLink>
                             </li>
