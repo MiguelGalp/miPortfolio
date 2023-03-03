@@ -14,7 +14,7 @@ function LatestRepo() {
     fetchData()
   }, [])
 
-  return <p>Latest repository: {latestRepoName}</p>
+  return <p>Trabajo hoy en ⇢ {latestRepoName}</p>
 }
 
 export default LatestRepo

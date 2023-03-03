@@ -1,6 +1,7 @@
 "use client"
 
 import * as React from "react"
+import next from "next"
 import Image from "next/image"
 import Link from "next/link"
 import * as NavigationMenuPrimitive from "@radix-ui/react-navigation-menu"
@@ -30,6 +31,7 @@ import {
   WifiIcon,
   WrenchIcon,
 } from "lucide-react"
+import { useTheme } from "next-themes"
 import Balancer from "react-wrap-balancer"
 
 import { siteConfig } from "@/config/site"
@@ -72,6 +74,7 @@ import LatestRepo from "./latestRepo"
 import VideoComponent from "./videocomponent"
 
 export function Dropdown_menu() {
+  const { theme } = useTheme()
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -183,8 +186,8 @@ export function Dropdown_menu() {
                           Stack, objetivos, equipo...
                         </NavigationMenuTrigger>
                         <NavigationMenuContent className="overflow-visible">
-                          <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                            <li className="row-span-3">
+                          <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[400px] lg:grid-cols-[1fr_.75fr]">
+                            <li className="row-span-2">
                               <NavigationMenuLink>
                                 <Link
                                   href="https://superuber.com/light-energy-museum-2/"
@@ -250,10 +253,21 @@ export function Dropdown_menu() {
                           <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                             <li className="row-span-3">
                               <NavigationMenuLink>
-                                <a
-                                  className="flex h-full w-full select-none flex-col justify-end rounded-md bg-[url('/coderGIF.svg')] bg-contain bg-no-repeat p-6 no-underline outline-none focus:shadow-md"
-                                  href="https://proyecto-firebase-ctl8u7jln-miguelgalp.vercel.app/"
-                                ></a>
+                                <div
+                                  style={{
+                                    position: "relative",
+                                    borderRight: `1px solid ${
+                                      theme === "dark" ? "white" : "black"
+                                    }`,
+                                    height: "30%",
+                                    top: "40px",
+                                  }}
+                                  className="overflow-visible"
+                                >
+                                  <div className="relative -top-7 flex h-full w-full select-none flex-col justify-end overflow-hidden rounded-md p-6 no-underline outline-none focus:shadow-md">
+                                    <div className="h-full w-full bg-[url('/coderGIF.svg')] bg-cover bg-no-repeat">Mano</div>
+                                  </div>
+                                </div>
                               </NavigationMenuLink>
                             </li>
                             <li className="row-span-3">
@@ -262,11 +276,15 @@ export function Dropdown_menu() {
                                   className="flex h-full w-full select-none flex-col justify-end rounded-md p-6 no-underline outline-none focus:shadow-md"
                                   href="https://www.semanticscholar.org/paper/Designing-Creative-AI-Partners-with-COFI%3A-A-for-in-Rezwana-Maher/864b8521239d722f4fb8ffe17e32abf2cef6f202"
                                 >
-                                  <Icons.gitHub className="h-6 w-6 text-slate-600" />
-                                  <div className="mt-4 mb-2 text-lg font-medium">
-                                    Según la API...{" "}
+                                  <div className="flex w-[200px] items-center">
+                                    <Icons.gitHub className="mr-2 h-5 w-5" />
+                                    <div className="text-lg font-medium">
+                                      , según su API...{" "}
+                                    </div>
                                   </div>
-                                  <LatestRepo />
+                                  <div className="mt-4 mb-2">
+                                    <LatestRepo />
+                                  </div>
                                 </a>
                               </NavigationMenuLink>
                             </li>
