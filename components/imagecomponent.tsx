@@ -10,13 +10,20 @@ const ImageComponent = () => {
   }
 
   return (
-    <div style={{ position: "relative", width: "100%", height: "100%" }}>
+    <div
+      style={{
+        position: "relative",
+        width: "150%",
+        height: "100%",
+        right: "20px",
+      }}
+    >
       {loading && (
         <div
           style={{
             position: "absolute",
             top: 0,
-            left: 0,
+            right: 0,
             width: "100%",
             height: "100%",
             display: "flex",

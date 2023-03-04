@@ -98,7 +98,7 @@ export function Dropdown_menu() {
           <DropdownMenuSub>
             <DropdownMenuSubTrigger>
               <BoxIcon className="mr-2 h-4 w-4" />
-              <span>Aplicaciones</span>
+              <span>Servicios digitales</span>
             </DropdownMenuSubTrigger>
             <DropdownMenuPortal>
               <DropdownMenuSubContent className="overflow-visible">
@@ -110,7 +110,7 @@ export function Dropdown_menu() {
                           SaaS, E-commerce, Web...
                         </NavigationMenuTrigger>
                         <NavigationMenuContent className="overflow-visible">
-                          <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                          <ul className="grid gap-2 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                             <li className="row-span-3">
                               <NavigationMenuLink>
                                 <Link
@@ -128,37 +128,32 @@ export function Dropdown_menu() {
                             </li>
 
                             <ListItem
-                              href="https://superuber.com/light-energy-museum-2/"
+                              href="https://miss-subtitulos.app"
                               title="Micro-servicios"
                             >
-                              SaaS a la medida de tu idea. Tu proyecto puede
-                              incluir backend y dar servicios →
+                              SaaS a la medida. Tu proyecto puede incluir un
+                              backend →
                             </ListItem>
                             <ListItem
-                              href="https://superuber.com/light-energy-museum-2/"
+                              href="https://revista.super.site"
                               title="E-commerce"
                             >
-                              Ejemplo de diseño de UI e integración con
-                              plataforma de pagos para tu proyecto online →
+                              Diseño de UI para pagos en tu e-commerce →
                             </ListItem>
                             <ListItem
-                              href="https://superuber.com/light-energy-museum-2/"
+                              href="https://atlanticx.org"
                               title="Contenidos"
                             >
-                              Un caso de integración con gerenciadores de
-                              contenidos (CMS) rápidos y económicos →
+                              CMS rápidos y económicos para comunicar mejor →
                             </ListItem>
+                            <ListItem href="" title=""></ListItem>
                             <ListItem
-                              href="https://superuber.com/light-energy-museum-2/"
-                              title=""
-                            ></ListItem>
-                            <ListItem
-                              href="https://superuber.com/light-energy-museum-2/"
-                              title="¿Quiénes y cómo?"
-                              className="pointer-events-none"
+                              href=""
+                              title="En vivo"
+                              className="pointer-events-none text-slate-300"
                             >
-                              Trabajo en un contexto interdisciplinario que
-                              incluye diseño, editores y colegas Devs
+                              Enlaces (arriba) apuntando a algunos sitios ya
+                              entregados, en vivo.
                             </ListItem>
                           </ul>
                         </NavigationMenuContent>
@@ -174,7 +169,7 @@ export function Dropdown_menu() {
           <DropdownMenuSub>
             <DropdownMenuSubTrigger>
               <Rotate3dIcon className="mr-2 h-4 w-4" />
-              <span>Inmersivo</span>
+              <span>Eventos IRL</span>
             </DropdownMenuSubTrigger>
             <DropdownMenuPortal>
               <DropdownMenuSubContent className="overflow-visible">
@@ -186,7 +181,7 @@ export function Dropdown_menu() {
                           Stack, objetivos, equipo...
                         </NavigationMenuTrigger>
                         <NavigationMenuContent className="overflow-visible">
-                          <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[400px] lg:grid-cols-[1fr_.75fr]">
+                          <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[550px] lg:grid-cols-[1fr_.75fr]">
                             <li className="row-span-2">
                               <NavigationMenuLink>
                                 <Link
@@ -202,27 +197,18 @@ export function Dropdown_menu() {
                             <ListItem
                               href="https://superuber.com/light-energy-museum-2/"
                               title="Stack"
-                              className="pointer-events-none"
+                              className="pointer-events-none mt-2"
                             >
-                              Integración con Unity desde el entorno de creación
-                              de sonido SuperCollider.
+                              Unity + Resolume + SuperCollider. Armo equipos
+                              para impulsar tu evento o instalación.
                             </ListItem>
                             <ListItem
                               href="https://superuber.com/light-energy-museum-2/"
                               title="Objetivos"
-                              className="pointer-events-none"
+                              className="pointer-events-none -mt-6"
                             >
-                              Diseño de sonido e interactividad para eventos y
-                              espacios que incluyen centralmente al usuario.
-                            </ListItem>
-                            <ListItem
-                              href="https://superuber.com/light-energy-museum-2/"
-                              title="¿Quiénes?"
-                              className="pointer-events-none"
-                            >
-                              Trabajo junto a colegas y a estudios como
-                              SuperUber, uno de los mayores compañías de diseño
-                              interactivo en Brasil
+                              Me interesa diseñar el sonido y la interactividad
+                              para incluir centralmente al usuario.
                             </ListItem>
                           </ul>
                         </NavigationMenuContent>
@@ -238,7 +224,7 @@ export function Dropdown_menu() {
           <DropdownMenuSub>
             <DropdownMenuSubTrigger>
               <WrenchIcon className="mr-2 h-4 w-4" />
-              <span>Proyectos</span>
+              <span>Mis Proyectos</span>
             </DropdownMenuSubTrigger>
             <DropdownMenuPortal>
               <DropdownMenuSubContent className="overflow-visible">
@@ -247,7 +233,7 @@ export function Dropdown_menu() {
                     <NavigationMenuList>
                       <NavigationMenuItem className="overflow-visible">
                         <NavigationMenuTrigger className="dark:text-dracula-aro-200">
-                          Lo que tengo más activo en GitHub
+                          Estoy siempre activo en GitHub
                         </NavigationMenuTrigger>
                         <NavigationMenuContent className="overflow-visible">
                           <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
@@ -293,25 +279,6 @@ export function Dropdown_menu() {
             </DropdownMenuPortal>
           </DropdownMenuSub>
         </DropdownMenuGroup>
-        <DropdownMenuSeparator />
-        <DropdownMenuItem>
-          <Github className="mr-2 h-4 w-4" />
-          <span>GitHub</span>
-        </DropdownMenuItem>
-        <DropdownMenuItem>
-          <LifeBuoy className="mr-2 h-4 w-4" />
-          <span>Support</span>
-        </DropdownMenuItem>
-        <DropdownMenuItem disabled>
-          <Cloud className="mr-2 h-4 w-4" />
-          <span>API</span>
-        </DropdownMenuItem>
-        <DropdownMenuSeparator />
-        <DropdownMenuItem>
-          <LogOut className="mr-2 h-4 w-4" />
-          <span>Log out</span>
-          <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
-        </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   )
@@ -329,7 +296,7 @@ const ListItem = React.forwardRef<
           target="_blank"
           ref={ref}
           className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-slate-700 dark:focus:bg-slate-700",
+            "block select-none space-y-0 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-slate-700 dark:focus:bg-slate-700",
             className
           )}
           {...props}
