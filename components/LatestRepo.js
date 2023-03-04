@@ -27,8 +27,7 @@ function LatestRepo() {
 
   return (
     <p className="relative ml-[0.5px]">
-      Hoy estoy trabajando en ⇢{" "}
-      <span className="rounded-sm bg-slate-200 px-1">{latestRepoName}</span>
+      Hoy estoy trabajando en ⇢ <span className="">{latestRepoName}</span>
     </p>
   )
 }

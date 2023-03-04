@@ -33,7 +33,7 @@ export default function MyImage() {
   const { theme } = useTheme()
 
   return (
-    <div className="relative order-first hidden max-h-[400px] w-0 max-w-[500px] flex-1 scale-90 bg-transparent lg:top-16 lg:block">
+    <div className="relative order-first hidden max-h-[400px] w-0 max-w-[500px] flex-1 scale-90 bg-transparent lg:top-16 lg:right-2 lg:block">
       <div
         style={{
           position: "relative",
