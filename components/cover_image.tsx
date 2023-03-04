@@ -127,8 +127,8 @@ export function CoverImage() {
                       <div className="grid grid-cols-1 items-center gap-4">
                         <Label htmlFor="name" className=""></Label>
                       </div>
-                      <div className="-ml[1px] mb-16 w-full">
-                        <div className="rounded-md bg-gray-100 p-6 dark:bg-dracula-aro-200">
+                      <div className="-ml[1px] mb-16 -mt-8 w-full">
+                        <div className="mb-[-60px] rounded-md bg-gray-100 p-6 dark:bg-dracula-aro-200">
                           <ContactForm />
                         </div>
                       </div>
