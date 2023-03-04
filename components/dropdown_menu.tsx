@@ -253,21 +253,7 @@ export function Dropdown_menu() {
                           <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                             <li className="row-span-3">
                               <NavigationMenuLink>
-                                <div
-                                  style={{
-                                    position: "relative",
-                                    borderRight: `1px solid ${
-                                      theme === "dark" ? "white" : "black"
-                                    }`,
-                                    height: "30%",
-                                    top: "40px",
-                                  }}
-                                  className="overflow-visible"
-                                >
-                                  <div className="relative -top-7 flex h-full w-full select-none flex-col justify-end overflow-hidden rounded-md p-6 no-underline outline-none focus:shadow-md">
-                                    <div className="h-full w-full bg-[url('/coderGIF.svg')] bg-cover bg-no-repeat">Mano</div>
-                                  </div>
-                                </div>
+                                <div className="relative bottom-3 left-12 h-full w-full overflow-visible bg-[url('/coderGIF.svg')] bg-contain bg-no-repeat"></div>
                               </NavigationMenuLink>
                             </li>
                             <li className="row-span-3">
@@ -276,13 +262,22 @@ export function Dropdown_menu() {
                                   className="flex h-full w-full select-none flex-col justify-end rounded-md p-6 no-underline outline-none focus:shadow-md"
                                   href="https://www.semanticscholar.org/paper/Designing-Creative-AI-Partners-with-COFI%3A-A-for-in-Rezwana-Maher/864b8521239d722f4fb8ffe17e32abf2cef6f202"
                                 >
-                                  <div className="flex w-[200px] items-center">
-                                    <Icons.gitHub className="mr-2 h-5 w-5" />
-                                    <div className="text-lg font-medium">
-                                      , según su API...{" "}
+                                  <div
+                                    style={{
+                                      position: "relative",
+                                      borderLeft: `2px solid ${
+                                        theme === "dark" ? "white" : "black"
+                                      }`,
+                                      height: "50%",
+                                      top: "15px",
+                                    }}
+                                    className="flex w-full items-center"
+                                  >
+                                    <div className="relative -top-4 ml-11 text-lg font-medium">
+                                      Según mi API{" "}
                                     </div>
                                   </div>
-                                  <div className="mt-4 mb-2">
+                                  <div className="-top-8 ml-12 mb-2">
                                     <LatestRepo />
                                   </div>
                                 </a>
