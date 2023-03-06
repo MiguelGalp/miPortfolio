@@ -60,7 +60,12 @@ export function CoverImage() {
                 centrado en
                 <HoverCard>
                   <HoverCardTrigger asChild>
-                    <Link href="https://nextjs.org/"> Next.js </Link>
+                    <Link href="">
+                      {" "}
+                      <span className="relative z-50 -m-5 inline-block p-5 opacity-50">
+                        Next.js
+                      </span>
+                    </Link>
                   </HoverCardTrigger>
                   <HoverCardContent className="w-80">
                     <div className="flex justify-between space-x-4">
@@ -78,27 +83,8 @@ export function CoverImage() {
                     </div>
                   </HoverCardContent>
                 </HoverCard>
-                <HoverCard>
-                  <HoverCardTrigger asChild>
-                    <Link href="https://tana.inc/">y Tana. </Link>
-                  </HoverCardTrigger>
-                  <HoverCardContent className="w-80">
-                    <div className="flex justify-between space-x-4">
-                      <Avatar>
-                        <AvatarImage src="https://github.com/tanainc.png" />
-                        <AvatarFallback>T.</AvatarFallback>
-                      </Avatar>
-                      <div className="space-y-1">
-                        <h4 className="text-sm font-semibold">@tana_inc</h4>
-                        <p className="text-sm">
-                          Tana is a Knowledge Graph for you & your team
-                        </p>
-                      </div>
-                    </div>
-                  </HoverCardContent>
-                </HoverCard>
-                Trabajemos juntos para construir la herramienta que querés.
-                Escribime hoy para discutir tu proyecto!
+                &nbsp;y el diseño. Trabajemos juntos para construir la
+                herramienta que querés. Escribime hoy para discutir tu proyecto!
               </Balancer>
             </div>
             <div className="mt-10 flex flex-col gap-3 md:max-md:flex-row lg:flex-row">
