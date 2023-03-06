@@ -22,7 +22,7 @@ function MyDarkImageComponent() {
       width={500}
       height={500}
       className="absolute bottom-5 left-8 top-5 h-full w-full scale-[280%] object-contain"
-      src="/Miguel_Dos_dark.png"
+      src="/Migue-Dark.png"
       alt=""
       priority
     />
