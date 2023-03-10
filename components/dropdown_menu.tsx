@@ -131,20 +131,19 @@ export function Dropdown_menu() {
                               href="https://miss-subtitulos.app"
                               title="Micro-servicios"
                             >
-                              SaaS a la medida. Tu proyecto puede incluir un
-                              backend →
+                              SaaS a la medida. Tu proyecto se potencia con más opciones →
                             </ListItem>
                             <ListItem
                               href="https://revista.super.site"
                               title="E-commerce"
                             >
-                              Diseño de UI para pagos en tu e-commerce →
+                              Diseño de UI/UX e integraciones para pagos en tu e-commerce →
                             </ListItem>
                             <ListItem
                               href="https://atlanticx.org"
                               title="Contenidos"
                             >
-                              CMS rápidos y económicos para comunicar mejor →
+                              Te ayudo a publicar contenido en workflows colaborativos y económicos para comunicar mejor →
                             </ListItem>
                             <ListItem href="" title=""></ListItem>
                             <ListItem

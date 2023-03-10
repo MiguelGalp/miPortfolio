@@ -52,9 +52,9 @@ export function CoverImage() {
                 Cultura digital, juntos
               </p>
               <Balancer className="mt-4 max-w-xl text-lg tracking-tight text-gray-600 dark:text-dracula-aro-200">
-                Integremos tus redes a un workflow inteligente y colaborativo.
-                Demos mejores servicios y contenidos para tus usuarios.
-                Impulsemos tus proyectos y comunidades{" "}
+              ¿Querés usar la IA para tus redes en un workflow documentable?
+                ¿Mejores y más servicios y contenidos para tus usuarios?
+                ¿Necesitás impulsar tu proyecto y tu comunidad?{" "}
                 <p className="relative top-[1.5px] inline text-xl">⇢</p>{" "}
                 Desarrollo arquitecturas de micro-servicios utilizando un stack
                 centrado en
@@ -83,7 +83,7 @@ export function CoverImage() {
                     </div>
                   </HoverCardContent>
                 </HoverCard>
-                &nbsp;y el diseño. Trabajemos juntos para construir la
+                &nbsp;y en tus necesidades. Trabajemos juntos para construir la
                 herramienta que querés. Escribime hoy para discutir tu proyecto!
               </Balancer>
             </div>
