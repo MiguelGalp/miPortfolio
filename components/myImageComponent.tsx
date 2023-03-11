@@ -9,7 +9,7 @@ function MyImageComponent() {
       width={500}
       height={500}
       className="absolute bottom-5 left-8 top-5 h-full w-full scale-[730%] object-contain"
-      src="/Glyphy.png"
+      src="/Wtf_Migue.png"
       alt=""
       priority
     />
@@ -22,7 +22,7 @@ function MyDarkImageComponent() {
       width={500}
       height={500}
       className="absolute bottom-5 left-8 top-5 h-full w-full scale-[730%] object-contain"
-      src="/Glyphy.png"
+      src="/Wtf_Migue.png"
       alt=""
       priority
     />
