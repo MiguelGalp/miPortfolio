@@ -8,8 +8,8 @@ function MyImageComponent() {
     <Image
       width={500}
       height={500}
-      className="absolute bottom-5 left-8 top-5 h-full w-full scale-[280%] object-contain"
-      src="/Miguel_Dos.png"
+      className="absolute bottom-5 left-8 top-5 h-full w-full scale-[730%] object-contain"
+      src="/Glyphy.png"
       alt=""
       priority
     />
@@ -21,8 +21,8 @@ function MyDarkImageComponent() {
     <Image
       width={500}
       height={500}
-      className="absolute bottom-5 left-8 top-5 h-full w-full scale-[280%] object-contain"
-      src="/Miguel_Dos.png"
+      className="absolute bottom-5 left-8 top-5 h-full w-full scale-[730%] object-contain"
+      src="/Glyphy.png"
       alt=""
       priority
     />
@@ -33,7 +33,7 @@ export default function MyImage() {
   const { theme } = useTheme()
 
   return (
-    <div className="relative order-first hidden max-h-[400px] w-0 max-w-[500px] flex-1 scale-90 bg-transparent lg:top-16 lg:right-2 lg:block">
+    <div className="relative order-first -z-50 hidden max-h-[400px] w-0 max-w-[500px] flex-1 scale-90 bg-transparent lg:top-16 lg:right-2 lg:block">
       <div
         style={{
           position: "relative",
