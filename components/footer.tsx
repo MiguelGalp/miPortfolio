@@ -8,7 +8,7 @@ import { Icons } from "@/components/icons"
 export function SiteFooter() {
   const currentYear = new Date().getFullYear()
   return (
-    <footer className=" relative top-[18vh] w-full ">
+    <footer className=" relative top-[25vh] w-full ">
       <div className="flex flex-col items-center justify-center gap-4 md:h-24 md:flex-row md:mt-12">
         <div className="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
           <CircleDot className="h-8 w-8 md:h-6" />

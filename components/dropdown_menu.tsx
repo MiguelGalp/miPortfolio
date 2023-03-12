@@ -83,7 +83,7 @@ export function Dropdown_menu() {
           className="relative bottom-[2.5px] hidden scale-110 p-1 hover:bg-slate-200 focus:ring-1 md:mt-1 md:mb-0.5 md:flex"
         >
           <Avatar>
-            <AvatarImage src="/Avatar_Darker.png" className="" />
+            <AvatarImage src="/AvatarMaker (1).png" className="" />
             <AvatarFallback>MG</AvatarFallback>
           </Avatar>
 
