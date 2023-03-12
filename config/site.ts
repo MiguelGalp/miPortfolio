@@ -18,7 +18,7 @@ export const siteConfig: SiteConfig = {
   mainNav: [],
   links: {
     twitter: "https://twitter.com/miguel_galperin",
-    github: "https://github.com/shadcn/ui",
+    github: "https://github.com/MiguelGalp?tab=repositories",
     docs: "https://ui.shadcn.com",
   },
 }
