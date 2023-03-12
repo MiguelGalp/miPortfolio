@@ -52,7 +52,7 @@ export function CoverImage() {
                 Cultura digital, juntos
               </p>
               <Balancer className="mt-4 max-w-xl text-lg tracking-tight text-gray-600 dark:text-dracula-aro-200">
-              ¿Querés usar la IA para tus redes en un workflow documentable?
+              ¿Querés usar la IA para tus redes en un workflow colaborativo?
                 ¿Mejores y más servicios y contenidos para tus usuarios?
                 ¿Necesitás impulsar tu proyecto y tu comunidad?{" "}
                 <p className="relative top-[1.5px] inline text-xl">⇢</p>{" "}
@@ -83,8 +83,8 @@ export function CoverImage() {
                     </div>
                   </HoverCardContent>
                 </HoverCard>
-                &nbsp;y en tus necesidades. Trabajemos juntos para construir la
-                herramienta que querés. Escribime hoy para discutir tu proyecto!
+                &nbsp;y en tus necesidades. ¡Trabajemos para construir la
+                herramienta que querés, escribime!
               </Balancer>
             </div>
             <div className="mt-10 flex flex-col gap-3 md:max-md:flex-row lg:flex-row">

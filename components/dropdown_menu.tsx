@@ -131,7 +131,7 @@ export function Dropdown_menu() {
                               href="https://miss-subtitulos.app"
                               title="Micro-servicios"
                             >
-                              SaaS a la medida. Tu proyecto se potencia con más opciones →
+                              SaaS e Inteligencia Artificial a medida. Tu proyecto se potencia con más opciones →
                             </ListItem>
                             <ListItem
                               href="https://revista.super.site"
@@ -140,10 +140,10 @@ export function Dropdown_menu() {
                               Diseño de UI/UX e integraciones para pagos en tu e-commerce →
                             </ListItem>
                             <ListItem
-                              href="https://atlanticx.org"
+                              href="https://yudax.notion.site/Instapost-0622a789e4aa459d9edaf21f1d66d36d"
                               title="Contenidos"
                             >
-                              Te ayudo a publicar contenido en workflows colaborativos y económicos para comunicar mejor →
+                              Te ayudo a publicar contenido en redes para aprovechar la IA y la colaboración, comunicá mejor y en equipo →
                             </ListItem>
                             <ListItem href="" title=""></ListItem>
                             <ListItem
@@ -151,8 +151,7 @@ export function Dropdown_menu() {
                               title="En vivo"
                               className="pointer-events-none text-slate-300"
                             >
-                              Enlaces (arriba) apuntando a algunos sitios ya
-                              entregados, en vivo.
+                              Enlaces apuntando a mis apps y recursos (notion + node.js)
                             </ListItem>
                           </ul>
                         </NavigationMenuContent>
