@@ -1,0 +1,14 @@
+/* Apply styles only for Safari browsers */
+@media not all and (min-resolution:.001dpcm) { 
+    @supports (-webkit-appearance:none) {
+      /* Target Safari 14+ */
+      .safari_only {
+        _::-webkit-full-page-media, _:future, :root & {
+          /* Safari-specific styles here */
+          border: 1px solid red;
+          transform: scale(2.5);
+        }
+      }
+    }
+}      
+  

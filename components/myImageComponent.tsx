@@ -2,26 +2,30 @@
 
 import Image from "next/image"
 import { useTheme } from "next-themes"
+import { useEffect } from "react"
+
+import styles from "./MyImageComponent.module.scss"
 
 function MyImageComponent() {
   return (
     <Image
       width={500}
-      height={500}
-      className="absolute bottom-5 left-8 top-5 h-full w-full scale-[740%] object-contain"
+      height={1500}
+      className={`absolute bottom-5 left-8 top-5 scale-[200%] object-contain safari_only`}
       src="/Wtf_Migue.png"
       alt=""
       priority
     />
   )
 }
+
 
 function MyDarkImageComponent() {
   return (
     <Image
       width={500}
-      height={500}
-      className="absolute bottom-5 left-8 top-5 h-full w-full scale-[730%] object-contain"
+      height={1500}
+      className="absolute bottom-5 left-8 top-5 scale-[200%] object-contain safari_only"
       src="/Wtf_Migue.png"
       alt=""
       priority
@@ -29,20 +33,19 @@ function MyDarkImageComponent() {
   )
 }
 
+
 export default function MyImage() {
   const { theme } = useTheme()
 
+  useEffect(() => {
+    if (navigator.userAgent.indexOf("Safari") !== -1) {
+      document.body.classList.add("safari")
+    }
+  }, [])
+
   return (
-    <div className="relative order-first -z-50 hidden max-h-[400px] w-0 max-w-[500px] flex-1 scale-90 bg-transparent lg:top-16 lg:right-6 lg:block">
-      <div
-        style={{
-          position: "relative",
-          borderRight: `2px solid ${theme === "dark" ? "white" : "black"}`,
-          height: "30%",
-          top: "100px",
-        }}
-        className="flex items-center"
-      >
+    <div className={`relative order-first -z-50 hidden flex-1 bg-transparent lg:top-16 lg:right-6 lg:block`}>
+      <div className="flex items-center">
         {theme === "dark" ? <MyDarkImageComponent /> : <MyImageComponent />}
       </div>
     </div>
