@@ -14,7 +14,7 @@ interface SiteConfig {
 export const siteConfig: SiteConfig = {
   name: "Miguel Galperin ⤑",
   description:
-    "Beautifully designed components built with Radix UI and Tailwind CSS.",
+    "Portfolio de software",
   mainNav: [],
   links: {
     twitter: "https://twitter.com/miguel_galperin",
