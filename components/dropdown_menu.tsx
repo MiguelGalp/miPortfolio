@@ -131,19 +131,19 @@ export function Dropdown_menu() {
                               href="https://miss-subtitulos.app"
                               title="Micro-servicios"
                             >
-                              SaaS e Inteligencia Artificial a medida. Tu proyecto se potencia con más opciones →
+                              SaaS e Inteligencia Artificial a medida. Tu proyecto se potencia. Ver un caso →
                             </ListItem>
                             <ListItem
                               href="https://revista.super.site"
                               title="E-commerce"
                             >
-                              Diseño de UI/UX e integraciones para pagos en tu e-commerce →
+                              Diseño de UI/UX y automatizaciones. Ver un workflow de pago y entregas con Mercado Pago →
                             </ListItem>
                             <ListItem
                               href="https://yudax.notion.site/Instapost-0622a789e4aa459d9edaf21f1d66d36d"
                               title="Contenidos"
                             >
-                              Te ayudo a publicar contenido en redes para aprovechar la IA y la colaboración, comunicá mejor y en equipo →
+                              Te ayudo a publicar tus redes en equipo y aprovechando la inteligencia artificial. Stack →
                             </ListItem>
                             <ListItem href="" title=""></ListItem>
                             <ListItem
@@ -151,7 +151,7 @@ export function Dropdown_menu() {
                               title="En vivo"
                               className="pointer-events-none text-slate-300"
                             >
-                              Enlaces apuntando a mis apps y recursos (notion + node.js)
+                              Los enlaces apuntan a mis apps y recursos, funcionando.
                             </ListItem>
                           </ul>
                         </NavigationMenuContent>
