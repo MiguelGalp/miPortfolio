@@ -9,12 +9,14 @@ import styles from "./MyImageComponent.module.scss"
 function MyImageComponent() {
   return (
     <Image
-      height={5612}
-      width={4544}
-      className={`object-fit safari_only absolute bottom-5 left-8 scale-150`}
-      src="/Wtf_Migue.png"
-      alt=""
-      priority
+    className={`absolute bottom-5 left-8 scale-[2]`}
+    src="/Wtf_Migue.png"
+    priority
+    alt="My image"
+    layout="fixed"
+    width={500}
+    height={500}
+    objectFit="contain"
     />
   )
 }
@@ -22,12 +24,12 @@ function MyImageComponent() {
 function MyDarkImageComponent() {
   return (
     <Image
-      height={5612}
-      width={4544}
-      className={`object-fit safari_only absolute bottom-5 left-8 scale-150`}
+      className={`absolute bottom-5 left-8 scale-[2]`}
       src="/Wtf_Migue.png"
-      alt=""
       priority
+      alt="My image"
+      layout="fill"
+      objectFit="contain"
     />
   )
 }
@@ -43,7 +45,7 @@ export default function MyImage() {
 
   return (
     <div
-      className={`relative -z-50 order-first hidden flex-1 bg-transparent md:min-h-[1200px] lg:bottom-80 lg:right-6 lg:block`}
+      className={`relative -z-50 order-first hidden flex-1 bg-transparent md:min-h-[1200px] lg:bottom-96 lg:right-6 lg:block`}
     >
       <div className="flex items-center">
         {theme === "dark" ? <MyDarkImageComponent /> : <MyImageComponent />}

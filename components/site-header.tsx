@@ -44,7 +44,7 @@ import { Dropdown_menu } from "./dropdown_menu"
 
 export function SiteHeader() {
   return (
-    <header className="sticky z-10 bg-[#dfe1ed]  dark:bg-slate-600 md:top-2 md:max-md:bg-blue-200 lg:bg-transparent">
+    <header className="sticky z-10 bg-[#dfe1ed]  dark:bg-transparent md:top-2 md:max-md:bg-blue-200 lg:bg-transparent">
       <div className="container flex h-16 items-center space-x-2 bg-transparent sm:justify-between sm:space-x-2">
         <MainNav items={siteConfig.mainNav} />
         <Dropdown_menu />
