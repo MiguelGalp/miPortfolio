@@ -30,10 +30,10 @@ import { Label } from "./ui/label"
 
 export function CoverImage() {
   return (
-    <div className="0 relative z-0 mx-auto flex min-h-screen justify-center bg-gradient-to-b from-[#dfe1ed] to-white dark:bg-none lg:relative lg:top-[7vh] lg:left-6 lg:min-h-full lg:bg-none xl:top-[10vh]">
+    <div className="0 relative z-0 mx-auto flex min-h-screen justify-center bg-gradient-to-b from-[#dfe1ed] to-white dark:bg-none md:w-full lg:relative lg:top-[7vh] lg:left-6 lg:min-h-full lg:bg-none xl:top-[10vh]">
       <div className="flex flex-1 flex-col p-8 md:px-20 md:ml-8 lg:flex-none">
-        <div className="mx-auto w-full scale-90 lg:max-w-xl">
-          <div className="mx-auto max-w-lg text-center lg:p-1 lg:text-left">
+        <div className="relative mx-auto w-full scale-90 lg:max-w-xl bottom-4 right-6">
+          <div className="mx-auto max-w-lg text-center lg:top-6 lg:text-left">
             <div>
               <span className="inline-flex items-center text-black">
                 {" "}
