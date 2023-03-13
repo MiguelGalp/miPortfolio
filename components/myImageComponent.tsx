@@ -9,7 +9,7 @@ import styles from "./MyImageComponent.module.scss"
 function MyImageComponent() {
   return (
     <Image
-      className={`absolute bottom-36 scale-[2] xl:ml-[3vw]`}
+      className={`absolute bottom-40 scale-[2] xl:ml-[4vw]`}
       src="/Wtf_Migue.png"
       priority
       alt="My image"
