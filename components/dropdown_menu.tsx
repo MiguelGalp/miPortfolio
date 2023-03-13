@@ -134,7 +134,7 @@ export function Dropdown_menu() {
                               SaaS e Inteligencia Artificial a medida. Tu proyecto se potencia. Ver un caso →
                             </ListItem>
                             <ListItem
-                              href="https://revista.super.site"
+                              href="https://latinoarts.super.site/"
                               title="E-commerce"
                             >
                               Diseño de UI/UX y automatizaciones. Ver un workflow de pago y entregas con Mercado Pago →
