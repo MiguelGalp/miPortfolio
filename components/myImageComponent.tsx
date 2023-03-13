@@ -45,7 +45,7 @@ export default function MyImage() {
 
   return (
     <div
-      className={`relative -z-50 order-first hidden flex-col bg-transparent lg:right-12 lg:bottom-96 lg:flex lg:min-h-[1200px] lg:min-w-[450px] xl:mr-6 xl:min-w-[500px]`}
+      className={`relative -z-50 order-first hidden flex-col bg-transparent dark:-top-[220px] lg:right-12 lg:bottom-96 lg:flex lg:min-h-[1200px] lg:min-w-[450px] xl:mr-6 xl:min-w-[500px]`}
     >
       <div className="">
         {theme === "dark" ? <MyDarkImageComponent /> : <MyImageComponent />}
