@@ -16,7 +16,7 @@ export default function IndexPage() {
           content="Portfolio de Software de Miguel Galperin"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon_2.ico" />
       </Head>
       <CoverImage />
     </Layout>
