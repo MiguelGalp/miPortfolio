@@ -30,9 +30,9 @@ import { Label } from "./ui/label"
 
 export function CoverImage() {
   return (
-    <div className="0 relative z-0 mx-auto flex min-h-screen justify-center bg-gradient-to-b from-[#dfe1ed] to-white dark:bg-none md:w-full lg:relative lg:top-[7vh] lg:left-6 lg:min-h-full lg:bg-none xl:top-[10vh]">
-      <div className="flex flex-1 flex-col p-8 md:px-20 md:ml-8 lg:flex-none">
-        <div className="relative mx-auto w-full scale-90 lg:max-w-xl bottom-4 right-6">
+    <div className="relative z-0 flex min-h-screen justify-center bg-gradient-to-b from-[#dfe1ed] to-white dark:bg-none lg:left-16 lg:top-[7vh] lg:min-h-full lg:grow lg:bg-none xl:top-[10vh]">
+      <div className="flex flex-1 flex-col p-8 lg:ml-16 lg:w-1/2 lg:flex-none">
+        <div className="relative bottom-4 right-6 mx-auto w-full scale-90 lg:max-w-xl">
           <div className="mx-auto max-w-lg text-center lg:top-6 lg:text-left">
             <div>
               <span className="inline-flex items-center text-black">
@@ -52,7 +52,7 @@ export function CoverImage() {
                 Cultura digital, juntos
               </p>
               <Balancer className="mt-4 max-w-xl text-lg tracking-tight text-gray-600 dark:text-dracula-aro-200">
-              ¿Querés usar la IA para tus redes en un workflow colaborativo?
+                ¿Querés usar la IA para tus redes en un workflow colaborativo?
                 ¿Mejores y más servicios y contenidos para tus usuarios?
                 ¿Necesitás impulsar tu proyecto y tu comunidad?{" "}
                 <p className="relative top-[1.5px] inline text-xl">⇢</p>{" "}
