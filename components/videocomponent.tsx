@@ -30,7 +30,7 @@ const VideoComponent = () => {
       )}
       <video
         className="absolute inset-0 h-full w-full rounded-md object-cover"
-        src="/video_cropped.mp4"
+        src="/nuevoVideoPortfolio.mp4"
         autoPlay
         muted
         loop
