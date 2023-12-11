@@ -1,7 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Separator } from "@radix-ui/react-dropdown-menu"
-import Balancer from "react-wrap-balancer"
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import {
@@ -23,17 +22,16 @@ import extraLargeImage from "../public/extraLargeImage.png"
 import mediumImage from "../public/mediumImage.png"
 import smallImage from "../public/smallImage.png"
 import ContactForm from "./contact_form"
-import MyImage from "./myImageComponent"
 import { Button } from "./ui/button"
 import { Input } from "./ui/input"
 import { Label } from "./ui/label"
 
 export function CoverImage() {
   return (
-    <div className="relative z-0 flex min-h-screen justify-center bg-gradient-to-b from-[#dfe1ed] to-white lg:left-16 lg:top-[7vh] lg:min-h-full lg:grow lg:bg-none xl:top-[12vh] xl:left-32">
-      <div className="flex flex-1 flex-col p-8 lg:ml-16 lg:w-1/2 lg:flex-none xl:mt-10">
-        <div className="relative bottom-4 mx-auto w-full scale-90 lg:right-6 lg:max-w-xl">
-          <div className="mx-auto max-w-lg text-center lg:top-6 lg:text-left">
+    <div className="relative z-0 mx-auto flex min-h-screen justify-center bg-transparent bg-gradient-to-b from-blue-200 to-white lg:relative lg:top-[2.5rem] lg:min-h-full lg:bg-none">
+      <div className="flex flex-1 flex-col justify-center p-8 md:px-12 lg:flex-none">
+        <div className="mx-auto w-full lg:max-w-xl">
+          <div className="mx-auto max-w-lg text-center lg:p-1 lg:text-left">
             <div>
               <span className="inline-flex items-center text-black">
                 {" "}
@@ -51,46 +49,17 @@ export function CoverImage() {
               <p className="font-display mt-8 text-4xl tracking-tighter text-black dark:text-dracula-aro-50 lg:text-5xl">
                 Cultura digital, juntos
               </p>
-              <Balancer className="mt-4 max-w-xl text-lg tracking-tight text-gray-600 dark:text-dracula-aro-200">
-                ¿Querés usar la IA para tus redes en un workflow colaborativo?
-                ¿Mejores y más servicios y contenidos para tus usuarios?
-                ¿Necesitás impulsar tu proyecto y tu comunidad?{" "}
-                <p className="relative top-[1.5px] inline text-xl">⇢</p>{" "}
-                Desarrollo arquitecturas de micro-servicios utilizando un stack
-                centrado en
-                <HoverCard>
-                  <HoverCardTrigger asChild>
-                    <Link href="">
-                      {" "}
-                      <span className="relative z-50 -m-5 inline-block p-5 opacity-50">
-                        Next.js
-                      </span>
-                    </Link>
-                  </HoverCardTrigger>
-                  <HoverCardContent className="w-80">
-                    <div className="flex justify-between space-x-4">
-                      <Avatar>
-                        <AvatarImage src="https://github.com/vercel.png" />
-                        <AvatarFallback>VC</AvatarFallback>
-                      </Avatar>
-                      <div className="space-y-1">
-                        <h4 className="text-sm font-semibold">@nextjs</h4>
-                        <p className="text-sm">
-                          The React Framework – created and maintained by
-                          @vercel.
-                        </p>
-                      </div>
-                    </div>
-                  </HoverCardContent>
-                </HoverCard>
-                &nbsp;y en tus necesidades. ¡Trabajemos para construir la
-                herramienta que querés, escribime!
-              </Balancer>
+              <p className="mt-4 max-w-xl text-lg tracking-tight text-gray-600 dark:text-dracula-aro-200">
+                Me especializo en dar vida a aplicaciones y sitios web centrados
+                en el usuario. Desde frontends hasta plataformas micro SaaS,
+                podemos hacer realidad tu visión utilizando un Stack moderno y económico.
+                Trabajemos juntos para construir la herramienta que querés. Escribime hoy para discutir tu proyecto!
+              </p>
             </div>
-            <div className="mt-10 flex flex-col gap-3 md:max-md:flex-row lg:flex-row">
+            <div className="mt-10 flex flex-col gap-3 sm:flex-row">
               <Dialog>
                 <DialogTrigger className="z-50">
-                  <Button className=" dark:bg-dracula-aro-50">Contacto</Button>
+                  <Button className="dark:bg-dracula-aro-50">Contacto</Button>
                 </DialogTrigger>
                 <div className="flex items-center justify-center bg-white">
                   <DialogContent className="sm:max-w-[425px]">
@@ -113,8 +82,8 @@ export function CoverImage() {
                       <div className="grid grid-cols-1 items-center gap-4">
                         <Label htmlFor="name" className=""></Label>
                       </div>
-                      <div className="-ml[1px] mb-16 -mt-8 w-full">
-                        <div className="mb-[-60px] rounded-md bg-gray-100 p-6 dark:bg-dracula-aro-200">
+                      <div className="-ml[1px] mb-16 w-full">
+                        <div className="rounded-md bg-gray-100 p-6">
                           <ContactForm />
                         </div>
                       </div>
@@ -126,7 +95,18 @@ export function CoverImage() {
           </div>
         </div>
       </div>
-      <MyImage />
+      <div className="relative order-first hidden w-0 max-w-[650px] flex-1  bg-transparent lg:block">
+        <div>
+          <Image
+            width={500}
+            height={500}
+            className="absolute bottom-5 left-8 h-full w-full scale-125 object-contain"
+            src="/coderGIF.svg"
+            alt=""
+            priority={true}
+          />
+        </div>
+      </div>
     </div>
   )
 }
