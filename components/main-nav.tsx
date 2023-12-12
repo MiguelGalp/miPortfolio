@@ -24,7 +24,7 @@ export function MainNav({ items }: MainNavProps) {
   return (
     <div className="flex gap-6 md:gap-2">
       <Icons.logo className="hidden h-6 w-6" />
-      <span className="hidden font-semibold sm:inline-block">
+      <span className="hidden font-semibold sm:mt-2 md:mt-0 sm:inline-block">
         {siteConfig.name}
       </span>
 
@@ -47,7 +47,11 @@ export function MainNav({ items }: MainNavProps) {
           )}
         </nav>
       ) : null}
-      <Dropdown_mobile />
+      <div className="lg:hidden">
+        <Dropdown_mobile />
+      </div>
     </div>
   )
 }
+
+

@@ -28,10 +28,10 @@ import { Label } from "./ui/label"
 
 export function CoverImage() {
   return (
-    <div className="relative z-0 mx-auto flex min-h-screen justify-center bg-transparent bg-gradient-to-b from-blue-200 to-white lg:relative lg:top-[2.5rem] lg:min-h-full lg:bg-none">
-      <div className="flex flex-1 flex-col justify-center p-8 md:px-12 lg:flex-none">
-        <div className="mx-auto w-full lg:max-w-xl">
-          <div className="mx-auto max-w-lg text-center lg:p-1 lg:text-left">
+    <div className="flex flex-col md:flex-row-reverse min-h-screen items-center justify-between max-w-7xl mx-auto lg:-mt-36">
+    <div className="flex flex-1 flex-col justify-center">
+      <div className="mx-auto w-full lg:max-w-xl">
+          <div className="mx-auto max-w-lg text-center lg:text-left mt-10">
             <div>
               <span className="inline-flex items-center text-black">
                 {" "}
@@ -46,17 +46,17 @@ export function CoverImage() {
                   Desarrollador
                 </span>{" "}
               </span>
-              <p className="font-display mt-8 text-4xl tracking-tighter text-black dark:text-dracula-aro-50 lg:text-5xl">
+              <p className="font-display mt-6 lg:text-5xl  tracking-tighter text-black dark:text-dracula-aro-50">
                 Cultura digital, juntos
               </p>
-              <p className="mt-4 max-w-xl text-lg tracking-tight text-gray-600 dark:text-dracula-aro-200">
+              <p className="mt-4 mx-auto lg:text-lg lg:leading-6 xl:leading-normal tracking-tight text-gray-600 dark:text-dracula-aro-200">
                 Me especializo en dar vida a aplicaciones y sitios web centrados
-                en el usuario. Desde frontends hasta plataformas micro SaaS,
-                podemos hacer realidad tu visión utilizando un Stack moderno y económico.
+                en el usuario. Desde frontends hasta plataformas de micro-servicios digitales,
+                te puedo ayudar a hacer realidad tu visión. Utilizo un Stack moderno y económico.
                 Trabajemos juntos para construir la herramienta que querés. Escribime hoy para discutir tu proyecto!
               </p>
             </div>
-            <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+            <div className="mt-10 flex flex-col gap-3 lg:flex-row">
               <Dialog>
                 <DialogTrigger className="z-50">
                   <Button className="dark:bg-dracula-aro-50">Contacto</Button>
@@ -95,14 +95,15 @@ export function CoverImage() {
           </div>
         </div>
       </div>
-      <div className="relative order-first hidden w-0 max-w-[650px] flex-1  bg-transparent lg:block">
-        <div>
-          <Image
-            width={500}
-            height={500}
-            className="absolute bottom-5 left-8 h-full w-full scale-125 object-contain"
+      <div className="flex flex-1 items-center ml-8 lg:ml-30">
+        <div className="p-8">
+        <Image
             src="/coderGIF.svg"
             alt=""
+            width={500}
+            height={500}
+            layout="responsive"
+            sizes="(max-width: 768px) 500px, (min-width: 769px) and (max-width: 1024px) 700px, (min-width: 1025px) and (max-width: 1280px) 800px, 1000px"
             priority={true}
           />
         </div>
