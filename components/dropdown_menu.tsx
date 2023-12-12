@@ -9,6 +9,7 @@ import { cva } from "class-variance-authority"
 import {
   ArrowBigRight,
   BoxIcon,
+  ChevronsRightIcon,
   Cloud,
   CreditCard,
   Croissant,
@@ -72,6 +73,48 @@ import { DemoIndicator } from "./demo_indicator"
 import ImageComponent from "./imagecomponent"
 import LatestRepo from "./latestRepo"
 import VideoComponent from "./videocomponent"
+import { HoverCard, HoverCardTrigger, HoverCardContent } from "@radix-ui/react-hover-card"
+import { CalendarDays } from "lucide-react"
+import { Separator } from "@radix-ui/react-dropdown-menu"
+
+const CustomHoverCard = ({ children, ...props }) => {
+  const handleClick = (event) => {
+    event.stopPropagation();
+  };
+
+  return (
+    <div onClick={handleClick} style={{ display: 'inline-block' }}>
+      <HoverCard {...props}>{children}</HoverCard>
+    </div>
+  );
+};
+
+const CustomListItem = ({ children, ...props }) => {
+  const handleClick = (event) => {
+    event.stopPropagation();
+  };
+
+  return (
+    <ListItem onClick={handleClick} {...props}>
+      {children}
+    </ListItem>
+  );
+};
+
+const CustomNavigationMenu = ({ children, ...props }) => {
+  const handleClick = (event) => {
+    event.stopPropagation();
+  };
+
+  return (
+    <NavigationMenu onClick={handleClick} {...props}>
+      {children}
+    </NavigationMenu>
+  );
+};
+
+
+
 
 export function Dropdown_menu() {
   const { theme } = useTheme()
@@ -91,23 +134,23 @@ export function Dropdown_menu() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">
-        <DropdownMenuLabel>Mi trabajo</DropdownMenuLabel>
+        <DropdownMenuLabel>Mi Portfolio</DropdownMenuLabel>
         <DropdownMenuSeparator />
 
         <DropdownMenuGroup>
           <DropdownMenuSub>
             <DropdownMenuSubTrigger>
               <BoxIcon className="mr-2 h-4 w-4" />
-              <span>Servicios digitales</span>
+              <span>Software</span>
             </DropdownMenuSubTrigger>
             <DropdownMenuPortal>
               <DropdownMenuSubContent className="overflow-visible">
                 <DropdownMenuItem className="overflow-visible">
-                  <NavigationMenu>
+                  <CustomNavigationMenu>
                     <NavigationMenuList>
                       <NavigationMenuItem className="overflow-visible">
                         <NavigationMenuTrigger className="dark:text-dracula-aro-200">
-                          SaaS, E-commerce, Web...
+                          UX/UI, CMS, E-commerce, Web...
                         </NavigationMenuTrigger>
                         <NavigationMenuContent className="overflow-visible">
                           <ul className="grid gap-2 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
@@ -127,23 +170,140 @@ export function Dropdown_menu() {
                               </NavigationMenuLink>
                             </li>
 
-                            <ListItem
-                              href="https://miss-subtitulos.app"
-                              title="Micro-servicios"
+                            <CustomListItem
+
+                              title="Diseño de UX/UI"
                             >
-                              SaaS e Inteligencia Artificial a medida. Tu proyecto se potencia. Ver un caso →
-                            </ListItem>
+
+                              Gestión de contenidos y experiencias centradas en los usuarios.
+                              <CustomHoverCard>
+                                <HoverCard>
+                                  <HoverCardTrigger className="ml-1 hover:brightness-50">
+                                    Ver un caso →
+                                  </HoverCardTrigger>
+                                  <HoverCardContent className="w-[350px] backdrop-blur-3xl backdrop-contrast-125 bg-white/30 p-4 rounded-md">
+                                    <div className="flex justify-between space-x-4">
+                                      <Avatar>
+                                        <AvatarImage src="/ATX_AVATAR.png" />
+                                        <AvatarFallback>ATX</AvatarFallback>
+                                      </Avatar>
+                                      <div className="space-y-1">
+                                        <h4 className="text-sm font-semibold"><Link href={"https://instagram.com/atlantic.x"}>@atlantic.x</Link></h4>
+                                        <p className="text-sm mb-4">
+                                          Desarrollo del sitio de la ONG Atlanticx. Diseño (junto a <Link href={"https://ar.pinterest.com/doncorbi/"}>@DonCorbi</Link>). Gestión headless de contenidos, con trackeo persistente.
+                                          Se utilizó el siguiente Stack: Tina CMS, GitHub, Next.js, Mux, Tailwind CSS
+                                        </p>
+                                        <div className="pt-4">
+                                          <Link href={"https:atlanticx-2.vercel.app"}>
+                                            <Image
+                                              src="/ATX_PORTADA.png"
+                                              alt="Portada ATX"
+                                              width={500} // adjust as needed
+                                              height={300} // adjust as needed
+                                              objectFit="cover"
+                                              className="rounded-md"
+                                              loading="lazy"
+                                            />
+                                          </Link>
+                                        </div>
+                                        <div className="flex items-center pt-2">
+                                          <CalendarDays className="mr-2 h-4 w-4 opacity-70" />{" "}
+                                          <span className="text-xs text-muted-foreground">
+                                            Entregado Diciembre 2023
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </HoverCardContent>
+                                </HoverCard>
+                              </CustomHoverCard>
+                            </CustomListItem>
                             <ListItem
-                              href="https://latinoarts.super.site/"
+
                               title="E-commerce"
                             >
-                              Diseño de UI/UX y automatizaciones. Ver un workflow de pago y entregas con Mercado Pago →
+                              Desarrollo FullStack de soluciones rápidas y económicas para ventas online.
+                              <HoverCard>
+                                <HoverCardTrigger className="ml-1">
+                                  Ver un caso →
+                                </HoverCardTrigger>
+                                <HoverCardContent className="w-[350px] backdrop-blur-3xl backdrop-contrast-125 bg-white/30 p-4 rounded-md">
+                                  <div className="flex justify-between space-x-4">
+                                    <Avatar>
+                                      <AvatarImage src="/LOGO_MP.png" />
+                                      <AvatarFallback>MISS</AvatarFallback>
+                                    </Avatar>
+                                    <div className="space-y-1">
+                                      <h4 className="text-sm font-semibold"><Link href={"https://twitter.com/MissSubtitulos"}>@MissSubtitulos</Link></h4>
+                                      <p className="text-sm mb-4">
+                                        Desarrollo de backend, e-commerce y UX/UI para <Link href={"https://miss-subtitulos.app/"}>Miss-Subtítulos</Link>. Desarrollo del servicio (Saas) para generar y enviar subtítulos. El Stack utilizado: Next.js, PipeDream, DeepGramAI.
+                                      </p>
+                                      <div className="pt-4">
+                                        <Link href={"https://miss-subtitulos.app"}>
+                                          <Image
+                                            src="/MISS-WEB.png"
+                                            alt="Portada ATX"
+                                            width={500} // adjust as needed
+                                            height={300} // adjust as needed
+                                            objectFit="cover"
+                                            className="rounded-md"
+                                            loading="lazy"
+                                          />
+                                        </Link>
+                                      </div>
+                                      <div className="flex items-center pt-2">
+                                        <CalendarDays className="mr-2 h-4 w-4 opacity-70" />{" "}
+                                        <span className="text-xs text-muted-foreground">
+                                          Entregado Marzo 2023
+                                        </span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </HoverCardContent>
+
+                              </HoverCard>
                             </ListItem>
                             <ListItem
-                              href="https://yudax.notion.site/Instapost-0622a789e4aa459d9edaf21f1d66d36d"
-                              title="Contenidos"
+
+                              title="Datos"
                             >
-                              Te ayudo a publicar tus redes en equipo y aprovechando la inteligencia artificial. Stack →
+                              Análisis y visualización de datos.
+                              <HoverCard>
+                                <HoverCardTrigger className="ml-1">
+                                  Ver un caso →
+                                </HoverCardTrigger>
+                                <HoverCardContent className="w-[350px] backdrop-blur-3xl backdrop-contrast-125 bg-white/30 p-4 rounded-md">
+                                  <div className="flex justify-between space-x-4">
+
+                                    <div className="space-y-1">
+                                      <h4 className="text-sm font-semibold"><Link href={"https://twitter.com/MissSubtitulos"}>@MissSubtitulos</Link></h4>
+                                      <p className="text-sm mb-4">
+                                        Scrapeo de datos de redes para su visualización y análisis <Link href={"https://twitter-temperature.onrender.com/"}>Proyecto en desarrollo</Link>, con un objetivo educativo.
+                                      </p>
+                                      <div className="pt-4">
+                                        <Link href={"https://twitter-temperature.onrender.com/"}>
+                                          <Image
+                                            src="/TEMP_2.png"
+                                            alt="Portada ATX"
+                                            width={500} // adjust as needed
+                                            height={300} // adjust as needed
+                                            objectFit="cover"
+                                            className="rounded-md"
+                                            loading="lazy"
+                                          />
+                                        </Link>
+                                      </div>
+                                      <div className="flex items-center pt-2">
+                                        <CalendarDays className="mr-2 h-4 w-4 opacity-70" />{" "}
+                                        <span className="text-xs text-muted-foreground">
+                                          Entregado Marzo 2023
+                                        </span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </HoverCardContent>
+
+                              </HoverCard>
                             </ListItem>
                             <ListItem href="" title=""></ListItem>
                             <ListItem
@@ -157,7 +317,7 @@ export function Dropdown_menu() {
                         </NavigationMenuContent>
                       </NavigationMenuItem>
                     </NavigationMenuList>
-                  </NavigationMenu>
+                  </CustomNavigationMenu>
                 </DropdownMenuItem>
               </DropdownMenuSubContent>
             </DropdownMenuPortal>
@@ -167,7 +327,7 @@ export function Dropdown_menu() {
           <DropdownMenuSub>
             <DropdownMenuSubTrigger>
               <Rotate3dIcon className="mr-2 h-4 w-4" />
-              <span>Eventos IRL</span>
+              <span>Instalaciones</span>
             </DropdownMenuSubTrigger>
             <DropdownMenuPortal>
               <DropdownMenuSubContent className="overflow-visible">
@@ -222,7 +382,7 @@ export function Dropdown_menu() {
           <DropdownMenuSub>
             <DropdownMenuSubTrigger>
               <WrenchIcon className="mr-2 h-4 w-4" />
-              <span>Mis Proyectos</span>
+              <span>Proyectos</span>
             </DropdownMenuSubTrigger>
             <DropdownMenuPortal>
               <DropdownMenuSubContent className="overflow-visible">
@@ -249,9 +409,8 @@ export function Dropdown_menu() {
                                   <div
                                     style={{
                                       position: "relative",
-                                      borderLeft: `2px solid ${
-                                        theme === "dark" ? "white" : "black"
-                                      }`,
+                                      borderLeft: `2px solid ${theme === "dark" ? "white" : "black"
+                                        }`,
                                       height: "50%",
                                       top: "15px",
                                     }}
