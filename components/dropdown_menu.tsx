@@ -196,7 +196,7 @@ export function Dropdown_menu() {
                                   <HoverCardTrigger className="ml-1 hover:brightness-50">
                                     Ver un caso →
                                   </HoverCardTrigger>
-                                  <CustomHoverCardContent className="w-[350px] backdrop-blur-3xl backdrop-contrast-125 bg-white/30 p-4 rounded-md">
+                                  <CustomHoverCardContent className="w-[350px] backdrop-blur-3xl backdrop-contrast-125 bg-white/30 p-4 rounded-md shadow-md dark:bg-slate-800">
                                     <div className="flex justify-between space-x-4">
                                       <Avatar>
                                         <AvatarImage src="/ATX_AVATAR.png" />
@@ -242,7 +242,7 @@ export function Dropdown_menu() {
                                 <HoverCardTrigger className="ml-1">
                                   Ver un caso →
                                 </HoverCardTrigger>
-                                <CustomHoverCardContent className="w-[350px] backdrop-blur-3xl backdrop-contrast-125 bg-white/30 p-4 rounded-md">
+                                <CustomHoverCardContent className="w-[350px] backdrop-blur-3xl backdrop-contrast-125 bg-white/30 p-4 rounded-md shadow-md dark:bg-slate-800">
                                   <div className="flex justify-between space-x-4">
                                     <Avatar>
                                       <AvatarImage src="/LOGO_MP.png" />
@@ -251,7 +251,7 @@ export function Dropdown_menu() {
                                     <div className="space-y-1">
                                       <h4 className="text-sm font-semibold"><Link href={"https://twitter.com/MissSubtitulos"}>@MissSubtitulos</Link></h4>
                                       <p className="text-sm mb-4">
-                                        Desarrollo de backend, e-commerce y UX/UI para <Link href={"https://miss-subtitulos.app/"}>Miss-Subtítulos</Link>. Desarrollo del servicio (Saas) para generar y enviar subtítulos. El Stack utilizado: Next.js, PipeDream, DeepGramAI.
+                                        Desarrollo de backend, e-commerce y UX/UI para <Link href={"https://miss-subtitulos.app/"}>Miss-Subtítulos</Link>, un servicio (Saas) para generar y enviar subtítulos. El Stack utilizado: Next.js, PipeDream, DeepGramAI.
                                       </p>
                                       <div className="pt-4">
                                         <Link href={"https://miss-subtitulos.app"}>
@@ -286,7 +286,7 @@ export function Dropdown_menu() {
                                 <HoverCardTrigger className="">
                                   Ver un caso →
                                 </HoverCardTrigger>
-                                <CustomHoverCardContent className="w-[350px] backdrop-blur-3xl backdrop-contrast-125 bg-white/30 p-4 rounded-md">
+                                <CustomHoverCardContent className="w-[350px] backdrop-blur-3xl backdrop-contrast-125 bg-white/30 p-4 rounded-md shadow-md dark:bg-slate-800">
                                   <div className="flex justify-between space-x-4">
 
                                     <div className="space-y-1">
