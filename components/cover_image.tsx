@@ -31,7 +31,7 @@ export function CoverImage() {
     <div className="flex flex-col md:flex-row-reverse min-h-screen items-center justify-between max-w-6xl mx-auto lg:-mt-36">
     <div className="flex flex-1 flex-col justify-center">
       <div className="mx-auto w-full lg:max-w-xl">
-          <div className="mx-auto max-w-lg text-center lg:text-left lg:mt-12 xl:mt-10">
+          <div className="mx-auto max-w-lg text-center lg:text-left lg:mt-8 xl:mt-10">
             <div>
               <span className="inline-flex items-center text-black lg:mb-4 xl:mb-0">
                 {" "}
@@ -46,10 +46,10 @@ export function CoverImage() {
                   Desarrollador
                 </span>{" "}
               </span>
-              <p className="font-display lg:mt-0 xl:mt-2 lg:text-5xl  tracking-tighter text-black dark:text-dracula-aro-50">
+              <p className="font-display lg:-mt-2 xl:mt-2 lg:text-5xl tracking-tighter text-black dark:text-dracula-aro-50">
                 Cultura digital, juntos
               </p>
-              <p className="mt-4 mx-auto lg:pr-2 xl:pr-0 lg:text-lg lg:leading-6 xl:leading-normal lg:tracking-tighter xl:tracking-tight text-gray-600 dark:text-dracula-aro-200">
+              <p className="mt-4 mx-auto lg:pr-2 xl:pr-0 lg:text-lg lg:leading-5 xl:leading-normal lg:tracking-tighter xl:tracking-tight text-gray-600 dark:text-dracula-aro-200">
                 Me especializo en dar vida a aplicaciones y sitios web centrados
                 en el usuario. Desde frontends hasta plataformas de micro-servicios digitales,
                 te puedo ayudar a hacer realidad tu visión. Utilizo un Stack moderno y económico.
