@@ -5,6 +5,9 @@ import next from "next"
 import Image from "next/image"
 import Link from "next/link"
 import * as NavigationMenuPrimitive from "@radix-ui/react-navigation-menu"
+
+import * as HoverCardPrimitive from "@radix-ui/react-hover-card"
+
 import { cva } from "class-variance-authority"
 import {
   ArrowBigRight,
@@ -73,9 +76,21 @@ import { DemoIndicator } from "./demo_indicator"
 import ImageComponent from "./imagecomponent"
 import LatestRepo from "./latestRepo"
 import VideoComponent from "./videocomponent"
-import { HoverCard, HoverCardTrigger, HoverCardContent } from "@radix-ui/react-hover-card"
+import { HoverCardTrigger, HoverCardContent } from "@radix-ui/react-hover-card"
 import { CalendarDays } from "lucide-react"
 import { Separator } from "@radix-ui/react-dropdown-menu"
+
+const HoverCard = ({ children, ...props }) => (
+  <HoverCardPrimitive.Root openDelay={150} closeDelay={0} {...props}>
+    {children}
+  </HoverCardPrimitive.Root>
+);
+
+const CustomHoverCardContent = ({ children, ...props }) => (
+  <HoverCardContent side={"right"} {...props}>
+    {children}
+  </HoverCardContent>
+);
 
 const CustomHoverCard = ({ children, ...props }) => {
   const handleClick = (event) => {
@@ -153,16 +168,16 @@ export function Dropdown_menu() {
                           UX/UI, CMS, E-commerce, Web...
                         </NavigationMenuTrigger>
                         <NavigationMenuContent className="overflow-visible">
-                          <ul className="grid gap-2 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                          <ul className="grid gap-2 p-6 md:w-[500px] lg:w-[550px] lg:grid-cols-[.75fr_1fr]">
                             <li className="row-span-3">
                               <NavigationMenuLink>
                                 <Link
                                   href=""
-                                  className="pointer-events-none relative top-12 flex h-full min-h-[250px] w-full select-none rounded-md no-underline outline-none focus:shadow-md"
+                                  className="pointer-events-none relative top-2 flex h-full min-h-[250px] w-full select-none rounded-md no-underline outline-none"
                                   rel="noopener noreferrer"
                                   target="_blank"
                                 >
-                                  <div className="absolute inset-0 rounded-md bg-transparent opacity-30"></div>
+                                  <div className="absolute inset-0 rounded-md bg-transparent"></div>
                                   <div className="absolute inset-0">
                                     <ImageComponent />
                                   </div>
@@ -177,11 +192,11 @@ export function Dropdown_menu() {
 
                               Gestión de contenidos y experiencias centradas en los usuarios.
                               <CustomHoverCard>
-                                <HoverCard>
+                                <CustomHoverCard>
                                   <HoverCardTrigger className="ml-1 hover:brightness-50">
                                     Ver un caso →
                                   </HoverCardTrigger>
-                                  <HoverCardContent className="w-[350px] backdrop-blur-3xl backdrop-contrast-125 bg-white/30 p-4 rounded-md">
+                                  <CustomHoverCardContent className="w-[350px] backdrop-blur-3xl backdrop-contrast-125 bg-white/30 p-4 rounded-md">
                                     <div className="flex justify-between space-x-4">
                                       <Avatar>
                                         <AvatarImage src="/ATX_AVATAR.png" />
@@ -214,20 +229,20 @@ export function Dropdown_menu() {
                                         </div>
                                       </div>
                                     </div>
-                                  </HoverCardContent>
-                                </HoverCard>
+                                  </CustomHoverCardContent>
+                                </CustomHoverCard>
                               </CustomHoverCard>
                             </CustomListItem>
-                            <ListItem
+                            <CustomListItem
 
                               title="E-commerce"
                             >
                               Desarrollo FullStack de soluciones rápidas y económicas para ventas online.
-                              <HoverCard>
+                              <CustomHoverCard>
                                 <HoverCardTrigger className="ml-1">
                                   Ver un caso →
                                 </HoverCardTrigger>
-                                <HoverCardContent className="w-[350px] backdrop-blur-3xl backdrop-contrast-125 bg-white/30 p-4 rounded-md">
+                                <CustomHoverCardContent className="w-[350px] backdrop-blur-3xl backdrop-contrast-125 bg-white/30 p-4 rounded-md">
                                   <div className="flex justify-between space-x-4">
                                     <Avatar>
                                       <AvatarImage src="/LOGO_MP.png" />
@@ -259,20 +274,19 @@ export function Dropdown_menu() {
                                       </div>
                                     </div>
                                   </div>
-                                </HoverCardContent>
-
-                              </HoverCard>
-                            </ListItem>
-                            <ListItem
+                                </CustomHoverCardContent>
+                              </CustomHoverCard>
+                            </CustomListItem>
+                            <CustomListItem
 
                               title="Datos"
                             >
                               Análisis y visualización de datos.
-                              <HoverCard>
-                                <HoverCardTrigger className="ml-1">
+                              <CustomHoverCard>
+                                <HoverCardTrigger className="">
                                   Ver un caso →
                                 </HoverCardTrigger>
-                                <HoverCardContent className="w-[350px] backdrop-blur-3xl backdrop-contrast-125 bg-white/30 p-4 rounded-md">
+                                <CustomHoverCardContent className="w-[350px] backdrop-blur-3xl backdrop-contrast-125 bg-white/30 p-4 rounded-md">
                                   <div className="flex justify-between space-x-4">
 
                                     <div className="space-y-1">
@@ -301,18 +315,9 @@ export function Dropdown_menu() {
                                       </div>
                                     </div>
                                   </div>
-                                </HoverCardContent>
-
-                              </HoverCard>
-                            </ListItem>
-                            <ListItem href="" title=""></ListItem>
-                            <ListItem
-                              href=""
-                              title="En vivo"
-                              className="pointer-events-none text-slate-300"
-                            >
-                              Los enlaces apuntan a mis apps y recursos, funcionando.
-                            </ListItem>
+                                </CustomHoverCardContent>
+                              </CustomHoverCard>
+                            </CustomListItem>
                           </ul>
                         </NavigationMenuContent>
                       </NavigationMenuItem>
