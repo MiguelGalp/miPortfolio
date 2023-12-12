@@ -46,7 +46,7 @@ export function CoverImage() {
                   Desarrollador
                 </span>{" "}
               </span>
-              <p className="font-display lg:mt-0 xl:mt-6 lg:text-5xl  tracking-tighter text-black dark:text-dracula-aro-50">
+              <p className="font-display lg:mt-0 xl:mt-2 lg:text-5xl  tracking-tighter text-black dark:text-dracula-aro-50">
                 Cultura digital, juntos
               </p>
               <p className="mt-4 mx-auto lg:pr-2 xl:pr-0 lg:text-lg lg:leading-6 xl:leading-normal lg:tracking-tighter xl:tracking-tight text-gray-600 dark:text-dracula-aro-200">
