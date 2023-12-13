@@ -5,6 +5,7 @@ import { siteConfig } from "@/config/site"
 import { CoverImage } from "@/components/cover_image"
 import { Layout } from "@/components/layout"
 import { buttonVariants } from "@/components/ui/button"
+import Hero from "@/components/hero"
 
 export default function IndexPage() {
   return (
@@ -18,7 +19,7 @@ export default function IndexPage() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon_3.ico" />
       </Head>
-      <CoverImage />
+      <Hero />
     </Layout>
   )
 }

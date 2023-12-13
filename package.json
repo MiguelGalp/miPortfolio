@@ -48,6 +48,7 @@
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.43.1",
     "react-ion-icon": "^4.0.0",
+    "react-responsive": "^9.0.2",
     "react-spinners": "^0.13.8",
     "react-wrap-balancer": "^0.4.0",
     "sass": "^1.59.2",
