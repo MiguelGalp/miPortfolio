@@ -28,7 +28,7 @@ import { Label } from "./ui/label"
 
 export function CoverImage() {
   return (
-    <div className="flex flex-col md:flex-row-reverse min-h-screen items-center justify-between max-w-6xl mx-auto lg:-mt-36">
+    <div className="flex flex-col md:flex-row-reverse min-h-screen items-center justify-between max-w-6xl mx-auto lg:-mt-20">
     <div className="flex flex-1 flex-col justify-center">
       <div className="mx-auto w-full lg:max-w-xl">
           <div className="mx-auto max-w-lg text-center lg:text-left lg:mt-8 xl:mt-10">
