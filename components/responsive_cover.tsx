@@ -20,7 +20,7 @@ const ResponsiveCover = () => {
             <div className="col-span-2 mx-7 text-base leading-5">
                 <p>Utilizo un Stack moderno y económico (Next.js y Tailwind en el cliente, Python en el servidor). Trabajemos juntos para construir la herramienta que querés. Escribime hoy para discutir tu proyecto!</p>
             </div>
-            <div className="col-span-1 flex items-start justify-left sm:col-span-1 sm:flex items-center justify-center py-6">
+            <div className="col-span-1 flex items-start justify-left sm:col-span-1 sm:flex justify-center py-6">
                 <button className="bg-black hover:bg-blue-700 text-white font-bold py-2 px-6 rounded -ml-3 sm:ml-0">
                     Contacto
                 </button>
