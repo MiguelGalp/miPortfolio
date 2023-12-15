@@ -1,5 +1,12 @@
 import { Separator } from "@/components/ui/separator"
+import { Dialog, DialogTrigger, DialogContent } from "./ui/dialog";
+import { Button } from "./ui/button";
+
+import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import React from 'react';
+import { Label } from "./ui/label";
+
+import ContactForm from "./contact_form";
 
 const ResponsiveCover = () => {
     return (
@@ -21,9 +28,40 @@ const ResponsiveCover = () => {
                 <p>Utilizo un Stack moderno y económico (Next.js y Tailwind en el cliente, Python en el servidor). Trabajemos juntos para construir la herramienta que querés. Escribime hoy para discutir tu proyecto!</p>
             </div>
             <div className="col-span-1 flex items-start justify-left sm:col-span-1 sm:flex justify-start py-6 px-6">
-                <button className="bg-black dark:bg-slate-100 hover:bg-blue-700 text-white dark:text-slate-900 font-bold py-2 px-6 rounded md:text-xl">
-                    Contacto
-                </button>
+            <Dialog>
+                <DialogTrigger className="z-50">
+                  <Button className="dark:bg-dracula-aro-50 sm:text-base md:text-xl">Contacto</Button>
+                </DialogTrigger>
+                <div className="flex items-center justify-center bg-white">
+                  <DialogContent className="sm:max-w-[425px]">
+                    <div className="flex space-x-6">
+                      <div className="space-y-1">
+                        <h4 className="text-sm font-medium leading-none">
+                          Miguel Galperin
+                        </h4>
+                        <p className="text-sm text-slate-500 dark:text-slate-400">
+                          Desarrollador
+                        </p>
+                      </div>
+                      <Avatar className="bottom-[2px]">
+                        <AvatarImage src="/Avatar_Darker.png" className="" />
+                        <AvatarFallback>MG</AvatarFallback>
+                      </Avatar>
+                    </div>
+                    <Separator className="text-black" />
+                    <div className="grid gap-4">
+                      <div className="grid grid-cols-1 items-center gap-4">
+                        <Label htmlFor="name" className=""></Label>
+                      </div>
+                      <div className="-ml[1px] mb-16 w-full">
+                        <div className="rounded-md bg-gray-100 p-6">
+                          <ContactForm />
+                        </div>
+                      </div>
+                    </div>
+                  </DialogContent>
+                </div>
+              </Dialog>
             </div>
         </div>
     );
