@@ -10,7 +10,7 @@ export function SiteFooter() {
   return (
     <footer className="relative w-full mt-16 mb-6">
       <div className="flex flex-col items-center justify-center md:h-24 md:flex-row">
-        <div className="flex flex-row items-center sm:px-2 md:px-8 md:flex-row md:gap-2 md:px-0">
+        <div className="flex flex-row items-center sm:px-2 md:px-8 md:flex-row md:gap-2">
           <Copyright className="h-3"/>
           <p className="text-center text-[10px] leading-normal tracking-tight text-slate-900 dark:text-slate-100 md:text-left md:text-sm">
             Portfolio de software de{" "}
