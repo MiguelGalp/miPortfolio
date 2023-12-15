@@ -40,12 +40,12 @@ export default function ContactForm() {
       <div className="justify-content-start flex w-full max-w-sm space-x-2">
         <Input
           {...register("nombre")}
-          defaultValue="Tu nombre"
+          defaultValue="Nombre"
           className="dark:text-dracula-aro-700"
         ></Input>
         <Input
           {...register("email")}
-          defaultValue="Tu email"
+          defaultValue="Email"
           className="dark:text-dracula-aro-700"
         ></Input>
         <Button type="submit" role="submit" className="dark:bg-dracula-aro-500">
