@@ -22,7 +22,7 @@ export function SiteFooter() {
             >
               Miguel Galperin
             </a>
-            , el UI es derivado de{" "}
+            , derivado del UI{" "}
             <a
               href={siteConfig.links.docs}
               target="_blank"
