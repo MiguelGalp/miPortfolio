@@ -4,8 +4,8 @@ import React from 'react';
 const ResponsiveCover = () => {
     return (
         <div className="gap-4 grid-cols-1 flex flex-col ">
-            <div className="col-span-2 ">
-                <img src="/Cortado.png" alt="placeholder" className="w-full h-full object-cover" />
+            <div className="col-span-2 scale-90 ">
+                <img src="/Recorte.svg" alt="placeholder" className=" object-cover" />
             </div>
             <div className="col-span-1 flex flex-col justify-center space-y-4 ml-6">
                 <div className="flex items-center">
@@ -13,7 +13,7 @@ const ResponsiveCover = () => {
                     ⎟
                     <h2 className="text-sm font-muted sm:text-base">Desarrollador</h2>
                 </div>
-                <h1 className="text-5xl tracking-tighter font-bold relative bottom-3 -ml-1">CULTURA DIGITAL, JUNTOS.</h1>
+                <h1 className="text-5xl tracking-tighter font-bold relative bottom-3 -ml-1 mr-6">CULTURA DIGITAL, JUNTOS.</h1>
                 <h3 className="mr-8 text-2xl tracking-tight leading-6">Apps, datos, contenidos y servicios para el sector creativo.</h3>
             </div>
 
