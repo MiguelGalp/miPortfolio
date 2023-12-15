@@ -21,9 +21,11 @@ import {
   Rotate3d,
   Settings,
   ShoppingCart,
+
   User,
   UserPlus,
   Users,
+  Video,
   Wrench,
 } from "lucide-react"
 
@@ -46,6 +48,10 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { DemoIndicator } from "./demo_indicator"
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar"
+import { ForwardIcon } from "lucide-react"
+import { LayoutGrid } from "lucide-react"
+import { Database } from "lucide-react"
+import VideoComponent from "./videocomponent"
 
 export function Dropdown_mobile() {
   return (
@@ -57,20 +63,20 @@ export function Dropdown_mobile() {
         >
           <Avatar>
             <AvatarImage src="/AvatarMaker (1).png" className="" />
-            <AvatarFallback>CN</AvatarFallback>
+            <AvatarFallback>MG</AvatarFallback>
           </Avatar>
 
           <DemoIndicator className="left-10 -mt-2" />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-40">
-        <DropdownMenuLabel className="flex">Para la Web</DropdownMenuLabel>
+        <DropdownMenuLabel className="flex">Portfolio</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
           <DropdownMenuSub>
             <DropdownMenuSubTrigger>
-              <LucideWifi className="mr-2 h-4 w-4" />
-              <span>CMS Mgmt.</span>
+              <LayoutGrid className="mr-2 h-4 w-4" />
+              <span>Contenidos</span>
             </DropdownMenuSubTrigger>
             <DropdownMenuPortal className="">
               <DropdownMenuSubContent className="">
@@ -83,13 +89,7 @@ export function Dropdown_mobile() {
                       className="flex h-[400px] w-[200px] select-none flex-col justify-end rounded-md p-6 no-underline outline-none focus:shadow-md"
                       href="https://atlanticx.org"
                     >
-                      <Icons.logo className="h-6 w-6 text-slate-200" />
-                      <div className="mt-4 mb-2 text-lg font-medium text-slate-200">
-                        Sitio Atlanticx
-                      </div>
-                      <p className="text-sm leading-tight text-slate-200">
-                        CMS desde Notion.so
-                      </p>
+                     
                     </a>
                   </li>
                 </ul>
@@ -98,8 +98,8 @@ export function Dropdown_mobile() {
           </DropdownMenuSub>
           <DropdownMenuSub>
             <DropdownMenuSubTrigger>
-              <Clapperboard className="mr-2 h-4 w-4" />
-              <span>Micro Saas</span>
+              <Database className="mr-2 h-4 w-4" />
+              <span>Backend</span>
             </DropdownMenuSubTrigger>
             <DropdownMenuPortal className="">
               <DropdownMenuSubContent className="">
@@ -112,14 +112,7 @@ export function Dropdown_mobile() {
                       className="flex h-[400px] w-[200px] select-none flex-col justify-end rounded-md p-6 no-underline outline-none focus:shadow-md"
                       href="https://atlanticx.org"
                     >
-                      <Icons.logo className="h-6 w-6 text-slate-800" />
-                      <div className="mt-4 mb-2 text-lg font-medium text-slate-800">
-                        Miss-subtitulos.app
-                      </div>
-                      <p className="text-sm leading-tight text-slate-900">
-                        Un micro servicio SaaS que utiliza IA para generar
-                        subtítulos
-                      </p>
+                    
                     </a>
                   </li>
                 </ul>
@@ -129,7 +122,7 @@ export function Dropdown_mobile() {
           <DropdownMenuSub>
             <DropdownMenuSubTrigger>
               <HomeIcon className="mr-2 h-4 w-4" />
-              <span>Reservas</span>
+              <span>Servicios</span>
             </DropdownMenuSubTrigger>
             <DropdownMenuPortal className="">
               <DropdownMenuSubContent className="">
@@ -142,8 +135,7 @@ export function Dropdown_mobile() {
                       className="flex h-[400px] w-[200px] select-none flex-col justify-end rounded-md p-6 no-underline outline-none focus:shadow-md"
                       href="https://atlanticx.org"
                     >
-                      <div className="mt-4 mb-2 text-lg font-medium text-slate-900"></div>
-                      <p className="text-sm leading-tight text-slate-900"></p>
+                    
                     </a>
                   </li>
                 </ul>
@@ -166,13 +158,7 @@ export function Dropdown_mobile() {
                       className="flex h-[400px] w-[200px] select-none flex-col justify-end rounded-md p-6 no-underline outline-none focus:shadow-md"
                       href="https://atlanticx.org"
                     >
-                      <Icons.logo className="h-6 w-6 text-slate-100" />
-                      <div className="mt-4 mb-2 text-lg font-medium text-slate-100">
-                        Revista y Shop
-                      </div>
-                      <p className="text-sm leading-tight text-slate-900">
-                        Web cultural, contenidos y radio en vivo
-                      </p>
+                      
                     </a>
                   </li>
                 </ul>
@@ -181,7 +167,7 @@ export function Dropdown_mobile() {
           </DropdownMenuSub>
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
-        <DropdownMenuLabel className="flex">Software</DropdownMenuLabel>
+        <DropdownMenuLabel className="flex">Proyectos</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuSub>
           <DropdownMenuSubTrigger>
@@ -191,15 +177,13 @@ export function Dropdown_mobile() {
           <DropdownMenuPortal className="">
             <DropdownMenuSubContent className="">
               <ul className="grid">
-                <li
-                  className="bg-cover bg-center"
-                  style={{ backgroundImage: "url('/miss_mockup.png')" }}
-                >
+                <li>
+                  <VideoComponent/>
                   <a
                     className="flex h-[400px] w-[200px] select-none flex-col justify-end rounded-md p-6 no-underline outline-none focus:shadow-md"
                     href="https://atlanticx.org"
                   >
-                    <Icons.logo className="h-6 w-6 text-slate-800" />
+                    
                     <div className="mt-4 mb-2 text-lg font-medium text-slate-800">
                       Miss-subtitulos.app
                     </div>
@@ -213,36 +197,7 @@ export function Dropdown_mobile() {
             </DropdownMenuSubContent>
           </DropdownMenuPortal>
         </DropdownMenuSub>
-        <DropdownMenuSub>
-          <DropdownMenuSubTrigger>
-            <Wrench className="mr-2 h-4 w-4" />
-            <span>Proyectos</span>
-          </DropdownMenuSubTrigger>
-          <DropdownMenuPortal className="">
-            <DropdownMenuSubContent className="">
-              <ul className="grid">
-                <li
-                  className="bg-cover bg-center"
-                  style={{ backgroundImage: "url('/miss_mockup.png')" }}
-                >
-                  <a
-                    className="flex h-[400px] w-[200px] select-none flex-col justify-end rounded-md p-6 no-underline outline-none focus:shadow-md"
-                    href="https://atlanticx.org"
-                  >
-                    <Icons.logo className="h-6 w-6 text-slate-800" />
-                    <div className="mt-4 mb-2 text-lg font-medium text-slate-800">
-                      Miss-subtitulos.app
-                    </div>
-                    <p className="text-sm leading-tight text-slate-900">
-                      Un micro servicio SaaS que utiliza IA para generar
-                      subtítulos
-                    </p>
-                  </a>
-                </li>
-              </ul>
-            </DropdownMenuSubContent>
-          </DropdownMenuPortal>
-        </DropdownMenuSub>
+        
       </DropdownMenuContent>
     </DropdownMenu>
   )
