@@ -8,11 +8,11 @@ import { Icons } from "@/components/icons"
 export function SiteFooter() {
   const currentYear = new Date().getFullYear()
   return (
-    <footer className="relative w-full lg:bottom-[15vh] md:top-[10vh] ">
-      <div className="flex flex-col items-center justify-center gap-4 md:mt-2 md:h-24 md:flex-row">
-        <div className="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
-          <Copyright className="h-6 w-6 md:h-4"/>
-          <p className="text-center text-[10px] leading-normal text-slate-900 dark:text-slate-100 md:text-left md:text-sm">
+    <footer className="relative w-full mt-16 mb-6">
+      <div className="flex flex-col items-center justify-center md:h-24 md:flex-row">
+        <div className="flex flex-row items-center sm:px-2 md:px-8 md:flex-row md:gap-2 md:px-0">
+          <Copyright className="h-3"/>
+          <p className="text-center text-[10px] leading-normal tracking-tight text-slate-900 dark:text-slate-100 md:text-left md:text-sm">
             Portfolio de software de{" "}
             <a
               href={siteConfig.links.twitter}
