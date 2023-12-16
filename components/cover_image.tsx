@@ -31,7 +31,7 @@ export function CoverImage() {
     <div className="flex flex-col md:flex-row-reverse min-h-screen items-center justify-between max-w-6xl mx-auto lg:-mt-20">
       <div className="flex flex-1 flex-col justify-center">
         <div className="mx-auto w-full lg:max-w-xl">
-          <div className="mx-auto max-w-lg text-center lg:text-left lg:mt-8 xl:mt-10">
+          <div className="mx-auto max-w-lg text-center lg:text-left -mt-56 -ml-10">
             <div>
               <span className="inline-flex items-center text-black lg:mb-4 xl:mb-0">
                 {" "}
@@ -92,13 +92,13 @@ export function CoverImage() {
           </div>
         </div>
       </div>
-      <div className="flex flex-1 items-center ml-8 lg:ml-30">
-        <div className="p-8">
+      <div className="flex flex-1 items-center ml-8 lg:-ml-10">
+        <div className="relative top-72 left-20">
           <Image
-            src="/CoderGif_2.svg"
+            src="/Miguel_Dark 1.svg"
             alt=""
-            width={500}
-            height={500}
+            width={600}
+            height={600}
             priority={true}
           />
         </div>
