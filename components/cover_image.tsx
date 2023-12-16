@@ -49,7 +49,7 @@ export function CoverImage() {
               <p className="font-display lg:-mt-2 xl:mt-2 lg:text-5xl tracking-tighter text-black dark:text-dracula-aro-50">
                 Cultura digital, juntos
               </p>
-              <p className="mt-4 mx-auto lg:pr-2 xl:pr-0 lg:text-lg lg:leading-5 xl:leading-normal lg:tracking-tighter xl:tracking-tight text-gray-600 dark:text-dracula-aro-200">
+              <p className="mt-4 mx-auto lg:pr-2 xl:pr-0 lg:text-lg lg:leading-5 xl:leading-normal lg:tracking-tighter xl:tracking-tight text-gray-600 dark:text-dracula-aro-200 mr-8">
               Mi estudio (uni-personal, junto con algunxs diseñadorxs amigxs) donde construyo objetos digitales. Me centro en la experiencia del usuario para gestionar contenidos, analizar datos y dar servicios. Lo hago para Atlanticx.org, y también podés escribirme, abajo. Trabajo con JavaScript y Python, tanto como con el diseño y la comunicación.
               </p>
             </div>
@@ -92,8 +92,8 @@ export function CoverImage() {
           </div>
         </div>
       </div>
-      <div className="flex flex-1 items-center ml-8 lg:ml-30">
-        <div className="p-8">
+      <div className="flex flex-1 items-center -ml-20">
+        <div className="pl-36 relative left-6">
           <Image
             src="/coderGIF_3.svg"
             alt=""
