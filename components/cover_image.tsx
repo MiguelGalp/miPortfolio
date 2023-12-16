@@ -95,7 +95,7 @@ export function CoverImage() {
       <div className="flex flex-1 items-center ml-8 lg:ml-30">
         <div className="p-8">
           <Image
-            src="/CoderGif_2.svg"
+            src="/CoderGIF_2.svg"
             alt=""
             width={500}
             height={500}
