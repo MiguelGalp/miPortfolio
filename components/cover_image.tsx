@@ -50,7 +50,7 @@ export function CoverImage() {
                 Cultura digital, juntos
               </p>
               <p className="mt-4 mx-auto lg:pr-2 xl:pr-0 lg:text-lg lg:leading-5 xl:leading-normal lg:tracking-tighter xl:tracking-tight text-gray-600 dark:text-dracula-aro-200">
-              Mi estudio (uni-personal, junto con algunxs diseñadorxs amigxs) donde construyo objetos digitales. Me centro en la experiencia del usuario para gestionar contenidos, analizar datos y dar servicios. Lo hago para Atlanticx.org, pero escribime abajo. Trabajo con JavaScript y Python, tanto como con el diseño y la comunicación.
+              Mi estudio (uni-personal, junto con algunxs diseñadorxs amigxs) donde construyo objetos digitales. Me centro en la experiencia del usuario para gestionar contenidos, analizar datos y dar servicios. Lo hago para Atlanticx.org, y también podés escribirme, abajo. Trabajo con JavaScript y Python, tanto como con el diseño y la comunicación.
               </p>
             </div>
             <div className="mt-10 flex flex-col gap-3 lg:flex-row lg:mt-5 xl:mt-6">
