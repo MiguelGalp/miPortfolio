@@ -28,7 +28,7 @@ import { Label } from "./ui/label"
 
 export function CoverImage() {
   return (
-    <div className="flex flex-col md:flex-row-reverse min-h-screen items-center justify-between max-w-6xl mx-auto lg:-mt-20">
+    <div className="flex flex-col md:flex-row-reverse min-h-screen items-center justify-between max-w-6xl mx-auto lg:-mt-20 lg:pr-16 xl:pr-8">
       <div className="flex flex-1 flex-col justify-center">
         <div className="mx-auto w-full lg:max-w-xl">
           <div className="mx-auto max-w-lg text-center lg:text-left lg:mt-8 xl:mt-10">
@@ -41,7 +41,7 @@ export function CoverImage() {
                 >
                   MG
                 </span>
-                <span className="ml-3 h-3.5 w-px bg-black"></span>
+                <span className="ml-3 h-3.5 w-px bg-black dark:bg-slate-100"></span>
                 <span className="ml-3 text-base font-medium tracking-tight dark:text-dracula-aro-100">
                   Desarrollador
                 </span>{" "}
@@ -93,7 +93,7 @@ export function CoverImage() {
         </div>
       </div>
       <div className="flex flex-1 items-center -ml-20">
-        <div className="pl-36 relative left-6">
+        <div className="lg:pl-48 xl:pl-36 relative lg:left-10 xl:left-6">
           <Image
             src="/coderGIF_3.svg"
             alt=""
