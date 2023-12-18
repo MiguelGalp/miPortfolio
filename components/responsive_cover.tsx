@@ -11,7 +11,7 @@ import ContactForm from "./contact_form";
 const ResponsiveCover = () => {
     return (
         <div className="container gap-4 grid-cols-1 flex flex-col -ml-2 ">
-            <div className="col-span-2 scale-90 md:scale-150 md:mt-28 md:ml-44">
+            <div className="col-span-2 md:scale-150 md:mt-28 md:ml-44 relative sm:left-5 md:-left-2">
                 <img src="/Recorte.svg" alt="placeholder" className=" object-cover" />
             </div>
             <div className="col-span-1 flex flex-col justify-center space-y-4 ml-6 mt-0 md:mt-24">

@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import Image from "next/image"
 import { ClipLoader } from "react-spinners"
 
-const ImageComponent = () => {
+const ImageComponent = ({ src, alt }) => {
   const [loading, setLoading] = useState(true)
 
   const handleOnLoad = () => {
@@ -36,12 +36,12 @@ const ImageComponent = () => {
         </div>
       )}
       <Image
-        src="/love_hero.png"
-        alt="Love hero image"
+        src={src} // Use the src prop
+        alt={alt} // Use the alt prop
         layout="fill"
         objectFit="cover"
         className="rounded-md"
-        loading="lazy"
+        priority
         onLoad={handleOnLoad}
       />
     </div>

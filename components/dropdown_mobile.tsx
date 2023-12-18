@@ -110,7 +110,7 @@ export function Dropdown_mobile() {
                   >
                     <a
                       className="flex h-[400px] w-[200px] select-none flex-col justify-end rounded-md p-6 no-underline outline-none focus:shadow-md"
-                      href="https://atlanticx.org"
+                      href="https://miss-subtitulos.app"
                     >
                     
                     </a>
@@ -133,7 +133,7 @@ export function Dropdown_mobile() {
                   >
                     <a
                       className="flex h-[400px] w-[200px] select-none flex-col justify-end rounded-md p-6 no-underline outline-none focus:shadow-md"
-                      href="https://atlanticx.org"
+                      href="https://casa-muro.vercel.app/"
                     >
                     
                     </a>
@@ -156,7 +156,7 @@ export function Dropdown_mobile() {
                   >
                     <a
                       className="flex h-[400px] w-[200px] select-none flex-col justify-end rounded-md p-6 no-underline outline-none focus:shadow-md"
-                      href="https://atlanticx.org"
+                      href="https://latinoarts.super.site/"
                     >
                       
                     </a>

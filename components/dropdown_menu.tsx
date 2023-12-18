@@ -179,7 +179,7 @@ export function Dropdown_menu() {
                                 >
                                   <div className="absolute inset-0 rounded-md bg-transparent"></div>
                                   <div className="absolute inset-0">
-                                    <ImageComponent />
+                                    <ImageComponent src="/love_hero.png" alt="Imagen de mockup" />
                                   </div>
                                 </Link>
                               </NavigationMenuLink>
