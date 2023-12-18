@@ -8,7 +8,7 @@ const ThemedImage = () => {
       <div className="hidden dark:block">
         <Image
           src="/Sin_Piso_2.svg"
-          alt="Light Theme Image"
+          alt="Dark Theme Image"
           width={500}
           height={500}
           priority={true}
@@ -17,8 +17,8 @@ const ThemedImage = () => {
       {/* Dark theme image */}
       <div className="block dark:hidden">
         <Image
-          src="/CoderGIF_3.svg"
-          alt="Dark Theme Image"
+          src="/coderGIF_3.svg"
+          alt="Light Theme Image"
           width={500}
           height={500}
           priority={true}
