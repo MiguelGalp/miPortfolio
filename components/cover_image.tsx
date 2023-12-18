@@ -1,6 +1,9 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Separator } from "@radix-ui/react-dropdown-menu"
+import CurrentMonthYear from "./current_month"
+
+import { CalendarDays } from "lucide-react"
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import {
@@ -26,7 +29,7 @@ import { Button } from "./ui/button"
 import { Input } from "./ui/input"
 import { Label } from "./ui/label"
 
-export function CoverImage() {
+const CoverImage = () => {
   return (
     <div className="flex flex-col md:flex-row-reverse min-h-screen items-center justify-between max-w-6xl mx-auto lg:-mt-20 lg:pr-16 xl:pr-8">
       <div className="flex flex-1 flex-col justify-center">
@@ -50,7 +53,32 @@ export function CoverImage() {
                 Cultura digital, juntos
               </p>
               <p className="mt-4 mx-auto lg:pr-2 xl:pr-0 lg:text-lg lg:leading-5 xl:leading-normal lg:tracking-tighter xl:tracking-tight text-gray-600 dark:text-dracula-aro-200 mr-8">
-              Mi estudio (uni-personal, junto con algunxs diseñadorxs amigxs) donde construyo objetos digitales. Me centro en la experiencia del usuario para gestionar contenidos, analizar datos y dar servicios. Lo hago para Atlanticx.org, y también podés escribirme, abajo. Trabajo con JavaScript y Python, tanto como con el diseño y la comunicación.
+              Tengo un estudio (junto con diseñadorxs amigxs) donde construyo objetos digitales. Me centro en la experiencia del usuario para gestionar contenidos, analizar datos y dar servicios fullstack. Lo hago para 
+              <HoverCard>
+      <HoverCardTrigger asChild>
+        <div className="cursor-pointer inline lg:text-lg lg:leading-5 xl:leading-normal lg:tracking-tighter xl:tracking-tight text-gray-400 dark:text-dracula-aro-200 pl-1 m-0">@atlantic.x</div>
+      </HoverCardTrigger>
+      <HoverCardContent className="w-80">
+        <div className="flex justify-between space-x-4">
+          <Avatar>
+            <AvatarImage src="/ATX_AVATAR.png" />
+            <AvatarFallback>ATX</AvatarFallback>
+          </Avatar>
+          <div className="space-y-1">
+            <h4 className="text-sm font-semibold"><Link href="https://www.instagram.com/atlantic.x">@atlantic.x</Link></h4>
+            <p className="text-sm">
+              Plataforma para escénicas. Becas para artistxs junto a <Link href="https://twitter.com/FundWilliams">@FundWilliams</Link>.
+            </p>
+            <div className="flex items-center pt-2">
+              <CalendarDays className="mr-2 h-4 w-4 opacity-70" />{" "}
+              <span className="text-xs text-muted-foreground">
+                Actualizado en <CurrentMonthYear/>
+              </span>
+            </div>
+          </div>
+        </div>
+      </HoverCardContent>
+    </HoverCard>, y también podés escribirme, abajo. Trabajo con JavaScript y Python.
               </p>
             </div>
             <div className="mt-10 flex flex-col gap-3 lg:flex-row lg:mt-5 xl:mt-6">
@@ -106,3 +134,5 @@ export function CoverImage() {
     </div>
   )
 }
+
+export default CoverImage;

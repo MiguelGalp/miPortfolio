@@ -2,7 +2,7 @@ import Head from "next/head"
 import Link from "next/link"
 
 import { siteConfig } from "@/config/site"
-import { CoverImage } from "@/components/cover_image"
+import CoverImage from "@/components/cover_image"
 import { Layout } from "@/components/layout"
 import { buttonVariants } from "@/components/ui/button"
 import Hero from "@/components/hero"
