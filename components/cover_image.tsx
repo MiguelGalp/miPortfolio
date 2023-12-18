@@ -53,7 +53,7 @@ const CoverImage = () => {
                 Cultura digital, juntos
               </p>
               <p className="mt-4 mx-auto lg:pr-2 xl:pr-0 lg:text-lg lg:leading-5 xl:leading-normal lg:tracking-tighter xl:tracking-tight text-gray-600 dark:text-dracula-nosferatu-200 mr-8">
-              Tengo un estudio (junto con diseñadorxs amigxs) donde construyo objetos digitales. Me centro en la experiencia del usuario para gestionar contenidos, analizar datos y dar servicios fullstack. Lo hago para 
+              Tengo un estudio (junto con diseñadorxs amigxs) donde construyo objetos digitales pensando la experiencia del usuario (UX) y la interface (UI). Lo hago para 
               <HoverCard>
       <HoverCardTrigger asChild>
         <div className="cursor-pointer inline lg:text-lg lg:leading-5 xl:leading-normal lg:tracking-tighter xl:tracking-tight text-gray-400 dark:text-dracula-nosferatu-600 pl-1 m-0">@atlantic.x</div>
@@ -78,7 +78,7 @@ const CoverImage = () => {
           </div>
         </div>
       </HoverCardContent>
-    </HoverCard>, y también podés escribirme, abajo. Trabajo con JavaScript y Python.
+    </HoverCard>, y también podés escribirme, abajo. Trabajo con JavaScript y Python (React/Jinja).
               </p>
             </div>
             <div className="mt-10 flex flex-col gap-3 lg:flex-row lg:mt-5 xl:mt-6">

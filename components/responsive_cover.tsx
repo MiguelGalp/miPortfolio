@@ -1,7 +1,7 @@
 import { Separator } from "@/components/ui/separator"
 import { Dialog, DialogTrigger, DialogContent } from "./ui/dialog";
 import { Button } from "./ui/button";
-
+import Link from "next/link";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import React from 'react';
 import { Label } from "./ui/label";
@@ -21,11 +21,11 @@ const ResponsiveCover = () => {
                     <h2 className="text-sm font-muted sm:text-base">Desarrollador</h2>
                 </div>
                 <h1 className="text-5xl md:text-7xl tracking-tighter font-bold md:font-bolder relative bottom-3 -ml-1 sm:mr-6 md:mr-[50vw]">CULTURA DIGITAL, JUNTOS.</h1>
-                <h3 className="mr-8 text-2xl md:text-3xl tracking-tight md:tracking-normal leading-6 md:leading-8 sm:mr-0 md:mr-10">Apps, datos, contenidos y servicios para el sector creativo.<span className="sm:hidden md:inline"> Me dedico al desarrollo de sistemas diseñados para atraer y entender a las audiencias.</span></h3>
+                <h3 className="mr-8 text-2xl md:text-3xl tracking-tight md:tracking-normal leading-6 md:leading-8 sm:mr-0 md:mr-10">Tengo un estudio (junto con diseñadorxs amigxs) donde construyo objetos digitales pensando la experiencia del usuario (UX) y la interface (UI).<span className="sm:hidden md:inline"> Lo hago para <Link href="https://instagram.com/atlantic.x">@atlantic.x</Link> y también podés escribirme, abajo.</span></h3>
             </div>
 
             <div className="col-span-2 mx-6 text-base md:text-xl leading-5">
-                <p>Utilizo un Stack moderno y económico (Next.js y Tailwind en el cliente, Python en el servidor). Trabajemos juntos para construir la herramienta que querés. Escribime hoy para discutir tu proyecto!</p>
+                <p>Trabajo con JavaScript y Python (React/Jinja), y según los objetivos del proyecto también incorporo frameworks y librerías como 11ty, Next.js, Tailwind, Bootstrap, etc.</p>
             </div>
             <div className="col-span-1 flex items-start justify-left sm:col-span-1 sm:flex justify-start py-6 px-6">
             <Dialog>
