@@ -218,6 +218,7 @@ export function Dropdown_menu() {
                                               objectFit="cover"
                                               className="rounded-md"
                                               loading="lazy"
+                                              priority
                                             />
                                           </Link>
                                         </div>
@@ -263,6 +264,7 @@ export function Dropdown_menu() {
                                             objectFit="cover"
                                             className="rounded-md"
                                             loading="lazy"
+                                            priority
                                           />
                                         </Link>
                                       </div>
@@ -304,6 +306,7 @@ export function Dropdown_menu() {
                                             objectFit="cover"
                                             className="rounded-md"
                                             loading="lazy"
+                                            priority
                                           />
                                         </Link>
                                       </div>
