@@ -53,7 +53,7 @@ const CoverImage = () => {
                 Cultura digital, juntos
               </p>
               <p className="mt-4 mx-auto lg:pr-2 xl:pr-0 lg:text-lg lg:leading-5 xl:leading-normal lg:tracking-tighter xl:tracking-tight text-gray-600 dark:text-dracula-nosferatu-200 mr-8">
-              Tengo un estudio (junto con diseñadorxs amigxs) donde construyo objetos digitales pensando la experiencia del usuario (UX) y la interface (UI). Lo hago para 
+              Tengo un estudio (junto con diseñadorxs amigxs) donde construyo objetos digitales pensando en la experiencia del usuario (UX) y en la interface (UI). Lo hago para 
               <HoverCard>
       <HoverCardTrigger asChild>
         <div className="cursor-pointer inline lg:text-lg lg:leading-5 xl:leading-normal lg:tracking-tighter xl:tracking-tight text-gray-400 dark:text-dracula-nosferatu-600 pl-1 m-0">@atlantic.x</div>
