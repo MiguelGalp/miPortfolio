@@ -141,7 +141,7 @@ export function Dropdown_menu() {
           className="relative bottom-[2.5px] hidden md:flex scale-110 p-1 hover:bg-slate-200 focus:ring-1 md:mt-1 md:mb-0.5"
         >
           <Avatar>
-            <AvatarImage src="/AvatarMaker (1).png" className="opacity-[.93]" />
+            <AvatarImage src="/AvatarMaker (1).png" className="dark:invert-[20%] dark:sepia-[0%] dark:saturate-[1822%] dark:hue-rotate-[188deg] dark:brightness-[3%] dark:contrast-[18%]" />
             <AvatarFallback>MG</AvatarFallback>
           </Avatar>
 
@@ -216,8 +216,7 @@ export function Dropdown_menu() {
                                               width={500} // adjust as needed
                                               height={300} // adjust as needed
                                               objectFit="cover"
-                                              className="rounded-md"
-                                              loading="lazy"
+                                              className="rounded-md" 
                                               priority
                                             />
                                           </Link>
@@ -263,7 +262,6 @@ export function Dropdown_menu() {
                                             height={300} // adjust as needed
                                             objectFit="cover"
                                             className="rounded-md"
-                                            loading="lazy"
                                             priority
                                           />
                                         </Link>
@@ -304,8 +302,7 @@ export function Dropdown_menu() {
                                             width={500} // adjust as needed
                                             height={300} // adjust as needed
                                             objectFit="cover"
-                                            className="rounded-md"
-                                            loading="lazy"
+                                            className="rounded-md" 
                                             priority
                                           />
                                         </Link>
