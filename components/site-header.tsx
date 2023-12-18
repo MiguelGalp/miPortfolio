@@ -44,7 +44,7 @@ import { Dropdown_menu } from "./dropdown_menu"
 
 export function SiteHeader() {
   return (
-    <header className="sticky z-10 dark:bg-nosferatu-400  md:top-2 md:max-md:bg-blue-200 md:bg-transparent">
+    <header className="sticky z-10 dark:bg-nosferatu-400 md:top-2 dark:text-dracula-nosferatu-100">
       <div className="container flex h-16 items-center space-x-2 bg-transparent sm:justify-between sm:space-x-2">
         <MainNav items={siteConfig.mainNav} />
         <Dropdown_menu />
@@ -60,10 +60,10 @@ export function SiteHeader() {
                 className={buttonVariants({
                   size: "sm",
                   variant: "ghost",
-                  className: "text-slate-700 dark:text-dracula-aro-50",
+                  className: "text-slate-700 dark:text-dracula-nosferatu-100",
                 })}
               >
-                <Icons.gitHub className="h-5 w-5" />
+                <Icons.gitHub className="h-5 w-5 fill-transparent" />
                 <span className="sr-only">GitHub</span>
               </div>
             </Link>
@@ -76,10 +76,10 @@ export function SiteHeader() {
                 className={buttonVariants({
                   size: "sm",
                   variant: "ghost",
-                  className: "text-slate-700 dark:text-dracula-aro-50",
+                  className: "text-slate-700 dark:text-dracula-aro-100",
                 })}
               >
-                <Icons.twitter className="relative left-[1.5px] h-5 w-5 fill-current" />
+                <Icons.twitter className="relative left-[1.5px] h-5 w-5 fill-current dark:fill-transparent" />
                 <span className="sr-only">Twitter</span>
               </div>
             </Link>

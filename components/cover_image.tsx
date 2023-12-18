@@ -2,7 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Separator } from "@radix-ui/react-dropdown-menu"
 import CurrentMonthYear from "./current_month"
-
+import Themed_Image from "./themed_image"
 import { CalendarDays } from "lucide-react"
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
@@ -39,24 +39,24 @@ const CoverImage = () => {
               <span className="inline-flex items-center text-black lg:mb-4 xl:mb-0">
                 {" "}
                 <span
-                  className="font-mono text-sm dark:text-dracula-aro-100"
+                  className="font-mono text-sm dark:text-dracula-nosferatu-100"
                   aria-hidden="true"
                 >
                   MG
                 </span>
                 <span className="ml-3 h-3.5 w-px bg-black dark:bg-slate-100"></span>
-                <span className="ml-3 text-base font-medium tracking-tight dark:text-dracula-aro-100">
+                <span className="ml-3 text-base font-medium tracking-tight dark:text-dracula-nosferatu-100">
                   Desarrollador
                 </span>{" "}
               </span>
-              <p className="font-display lg:-mt-2 xl:mt-2 lg:text-5xl tracking-tighter text-black dark:text-dracula-aro-50">
+              <p className="font-display lg:-mt-2 xl:mt-2 lg:text-5xl tracking-tighter text-black dark:text-dracula-nosferatu-100">
                 Cultura digital, juntos
               </p>
-              <p className="mt-4 mx-auto lg:pr-2 xl:pr-0 lg:text-lg lg:leading-5 xl:leading-normal lg:tracking-tighter xl:tracking-tight text-gray-600 dark:text-dracula-aro-200 mr-8">
+              <p className="mt-4 mx-auto lg:pr-2 xl:pr-0 lg:text-lg lg:leading-5 xl:leading-normal lg:tracking-tighter xl:tracking-tight text-gray-600 dark:text-dracula-nosferatu-200 mr-8">
               Tengo un estudio (junto con diseñadorxs amigxs) donde construyo objetos digitales. Me centro en la experiencia del usuario para gestionar contenidos, analizar datos y dar servicios fullstack. Lo hago para 
               <HoverCard>
       <HoverCardTrigger asChild>
-        <div className="cursor-pointer inline lg:text-lg lg:leading-5 xl:leading-normal lg:tracking-tighter xl:tracking-tight text-gray-400 dark:text-dracula-aro-200 pl-1 m-0">@atlantic.x</div>
+        <div className="cursor-pointer inline lg:text-lg lg:leading-5 xl:leading-normal lg:tracking-tighter xl:tracking-tight text-gray-400 dark:text-dracula-nosferatu-600 pl-1 m-0">@atlantic.x</div>
       </HoverCardTrigger>
       <HoverCardContent className="w-80">
         <div className="flex justify-between space-x-4">
@@ -84,7 +84,7 @@ const CoverImage = () => {
             <div className="mt-10 flex flex-col gap-3 lg:flex-row lg:mt-5 xl:mt-6">
               <Dialog>
                 <DialogTrigger className="z-50">
-                  <Button className="dark:bg-dracula-aro-50">Contacto</Button>
+                  <Button className="dark:bg-dracula-nosferatu-300">Contacto</Button>
                 </DialogTrigger>
                 <div className="flex items-center justify-center bg-white">
                   <DialogContent className="sm:max-w-[425px]">
@@ -121,14 +121,8 @@ const CoverImage = () => {
         </div>
       </div>
       <div className="flex flex-1 items-center -ml-20">
-        <div className="lg:pl-48 xl:pl-36 relative lg:left-10 xl:left-6">
-          <Image
-            src="/coderGIF_3.svg"
-            alt=""
-            width={500}
-            height={500}
-            priority={true}
-          />
+        <div className="lg:pl-48 xl:pl-36 relative lg:left-10 xl:left-6 dark:opacity-90">
+          <Themed_Image />
         </div>
       </div>
     </div>

@@ -17,7 +17,7 @@ export function ThemeToggle() {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" size="sm">
-          <Icons.sun className="hover:text-slate-900 dark:text-dracula-aro-50 dark:hover:text-slate-400" />
+          <Icons.sun className="hover:text-slate-900 dark:text-dracula-nosferatu-100 dark:hover:text-slate-400" />
           <span className="sr-only">Toggle theme</span>
         </Button>
       </DropdownMenuTrigger>
