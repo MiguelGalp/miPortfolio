@@ -1,3 +1,4 @@
+"use client"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "./footer"
 import { Analytics } from "@vercel/analytics/react"

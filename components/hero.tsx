@@ -1,3 +1,4 @@
+"user client"
 import { useMediaQuery } from 'react-responsive'
 import CoverImage from './cover_image'
 import ResponsiveCover from './responsive_cover'
