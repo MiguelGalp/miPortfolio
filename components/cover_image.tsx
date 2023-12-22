@@ -53,32 +53,32 @@ const CoverImage = () => {
                 Cultura digital, juntos
               </p>
               <p className="mt-4 mx-auto lg:pr-2 xl:pr-0 lg:text-lg lg:leading-5 xl:leading-normal lg:tracking-tighter xl:tracking-tight text-gray-600 dark:text-dracula-nosferatu-200 mr-8">
-              Tengo un estudio (junto con diseñadorxs amigxs) donde construyo objetos digitales pensando en la experiencia del usuario (UX) y en la interface (UI). Lo hago para 
-              <HoverCard>
-      <HoverCardTrigger asChild>
-        <div className="cursor-pointer inline lg:text-lg lg:leading-5 xl:leading-normal lg:tracking-tighter xl:tracking-tight text-gray-400 dark:text-dracula-nosferatu-600 pl-1 m-0">@atlantic.x</div>
-      </HoverCardTrigger>
-      <HoverCardContent className="w-80">
-        <div className="flex justify-between space-x-4">
-          <Avatar>
-            <AvatarImage src="/ATX_AVATAR.png" />
-            <AvatarFallback>ATX</AvatarFallback>
-          </Avatar>
-          <div className="space-y-1">
-            <h4 className="text-sm font-semibold"><Link href="https://www.instagram.com/atlantic.x">@atlantic.x</Link></h4>
-            <p className="text-sm">
-              Plataforma para escénicas. Becas para artistxs junto a <Link href="https://twitter.com/FundWilliams">@FundWilliams</Link>.
-            </p>
-            <div className="flex items-center pt-2">
-              <CalendarDays className="mr-2 h-4 w-4 opacity-70" />{" "}
-              <span className="text-xs text-muted-foreground">
-                Actualizado en <CurrentMonthYear/>
-              </span>
-            </div>
-          </div>
-        </div>
-      </HoverCardContent>
-    </HoverCard>, y también podés escribirme, abajo. Trabajo con JavaScript y Python (React/Jinja).
+                Tengo un estudio (junto con diseñadorxs amigxs) donde construyo objetos digitales pensando en la experiencia del usuario (UX) y en la interface (UI). Lo hago para
+                <HoverCard>
+                  <HoverCardTrigger asChild>
+                    <div className="cursor-pointer inline lg:text-lg lg:leading-5 xl:leading-normal lg:tracking-tighter xl:tracking-tight text-gray-400 dark:text-dracula-nosferatu-600 pl-1 m-0">@atlantic.x</div>
+                  </HoverCardTrigger>
+                  <HoverCardContent className="w-80">
+                    <div className="flex justify-between space-x-4">
+                      <Avatar>
+                        <AvatarImage src="/ATX_AVATAR.png" />
+                        <AvatarFallback>ATX</AvatarFallback>
+                      </Avatar>
+                      <div className="space-y-1">
+                        <h4 className="text-sm font-semibold"><Link href="https://www.instagram.com/atlantic.x">@atlantic.x</Link></h4>
+                        <p className="text-sm">
+                          Plataforma para escénicas. Becas para artistxs junto a <Link href="https://twitter.com/FundWilliams">@FundWilliams</Link>.
+                        </p>
+                        <div className="flex items-center pt-2">
+                          <CalendarDays className="mr-2 h-4 w-4 opacity-70" />{" "}
+                          <span className="text-xs text-muted-foreground">
+                            Actualizado en <CurrentMonthYear />
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </HoverCardContent>
+                </HoverCard>, y también podés escribirme, abajo. Trabajo con JavaScript y Python (React/Jinja).
               </p>
             </div>
             <div className="mt-10 flex flex-col gap-3 lg:flex-row lg:mt-5 xl:mt-6">

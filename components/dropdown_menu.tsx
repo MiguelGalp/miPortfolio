@@ -290,7 +290,7 @@ export function Dropdown_menu() {
                                   <div className="flex justify-between space-x-4">
 
                                     <div className="space-y-1">
-                                      <h4 className="text-sm font-semibold"><Link href={"https://twitter.com/MissSubtitulos"}>@MissSubtitulos</Link></h4>
+                                      <h4 className="text-sm font-semibold"><Link href={""}>@OdioOído</Link></h4>
                                       <p className="text-sm mb-4">
                                         Scrapeo de datos de redes para su visualización y análisis <Link href={"https://twitter-temperature.onrender.com/"}>Proyecto en desarrollo</Link>, con un objetivo educativo.
                                       </p>

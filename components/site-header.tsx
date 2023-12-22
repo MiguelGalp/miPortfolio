@@ -63,7 +63,7 @@ export function SiteHeader() {
                   className: "text-slate-700 dark:text-dracula-nosferatu-100",
                 })}
               >
-                <Icons.gitHub className="h-5 w-5 fill-transparent" />
+                <Icons.gitHub className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
               </div>
             </Link>
@@ -79,7 +79,7 @@ export function SiteHeader() {
                   className: "text-slate-700 dark:text-dracula-aro-100",
                 })}
               >
-                <Icons.twitter className="relative left-[1.5px] h-5 w-5 fill-current dark:fill-transparent" />
+                <Icons.twitter className="relative left-[1.5px] h-5 w-5 fill-current dark:fill-black-50" />
                 <span className="sr-only">Twitter</span>
               </div>
             </Link>
