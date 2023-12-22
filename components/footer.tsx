@@ -1,4 +1,4 @@
-"use client"
+
 
 import { CircleDot, Copyright } from "lucide-react"
 

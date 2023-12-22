@@ -1,4 +1,4 @@
-"use client";
+
 import { Suspense } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import CoverImage from './cover_image';
