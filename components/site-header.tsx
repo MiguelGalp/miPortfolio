@@ -40,7 +40,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { DemoIndicator } from "./demo_indicator"
-import { Dropdown_menu } from "./dropdown_menu"
+import Dropdown_menu from "./dropdown_menu"
 
 export function SiteHeader() {
   return (

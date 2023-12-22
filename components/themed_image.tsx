@@ -28,7 +28,7 @@ const ThemedImage = () => {
           <ClipLoader />
         </div>
       )}
-        <>
+        
           {/* Light theme image */}
           <div className="hidden dark:block">
             <img
@@ -49,7 +49,7 @@ const ThemedImage = () => {
               className="max-w-full max-h-full"
             />
           </div>
-        </>
+        
     </div>
   );
 };

@@ -131,7 +131,7 @@ const CustomNavigationMenu = ({ children, ...props }) => {
 
 
 
-export function Dropdown_menu() {
+export default function Dropdown_menu() {
   const { theme } = useTheme()
   return (
     <DropdownMenu>
