@@ -125,7 +125,7 @@ const CoverImage = () => {
       </div>
       <div className="flex flex-1 items-center -ml-20">
         <div className="lg:pl-48 xl:pl-36 relative lg:left-10 xl:left-6 dark:opacity-90">
-          <Themed_Image />
+          <Themed_Image width={500} height={500} />
         </div>
       </div>
     </div>

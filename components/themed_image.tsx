@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { ClipLoader } from 'react-spinners';
 import Image from 'next/image';
 
-const ThemedImage = () => {
+const ThemedImage = ({ width, height })  => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -35,8 +35,10 @@ const ThemedImage = () => {
             <Image
               src="/Sin_Piso_2.svg"
               alt="Dark Theme Image"
-              fill
-              loading='lazy'
+              width={width}
+              height={height}
+              className="max-w-full max-h-full"
+              loading='eager'
             />
           </div>
           {/* Dark theme image */}
@@ -44,8 +46,10 @@ const ThemedImage = () => {
             <Image
               src="/coderGIF_3.svg"
               alt="Light Theme Image"
-              fill
-              loading='lazy'
+              width={width}
+              height={height}
+              className="max-w-full max-h-full"
+              loading='eager'
             />
           </div>
         
