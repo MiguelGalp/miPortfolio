@@ -1,5 +1,6 @@
 "use client"
 import { useState, useEffect } from 'react';
+import { ClipLoader } from 'react-spinners';
 
 const ThemedImage = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -10,9 +11,23 @@ const ThemedImage = () => {
 
   return (
     <div className="relative" style={{ width: 500, height: 500 }}>
-      {isLoading ? (
-        <div>Loading...</div>
-      ) : (
+      {isLoading && (
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            backgroundColor: "rgba(0, 0, 0, 0)",
+          }}
+        >
+          <ClipLoader />
+        </div>
+      )}
         <>
           {/* Light theme image */}
           <div className="hidden dark:block">
@@ -35,7 +50,6 @@ const ThemedImage = () => {
             />
           </div>
         </>
-      )}
     </div>
   );
 };
