@@ -35,10 +35,8 @@ const ThemedImage = () => {
             <Image
               src="/Sin_Piso_2.svg"
               alt="Dark Theme Image"
-              width={500}
-              height={500}
-              className="max-w-full max-h-full"
-              loading='eager'
+              fill
+              loading='lazy'
             />
           </div>
           {/* Dark theme image */}
@@ -46,10 +44,8 @@ const ThemedImage = () => {
             <Image
               src="/coderGIF_3.svg"
               alt="Light Theme Image"
-              width={500}
-              height={500}
-              className="max-w-full max-h-full"
-              loading='eager'
+              fill
+              loading='lazy'
             />
           </div>
         
