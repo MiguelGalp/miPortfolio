@@ -1,3 +1,4 @@
+"use client"
 import { Separator } from "@/components/ui/separator"
 import { Dialog, DialogTrigger, DialogContent } from "./ui/dialog";
 import { Button } from "./ui/button";
