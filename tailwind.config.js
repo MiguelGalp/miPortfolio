@@ -1,4 +1,4 @@
-const { fontFamily } = require("tailwindcss/defaultTheme")
+const { fontFamily } = require("tailwindcss/defaultTheme");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -9,7 +9,6 @@ module.exports = {
       center: true,
       padding: "1.5rem",
       screens: {
-        
         "2xl": "1360px",
       },
     },
@@ -17,6 +16,10 @@ module.exports = {
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
       },
+      backgroundImage: theme => ({
+        'light-hero': "url('/coderGIF_3.svg')",
+        'dark-hero': "url('/Sin_Piso_2.svg')",
+      }),
       keyframes: {
         "accordion-down": {
           from: { height: 0 },
@@ -34,5 +37,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate"), require('tailwind-dracula')('dracula', true), require("tailwind-gradient-mask-image") ],
-  
 }
