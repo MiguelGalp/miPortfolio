@@ -6,7 +6,7 @@ export default function Document() {
   return (
     <Html lang="es">
       <Head />
-      <body className="min-h-screen overflow-x-hidden font-sans text-slate-900 antialiased dark:text-slate-100">
+      <body className="min-h-screen overflow-x-hidden font-sans antialiased">
         <Main />
         <NextScript />
         <Analytics />
