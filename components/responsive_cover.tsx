@@ -38,7 +38,7 @@ const ResponsiveCover = () => {
       <div className="col-span-1 flex items-start justify-left sm:col-span-1 sm:flex justify-start py-6 px-6">
         <Dialog>
           <DialogTrigger className="z-50">
-            <Button className="dark:bg-dracula-aro-50 sm:text-base md:text-xl">Contacto</Button>
+            <Button className="dark:bg-dracula-nosferatu-100 sm:text-base dark:text-dracula-nosferatu-900 md:text-xl">Contacto</Button>
           </DialogTrigger>
           <div className="flex items-center justify-center bg-white">
             <DialogContent className="sm:max-w-[425px]">
@@ -62,7 +62,7 @@ const ResponsiveCover = () => {
                   <Label htmlFor="name" className=""></Label>
                 </div>
                 <div className="-ml[1px] mb-16 w-full">
-                  <div className="rounded-md bg-gray-100 p-6">
+                  <div className="rounded-md bg-gray-100 dark:bg-dracula-aro-200 p-6">
                     <ContactForm />
                   </div>
                 </div>

@@ -41,17 +41,17 @@ const CoverImage = () => {
               <span className="inline-flex items-center text-black lg:mb-4 xl:mb-0">
                 {" "}
                 <span
-                  className="font-mono text-sm dark:text-dracula-nosferatu-100"
+                  className="font-mono text-sm dark:text-dracula-nosferatu-200"
                   aria-hidden="true"
                 >
                   MG
                 </span>
-                <span className="ml-3 h-3.5 w-px bg-black dark:bg-slate-100"></span>
-                <span className="ml-3 text-base font-medium tracking-tight dark:text-dracula-nosferatu-100">
+                <span className="ml-3 h-3.5 w-px bg-black dark:bg-dracula-nosferatu-200"></span>
+                <span className="ml-3 text-base font-medium tracking-tight dark:text-dracula-nosferatu-200">
                   Desarrollador
                 </span>{" "}
               </span>
-              <p className="font-display lg:-mt-2 xl:mt-2 lg:text-5xl tracking-tighter text-black dark:text-dracula-nosferatu-100">
+              <p className="font-display lg:-mt-2 xl:mt-2 lg:text-5xl tracking-tighter text-black dark:text-dracula-nosferatu-200">
                 Cultura digital, juntos
               </p>
               <p className="mt-4 mx-auto lg:pr-2 xl:pr-0 lg:text-lg lg:leading-5 xl:leading-normal lg:tracking-tighter xl:tracking-tighter text-gray-600 dark:text-dracula-nosferatu-200 mr-8">
