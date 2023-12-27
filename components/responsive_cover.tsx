@@ -13,17 +13,17 @@ import Image from "next/image";
 
 const ResponsiveCover = () => {
   return (
-    <div className="container gap-4 grid-cols-1 flex flex-col -ml-2 dark:bg-dracula-nosferatu-900 ">
-      <div className="col-span-full relative right-24 md:right-28 md:scale-125 md:mt-28">
+    <div className="container gap-4 grid-cols-1 flex flex-col dark:bg-[#121212]">
+      <div className="col-span-1 flex flex-col justify-start space-y-4 ml-6 md:scale-125 mt-10 md:mt-28">
         <Image
-          src="/Recorte_2.svg"
+          src="/Recorte_2.png"
           alt="placeholder"
           height={500}
           width={500}
         />
       </div>
-      <div className="col-span-1 flex flex-col justify-center space-y-4 ml-6 mt-0 md:mt-24">
-        <div className="flex items-center">
+      <div className="col-span-1 flex flex-col justify-start space-y-4 ml-6 mt-0 md:mt-24">
+        <div className="flex items-start">
           <h2 className="font-muted sm:text-base dark:text-dracula-nosferatu-100">MG</h2>
           ⎟
           <h2 className="text-sm font-muted sm:text-base dark:text-dracula-nosferatu-100 ">Desarrollador</h2>

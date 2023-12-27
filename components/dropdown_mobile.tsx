@@ -62,7 +62,7 @@ export function Dropdown_mobile() {
           className="relative right-1 bottom-0 p-2 md:hidden"
         >
           <Avatar>
-            <AvatarImage src="/AvatarMaker (1).png" className="" />
+            <AvatarImage src="/AvatarMaker (1).png" className="dark:invert-[20%] dark:sepia-[0%] dark:saturate-[1822%] dark:hue-rotate-[188deg] dark:brightness-[3%] dark:contrast-[18%]" />
             <AvatarFallback>MG</AvatarFallback>
           </Avatar>
 
