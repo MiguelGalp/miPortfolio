@@ -41,7 +41,7 @@ const CoverImage = () => {
               <span className="inline-flex items-center text-black lg:mb-4 xl:mb-0">
                 {" "}
                 <span
-                  className="text-base font-medium tracking-tight dark:text-dracula-nosferatu-200 scale-90 mt-[0.5px] tracking-[-1.7px]"
+                  className="text-base font-medium dark:text-dracula-nosferatu-200 scale-90 mt-[0.5px] tracking-[-1.7px]"
                   aria-hidden="true"
                 >
                   MG
