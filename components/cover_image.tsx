@@ -82,7 +82,7 @@ const CoverImage = () => {
                       </div>
                     </HoverCardContent>
                   </HoverCard>
-                </div>Trabajo con JavaScript y Python (React/Jinja). Si te interesa que trabajemos juntos escribime.
+                </div>Trabajo con JavaScript y Python (Flask/Jinja). Si te interesa que trabajemos juntos escribime.
               </p>
             </div>
             <div className="mt-10 flex flex-col gap-3 lg:flex-row lg:mt-5 xl:mt-6">
