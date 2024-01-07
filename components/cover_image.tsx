@@ -41,7 +41,7 @@ const CoverImage = () => {
               <span className="inline-flex items-center text-black lg:mb-4 xl:mb-0">
                 {" "}
                 <span
-                  className="font-mono text-sm dark:text-dracula-nosferatu-200"
+                  className="text-base font-medium tracking-tight dark:text-dracula-nosferatu-200 scale-90 mt-[0.5px] tracking-[-1.7px]"
                   aria-hidden="true"
                 >
                   MG
@@ -82,7 +82,7 @@ const CoverImage = () => {
                       </div>
                     </HoverCardContent>
                   </HoverCard>
-                </div> También podés escribirme, abajo. Trabajo con JavaScript y Python (React/Jinja).
+                </div>Trabajo con JavaScript y Python (React/Jinja). Si te interesa que trabajemos juntos escribime.
               </p>
             </div>
             <div className="mt-10 flex flex-col gap-3 lg:flex-row lg:mt-5 xl:mt-6">
