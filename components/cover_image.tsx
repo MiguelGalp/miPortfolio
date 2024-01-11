@@ -34,9 +34,9 @@ import { Label } from "./ui/label"
 const CoverImage = () => {
   return (
     <div className="flex flex-col md:flex-row-reverse min-h-screen items-center justify-between max-w-6xl mx-auto lg:-mt-20 lg:pr-16 xl:pr-8">
-      <div className="flex flex-1 flex-col justify-center">
+      <div className="flex flex-1 flex-col justify-center xl:-mt-2">
         <div className="mx-auto w-full lg:max-w-xl">
-          <div className="mx-auto max-w-lg text-center lg:text-left lg:mt-8 xl:mt-10">
+          <div className="mx-auto max-w-lg text-center lg:text-left xl:mt-10">
             <div>
               <span className="inline-flex items-center text-black lg:mb-4 xl:mb-0">
                 {" "}
@@ -125,8 +125,8 @@ const CoverImage = () => {
         </div>
       </div>
       <div className="flex flex-1 items-center -ml-20">
-        <div className="lg:pl-48 xl:pl-36 relative lg:left-10 xl:left-6 dark:opacity-90">
-          <Themed_Image width={500} height={500} />
+        <div className="lg:pt-10 xl:pt-12 lg:pl-44 xl:pl-32 relative lg:left-12 xl:left-16 dark:opacity-90">
+          <Themed_Image width={450} height={450} />
         </div>
       </div>
     </div>
