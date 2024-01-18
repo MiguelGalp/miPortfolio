@@ -67,7 +67,7 @@ const CoverImage = () => {
                           <AvatarImage src="/ATX_AVATAR.png" />
                           <AvatarFallback>ATX</AvatarFallback>
                         </Avatar>
-                        <div className="space-y-1">
+                        <div className="space-y-0">
                           <h4 className="text-sm font-semibold"><Link href="https://www.instagram.com/atlantic.x">@atlantic.x</Link></h4>
                           <p className="text-sm">
                             Plataforma para escénicas. Becas para artistxs junto a <Link href="https://twitter.com/FundWilliams">@FundWilliams</Link>.

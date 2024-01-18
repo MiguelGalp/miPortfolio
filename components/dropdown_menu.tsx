@@ -190,11 +190,11 @@ export default function Dropdown_menu() {
                               title="Diseño de UX/UI"
                             >
 
-                              Gestión de contenidos y experiencias centradas en los usuarios.
+                              <div className="mt-1">Gestión de contenidos y experiencias centradas en los usuarios.<br /></div>
                               <CustomHoverCard>
                                 <CustomHoverCard>
-                                  <HoverCardTrigger className="ml-1 hover:brightness-50">
-                                    Ver un caso →
+                                  <HoverCardTrigger className="hover:brightness-0">
+                                    <div className="mt-2 opacity-75">Ver un caso</div>
                                   </HoverCardTrigger>
                                   <CustomHoverCardContent className="w-[350px] backdrop-blur-3xl backdrop-contrast-125 bg-white/30 p-4 rounded-md shadow-md dark:bg-slate-800">
                                     <div className="flex justify-between space-x-4">
@@ -237,11 +237,11 @@ export default function Dropdown_menu() {
 
                               title="E-commerce"
                             >
-                              Desarrollo FullStack de soluciones rápidas y económicas para ventas online.
+                              <div className="mt-1">Desarrollo FullStack de soluciones rápidas y económicas para ventas online.<br /></div>
                               <CustomHoverCard>
-                                <HoverCardTrigger className="ml-1">
-                                  Ver un caso →
-                                </HoverCardTrigger>
+                              <HoverCardTrigger className="hover:brightness-0">
+                                    <div className="mt-2 opacity-75">Ver un caso</div>
+                                  </HoverCardTrigger>
                                 <CustomHoverCardContent className="w-[350px] backdrop-blur-3xl backdrop-contrast-125 bg-white/30 p-4 rounded-md shadow-md dark:bg-slate-800">
                                   <div className="flex justify-between space-x-4">
                                     <Avatar>
@@ -281,11 +281,11 @@ export default function Dropdown_menu() {
 
                               title="Datos"
                             >
-                              Análisis y visualización de datos.
+                              <div className="mt-1">Análisis y visualización de datos.</div>
                               <CustomHoverCard>
-                                <HoverCardTrigger className="">
-                                  Ver un caso →
-                                </HoverCardTrigger>
+                              <HoverCardTrigger className="hover:brightness-0">
+                                    <div className="mt-2 opacity-75">Ver un caso</div>
+                                  </HoverCardTrigger>
                                 <CustomHoverCardContent className="w-[350px] backdrop-blur-3xl backdrop-contrast-125 bg-white/30 p-4 rounded-md shadow-md dark:bg-slate-800">
                                   <div className="flex justify-between space-x-4">
 
@@ -464,7 +464,7 @@ const ListItem = React.forwardRef<
           {...props}
         >
           <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-slate-500 dark:text-slate-400">
+          <p className="line-clamp-2 text-sm leading-[0.9rem] text-slate-500 dark:text-slate-400">
             {children}
           </p>
         </a>
