@@ -46,7 +46,7 @@ import Dropdown_menu from "./dropdown_menu"
 export function SiteHeader() {
   return (
     <header className="sticky z-10 md:top-2 dark:text-dracula-nosferatu-100">
-      <div className="container flex h-16 items-center space-x-2 dark:bg-[#121212] sm:justify-between sm:space-x-2">
+      <div className="container flex h-16 items-center space-x-2 dark:bg-[#121212] w-11/12 md:w-auto">
         <MainNav items={siteConfig.mainNav} />
         <Dropdown_menu />
 
