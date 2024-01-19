@@ -3,8 +3,6 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Separator } from "@radix-ui/react-dropdown-menu"
-import CurrentMonthYear from "./current_month"
-import Themed_Image from "./themed_image"
 import { CalendarDays } from "lucide-react"
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
@@ -27,54 +25,73 @@ import extraLargeImage from "../public/extraLargeImage.png"
 import mediumImage from "../public/mediumImage.png"
 import smallImage from "../public/smallImage.png"
 import ContactForm from "./contact_form"
+import CurrentMonthYear from "./current_month"
+import Themed_Image from "./themed_image"
 import { Button } from "./ui/button"
 import { Input } from "./ui/input"
 import { Label } from "./ui/label"
 
 const CoverImage = () => {
   return (
-    <div className="flex flex-col md:flex-row-reverse min-h-screen items-center justify-between max-w-6xl mx-auto lg:-mt-20 lg:pr-16 xl:pr-8">
+    <div className="mx-auto flex min-h-screen max-w-6xl flex-col items-center justify-between md:flex-row-reverse lg:-mt-20 lg:pr-16 xl:pr-8">
       <div className="flex flex-1 flex-col justify-center xl:-mt-2">
         <div className="mx-auto w-full lg:max-w-xl">
           <div className="mx-auto max-w-lg text-center lg:text-left xl:mt-10">
             <div>
               <span className="inline-flex items-center text-black lg:mb-4 xl:mb-0">
-                {" "}
-                <span
-                  className="text-base font-medium dark:text-dracula-nosferatu-200 scale-90 mt-[0.5px] tracking-[-1.7px]"
-                  aria-hidden="true"
-                >
-                  MG
-                </span>
+                <div className="flex h-6 w-6 z-99 ml-1 mb-1 items-center justify-center rounded-full border-2 border-white dark:border-dracula-nosferatu-200 bg-transparent">
+                  <span
+                    className="-z-50 -ml-[0.8rem] mt-1 relative left-1 mt-[0.5px] scale-90 text-base font-medium tracking-[-3.7px] dark:text-dracula-nosferatu-200"
+                    aria-hidden="true"
+                  >
+                    MG
+                  </span>
+                </div>
                 <span className="ml-3 h-3.5 w-px bg-black dark:bg-dracula-nosferatu-200"></span>
-                <span className="ml-3 text-base font-medium tracking-tight dark:text-dracula-nosferatu-200">
+                <span className="ml-3 text-base font-medium tracking-tight text-black dark:text-dracula-nosferatu-200">
                   Desarrollador
-                </span>{" "}
+                </span>
               </span>
-              <p className="font-display lg:-mt-2 xl:mt-2 lg:text-5xl tracking-tighter text-black dark:text-dracula-nosferatu-200">
+              <p className="font-display tracking-tighter text-black dark:text-dracula-nosferatu-200 lg:-mt-2 lg:text-5xl xl:mt-2">
                 Cultura digital, juntos
               </p>
-              <p className="mt-4 mx-auto lg:pr-2 xl:pr-0 lg:text-lg lg:leading-5 xl:leading-normal lg:tracking-tighter xl:tracking-tighter text-gray-600 dark:text-dracula-nosferatu-200 mr-8">
-                Tengo un estudio (junto con diseñadorxs amigxs) donde construyo objetos digitales pensando en la experiencia del usuario (UX) y en la interface (UI). Lo hago para
+              <p className="mx-auto mt-4 mr-8 text-gray-600 dark:text-dracula-nosferatu-200 lg:pr-2 lg:text-lg lg:leading-5 lg:tracking-tighter xl:pr-0 xl:leading-normal xl:tracking-tighter">
+                Tengo un estudio (junto con diseñadorxs amigxs) donde construyo
+                objetos digitales pensando en la experiencia del usuario (UX) y
+                en la interface (UI). Lo hago para
                 <div className="relative inline-block">
                   <HoverCard>
                     <HoverCardTrigger asChild>
-                      <div className="cursor-pointer inline lg:text-lg lg:leading-5 xl:leading-normal lg:tracking-tighter xl:tracking-tight text-gray-400 dark:text-dracula-nosferatu-600 m-0">&nbsp;@atlantic.x<span className="inline text-gray-600 dark:text-dracula-nosferatu-200">.</span></div>
+                      <div className="m-0 inline cursor-pointer text-gray-400 dark:text-dracula-nosferatu-600 lg:text-lg lg:leading-5 lg:tracking-tighter xl:leading-normal xl:tracking-tight">
+                        &nbsp;@atlantic.x
+                        <span className="inline text-gray-600 dark:text-dracula-nosferatu-200">
+                          .
+                        </span>
+                      </div>
                     </HoverCardTrigger>
-                    <HoverCardContent className="w-80 z-50">
+                    <HoverCardContent className="z-50 w-80">
                       <div className="flex justify-between space-x-4">
                         <Avatar>
                           <AvatarImage src="/ATX_AVATAR.png" />
                           <AvatarFallback>ATX</AvatarFallback>
                         </Avatar>
                         <div className="space-y-0">
-                          <h4 className="text-sm font-semibold"><Link href="https://www.instagram.com/atlantic.x">@atlantic.x</Link></h4>
+                          <h4 className="text-sm font-semibold">
+                            <Link href="https://www.instagram.com/atlantic.x">
+                              @atlantic.x
+                            </Link>
+                          </h4>
                           <p className="text-sm">
-                            Plataforma para escénicas. Becas para artistxs junto a <Link href="https://twitter.com/FundWilliams">@FundWilliams</Link>.
+                            Plataforma para escénicas. Becas para artistxs junto
+                            a{" "}
+                            <Link href="https://twitter.com/FundWilliams">
+                              @FundWilliams
+                            </Link>
+                            .
                           </p>
                           <div className="flex items-center pt-2">
                             <CalendarDays className="mr-2 h-4 w-4 opacity-70" />{" "}
-                            <span className="text-xs text-muted-foreground">
+                            <span className="text-muted-foreground text-xs">
                               Actualizado en <CurrentMonthYear />
                             </span>
                           </div>
@@ -82,13 +99,17 @@ const CoverImage = () => {
                       </div>
                     </HoverCardContent>
                   </HoverCard>
-                </div>Trabajo con JavaScript y Python (Flask/Jinja). Si te interesa que trabajemos juntos escribime.
+                </div>
+                Trabajo con JavaScript y Python (Flask/Jinja). Si te interesa
+                que trabajemos juntos escribime.
               </p>
             </div>
-            <div className="mt-10 flex flex-col gap-3 lg:flex-row lg:mt-5 xl:mt-6">
+            <div className="mt-10 flex flex-col gap-3 lg:mt-5 lg:flex-row xl:mt-6">
               <Dialog>
                 <DialogTrigger className="z-10">
-                  <Button className="dark:bg-dracula-nosferatu-300">Contacto</Button>
+                  <Button className="dark:bg-dracula-nosferatu-300">
+                    Contacto
+                  </Button>
                 </DialogTrigger>
                 <div className="flex items-center justify-center bg-white">
                   <DialogContent className="sm:max-w-[425px]">
@@ -124,8 +145,8 @@ const CoverImage = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-1 items-center -ml-20">
-        <div className="lg:pt-10 xl:pt-12 lg:pl-44 xl:pl-32 relative lg:left-12 xl:left-16 dark:opacity-90">
+      <div className="-ml-20 flex flex-1 items-center">
+        <div className="relative dark:opacity-90 lg:left-12 lg:pt-10 lg:pl-44 xl:left-16 xl:pt-12 xl:pl-32">
           <Themed_Image width={450} height={450} />
         </div>
       </div>
@@ -133,4 +154,4 @@ const CoverImage = () => {
   )
 }
 
-export default CoverImage;
+export default CoverImage
