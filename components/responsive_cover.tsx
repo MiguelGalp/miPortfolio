@@ -14,7 +14,7 @@ import Image from "next/image";
 const ResponsiveCover = () => {
   return (
     <div className="container gap-4 grid-cols-1 flex flex-col dark:bg-[#121212] scale-[1.1]">
-      <div className="col-span-1 flex flex-col justify-start space-y-4 ml-6 md:scale-125 mt-10 md:mt-44 md:ml-[85px] relative right-[83px]">
+      <div className="col-span-1 flex flex-col justify-start space-y-4 ml-6 md:scale-125 mt-10 md:mt-44 md:ml-[85px] relative right-[25%]">
         <Image
           src="/Recorte_2.png"
           alt="placeholder"
