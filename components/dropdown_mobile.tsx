@@ -66,7 +66,7 @@ export function Dropdown_mobile() {
             <AvatarFallback>MG</AvatarFallback>
           </Avatar>
 
-          <DemoIndicator className="left-10 -mt-2" />
+          <DemoIndicator className="left-12 -mt-2" />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-40">
