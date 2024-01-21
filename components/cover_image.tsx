@@ -38,17 +38,17 @@ const CoverImage = () => {
         <div className="mx-auto w-full lg:max-w-xl">
           <div className="mx-auto max-w-lg text-center lg:text-left xl:mt-10">
             <div>
-              <span className="inline-flex items-center text-black lg:mb-4 xl:mb-0">
-                <div className="flex h-6 w-6 z-99 ml-1 mb-1 items-center justify-center rounded-full border-2 border-white dark:border-dracula-nosferatu-200 bg-transparent">
+              <span className="inline-flex items-center text-gray-600 lg:mb-4 xl:mb-0">
+                <div className="ml-1 text-base font-medium tracking-tight dark:text-dracula-nosferatu-200 tracking-[-3px] scale-[0.9] mt-[0.9px]">
                   <span
-                    className="-z-50 -ml-[0.8rem] mt-1 relative left-1 scale-90 text-base font-medium tracking-[-3.7px] dark:text-dracula-nosferatu-200"
-                    aria-hidden="true"
+                   
                   >
                     MG
+                    
                   </span>
                 </div>
-                <span className="ml-3 h-3.5 w-px bg-black dark:bg-dracula-nosferatu-200"></span>
-                <span className="ml-3 text-base font-medium tracking-tight text-black dark:text-dracula-nosferatu-200">
+                <span className="ml-3 h-3.5 w-px bg-gray-400 dark:bg-dracula-nosferatu-200"></span>
+                <span className="ml-3 text-base font-medium tracking-tight dark:text-dracula-nosferatu-200">
                   Desarrollador
                 </span>
               </span>
