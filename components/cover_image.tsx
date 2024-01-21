@@ -39,7 +39,7 @@ const CoverImage = () => {
           <div className="mx-auto max-w-lg text-center lg:text-left xl:mt-10">
             <div>
               <span className="inline-flex items-center text-gray-600 lg:mb-4 xl:mb-0">
-                <div className="ml-1 text-base font-medium tracking-tight dark:text-dracula-nosferatu-200 tracking-[-3px] scale-[0.9] mt-[0.9px]">
+                <div className="ml-1 text-base font-medium dark:text-dracula-nosferatu-200 tracking-[-3px] scale-[0.9] mt-[0.9px]">
                   <span
                    
                   >
