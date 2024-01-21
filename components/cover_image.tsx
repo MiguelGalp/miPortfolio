@@ -57,8 +57,7 @@ const CoverImage = () => {
               </p>
               <p className="mx-auto mt-4 mr-8 text-gray-600 dark:text-dracula-nosferatu-200 lg:pr-2 lg:text-lg lg:leading-5 lg:tracking-tighter xl:pr-0 xl:leading-normal xl:tracking-tighter">
                 Tengo un estudio (junto con diseñadorxs amigxs) donde construyo
-                objetos digitales pensando en la experiencia del usuario (UX) y
-                en la interface (UI). Lo hago para
+                objetos digitales pensando en la experiencia del usuario (UX) desde la interface (UI). Lo hago para
                 <div className="relative inline-block">
                   <HoverCard>
                     <HoverCardTrigger asChild>

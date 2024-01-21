@@ -12,7 +12,7 @@ interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-  name: "Miguel Galperin ⤑",
+  name: "Conocé mi trabajo ⤑",
   description:
     "Portfolio de software",
   mainNav: [],

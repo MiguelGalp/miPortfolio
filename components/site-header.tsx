@@ -80,8 +80,24 @@ export function SiteHeader() {
                   className: "text-slate-700 dark:text-dracula-nosferatu-100",
                 })}
               >
-                <Icons.twitter className="relative left-[1.5px] h-5 w-5 fill-current dark:fill-black-50" />
+                <Icons.twitter className="relative left-[1px] h-5 w-5 fill-current dark:fill-black-50" />
                 <span className="sr-only">Twitter</span>
+              </div>
+            </Link>
+            <Link
+              href="/Miguel_Galperin_UI.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div
+                className={buttonVariants({
+                  size: "sm",
+                  variant: "ghost",
+                  className: "text-slate-700 dark:text-dracula-nosferatu-100",
+                })}
+              >
+                <Icons.user className="relative left-[.5px] h-5 w-5 fill-current dark:fill-black-50" />
+                <span className="sr-only">CV</span>
               </div>
             </Link>
             <ThemeToggle />
