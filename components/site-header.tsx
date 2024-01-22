@@ -47,7 +47,7 @@ export function SiteHeader() {
   return (
     <header className="sticky z-10 top-2 md:top-2 dark:text-dracula-nosferatu-100">
       <div className="container flex h-16 items-center space-x-2 dark:bg-[#121212] w-auto">
-        <MainNav items={siteConfig.mainNav} />
+        <MainNav items={siteConfig.mainNav}/>
         <Dropdown_menu />
 
         <div className="flex flex-1 items-center justify-end space-x-4">

@@ -79,6 +79,8 @@ import VideoComponent from "./videocomponent"
 import { HoverCardTrigger, HoverCardContent } from "@radix-ui/react-hover-card"
 import { CalendarDays } from "lucide-react"
 import { Separator } from "@radix-ui/react-dropdown-menu"
+import { AvatarImageSvg } from "@/components/ui/avatar"
+
 
 const HoverCard = ({ children, ...props }) => (
   <HoverCardPrimitive.Root openDelay={150} closeDelay={0} {...props}>
@@ -138,14 +140,15 @@ export default function Dropdown_menu() {
       <DropdownMenuTrigger asChild>
         <Button
           variant="ghost"
-          className="relative bottom-[2.5px] hidden md:flex scale-110 p-1 hover:bg-slate-200 focus:ring-1 md:mt-1 md:mb-0.5"
+          className="relative bottom-[2.5px] hidden md:flex scale-110 p-1 hover:bg-slate-200 focus:ring-1 md:mt-1 md:mb-0.5 right-1"
         >
-          <Avatar>
-            <AvatarImage src="/AvatarMaker (1).png" className="dark:invert-[20%] dark:sepia-[0%] dark:saturate-[1822%] dark:hue-rotate-[188deg] dark:brightness-[3%] dark:contrast-[18%]" />
-            <AvatarFallback>MG</AvatarFallback>
+          <Avatar className="">
+            <AvatarImageSvg className="text-white fill-current" />
+            <AvatarFallback className="tracking-[-3px] ml-[-1px]">MG</AvatarFallback>
           </Avatar>
 
-          <DemoIndicator className="left-10 -mt-3" />
+
+          <DemoIndicator className="left-7 -mt-2" />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">
@@ -216,7 +219,7 @@ export default function Dropdown_menu() {
                                               width={500} // adjust as needed
                                               height={300} // adjust as needed
                                               objectFit="cover"
-                                              className="rounded-md" 
+                                              className="rounded-md"
                                               priority
                                             />
                                           </Link>
@@ -239,9 +242,9 @@ export default function Dropdown_menu() {
                             >
                               <div className="mt-1">Desarrollo FullStack de soluciones rápidas y económicas para ventas online.<br /></div>
                               <CustomHoverCard>
-                              <HoverCardTrigger className="hover:brightness-0">
-                                    <div className="mt-2 opacity-75">Ver un caso</div>
-                                  </HoverCardTrigger>
+                                <HoverCardTrigger className="hover:brightness-0">
+                                  <div className="mt-2 opacity-75">Ver un caso</div>
+                                </HoverCardTrigger>
                                 <CustomHoverCardContent className="w-[350px] backdrop-blur-3xl backdrop-contrast-125 bg-white/30 p-4 rounded-md shadow-md dark:bg-slate-800">
                                   <div className="flex justify-between space-x-4">
                                     <Avatar>
@@ -283,9 +286,9 @@ export default function Dropdown_menu() {
                             >
                               <div className="mt-1">Análisis y visualización de datos.</div>
                               <CustomHoverCard>
-                              <HoverCardTrigger className="hover:brightness-0">
-                                    <div className="mt-2 opacity-75">Ver un caso</div>
-                                  </HoverCardTrigger>
+                                <HoverCardTrigger className="hover:brightness-0">
+                                  <div className="mt-2 opacity-75">Ver un caso</div>
+                                </HoverCardTrigger>
                                 <CustomHoverCardContent className="w-[350px] backdrop-blur-3xl backdrop-contrast-125 bg-white/30 p-4 rounded-md shadow-md dark:bg-slate-800">
                                   <div className="flex justify-between space-x-4">
 
@@ -302,7 +305,7 @@ export default function Dropdown_menu() {
                                             width={500} // adjust as needed
                                             height={300} // adjust as needed
                                             objectFit="cover"
-                                            className="rounded-md" 
+                                            className="rounded-md"
                                             priority
                                           />
                                         </Link>

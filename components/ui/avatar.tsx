@@ -2,6 +2,8 @@
 
 import * as React from "react"
 import * as AvatarPrimitive from "@radix-ui/react-avatar"
+import AvatarSvg from 'public/Avatar.svg'
+
 
 import { cn } from "@/lib/utils"
 
@@ -12,7 +14,7 @@ const Avatar = React.forwardRef<
   <AvatarPrimitive.Root
     ref={ref}
     className={cn(
-      "relative flex h-12 w-12 md:h-10 md:w-10 shrink-0 overflow-hidden rounded-full",
+      "relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full scale-90",
       className
     )}
     {...props}
@@ -47,4 +49,17 @@ const AvatarFallback = React.forwardRef<
 ))
 AvatarFallback.displayName = AvatarPrimitive.Fallback.displayName
 
-export { Avatar, AvatarImage, AvatarFallback }
+const AvatarImageSvg = React.forwardRef<
+  React.ElementRef<typeof AvatarSvg>,
+  React.ComponentPropsWithoutRef<typeof AvatarSvg>
+>(({ className, ...props }, ref) => (
+  <AvatarImage {...props}>
+    <AvatarSvg
+      ref={ref}
+      className={cn("text-white fill-current", className)}
+    />
+  </AvatarImage>
+))
+AvatarImageSvg.displayName = AvatarSvg.displayName
+
+export { Avatar, AvatarImage, AvatarFallback, AvatarImageSvg }
