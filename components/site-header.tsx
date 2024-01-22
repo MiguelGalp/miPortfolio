@@ -84,10 +84,10 @@ export function SiteHeader() {
                 <span className="sr-only">Twitter</span>
               </div>
             </Link>
-            <Link
+            <a
               href="/Miguel_Galperin_UI.pdf"
-              target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
+              download
             >
               <div
                 className={buttonVariants({
@@ -99,7 +99,8 @@ export function SiteHeader() {
                 <Icons.user className="relative left-[.5px] h-5 w-5 fill-current dark:fill-black-50" />
                 <span className="sr-only">CV</span>
               </div>
-            </Link>
+              </a>
+            
             <ThemeToggle />
           </nav>
         </div>
