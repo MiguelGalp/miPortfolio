@@ -35,6 +35,7 @@ import {
   Users,
   WifiIcon,
   WrenchIcon,
+  GalleryHorizontalEndIcon
 } from "lucide-react"
 import { useTheme } from "next-themes"
 import Balancer from "react-wrap-balancer"
@@ -145,7 +146,7 @@ export default function Dropdown_menu() {
         >
           <Avatar className="">
             <AvatarImageSvg className="text-white fill-current" />
-            <AvatarFallback className="tracking-[-3px] ml-[-1px]"><GalleryHorizontalEnd/></AvatarFallback>
+            <AvatarFallback className="tracking-[-3px] ml-[-1px]"><GalleryHorizontalEndIcon/></AvatarFallback>
           </Avatar>
 
 

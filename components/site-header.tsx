@@ -16,8 +16,10 @@ import {
   UserPlus,
   Users,
   Dot,
-  GalleryHorizontalEnd
 } from "lucide-react"
+
+
+
 
 import { siteConfig } from "@/config/site"
 import ContactForm from "@/components/contact_form"
