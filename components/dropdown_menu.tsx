@@ -34,14 +34,13 @@ import {
   Users,
   WifiIcon,
   WrenchIcon,
-  GalleryHorizontalEndIcon
 } from "lucide-react"
 import { useTheme } from "next-themes"
 import Balancer from "react-wrap-balancer"
 
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
-import { Icons } from "@/components/icons"
+
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import {
@@ -81,6 +80,10 @@ import { HoverCardTrigger, HoverCardContent } from "@radix-ui/react-hover-card"
 import { CalendarDays } from "lucide-react"
 import { Separator } from "@radix-ui/react-dropdown-menu"
 import { AvatarImageSvg } from "@/components/ui/avatar"
+
+import { GalleryHorizontalEndIcon } from "lucide-react"
+
+import { Icons } from "@/components/icons"
 
 
 const HoverCard = ({ children, ...props }) => (
@@ -145,7 +148,7 @@ export default function Dropdown_menu() {
         >
           <Avatar className="">
             <AvatarImageSvg className="text-white fill-current" />
-            <AvatarFallback className="tracking-[-3px] ml-[-1px]"><GalleryHorizontalEndIcon/></AvatarFallback>
+            <AvatarFallback className="tracking-[-3px] ml-[-1px]"><Icons.gallery/></AvatarFallback>
           </Avatar>
 
 
