@@ -146,12 +146,12 @@ export default function Dropdown_menu() {
           className="relative bottom-[2.5px] hidden md:flex scale-110 p-1  focus:ring-1 md:mt-1 md:mb-0.5 right-2"
         >
           <Avatar className="">
-            <AvatarImageSvg className="text-white fill-current" />
-            <AvatarFallback className="tracking-[-3px] ml-[-1px]"><GalleryHorizontalEndIcon/></AvatarFallback>
+          <AvatarImage src="/Gallery.png" className="" />
+            <AvatarFallback className="tracking-[-3px] ml-[-1px]">MG</AvatarFallback>
           </Avatar>
 
 
-          <DemoIndicator className="left-7 -mt-2" />
+          <DemoIndicator className="left-8 -mt-2" />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56" align="start">
