@@ -16,6 +16,9 @@ module.exports = {
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
       },
+      fontSize: {
+        'xs': '0.625rem', // Customize the value to make it smaller
+      },
       backgroundImage: theme => ({
         'light-hero': "url('/coderGIF_3.svg')",
         'dark-hero': "url('/Sin_Piso_2.svg')",

@@ -33,17 +33,17 @@ import { Label } from "./ui/label"
 
 const CoverImage = () => {
   return (
-    <div className="mx-auto flex min-h-screen max-w-6xl flex-col items-center justify-between md:flex-row-reverse lg:-mt-20 lg:pr-16 xl:pr-8">
+    <div className="hidden mx-auto flex min-h-screen max-w-6xl flex-col items-center justify-between md:flex-row-reverse lg:-mt-20 lg:pr-16 xl:pr-8">
       <div className="flex flex-1 flex-col justify-center xl:-mt-2">
         <div className="mx-auto w-full lg:max-w-xl">
           <div className="mx-auto max-w-lg text-center lg:text-left xl:mt-10">
             <div>
               <span className="inline-flex items-center text-gray-600 lg:mb-4 xl:mb-0">
-                <div className="ml-1 text-base font-medium dark:text-dracula-nosferatu-200 tracking-[-3px] scale-[0.9] mt-[0.9px]">
+                <div className="ml-1 text-base font-medium dark:text-dracula-nosferatu-200">
                   <span
                    
                   >
-                    MG
+                    Miguel Galperin
                     
                   </span>
                 </div>
@@ -53,7 +53,7 @@ const CoverImage = () => {
                 </span>
               </span>
               <p className="font-display tracking-tighter text-black dark:text-dracula-nosferatu-200 lg:-mt-2 lg:text-5xl xl:mt-2">
-                Cultura digital, juntos
+                Fullstack, juntos.
               </p>
               <p className="mx-auto mt-4 mr-8 text-gray-600 dark:text-dracula-nosferatu-200 lg:pr-2 lg:text-lg lg:leading-5 lg:tracking-tighter xl:pr-0 xl:leading-normal xl:tracking-tighter">
                 Tengo un estudio (junto con diseñadorxs amigxs) donde construyo

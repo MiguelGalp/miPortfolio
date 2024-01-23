@@ -1,7 +1,6 @@
 
 import * as React from "react"
 import Link from "next/link"
-
 import { NavItem } from "@/types/nav"
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
@@ -16,19 +15,24 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { Dropdown_mobile } from "./dropdown_mobile"
+import { ArrowBigRightDash } from "@/components/icons"
+import { ArrowRightSquare } from "lucide-react"
 
 interface MainNavProps {
   items?: NavItem[]
 }
 
 export function MainNav({ items }: MainNavProps) {
-  return (
-    <div className="flex gap-6 md:gap-2">
-      <Icons.logo className="hidden h-6 w-6" />
-      <span className="hidden font-semibold sm:mt-2 md:mt-0 sm:inline-block">
-        {siteConfig.name}
-      </span>
+  const IconComponent = siteConfig.icon;
 
+  return (
+    <div className="flex gap-6 md:gap-1">
+
+      <ArrowBigRightDash />
+      <ArrowBigRightDash />
+      <ArrowBigRightDash />
+      
+  <span className="relative bottom-[1px]">portfolio miguel galperin</span>
       {items?.length ? (
         <nav className="hidden gap-6 lg:flex">
           {items?.map(

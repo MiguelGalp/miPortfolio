@@ -5,6 +5,7 @@ import next from "next"
 import Image from "next/image"
 import Link from "next/link"
 import * as NavigationMenuPrimitive from "@radix-ui/react-navigation-menu"
+import { ArrowBigRightDash } from "@/components/icons";
 
 import * as HoverCardPrimitive from "@radix-ui/react-hover-card"
 
@@ -34,7 +35,12 @@ import {
   Users,
   WifiIcon,
   WrenchIcon,
+  GalleryHorizontalEnd,
+  ArrowRightCircle,
 } from "lucide-react"
+
+
+
 import { useTheme } from "next-themes"
 import Balancer from "react-wrap-balancer"
 
@@ -130,36 +136,32 @@ const CustomNavigationMenu = ({ children, ...props }) => {
   );
 };
 
-
-
-
 export default function Dropdown_menu() {
   const { theme } = useTheme()
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
+
         <Button
           variant="ghost"
-          className="relative bottom-[2.5px] hidden md:flex scale-110 p-1 hover:bg-slate-200 focus:ring-1 md:mt-1 md:mb-0.5 right-1"
+          className="relative bottom-[11.5px] ml-3 hidden md:flex scale-110 p-[2.5px] hover:bg-slate-200 focus:ring-1 md:mt-1 md:mb-0.5 right-0 scale-125"
         >
           <Avatar className="">
             <AvatarImageSvg className="text-white fill-current" />
-            <AvatarFallback className="tracking-[-3px] ml-[-1px]">MG</AvatarFallback>
+            <AvatarFallback className="tracking-[-3px] ml-[-1px]"><GalleryHorizontalEnd /></AvatarFallback>
           </Avatar>
 
 
           <DemoIndicator className="left-7 -mt-2" />
         </Button>
-      </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-56">
-        <DropdownMenuLabel>Mi Portfolio</DropdownMenuLabel>
-        <DropdownMenuSeparator />
 
+      </DropdownMenuTrigger>
+      <DropdownMenuContent className="w-56" align="start" sideOffset={8}>
         <DropdownMenuGroup>
           <DropdownMenuSub>
             <DropdownMenuSubTrigger>
-              <BoxIcon className="mr-2 h-4 w-4" />
-              <span>Software</span>
+              
+              <span>apps</span>
             </DropdownMenuSubTrigger>
             <DropdownMenuPortal>
               <DropdownMenuSubContent className="overflow-visible">
@@ -167,26 +169,12 @@ export default function Dropdown_menu() {
                   <CustomNavigationMenu>
                     <NavigationMenuList>
                       <NavigationMenuItem className="overflow-visible">
-                        <NavigationMenuTrigger className="dark:text-dracula-aro-200">
-                          UX/UI, CMS, E-commerce, Web...
+                        <NavigationMenuTrigger className="text-base">
+                          hechas con python, react, tailwind
                         </NavigationMenuTrigger>
                         <NavigationMenuContent className="overflow-visible">
                           <ul className="grid gap-2 p-6 md:w-[500px] lg:w-[550px] lg:grid-cols-[.75fr_1fr]">
-                            <li className="row-span-3">
-                              <NavigationMenuLink>
-                                <Link
-                                  href=""
-                                  className="pointer-events-none relative top-2 flex h-full min-h-[250px] w-full select-none rounded-md no-underline outline-none"
-                                  rel="noopener noreferrer"
-                                  target="_blank"
-                                >
-                                  <div className="absolute inset-0 rounded-md bg-transparent"></div>
-                                  <div className="absolute inset-0">
-                                    <ImageComponent src="/love_hero.png" alt="Imagen de mockup" />
-                                  </div>
-                                </Link>
-                              </NavigationMenuLink>
-                            </li>
+                            
 
                             <CustomListItem
 
@@ -272,7 +260,7 @@ export default function Dropdown_menu() {
                                       <div className="flex items-center pt-2">
                                         <CalendarDays className="mr-2 h-4 w-4 opacity-70" />{" "}
                                         <span className="text-xs text-muted-foreground">
-                                          Entregado Marzo 2023
+                                          Marzo 2023
                                         </span>
                                       </div>
                                     </div>
@@ -313,7 +301,7 @@ export default function Dropdown_menu() {
                                       <div className="flex items-center pt-2">
                                         <CalendarDays className="mr-2 h-4 w-4 opacity-70" />{" "}
                                         <span className="text-xs text-muted-foreground">
-                                          Entregado Marzo 2023
+                                          Marzo 2023
                                         </span>
                                       </div>
                                     </div>
@@ -334,8 +322,8 @@ export default function Dropdown_menu() {
         <DropdownMenuGroup>
           <DropdownMenuSub>
             <DropdownMenuSubTrigger>
-              <Rotate3dIcon className="mr-2 h-4 w-4" />
-              <span>Instalaciones</span>
+              
+              <span>irl</span>
             </DropdownMenuSubTrigger>
             <DropdownMenuPortal>
               <DropdownMenuSubContent className="overflow-visible">
@@ -389,8 +377,7 @@ export default function Dropdown_menu() {
         <DropdownMenuGroup>
           <DropdownMenuSub>
             <DropdownMenuSubTrigger>
-              <WrenchIcon className="mr-2 h-4 w-4" />
-              <span>Proyectos</span>
+              <span>stuff</span>
             </DropdownMenuSubTrigger>
             <DropdownMenuPortal>
               <DropdownMenuSubContent className="overflow-visible">
@@ -466,8 +453,8 @@ const ListItem = React.forwardRef<
           )}
           {...props}
         >
-          <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="line-clamp-2 text-sm leading-[0.9rem] text-slate-500 dark:text-slate-400">
+          <div className="text-base font-medium leading-none">{title}</div>
+          <p className="line-clamp-2 text-base leading-[0.9rem] text-slate-500 dark:text-slate-400">
             {children}
           </p>
         </a>

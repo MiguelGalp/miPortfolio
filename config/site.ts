@@ -1,7 +1,11 @@
 import { NavItem } from "@/types/nav"
+import { ArrowBigRightDash } from "@/components/icons";
+import React from 'react';
+
 
 interface SiteConfig {
   name: string
+  icon: React.ComponentType
   description: string
   mainNav: NavItem[]
   links: {
@@ -11,10 +15,11 @@ interface SiteConfig {
   }
 }
 
+
 export const siteConfig: SiteConfig = {
-  name: "Conocé mi trabajo ⤑",
-  description:
-    "Portfolio de software",
+  name: "Portfolio",
+  icon: ArrowBigRightDash,
+  description: "Portfolio de software",
   mainNav: [],
   links: {
     twitter: "https://twitter.com/miguel_galperin",
@@ -22,3 +27,5 @@ export const siteConfig: SiteConfig = {
     docs: "https://ui.shadcn.com",
   },
 }
+
+

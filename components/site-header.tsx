@@ -44,13 +44,15 @@ import { DemoIndicator } from "./demo_indicator"
 import Dropdown_menu from "./dropdown_menu"
 
 export function SiteHeader() {
+  const IconComponent = siteConfig.icon;
   return (
-    <header className="sticky z-10 top-2 md:top-2 dark:text-dracula-nosferatu-100">
-      <div className="container flex h-16 items-center space-x-2 dark:bg-[#121212] w-auto">
+    <header className="sticky z-10 top-2 h-[75vh] dark:text-dracula-nosferatu-100 flex items-center justify-center">
+      <div className="container flex space-x-2 dark:bg-[#121212] w-auto">
+      <Dropdown_menu />
         <MainNav items={siteConfig.mainNav}/>
-        <Dropdown_menu />
+        
 
-        <div className="flex flex-1 items-center justify-end space-x-4">
+        <div className="flex flex-1 items-center justify-end space-x-4 relative bottom-[10.5px]">
           <nav className="flex items-center space-x-1">
             <Link
               href={siteConfig.links.github}
@@ -108,3 +110,4 @@ export function SiteHeader() {
     </header>
   )
 }
+
