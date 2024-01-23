@@ -82,6 +82,7 @@ import { AvatarImageSvg } from "@/components/ui/avatar"
 
 
 import { Icons } from "@/components/icons"
+import { GalleryHorizontalEnd } from 'lucide-react';
 
 
 const HoverCard = ({ children, ...props }) => (
@@ -146,7 +147,7 @@ export default function Dropdown_menu() {
         >
           <Avatar className="">
             <AvatarImageSvg className="text-white fill-current" />
-            <AvatarFallback className="tracking-[-3px] ml-[-1px]"><Icons.gallery/></AvatarFallback>
+            <AvatarFallback className="tracking-[-3px] ml-[-1px]"><GalleryHorizontalEnd/></AvatarFallback>
           </Avatar>
 
 
