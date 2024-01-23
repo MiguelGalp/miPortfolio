@@ -1,7 +1,7 @@
 
 
 import { CircleDot, Copyright } from "lucide-react"
-import { Dot } from "lucide-react"
+
 import { siteConfig } from "@/config/site"
 import { Icons } from "@/components/icons"
 
