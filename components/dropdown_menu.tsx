@@ -82,7 +82,7 @@ import { AvatarImageSvg } from "@/components/ui/avatar"
 
 
 import { Icons } from "@/components/icons"
-import { GalleryHorizontalEndIcon } from 'lucide-react';
+
 
 
 const HoverCard = ({ children, ...props }) => (
