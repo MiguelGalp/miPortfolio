@@ -7,7 +7,7 @@ import {
   SunMedium,
   Twitter,
   User,
-  GalleryHorizontalEndIcon,
+  GalleryHorizontalEnd,
   Dot
 } from "lucide-react"
 
@@ -19,7 +19,7 @@ export const Icons = {
   laptop: Laptop,
   twitter: Twitter,
   user: User,
-  gallery: GalleryHorizontalEndIcon,
+  gallery: GalleryHorizontalEnd,
   dot: Dot,
   logo: (props: LucideProps) => (
     <svg
