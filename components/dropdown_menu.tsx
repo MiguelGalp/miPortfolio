@@ -5,9 +5,7 @@ import next from "next"
 import Image from "next/image"
 import Link from "next/link"
 import * as NavigationMenuPrimitive from "@radix-ui/react-navigation-menu"
-
 import * as HoverCardPrimitive from "@radix-ui/react-hover-card"
-
 import { cva } from "class-variance-authority"
 import {
   ArrowBigRight,
@@ -81,7 +79,7 @@ import { CalendarDays } from "lucide-react"
 import { Separator } from "@radix-ui/react-dropdown-menu"
 import { AvatarImageSvg } from "@/components/ui/avatar"
 
-import { GalleryHorizontalEndIcon } from "lucide-react"
+
 
 import { Icons } from "@/components/icons"
 
