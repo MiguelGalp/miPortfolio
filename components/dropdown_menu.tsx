@@ -17,7 +17,6 @@ import {
   CreditCard,
   Croissant,
   CupSoda,
-  GalleryHorizontalEnd,
   Github,
   Keyboard,
   LifeBuoy,
