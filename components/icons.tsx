@@ -7,10 +7,11 @@ import {
   SunMedium,
   Twitter,
   User,
-  type Icon as LucideIcon, GalleryHorizontalEndIcon,
+  GalleryHorizontalEndIcon,
+  Dot
 } from "lucide-react"
 
-export type Icon = LucideIcon
+
 
 export const Icons = {
   sun: SunMedium,
@@ -19,6 +20,7 @@ export const Icons = {
   twitter: Twitter,
   user: User,
   gallery: GalleryHorizontalEndIcon,
+  dot: Dot,
   logo: (props: LucideProps) => (
     <svg
     xmlns="http://www.w3.org/2000/svg"
