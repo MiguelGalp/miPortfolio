@@ -1,7 +1,7 @@
 
 
 import { CircleDot, Copyright } from "lucide-react"
-
+import { Dot } from "lucide-react"
 import { siteConfig } from "@/config/site"
 import { Icons } from "@/components/icons"
 
@@ -9,11 +9,11 @@ export function SiteFooter() {
   const currentYear = new Date().getFullYear()
   return (
     <footer className="container">
-      <div className="flex items-center justify-center mt-20 mb-5 md:mt-20 md:mb-10 lg:mt-10 lg:mr-10">
+      <div className="flex justify-center mb-2 ">
         <div className="flex flex-row items-center">
-          <Copyright className="h-2"/>
-          <p className="text-center text-[10px] leading-normal tracking-tighter text-slate-900 dark:text-dracula-nosferatu-100 md:text-left md:text-sm">
-            Portfolio de {" "}
+          <Copyright className="h-2 w-2 mr-2"/>
+          <p className="text-center leading-normal tracking-tighter text-[#10182a] dark:text-dracula-nosferatu-100 md:text-left md:text-sm">
+            {" "}
             <a
               href={siteConfig.links.twitter}
               target="_blank"

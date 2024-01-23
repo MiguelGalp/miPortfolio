@@ -17,6 +17,7 @@ import {
   CreditCard,
   Croissant,
   CupSoda,
+  GalleryHorizontalEnd,
   Github,
   Keyboard,
   LifeBuoy,
@@ -140,26 +141,22 @@ export default function Dropdown_menu() {
       <DropdownMenuTrigger asChild>
         <Button
           variant="ghost"
-          className="relative bottom-[2.5px] hidden md:flex scale-110 p-1 hover:bg-slate-200 focus:ring-1 md:mt-1 md:mb-0.5 right-1"
+          className="relative bottom-[2.5px] hidden md:flex scale-110 p-1  focus:ring-1 md:mt-1 md:mb-0.5 right-2"
         >
           <Avatar className="">
             <AvatarImageSvg className="text-white fill-current" />
-            <AvatarFallback className="tracking-[-3px] ml-[-1px]">MG</AvatarFallback>
+            <AvatarFallback className="tracking-[-3px] ml-[-1px]"><GalleryHorizontalEnd/></AvatarFallback>
           </Avatar>
 
 
           <DemoIndicator className="left-7 -mt-2" />
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-56">
-        <DropdownMenuLabel>Mi Portfolio</DropdownMenuLabel>
-        <DropdownMenuSeparator />
-
+      <DropdownMenuContent className="w-56" align="start">
         <DropdownMenuGroup>
           <DropdownMenuSub>
-            <DropdownMenuSubTrigger>
-              <BoxIcon className="mr-2 h-4 w-4" />
-              <span>Software</span>
+            <DropdownMenuSubTrigger className="hover:none">
+              <span className="">Apps</span>
             </DropdownMenuSubTrigger>
             <DropdownMenuPortal>
               <DropdownMenuSubContent className="overflow-visible">
@@ -334,8 +331,8 @@ export default function Dropdown_menu() {
         <DropdownMenuGroup>
           <DropdownMenuSub>
             <DropdownMenuSubTrigger>
-              <Rotate3dIcon className="mr-2 h-4 w-4" />
-              <span>Instalaciones</span>
+              
+              <span>IRL</span>
             </DropdownMenuSubTrigger>
             <DropdownMenuPortal>
               <DropdownMenuSubContent className="overflow-visible">
@@ -389,8 +386,8 @@ export default function Dropdown_menu() {
         <DropdownMenuGroup>
           <DropdownMenuSub>
             <DropdownMenuSubTrigger>
-              <WrenchIcon className="mr-2 h-4 w-4" />
-              <span>Proyectos</span>
+            
+              <span>Stuff</span>
             </DropdownMenuSubTrigger>
             <DropdownMenuPortal>
               <DropdownMenuSubContent className="overflow-visible">

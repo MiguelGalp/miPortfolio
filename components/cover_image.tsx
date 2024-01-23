@@ -33,7 +33,7 @@ import { Label } from "./ui/label"
 
 const CoverImage = () => {
   return (
-    <div className="mx-auto flex min-h-screen max-w-6xl flex-col items-center justify-between md:flex-row-reverse lg:-mt-20 lg:pr-16 xl:pr-8">
+    <div className="mx-auto hidden min-h-screen max-w-6xl flex-col items-center justify-between md:flex-row-reverse lg:-mt-20 lg:pr-16 xl:pr-8">
       <div className="flex flex-1 flex-col justify-center xl:-mt-2">
         <div className="mx-auto w-full lg:max-w-xl">
           <div className="mx-auto max-w-lg text-center lg:text-left xl:mt-10">
