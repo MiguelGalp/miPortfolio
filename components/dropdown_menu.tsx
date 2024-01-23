@@ -144,7 +144,7 @@ export default function Dropdown_menu() {
 
         <Button
           variant="ghost"
-          className="relative bottom-[11.5px] ml-3 hidden md:flex scale-110 p-[2.5px] hover:bg-slate-200 focus:ring-1 md:mt-1 md:mb-0.5 right-0 scale-125"
+          className="relative bottom-[11.5px] ml-3 hidden md:flex p-[2.5px] hover:bg-slate-200 focus:ring-1 md:mt-1 md:mb-0.5 right-0 scale-125"
         >
           <Avatar className="">
             <AvatarImageSvg className="text-white fill-current" />
