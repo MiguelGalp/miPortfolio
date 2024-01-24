@@ -17,9 +17,9 @@ import {
   Users,
 } from "lucide-react"
 
-
-
-
+import { Label } from "@radix-ui/react-dropdown-menu"
+import { Separator } from "@radix-ui/react-dropdown-menu"
+import { Avatar, AvatarImage, AvatarFallback } from "@radix-ui/react-avatar"
 import { siteConfig } from "@/config/site"
 import ContactForm from "@/components/contact_form"
 import { Icons } from "@/components/icons"
@@ -45,6 +45,9 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { DemoIndicator } from "./demo_indicator"
 import Dropdown_menu from "./dropdown_menu"
+import { Dialog, DialogTrigger, DialogContent } from "@radix-ui/react-dialog"
+
+
 
 export function SiteHeader() {
   return (
@@ -107,6 +110,7 @@ export function SiteHeader() {
             <ThemeToggle />
           </nav>
         </div>
+        
       </div>
     </header>
   )
