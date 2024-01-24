@@ -168,7 +168,7 @@ export default function Dropdown_menu() {
                     <NavigationMenuList>
                       <NavigationMenuItem className="overflow-visible bg-transparent">
                         <NavigationMenuTrigger className="text-black">
-                          <Blocks/><span className="ml-2">Python, Javascript, SQL</span>
+                          <Icons.dot/><span className="ml-2">Python, Javascript, SQL</span>
                         </NavigationMenuTrigger>
                         <NavigationMenuContent className="overflow-visible">
                           <ul className="grid gap-2 p-6 md:w-[500px] lg:w-[550px] lg:grid-cols-[.75fr_1fr]">

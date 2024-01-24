@@ -14,5 +14,9 @@
     background-color: transparent !important;
     border: none !important;
   }
+  [data-state='closed'] {
+    background-color: transparent !important;
+    border: none !important;
+  }
 }
 
