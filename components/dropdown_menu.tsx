@@ -81,7 +81,7 @@ import { AvatarImageSvg } from "@/components/ui/avatar"
 
 
 
-import { Icons } from "@/components/icons"
+
 
 
 
@@ -168,7 +168,7 @@ export default function Dropdown_menu() {
                     <NavigationMenuList>
                       <NavigationMenuItem className="overflow-visible bg-transparent">
                         <NavigationMenuTrigger className="text-black">
-                          <Icons.dot/><span className="ml-2">Python, Javascript, SQL</span>
+                          Python, Javascript, SQL
                         </NavigationMenuTrigger>
                         <NavigationMenuContent className="overflow-visible">
                           <ul className="grid gap-2 p-6 md:w-[500px] lg:w-[550px] lg:grid-cols-[.75fr_1fr]">

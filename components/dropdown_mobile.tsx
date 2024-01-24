@@ -30,7 +30,7 @@ import {
 } from "lucide-react"
 
 import { siteConfig } from "@/config/site"
-import { Icons } from "@/components/icons"
+import { icons } from "@/components/icons"
 import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,

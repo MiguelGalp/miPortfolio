@@ -3,7 +3,7 @@
 import { CircleDot, Copyright } from "lucide-react"
 
 import { siteConfig } from "@/config/site"
-import { Icons } from "@/components/icons"
+import { icons } from "@/components/icons"
 
 export function SiteFooter() {
   const currentYear = new Date().getFullYear()
