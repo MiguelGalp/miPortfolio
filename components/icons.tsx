@@ -12,7 +12,7 @@ import {
 
 
 
-export const icons = {
+export const Icons = {
   sun: SunMedium,
   moon: Moon,
   laptop: Laptop,
