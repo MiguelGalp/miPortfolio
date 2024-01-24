@@ -1,3 +1,4 @@
+"use client"
 
 import * as React from "react"
 import next from "next"
@@ -79,12 +80,6 @@ import { Separator } from "@radix-ui/react-dropdown-menu"
 import { AvatarImageSvg } from "@/components/ui/avatar"
 
 
-
-
-
-
-
-
 const HoverCard = ({ children, ...props }) => (
   <HoverCardPrimitive.Root openDelay={150} closeDelay={0} {...props}>
     {children}
@@ -146,7 +141,7 @@ export default function Dropdown_menu() {
           className="w-17 h-17 relative hidden md:flex scale-110 p-1 md:mt-8 right-2"
         >
           <Avatar className="w-16 h-16">
-          <AvatarImage src="/Gallery.png" className="w-16 h-16 relative top-1" />
+            <AvatarImage src="/Gallery.png" className="w-16 h-16 relative top-1" />
             <AvatarFallback className="tracking-[-3px] ml-[-1px]">MG</AvatarFallback>
           </Avatar>
 
@@ -163,42 +158,89 @@ export default function Dropdown_menu() {
             <DropdownMenuPortal>
               <DropdownMenuSubContent className="overflow-visible">
                 <DropdownMenuItem className="overflow-visible">
-                  <CustomNavigationMenu>
+                  <CustomNavigationMenu open={true}>
                     <NavigationMenuList>
                       <NavigationMenuItem className="overflow-visible bg-transparent">
                         <NavigationMenuTrigger className="text-black">
-                          Python, Javascript, SQL
+                          Desarrollos con Python, Javascript, SQL
                         </NavigationMenuTrigger>
                         <NavigationMenuContent className="overflow-visible">
-                          <ul className="grid gap-2 p-6 md:w-[500px] lg:w-[550px] lg:grid-cols-[.75fr_1fr]">
-                            
-                            <CustomListItem
+                          <ul className="grid gap-0 p-3 md:w-[370px] grid-cols-[1fr,1fr]">
+                            <li className="-mr-2">
+                              <CustomListItem
 
-                              title="Diseño de UX/UI"
-                            >
+                                title="Front"
+                              >
 
-                              <div className="mt-1">Gestión de contenidos y experiencias centradas en los usuarios.<br /></div>
-                              <CustomHoverCard>
+                                <div className="mt-1 font-semibold text-base tracking-tighter leading-4">Servicio de desarrollo de Frontend utilizando el framework, las librerías y el manejo de contenidos más adecuado para cada proyecto.<div className="mt-2">Para Atlanticx utilicé Next.js, Mux, Tailwind y Tina.</div></div>
+                              
+                                  <CustomHoverCard>
+                                    <HoverCardTrigger className="hover:brightness-0">
+                                      <div className="mt-2 text-sm opacity-85">Ver</div>
+                                    </HoverCardTrigger>
+                                    <HoverCardContent className="w-[350px] backdrop-blur-sm  bg-white/30 p-4 rounded-md shadow-md dark:bg-slate-800">
+                                      <div className="flex justify-between space-x-4">
+                                        <Avatar>
+                                          <AvatarImage src="/ATX_AVATAR.png" />
+                                          <AvatarFallback>ATX</AvatarFallback>
+                                        </Avatar>
+                                        <div className="space-y-1">
+                                          <h4 className="text-sm opacity-75"><Link href={"https://instagram.com/atlantic.x"}>@atlantic.x</Link></h4>
+                                          <p className="text-base text-black mb-2 leading-4 font-semibold">
+                                            Desarrollo del sitio de la ONG Atlanticx. Diseño (junto a <Link href={"https://ar.pinterest.com/doncorbi/"}>@DonCorbi</Link>). Gestión headless de contenidos, con trackeo persistente.
+                                            Se utilizó el siguiente Stack: Tina CMS, GitHub, Next.js, Mux, Tailwind CSS
+                                          </p>
+                                          <div className="pt-2 mr-4">
+                                            <Link href={"https://atlanticx.org"}>
+                                              <Image
+                                                src="/Web_Atlanticx_Invertido.png"
+                                                alt="Portada ATX"
+                                                width={500} // adjust as needed
+                                                height={300} // adjust as needed
+                                                objectFit="cover"
+                                                className="rounded-md"
+                                                priority
+                                              />
+                                            </Link>
+                                          </div>
+                                          <div className="flex items-center pt-2">
+                                            <CalendarDays className="mr-2 h-4 w-4 opacity-70" />{" "}
+                                            <span className="text-xs text-muted-foreground">
+                                              Diciembre 2023
+                                            </span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </HoverCardContent>
+                                  </CustomHoverCard>
+                               
+                              </CustomListItem>
+                            </li>
+                            <li className="-mr-3">
+                              <CustomListItem
+
+                                title="Back"
+                              >
+                                <div className="mt-1 font-semibold text-base tracking-tighter leading-4">Desarrollo FullStack con Python (Django/Flask/Jinja) y Htmx. Hago MPVs y estoy estudiando Data Science de manera autónoma. <div className="mt-2">El proyecto "El opio de los pueblos" será lanzado próximamente en FrontEnd Café, donde soy mentor, como un proyecto OSS. Tiene como objetivo generar métricas de Twitter en tiempo real utilizando categorías LAD para el análisi del discurso. </div></div>
                                 <CustomHoverCard>
                                   <HoverCardTrigger className="hover:brightness-0">
-                                    <div className="mt-2 opacity-75">Ver un caso</div>
+                                    <div className="mt-2 text-sm opacity-85">Ver</div>
                                   </HoverCardTrigger>
-                                  <CustomHoverCardContent className="w-[350px] backdrop-blur-3xl backdrop-contrast-125 bg-white/30 p-4 rounded-md shadow-md dark:bg-slate-800">
+                                  <CustomHoverCardContent className="w-[350px] backdrop-blur-sm bg-white/30 p-4 rounded-md shadow-md dark:bg-slate-800" sideOffset={-400}>
                                     <div className="flex justify-between space-x-4">
                                       <Avatar>
-                                        <AvatarImage src="/ATX_AVATAR.png" />
-                                        <AvatarFallback>ATX</AvatarFallback>
+                                        <AvatarImage src="/Avatar_Opio_2.png" />
+                                        <AvatarFallback>OO</AvatarFallback>
                                       </Avatar>
                                       <div className="space-y-1">
-                                        <h4 className="text-sm font-semibold"><Link href={"https://instagram.com/atlantic.x"}>@atlantic.x</Link></h4>
-                                        <p className="text-sm mb-4">
-                                          Desarrollo del sitio de la ONG Atlanticx. Diseño (junto a <Link href={"https://ar.pinterest.com/doncorbi/"}>@DonCorbi</Link>). Gestión headless de contenidos, con trackeo persistente.
-                                          Se utilizó el siguiente Stack: Tina CMS, GitHub, Next.js, Mux, Tailwind CSS
+                                        <h4 className="text-sm text-sm opacity-75"><Link href={"https://twitter-temperature.onrender.com/"}>@OpioDeLosPueblos</Link></h4>
+                                        <p className="font-semibold text-base tracking-tighter leading-4 mb-4 font-semibold">
+                                          Desarrollo de backend y escrapeo de datos desde Twitter (2024!) para <Link href={"https://twitter-temperature.onrender.com/"}>El Opio de los Pueblos</Link>, una web app que genera métricas en tiempo real para analizar los discursos por país y de acuerdo a categorías LAD (Latent Dirilecth Distribution).
                                         </p>
                                         <div className="pt-4">
-                                          <Link href={"https:atlanticx-2.vercel.app"}>
+                                          <Link href={"https://twitter-temperature.onrender.com/"}>
                                             <Image
-                                              src="/ATX_PORTADA.png"
+                                              src="/Metricas.png"
                                               alt="Portada ATX"
                                               width={500} // adjust as needed
                                               height={300} // adjust as needed
@@ -211,100 +253,15 @@ export default function Dropdown_menu() {
                                         <div className="flex items-center pt-2">
                                           <CalendarDays className="mr-2 h-4 w-4 opacity-70" />{" "}
                                           <span className="text-xs text-muted-foreground">
-                                            Entregado Diciembre 2023
+                                            En proceso
                                           </span>
                                         </div>
                                       </div>
                                     </div>
                                   </CustomHoverCardContent>
                                 </CustomHoverCard>
-                              </CustomHoverCard>
-                            </CustomListItem>
-                            <CustomListItem
-
-                              title="E-commerce"
-                            >
-                              <div className="mt-1">Desarrollo FullStack de soluciones rápidas y económicas para ventas online.<br /></div>
-                              <CustomHoverCard>
-                                <HoverCardTrigger className="hover:brightness-0">
-                                  <div className="mt-2 opacity-75">Ver un caso</div>
-                                </HoverCardTrigger>
-                                <CustomHoverCardContent className="w-[350px] backdrop-blur-3xl backdrop-contrast-125 bg-white/30 p-4 rounded-md shadow-md dark:bg-slate-800">
-                                  <div className="flex justify-between space-x-4">
-                                    <Avatar>
-                                      <AvatarImage src="/LOGO_MP.png" />
-                                      <AvatarFallback>MISS</AvatarFallback>
-                                    </Avatar>
-                                    <div className="space-y-1">
-                                      <h4 className="text-sm font-semibold"><Link href={"https://twitter.com/MissSubtitulos"}>@MissSubtitulos</Link></h4>
-                                      <p className="text-sm mb-4">
-                                        Desarrollo de backend, e-commerce y UX/UI para <Link href={"https://miss-subtitulos.app/"}>Miss-Subtítulos</Link>, un servicio (Saas) para generar y enviar subtítulos. El Stack utilizado: Next.js, PipeDream, DeepGramAI.
-                                      </p>
-                                      <div className="pt-4">
-                                        <Link href={"https://miss-subtitulos.app"}>
-                                          <Image
-                                            src="/MISS-WEB.png"
-                                            alt="Portada ATX"
-                                            width={500} // adjust as needed
-                                            height={300} // adjust as needed
-                                            objectFit="cover"
-                                            className="rounded-md"
-                                            priority
-                                          />
-                                        </Link>
-                                      </div>
-                                      <div className="flex items-center pt-2">
-                                        <CalendarDays className="mr-2 h-4 w-4 opacity-70" />{" "}
-                                        <span className="text-xs text-muted-foreground">
-                                          Entregado Marzo 2023
-                                        </span>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </CustomHoverCardContent>
-                              </CustomHoverCard>
-                            </CustomListItem>
-                            <CustomListItem
-
-                              title="Datos"
-                            >
-                              <div className="mt-1">Análisis y visualización de datos.</div>
-                              <CustomHoverCard>
-                                <HoverCardTrigger className="hover:brightness-0">
-                                  <div className="mt-2 opacity-75">Ver un caso</div>
-                                </HoverCardTrigger>
-                                <CustomHoverCardContent className="w-[350px] backdrop-blur-3xl backdrop-contrast-125 bg-white/30 p-4 rounded-md shadow-md dark:bg-slate-800">
-                                  <div className="flex justify-between space-x-4">
-
-                                    <div className="space-y-1">
-                                      <h4 className="text-sm font-semibold"><Link href={""}>@OdioOído</Link></h4>
-                                      <p className="text-sm mb-4">
-                                        Scrapeo de datos de redes para su visualización y análisis <Link href={"https://twitter-temperature.onrender.com/"}>Proyecto en desarrollo</Link>, con un objetivo educativo.
-                                      </p>
-                                      <div className="pt-4">
-                                        <Link href={"https://twitter-temperature.onrender.com/"}>
-                                          <Image
-                                            src="/TEMP_2.png"
-                                            alt="Portada ATX"
-                                            width={500} // adjust as needed
-                                            height={300} // adjust as needed
-                                            objectFit="cover"
-                                            className="rounded-md"
-                                            priority
-                                          />
-                                        </Link>
-                                      </div>
-                                      <div className="flex items-center pt-2">
-                                        <CalendarDays className="mr-2 h-4 w-4 opacity-70" />{" "}
-                                        <span className="text-xs text-muted-foreground">
-                                          Entregado Marzo 2023
-                                        </span>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </CustomHoverCardContent>
-                              </CustomHoverCard>
-                            </CustomListItem>
+                              </CustomListItem>
+                            </li>
                           </ul>
                         </NavigationMenuContent>
                       </NavigationMenuItem>
@@ -318,7 +275,7 @@ export default function Dropdown_menu() {
         <DropdownMenuGroup>
           <DropdownMenuSub>
             <DropdownMenuSubTrigger>
-              
+
               <span>Sonido</span>
             </DropdownMenuSubTrigger>
             <DropdownMenuPortal>
@@ -327,7 +284,7 @@ export default function Dropdown_menu() {
                   <NavigationMenu>
                     <NavigationMenuList>
                       <NavigationMenuItem className="overflow-visible">
-                        <NavigationMenuTrigger className="dark:text-dracula-aro-200">
+                        <NavigationMenuTrigger className="text-black font-semibold">
                           Stack, objetivos, equipo...
                         </NavigationMenuTrigger>
                         <NavigationMenuContent className="overflow-visible">
@@ -373,7 +330,7 @@ export default function Dropdown_menu() {
         <DropdownMenuGroup>
           <DropdownMenuSub>
             <DropdownMenuSubTrigger>
-            
+
               <span>Cosas</span>
             </DropdownMenuSubTrigger>
             <DropdownMenuPortal>
@@ -445,13 +402,13 @@ const ListItem = React.forwardRef<
           target="_blank"
           ref={ref}
           className={cn(
-            "block select-none space-y-0 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-slate-700 dark:focus:bg-slate-700",
+            "block select-none space-y-0 rounded-md p-3 leading-none no-underline outline-none transition-colors focus:bg-slate-100 dark:hover:bg-slate-700 dark:focus:bg-slate-700",
             className
           )}
           {...props}
         >
           <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="line-clamp-2 text-sm leading-[0.9rem] text-slate-500 dark:text-slate-400">
+          <p className="line-clamp-2 text-base leading-[0.9rem] text-black dark:text-slate-400">
             {children}
           </p>
         </a>
