@@ -8,7 +8,6 @@ import * as HoverCardPrimitive from "@radix-ui/react-hover-card"
 import { cva } from "class-variance-authority"
 import {
   ArrowBigRight,
-  Blocks,
   BoxIcon,
   ChevronsRightIcon,
   Cloud,
