@@ -1,5 +1,4 @@
 
-
 import * as React from "react"
 import next from "next"
 import Image from "next/image"
@@ -9,6 +8,7 @@ import * as HoverCardPrimitive from "@radix-ui/react-hover-card"
 import { cva } from "class-variance-authority"
 import {
   ArrowBigRight,
+  Blocks,
   BoxIcon,
   ChevronsRightIcon,
   Cloud,
@@ -85,6 +85,7 @@ import { Icons } from "@/components/icons"
 
 
 
+
 const HoverCard = ({ children, ...props }) => (
   <HoverCardPrimitive.Root openDelay={150} closeDelay={0} {...props}>
     {children}
@@ -143,15 +144,15 @@ export default function Dropdown_menu() {
       <DropdownMenuTrigger asChild>
         <Button
           variant="ghost"
-          className="relative bottom-[2.5px] hidden md:flex scale-110 p-1  focus:ring-1 md:mt-1 md:mb-0.5 right-2"
+          className="w-17 h-17 relative hidden md:flex scale-110 p-1 md:mt-8 right-2"
         >
-          <Avatar className="">
-          <AvatarImage src="/Gallery.png" className="" />
+          <Avatar className="w-16 h-16">
+          <AvatarImage src="/Gallery.png" className="w-16 h-16 relative top-1" />
             <AvatarFallback className="tracking-[-3px] ml-[-1px]">MG</AvatarFallback>
           </Avatar>
 
 
-          <DemoIndicator className="left-8 -mt-2" />
+          <DemoIndicator className="left-12 -mt-1" />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56" align="start">
@@ -165,28 +166,13 @@ export default function Dropdown_menu() {
                 <DropdownMenuItem className="overflow-visible">
                   <CustomNavigationMenu>
                     <NavigationMenuList>
-                      <NavigationMenuItem className="overflow-visible">
-                        <NavigationMenuTrigger className="dark:text-dracula-aro-200">
-                          UX/UI, CMS, E-commerce, Web...
+                      <NavigationMenuItem className="overflow-visible bg-transparent">
+                        <NavigationMenuTrigger className="text-black">
+                          <Blocks/><span className="ml-2">Python, Javascript, SQL</span>
                         </NavigationMenuTrigger>
                         <NavigationMenuContent className="overflow-visible">
                           <ul className="grid gap-2 p-6 md:w-[500px] lg:w-[550px] lg:grid-cols-[.75fr_1fr]">
-                            <li className="row-span-3">
-                              <NavigationMenuLink>
-                                <Link
-                                  href=""
-                                  className="pointer-events-none relative top-2 flex h-full min-h-[250px] w-full select-none rounded-md no-underline outline-none"
-                                  rel="noopener noreferrer"
-                                  target="_blank"
-                                >
-                                  <div className="absolute inset-0 rounded-md bg-transparent"></div>
-                                  <div className="absolute inset-0">
-                                    <ImageComponent src="/love_hero.png" alt="Imagen de mockup" />
-                                  </div>
-                                </Link>
-                              </NavigationMenuLink>
-                            </li>
-
+                            
                             <CustomListItem
 
                               title="Diseño de UX/UI"
@@ -334,7 +320,7 @@ export default function Dropdown_menu() {
           <DropdownMenuSub>
             <DropdownMenuSubTrigger>
               
-              <span>IRL</span>
+              <span>Sonido</span>
             </DropdownMenuSubTrigger>
             <DropdownMenuPortal>
               <DropdownMenuSubContent className="overflow-visible">
@@ -389,7 +375,7 @@ export default function Dropdown_menu() {
           <DropdownMenuSub>
             <DropdownMenuSubTrigger>
             
-              <span>Stuff</span>
+              <span>Cosas</span>
             </DropdownMenuSubTrigger>
             <DropdownMenuPortal>
               <DropdownMenuSubContent className="overflow-visible">

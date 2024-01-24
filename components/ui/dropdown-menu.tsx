@@ -27,7 +27,7 @@ const DropdownMenuSubTrigger = React.forwardRef<
   <DropdownMenuPrimitive.SubTrigger
     ref={ref}
     className={cn(
-      "flex cursor-default select-none items-center rounded-sm py-1.5 px-2 text-sm font-medium outline-none data-[state=open]:bg-transparent dark:data-[state=open]:bg-slate-700",
+      "flex cursor-default select-none focus:outline-none items-center rounded-sm py-1.5 px-4 text-base font-semibold outline-none data-[state=open]:bg- dark:data-[state=open]:bg-slate-700",
       inset && "pl-8",
       className
     )}
@@ -65,7 +65,7 @@ const DropdownMenuContent = React.forwardRef<
       ref={ref}
       sideOffset={sideOffset}
       className={cn(
-        "z-50 max-w-[8.5rem] overflow-hidden rounded-md border-2 border-black shadow-md p-4 text-black animate-in data-[side=bottom]:slide-in-from-top-2 data-[side=top]:slide-in-from-bottom-2 dark:border-slate-800 dark:bg-slate-800 dark:text-dracula-aro-200",
+        "z-50 max-w-[8.5rem] overflow-hidden rounded-md border-3 border-black shadow-md p-4 text-black animate-in data-[side=bottom]:slide-in-from-top-2 data-[side=top]:slide-in-from-bottom-2 dark:border-slate-800 dark:bg-slate-800 dark:text-dracula-aro-200",
         className
       )}
       {...props}

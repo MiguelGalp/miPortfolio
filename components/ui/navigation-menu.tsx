@@ -41,7 +41,7 @@ NavigationMenuList.displayName = NavigationMenuPrimitive.List.displayName
 const NavigationMenuItem = NavigationMenuPrimitive.Item
 
 const navigationMenuTriggerStyle = cva(
-  "inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus:outline-none focus:bg-slate-100 disabled:opacity-50 dark:focus:bg-slate-800 disabled:pointer-events-none bg-transparent hover:bg-black dark:hover:bg-slate-800 dark:text-slate-100 dark:hover:text-slate-100 data-[state=open]:bg-slate-50 dark:data-[state=open]:bg-slate-800 h-10 py-2 px-4 group"
+  "inline-flex items-center justify-center rounded-md text-base font-semibold transition-colors disabled:opacity-50 dark:focus:bg-slate-800 disabled:pointer-events-none bg-transparent dark:hover:bg-slate-800 dark:text-slate-100 dark:hover:text-slate-100 data-[state=open]:bg-transparent dark:data-[state=open]:bg-slate-800 h-10 py-2 px-4 group"
 )
 
 const NavigationMenuTrigger = React.forwardRef<
@@ -55,9 +55,9 @@ const NavigationMenuTrigger = React.forwardRef<
   >
     {children}{" "}
     <div className="relative inline-block">
-      <div className="absolute left-2 z-0 rounded-full bg-gray-700"></div>
+      <div className="absolute left-2 z-0 rounded-full bg-gray-300"></div>
       <ChevronDown
-        className="relative z-10 ml-3 h-4 w-4 scale-110 rounded-full bg-slate-300 bg-opacity-50 transition duration-200 group-data-[state=open]:rotate-180 dark:text-dracula-aro-100"
+        className="relative z-10 ml-3 h-4 w-4 scale-110 rounded-full bg-transparent transition duration-200 group-data-[state=open]:rotate-180 dark:text-dracula-aro-100"
         aria-hidden="true"
       />
     </div>
