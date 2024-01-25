@@ -98,7 +98,7 @@ const CustomHoverCard = ({ children, ...props }) => {
   };
 
   return (
-    <div onClick={handleClick} style={{ display: 'inline-block' }}>
+    <div onClick={handleClick} style={{ display: "inline-block" }}>
       <HoverCard {...props}>{children}</HoverCard>
     </div>
   );
@@ -153,7 +153,7 @@ export default function Dropdown_menu() {
         <DropdownMenuGroup>
           <DropdownMenuSub>
             <DropdownMenuSubTrigger className="hover:none">
-              <span className="">Apps</span>
+              <span>Apps</span>
             </DropdownMenuSubTrigger>
             <DropdownMenuPortal>
               <DropdownMenuSubContent className="overflow-visible">
@@ -221,7 +221,7 @@ export default function Dropdown_menu() {
 
                                 title="Back"
                               >
-                                <div className="mt-1 font-semibold text-base tracking-tighter leading-4">Desarrollo FullStack con Python (Django/Flask/Jinja) y Htmx. Hago MPVs y estoy estudiando Data Science de manera autónoma. <div className="mt-2">El proyecto "El opio de los pueblos" será lanzado próximamente en FrontEnd Café, donde soy mentor, como un proyecto OSS. Tiene como objetivo generar métricas de Twitter en tiempo real utilizando categorías LAD para el análisi del discurso. </div></div>
+                                <div className="mt-1 font-semibold text-base tracking-tighter leading-4">Desarrollo FullStack con Python (Django/Flask/Jinja) y Htmx. Hago MPVs y estoy estudiando Data Science de manera autónoma. <div className="mt-2">El proyecto El opio de los pueblos será lanzado próximamente en FrontEnd Café, donde soy mentor, como un proyecto OSS. Tiene como objetivo generar métricas de Twitter en tiempo real utilizando categorías LAD para el análisi del discurso. </div></div>
                                 <CustomHoverCard>
                                   <HoverCardTrigger className="hover:brightness-0">
                                     <div className="mt-2 text-sm opacity-85">Ver</div>
