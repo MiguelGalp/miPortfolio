@@ -10,18 +10,11 @@ export function SiteFooter() {
   return (
     <footer className="container">
       <div className="flex justify-center mb-2 ">
-        <div className="flex flex-row items-center">
-          <Copyright className="h-2 w-2 mr-2"/>
-          <p className="text-center leading-normal tracking-tighter text-[#10182a] dark:text-dracula-nosferatu-100 md:text-left md:text-sm">
+        <div className="flex flex-row items-center relative left-5">
+          <Copyright className="h-2 w-2 mr-2 font-bold text-black"/>
+          <p className="text-center leading-normal tracking-tighter text-black font-bold dark:text-dracula-nosferatu-100 md:text-left md:text-sm">
             {" "}
-            <a
-              href={siteConfig.links.twitter}
-              target="_blank"
-              rel="noreferrer"
-              className="font-medium underline underline-offset-4"
-            >
-              Miguel Galperin
-            </a>
+            Miguel Galperin
             , derivado del UI{" "}
             <a
               href={siteConfig.links.docs}

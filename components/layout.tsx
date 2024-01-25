@@ -24,42 +24,39 @@ export function Layout({ children }: LayoutProps) {
         </video>
       </div>
       <div style={{ position: 'absolute', bottom: '40px', left: '50%', transform: 'translateX(-50%)' }}>
-      <Dialog>
-                <DialogTrigger className="z-10">
-                  <Button className="dark:bg-dracula-nosferatu-300">
-                    Contacto
-                  </Button>
-                </DialogTrigger>
-                <div className="flex items-center justify-center bg-white">
-                  <DialogContent className="sm:max-w-[425px]">
-                    <div className="flex space-x-6">
-                      <div className="space-y-1">
-                        <h4 className="text-sm font-medium leading-none">
-                          Miguel Galperin
-                        </h4>
-                        <p className="text-sm text-slate-500 dark:text-slate-400">
-                          Desarrollador
-                        </p>
-                      </div>
-                      <Avatar className="bottom-[2px]">
-                        <AvatarImage src="/Avatar_Darker.png" className="" />
-                        <AvatarFallback>MG</AvatarFallback>
-                      </Avatar>
-                    </div>
-                    <Separator className="text-black" />
-                    <div className="grid gap-4">
-                      <div className="grid grid-cols-1 items-center gap-4">
-                        <Label htmlFor="name" className=""></Label>
-                      </div>
-                      <div className="-ml[1px] mb-16 w-full">
-                        <div className="rounded-md bg-gray-100 p-6">
-                          <ContactForm />
-                        </div>
-                      </div>
-                    </div>
-                  </DialogContent>
+        <Dialog>
+          <DialogTrigger className="z-10 relative left-5">
+            <Button className="text-base text-bold text-slate-100 bg-opacity-50">
+              Contacto
+            </Button>
+          </DialogTrigger>
+          <div className="flex items-center justify-center bg-white">
+            <DialogContent className="sm:max-w-[425px]">
+              <div className="flex space-x-6">
+                <div className="space-y-1">
+                  <h4 className="text-lg text-black font-base font-extrabold leading-none">
+                    MIGUEL GALPERIN
+                  </h4>
+                  <p className="text-sm text-black opacity-75 dark:text-slate-400">
+                    Desarrollador Fullstack: Figma a Python, Figma a React...
+                  </p>
                 </div>
-              </Dialog>
+                
+              </div>
+              <Separator className="bg-black bg-opacity-75" />
+              <div className="grid gap-4">
+                <div className="grid grid-cols-1 items-center gap-4">
+                  <Label htmlFor="name" className=""></Label>
+                </div>
+                <div className="-ml[1px] mb-16 w-full">
+                  <div className="rounded-md bg-transparent p-6">
+                    <ContactForm />
+                  </div>
+                </div>
+              </div>
+            </DialogContent>
+          </div>
+        </Dialog>
       </div>
       <SiteHeader />
       <main style={{ flex: 1 }}>{children}</main>

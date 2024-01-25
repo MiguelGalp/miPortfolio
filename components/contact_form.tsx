@@ -39,18 +39,18 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <div className="justify-content-start flex w-full max-w-sm space-x-2">
+      <div className="justify-content-start flex relative bottom-9 right-6 w-full max-w-sm space-x-2 bg-transparent">
         <Input
           {...register("nombre")}
           defaultValue="Nombre"
-          className="dark:text-dracula-aro-700"
+          className="leading-normal"
         ></Input>
         <Input
           {...register("email")}
           defaultValue="Email"
-          className="dark:text-dracula-aro-700"
+          className=""
         ></Input>
-        <Button type="submit" role="submit" className="dark:bg-dracula-aro-500">
+        <Button type="submit" role="submit" className="">
           {isSubmitting ? "Submitting" : "Enviar"}
         </Button>
       </div>

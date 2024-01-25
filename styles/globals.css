@@ -18,5 +18,14 @@
     background-color: transparent !important;
     border: none !important;
   }
+  input::selection {
+    background: black; /* Your preferred color */
+    color: white; /* Your preferred color */
+  }
+  input::-moz-selection { /* For Firefox */
+    background: black;
+    color: white;
+  }
+  
   }
 

@@ -106,8 +106,6 @@ export function SiteHeader() {
                 <span className="sr-only">CV</span>
               </div>
               </a>
-            
-            <ThemeToggle />
           </nav>
         </div>
         
