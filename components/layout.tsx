@@ -24,7 +24,7 @@ export function Layout({ children }: LayoutProps) {
     // Simulating data loading or any other initialization process
     setTimeout(() => {
       setLoaded(true);
-    }, 1000); // Adjust the delay as needed
+    }, 100); // Adjust the delay as needed
   }, []);
 
 
