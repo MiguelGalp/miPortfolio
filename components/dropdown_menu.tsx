@@ -189,7 +189,7 @@ export default function Dropdown_menu() {
                                       Ver más
                                     </div>
                                   </HoverCardTrigger>
-                                  <CustomHoverCardContent className="w-[350px] rounded-md p-4 shadow-md backdrop-blur-xl">
+                                  <CustomHoverCardContent className="w-[350px] rounded-md p-4 bg-white/75 shadow-md backdrop-blur-xl">
                                     <div className="flex justify-between space-x-4">
                                       <Avatar>
                                         <AvatarImage src="/ATX_AVATAR.png" />
@@ -215,7 +215,7 @@ export default function Dropdown_menu() {
                                             @DonCorbi. 
                                           </Link>
                                           </span>
-                                          <span className="block mt-2">La página tiene como backend una app desarrollada con el SDK de TINA CMS que permite la edición live, colaborativa y online y que, desde su integración a GitHub, permite también el trackeo persistente (y rollbacks!) de los cambios realizados por los responsables de contenidos.</span> 
+                                          <span className="block mt-2">La página tiene como backend una app desarrollada con el SDK de TINA CMS que permite la edición live, colaborativa y online. <span className="block mt-2">Desde su integración a GitHub, el backend permite en la app el trackeo persistente de las versiones y rollbacks(!) de los cambios realizados por los responsables de contenidos.</span></span> 
                                         </p>
                                         <div className="mr-4 pt-2">
                                           {imageLoading ? (
