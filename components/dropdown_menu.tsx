@@ -189,7 +189,7 @@ export default function Dropdown_menu() {
                                       Ver más
                                     </div>
                                   </HoverCardTrigger>
-                                  <HoverCardContent className="w-[350px] rounded-md  bg-white/30 p-4 shadow-md backdrop-blur dark:bg-slate-800">
+                                  <CustomHoverCardContent className="w-[350px] rounded-md p-4 shadow-md backdrop-blur-xl">
                                     <div className="flex justify-between space-x-4">
                                       <Avatar>
                                         <AvatarImage src="/ATX_AVATAR.png" />
@@ -206,19 +206,16 @@ export default function Dropdown_menu() {
                                           </Link>
                                         </h4>
                                         <p className="mb-2 text-base font-semibold leading-4 text-black">
-                                          Desarrollo del sitio de la ONG
-                                          Atlanticx. Diseño (junto a{" "}
+                                          Como Lead Web Developer de la ONG Atlanticx, realicé el plan y la ejecución de la nueva web. <span className="block mt-2">El diseño fue en colaboración, junto a{" "}
                                           <Link
                                             href={
                                               "https://ar.pinterest.com/doncorbi/"
                                             }
                                           >
-                                            @DonCorbi
+                                            @DonCorbi. 
                                           </Link>
-                                          ). Gestión headless de contenidos, con
-                                          trackeo persistente. Se utilizó el
-                                          siguiente Stack: Tina CMS, GitHub,
-                                          Next.js, Mux, Tailwind CSS
+                                          </span>
+                                          <span className="block mt-2">La página tiene como backend una app desarrollada con el SDK de TINA CMS que permite la edición live, colaborativa y online y que, desde su integración a GitHub, permite también el trackeo persistente (y rollbacks!) de los cambios realizados por los responsables de contenidos.</span> 
                                         </p>
                                         <div className="mr-4 pt-2">
                                           {imageLoading ? (
@@ -249,7 +246,7 @@ export default function Dropdown_menu() {
                                         </div>
                                       </div>
                                     </div>
-                                  </HoverCardContent>
+                                  </CustomHoverCardContent>
                                 </CustomHoverCard>
                               </CustomListItem>
                             </li>
@@ -267,8 +264,8 @@ export default function Dropdown_menu() {
                                     </div>
                                   </HoverCardTrigger>
                                   <CustomHoverCardContent
-                                    className="w-[350px] rounded-md bg-white/30 p-4 shadow-md backdrop-blur dark:bg-slate-800"
-                                    sideOffset={-400}
+                                    className="w-[350px] rounded-md bg-white/30 p-4 shadow-md backdrop-blur-xl dark:bg-slate-800"
+                                    sideOffset={100}
                                   >
                                     <div className="flex justify-between space-x-4">
                                       <Avatar>
@@ -304,15 +301,15 @@ export default function Dropdown_menu() {
                                             Frontend Café
                                           </Link>
                                           , donde soy mentor, como un proyecto
-                                          OSS. El MVP linkeado abajo tiene como
+                                          OSS. <span className="block mt-2">El MVP linkeado abajo tiene como
                                           objetivo generar métricas de Twitter/X
                                           en tiempo real y utilizando categorías
-                                          LDA (Latent Dirichlet allocation).
-                                          Como resultado el proyecto busca
+                                          LDA (Latent Dirichlet allocation).</span>
+                                          <span className="block mt-2">Como resultado el proyecto busca
                                           ofrecer un análisis del discurso
                                           macro, organizado por país y guiado
                                           por categorías que, culturalmente, son
-                                          las del usuario.
+                                          las del usuario.</span>
                                         </p>
                                         <div className="pt-4">
                                           {imageLoading ? (
