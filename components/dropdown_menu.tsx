@@ -224,7 +224,6 @@ export default function Dropdown_menu() {
                                           {imageLoading ? (
                                             <div className="flex h-32 items-center justify-center">
                                               <ClipLoader />{" "}
-                                              {/* Show loading indicator */}
                                             </div>
                                           ) : (
                                             <Link
@@ -319,7 +318,6 @@ export default function Dropdown_menu() {
                                           {imageLoading ? (
                                             <div className="flex h-32 items-center justify-center">
                                               <ClipLoader />{" "}
-                                              {/* Show loading indicator */}
                                             </div>
                                           ) : (
                                             <Link
