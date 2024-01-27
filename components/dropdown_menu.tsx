@@ -130,12 +130,18 @@ const CustomNavigationMenu = ({ children, ...props }) => {
 
 export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
   const handleOpen = () => {
-    document.getElementById('myVideo').classList.add('blur');
+    const videoElement = document.getElementById('myVideo');
+    if (videoElement) {
+      videoElement.classList.add('blur');
+    }
     toggleDropdown();
   };
 
   const handleClose = () => {
-    document.getElementById('myVideo').classList.remove('blur');
+    const videoElement = document.getElementById('myVideo');
+    if (videoElement) {
+      videoElement.classList.remove('blur');
+    }
     toggleDropdown();
   };
   const [imageLoading, setImageLoading] = useState(true)
