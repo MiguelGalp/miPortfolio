@@ -126,7 +126,18 @@ const CustomNavigationMenu = ({ children, ...props }) => {
   )
 }
 
-export default function Dropdown_menu() {
+
+
+export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
+  const handleOpen = () => {
+    document.getElementById('myVideo').classList.add('blur');
+    toggleDropdown();
+  };
+
+  const handleClose = () => {
+    document.getElementById('myVideo').classList.remove('blur');
+    toggleDropdown();
+  };
   const [imageLoading, setImageLoading] = useState(true)
 
   // Simulate image loading delay
@@ -135,8 +146,8 @@ export default function Dropdown_menu() {
   }, 5000) // Adjust the delay as needed
   const { theme } = useTheme()
   return (
-    <DropdownMenu>
-      <DropdownMenuTrigger asChild>
+    <DropdownMenu onOpenChange={isOpen => isOpen ? handleOpen() : handleClose()}>
+      <DropdownMenuTrigger asChild className="data-[state=open]:bg-pink">
         <Button
           variant="ghost"
           className="w-17 h-17 relative right-2 hidden scale-110 p-1 md:mt-8 md:flex"

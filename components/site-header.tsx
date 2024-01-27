@@ -44,17 +44,20 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { DemoIndicator } from "./demo_indicator"
-import Dropdown_menu from "./dropdown_menu"
+import { Dropdown_menu } from "./dropdown_menu"
 import { Dialog, DialogTrigger, DialogContent } from "@radix-ui/react-dialog"
 
+type SiteHeaderProps = {
+  toggleDropdown: () => void;
+  isDropdownOpen: boolean;
+};
 
-
-export function SiteHeader() {
+export function SiteHeader({ toggleDropdown, isDropdownOpen }: SiteHeaderProps) {
   return (
     <header className="sticky z-10 top-2 md:top-2 dark:text-dracula-nosferatu-100">
       <div className="container flex h-16 items-center space-x-2 w-auto">
         
-        <Dropdown_menu />
+      <Dropdown_menu toggleDropdown={toggleDropdown} isDropdownOpen={isDropdownOpen} />
         
         <div className="flex flex-1 items-center justify-end space-x-4">
           <nav className="flex items-center space-x-1">

@@ -19,6 +19,11 @@ interface LayoutProps {
 
 export function Layout({ children }: LayoutProps) {
   const [loaded, setLoaded] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
 
   useEffect(() => {
     // Simulating data loading or any other initialization process
@@ -42,13 +47,18 @@ export function Layout({ children }: LayoutProps) {
             zIndex: -1,
           }}
         >
-          <video
+          <video 
+            id="myVideo"
             autoPlay
             loop
             muted
-            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              }}
           >
-            <source src="/Background.mp4" type="video/mp4" />
+          <source src="/Background.mp4" type="video/mp4" />
             Oops, tu navegador...uhm...
           </video>
         </div>
@@ -93,7 +103,7 @@ export function Layout({ children }: LayoutProps) {
             </div>
           </Dialog>
         </div>
-        <SiteHeader />
+        <SiteHeader toggleDropdown={toggleDropdown} isDropdownOpen={isDropdownOpen} />
         <main style={{ flex: 1 }}>{children}</main>
         <Analytics />
         <SiteFooter />
