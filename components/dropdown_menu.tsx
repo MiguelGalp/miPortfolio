@@ -251,7 +251,7 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                                       ) : (
                                         <Link href={"https://atlanticx.org"} target="_blank">
                                           <Image
-                                            src="/Web_Atx_Wide_inverted.png"
+                                            src="/Web_Atx_Wide_Inverted.png"
                                             alt="Portada ATX"
                                             width={500} // adjust as needed
                                             height={500} // adjust as needed
