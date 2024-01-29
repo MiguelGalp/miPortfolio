@@ -85,7 +85,7 @@ const HoverCard = ({ children, ...props }) => (
 )
 
 const CustomHoverCardContent = ({ children, ...props }) => (
-  <HoverCardContent side={"right"} {...props}>
+  <HoverCardContent side={"bottom"} {...props}>
     {children}
   </HoverCardContent>
 )
@@ -206,55 +206,34 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                                       Ver más
                                     </div>
                                   </HoverCardTrigger>
-                                  <CustomHoverCardContent className="w-[350px] rounded-md p-4 bg-white/75 shadow-md backdrop-blur-xl">
-                                    <div className="flex justify-between space-x-4">
-                                      <Avatar>
+                                  <CustomHoverCardContent className="flex space-x-4 w-[650px] rounded-md p-4 bg-white/75 shadow-md" sideOffset={0}>
+                                    {/* Left Column */}
+                                    <div className="flex flex-col justify-between space-y-4 w-1/2">
+                                      <Avatar className="hidden">
                                         <AvatarImage src="/ATX_AVATAR.png" />
                                         <AvatarFallback>ATX</AvatarFallback>
                                       </Avatar>
                                       <div className="space-y-1">
                                         <h4 className="text-sm opacity-75">
-                                          <Link
-                                            href={
-                                              "https://instagram.com/atlantic.x"
-                                            }
-                                          >
+                                          <Link href={"https://instagram.com/atlantic.x"} target="_blank">
                                             @atlantic.x
                                           </Link>
                                         </h4>
                                         <p className="mb-2 text-base font-semibold leading-4 text-black">
-                                          Como Lead Web Developer de la ONG Atlanticx, realicé el plan y la ejecución de la nueva web. <span className="block mt-2">El diseño fue en colaboración, junto a{" "}
-                                          <Link
-                                            href={
-                                              "https://ar.pinterest.com/doncorbi/"
-                                            }
-                                          >
-                                            @DonCorbi. 
-                                          </Link>
-                                          </span>
-                                          <span className="block mt-2">La página tiene como backend una app desarrollada con el SDK de TINA CMS que permite la edición live, colaborativa y online. <span className="block mt-2">Desde su integración a GitHub, el backend permite en la app el trackeo persistente de las versiones y rollbacks(!) de los cambios realizados por los responsables de contenidos.</span></span> 
-                                        </p>
-                                        <div className="mr-4 pt-2">
-                                          {imageLoading ? (
-                                            <div className="flex h-32 items-center justify-center">
-                                              <ClipLoader />{" "}
-                                            </div>
-                                          ) : (
-                                            <Link
-                                              href={"https://atlanticx.org"}
-                                            >
-                                              <Image
-                                                src="/Web_Atlanticx_Invertido.png"
-                                                alt="Portada ATX"
-                                                width={500} // adjust as needed
-                                                height={300} // adjust as needed
-                                                objectFit="cover"
-                                                className="rounded-md"
-                                                priority
-                                              />
+                                          Como Lead Web Developer de la ONG Atlanticx, realicé el plan y la ejecución de la nueva web.
+                                          <span className="block mt-2">
+                                            El diseño fue en colaboración, junto a{" "}
+                                            <Link href={"https://ar.pinterest.com/doncorbi/"} target="_blank">
+                                              @DonCorbi. La página utiliza el SDK de TINA CMS que permite la edición live, colaborativa y online.
                                             </Link>
-                                          )}
-                                        </div>
+                                          </span>
+                                          
+                                            
+                                            <span className="block mt-2">
+                                              Desde su integración a GitHub, el backend permite en la app el trackeo persistente de las versiones y rollbacks(!) de los cambios realizados por los responsables de contenidos.
+                                            </span>
+                                         
+                                        </p>
                                         <div className="flex items-center pt-2">
                                           <CalendarDays className="mr-2 h-4 w-4 opacity-70" />{" "}
                                           <span className="text-muted-foreground text-xs">
@@ -263,7 +242,28 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                                         </div>
                                       </div>
                                     </div>
+                                    {/* Right Column */}
+                                    <div className="flex flex-col items-center justify-center w-1/2">
+                                      {imageLoading ? (
+                                        <div className="flex h-32 items-center justify-center">
+                                          <ClipLoader />{" "}
+                                        </div>
+                                      ) : (
+                                        <Link href={"https://atlanticx.org"} target="_blank">
+                                          <Image
+                                            src="/Web_Atx_Wide_inverted.png"
+                                            alt="Portada ATX"
+                                            width={500} // adjust as needed
+                                            height={500} // adjust as needed
+                                            objectFit="cover"
+                                            className="rounded-md mt-3"
+                                            priority
+                                          />
+                                        </Link>
+                                      )}
+                                    </div>
                                   </CustomHoverCardContent>
+
                                 </CustomHoverCard>
                               </CustomListItem>
                             </li>
@@ -276,89 +276,72 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                                 </div>
                                 <CustomHoverCard>
                                   <HoverCardTrigger className="hover:brightness-0">
-                                    <div className="opacity-85 mt-2 text-sm">
+                                    <div className="opacity-85 text-sm p-6 relative right-6 bottom-4 hover:opacity-50">
                                       Ver más
                                     </div>
                                   </HoverCardTrigger>
                                   <CustomHoverCardContent
-                                    className="w-[350px] rounded-md bg-white/30 p-4 shadow-md backdrop-blur-xl dark:bg-slate-800"
-                                    sideOffset={100}
+                                    className="w-[550px] rounded-md p-4 shadow-md"
+                                    sideOffset={0}
                                   >
-                                    <div className="flex justify-between space-x-4">
-                                      <Avatar>
-                                        <AvatarImage src="/Avatar_Opio_2.png" />
-                                        <AvatarFallback>OO</AvatarFallback>
-                                      </Avatar>
-                                      <div className="space-y-1">
-                                        <h4 className="text-sm text-sm opacity-75">
-                                          <Link
-                                            href={
-                                              "https://twitter-temperature.onrender.com/"
-                                            }
-                                          >
-                                            @OpioDeLosPueblos
-                                          </Link>
-                                        </h4>
-                                        <p className="mb-4 text-base font-semibold font-semibold leading-4 tracking-tighter">
-                                          El proyecto{" "}
-                                          <Link
-                                            href={
-                                              "https://twitter-temperature.onrender.com/"
-                                            }
-                                          >
-                                            {" "}
-                                            El Opio de los Pueblos
-                                          </Link>{" "}
-                                          será lanzado próximamente en{" "}
-                                          <Link
-                                            href={
-                                              "https://twitter-temperature.onrender.com/"
-                                            }
-                                          >
-                                            Frontend Café
-                                          </Link>
-                                          , donde soy mentor, como un proyecto
-                                          OSS. <span className="block mt-2">El MVP linkeado abajo tiene como
-                                          objetivo generar métricas de Twitter/X
-                                          en tiempo real y utilizando categorías
-                                          LDA (Latent Dirichlet allocation).</span>
-                                          <span className="block mt-2">Como resultado el proyecto busca
-                                          ofrecer un análisis del discurso
-                                          macro, organizado por país y guiado
-                                          por categorías que, culturalmente, son
-                                          las del usuario.</span>
-                                        </p>
-                                        <div className="pt-4">
-                                          {imageLoading ? (
-                                            <div className="flex h-32 items-center justify-center">
-                                              <ClipLoader />{" "}
-                                            </div>
-                                          ) : (
-                                            <Link
-                                              href={
-                                                "https://twitter-temperature.onrender.com/"
-                                              }
-                                            >
-                                              <Image
-                                                src="/Metricas.png"
-                                                alt="Portada ATX"
-                                                width={500} // adjust as needed
-                                                height={300} // adjust as needed
-                                                objectFit="cover"
-                                                className="rounded-md"
-                                                priority
-                                              />
+                                    <div className="flex space-x-4">
+                                      {/* Left Column */}
+                                      <div className="flex flex-col justify-between space-y-4 w-1/2">
+                                        <Avatar className="hidden">
+                                          <AvatarImage src="/Avatar_Opio_2.png" />
+                                          <AvatarFallback>OO</AvatarFallback>
+                                        </Avatar>
+                                        <div className="space-y-1">
+                                          <h4 className="text-sm text-sm opacity-75 mt-10">
+                                            <Link href={"https://twitter-temperature.onrender.com/"} target="_blank">
+                                              @OpioDeLosPueblos
                                             </Link>
-                                          )}
-                                        </div>
-                                        <div className="flex items-center pt-2">
-                                          <CalendarDays className="mr-2 h-4 w-4 opacity-70" />{" "}
-                                          <span className="text-muted-foreground text-xs">
-                                            En proceso
-                                          </span>
+                                          </h4>
+                                          <p className="mb-4 text-base font-semibold font-semibold leading-4 tracking-tighter">
+                                            El proyecto{" "}
+                                            <Link href={"https://twitter-temperature.onrender.com/"} target="_blank">
+                                              {" "}
+                                              El Opio de los Pueblos
+                                            </Link>{" "}
+                                            será lanzado próximamente en{" "}
+                                            <Link href={"https://twitter-temperature.onrender.com/"} target="_blank">
+                                              Frontend Café
+                                            </Link>
+                                            , donde soy mentor, como un proyecto OSS.
+                                            <span className="block mt-2">
+                                              El MVP linkeado abajo tiene como objetivo generar métricas de
+                                              Twitter/X en tiempo real y utilizando categorías LDA (Latent
+                                              Dirichlet allocation).
+                                            </span>
+                                          </p>
+                                          <div className="flex items-center pt-2">
+                                            <CalendarDays className="mr-2 h-4 w-4 opacity-70" />{" "}
+                                            <span className="text-muted-foreground text-xs">En proceso</span>
+                                          </div>
                                         </div>
                                       </div>
+                                      {/* Right Column */}
+                                      <div className="flex flex-col items-center justify-center w-1/2">
+                                        {imageLoading ? (
+                                          <div className="flex h-32 items-center justify-center">
+                                            <ClipLoader />{" "}
+                                          </div>
+                                        ) : (
+                                          <Link href={"https://twitter-temperature.onrender.com/"} target="_blank">
+                                            <Image
+                                              src="/Metricas.png"
+                                              alt="Portada ATX"
+                                              width={500} // adjust as needed
+                                              height={500} // adjust as needed
+                                              objectFit="cover"
+                                              className="rounded-md mt-12"
+                                              priority
+                                            />
+                                          </Link>
+                                        )}
+                                      </div>
                                     </div>
+
                                   </CustomHoverCardContent>
                                 </CustomHoverCard>
                               </CustomListItem>
@@ -457,9 +440,8 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                                   <div
                                     style={{
                                       position: "relative",
-                                      borderLeft: `2px solid ${
-                                        theme === "dark" ? "white" : "black"
-                                      }`,
+                                      borderLeft: `2px solid ${theme === "dark" ? "white" : "black"
+                                        }`,
                                       height: "50%",
                                       top: "15px",
                                     }}

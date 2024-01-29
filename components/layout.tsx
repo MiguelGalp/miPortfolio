@@ -34,7 +34,7 @@ export function Layout({ children }: LayoutProps) {
 
 
   return (
-    <div className={`transition-opacity duration-1000 ease-in-out ${loaded ? 'opacity-100' : 'opacity-0'}`}>
+    <div id="cuerpo" className={`transition-opacity duration-1000 ease-in-out ${loaded ? 'opacity-100' : 'opacity-0'}`}>
       <div className="opacity-100" style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
         <div
           className=""
@@ -58,7 +58,7 @@ export function Layout({ children }: LayoutProps) {
               objectFit: "cover",
               }}
           >
-          <source src="/Background.mp4" type="video/mp4" />
+          <source src="/TLDF-Background.mp4" type="video/mp4" />
             Oops, tu navegador...uhm...
           </video>
         </div>
