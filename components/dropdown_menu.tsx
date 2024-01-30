@@ -324,12 +324,12 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                                       ) : (
                                         <Link href={"https://atlanticx.org"} target="_blank">
                                           <Image
-                                            src="/Web_Atx_Wide_Inverted.png"
+                                            src="/Web_Atx_Wide_Transparent.png"
                                             alt="Portada ATX"
-                                            width={250} // adjust as needed
-                                            height={250} // adjust as needed
+                                            width={300} // adjust as needed
+                                            height={300} // adjust as needed
                                             objectFit="cover"
-                                            className="rounded-md mt-8 scale-[95%]"
+                                            className="rounded-md mt-6"
                                             priority
                                           />
                                         </Link>
@@ -373,14 +373,10 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                                             </Link>{" "}
                                             será lanzado próximamente en{" "}
                                             <Link href={"https://frontend.cafe/"} target="_blank">
-                                              Frontend Café como un proyecto OSS.
-                                            </Link>
-
-                                            <span className="block mt-2">
-                                              El MVP (linkeado) tiene como objetivo generar métricas de
-                                              Twitter/X. Lo hace en tiempo real, utilizando categorías LDA (Latent
+                                              Frontend Café como un proyecto OSS con el objetivo generar métricas de
+                                              Twitter/X, en tiempo real y desde categorías LDA (Latent
                                               Dirichlet allocation).
-                                            </span>
+                                            </Link>
                                           </p>
                                           <div className="flex items-center">
                                             <CalendarDays className="mr-2 h-3 w-3 opacity-70" />{" "}
@@ -397,12 +393,12 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                                         ) : (
                                           <Link href={"https://twitter-temperature.onrender.com/"} target="_blank">
                                             <Image
-                                              src="/Metricas.png"
+                                              src="/Avatar_Negro.png"
                                               alt="Portada ATX"
-                                              width={500} // adjust as needed
-                                              height={500} // adjust as needed
+                                              width={750} // adjust as needed
+                                              height={750} // adjust as needed
                                               objectFit="cover"
-                                              className="rounded-md scale-[90%]"
+                                              className="rounded-md mt-4"
                                               priority
                                             />
                                           </Link>
