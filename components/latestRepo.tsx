@@ -16,7 +16,7 @@ function LatestRepo() {
         setLatestRepoName(data[0].name)
     
         // Fetch the social preview image of the latest repo
-        const repoResponse = await fetch(`https://api.github.com/repos/{your_username}/${data[0].name}`, {
+        const repoResponse = await fetch(`https://api.github.com/repos/MiguelGalp/${data[0].name}`, {
           headers: {
             Accept: 'application/vnd.github+json',
             Authorization: `token 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`
