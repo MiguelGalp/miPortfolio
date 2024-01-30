@@ -19,7 +19,7 @@ function LatestRepo() {
         const repoResponse = await fetch(`https://api.github.com/repos/MiguelGalp/${data[0].name}`, {
           headers: {
             Accept: 'application/vnd.github+json',
-            Authorization: `token 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`
+            Authorization: `token ${process.env.GITHUB_TOKEN}`
           }
         })
         const repoData = await repoResponse.json()
