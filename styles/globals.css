@@ -34,5 +34,5 @@
 @import 'tailwindcss/utilities';
 
 .blur {
-@apply bg-black/50 blur-sm transition-opacity fade-in
+@apply bg-black/75 blur-sm transition-opacity fade-in
 }

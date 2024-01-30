@@ -119,7 +119,7 @@ const CustomHoverCardContent = ({ children, ...props }) => {
   }, []);
 
   return (
-    <HoverCardContent side={side} sideOffset={sideOffset} style={{...style, transform: transform}} {...props}>
+    <HoverCardContent side={side} sideOffset={sideOffset} style={{ ...style, transform: transform }} {...props}>
       {children}
     </HoverCardContent>
   );
@@ -161,7 +161,7 @@ const CustomHoverCardContent2 = ({ children, ...props }) => {
   }, []);
 
   return (
-    <HoverCardContent side={side} sideOffset={sideOffset} style={{...style, transform: transform}} {...props}>
+    <HoverCardContent side={side} sideOffset={sideOffset} style={{ ...style, transform: transform }} {...props}>
       {children}
     </HoverCardContent>
   );
@@ -273,7 +273,7 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                                   contenidos más adecuado para cada proyecto.
                                   <div className="mt-2">
                                     Para Atlanticx utilicé Next.js, Mux,
-                                    Tailwind y Tina.
+                                    Tailwind y Tina CMS.
                                   </div>
                                 </div>
 
@@ -283,14 +283,14 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                                       Ver más
                                     </div>
                                   </HoverCardTrigger>
-                                  <CustomHoverCardContent className="flex space-x-4 w-[650px] rounded-md p-4 bg-white/75 shadow-md">
+                                  <CustomHoverCardContent className="flex space-x-4 w-[600px] rounded-md p-4 bg-white/75 shadow-md">
                                     {/* Left Column */}
                                     <div className="flex flex-col justify-between space-y-4 w-1/2">
                                       <Avatar className="hidden">
                                         <AvatarImage src="/ATX_AVATAR.png" />
                                         <AvatarFallback>ATX</AvatarFallback>
                                       </Avatar>
-                                      <div className="space-y-1">
+                                      <div className="space-y-2 px-4 py-0">
                                         <h4 className="text-sm opacity-75">
                                           <Link href={"https://instagram.com/atlantic.x"} target="_blank">
                                             @atlantic.x
@@ -305,9 +305,9 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                                             </Link>
                                           </span>
                                         </p>
-                                        <div className="flex items-center pt-6">
-                                          <CalendarDays className="mr-2 h-4 w-4 opacity-70" />{" "}
-                                          <span className="text-muted-foreground text-xs">
+                                        <div className="flex items-center pt-1">
+                                          <CalendarDays className="mr-2 h-3 w-3 opacity-70" />{" "}
+                                          <span className="text-muted-foreground text-xs mt-[0.5px]">
                                             Diciembre 2023
                                           </span>
                                         </div>
@@ -324,10 +324,10 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                                           <Image
                                             src="/Web_Atx_Wide_Inverted.png"
                                             alt="Portada ATX"
-                                            width={500} // adjust as needed
-                                            height={500} // adjust as needed
+                                            width={250} // adjust as needed
+                                            height={250} // adjust as needed
                                             objectFit="cover"
-                                            className="rounded-md mt-3"
+                                            className="rounded-md mt-8 scale-[95%]"
                                             priority
                                           />
                                         </Link>
@@ -354,10 +354,10 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                                   <CustomHoverCardContent2
                                     className="w-[550px] rounded-md p-4 shadow-md"
                                   >
-                                    <div className="flex space-x-4">
+                                    <div className="flex space-x-6 p-4">
                                       {/* Left Column */}
                                       <div className="flex flex-col justify-between space-y-4 w-1/2">
-                                        <div className="space-y-1">
+                                        <div className="space-y-2">
                                           <h4 className="text-sm text-sm opacity-75">
                                             <Link href={"https://twitter-temperature.onrender.com/"} target="_blank">
                                               @OpioDeLosPueblos
@@ -370,18 +370,18 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                                               El Opio de los Pueblos
                                             </Link>{" "}
                                             será lanzado próximamente en{" "}
-                                            <Link href={"https://twitter-temperature.onrender.com/"} target="_blank">
-                                              Frontend Café
+                                            <Link href={"https://frontend.cafe/"} target="_blank">
+                                              Frontend Café como un proyecto OSS.
                                             </Link>
-                                            , donde soy mentor, como un proyecto OSS.
+
                                             <span className="block mt-2">
-                                              El MVP linkeado abajo tiene como objetivo generar métricas de
-                                              Twitter/X en tiempo real y utilizando categorías LDA (Latent
+                                              El MVP (linkeado) tiene como objetivo generar métricas de
+                                              Twitter/X. Lo hace en tiempo real, utilizando categorías LDA (Latent
                                               Dirichlet allocation).
                                             </span>
                                           </p>
-                                          <div className="flex items-center pt-2">
-                                            <CalendarDays className="mr-2 h-4 w-4 opacity-70" />{" "}
+                                          <div className="flex items-center">
+                                            <CalendarDays className="mr-2 h-3 w-3 opacity-70" />{" "}
                                             <span className="text-muted-foreground text-xs">En proceso</span>
                                           </div>
                                         </div>
@@ -400,7 +400,7 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                                               width={500} // adjust as needed
                                               height={500} // adjust as needed
                                               objectFit="cover"
-                                              className="rounded-md"
+                                              className="rounded-md scale-[90%]"
                                               priority
                                             />
                                           </Link>
@@ -434,11 +434,11 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                     <NavigationMenuList>
                       <NavigationMenuItem className="overflow-visible">
                         <NavigationMenuTrigger className="font-semibold text-black">
-                          Stack, objetivos, equipo...
+                          En instalaciones y obras inmersivas
                         </NavigationMenuTrigger>
                         <NavigationMenuContent className="overflow-visible">
-                          <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[550px] lg:grid-cols-[1fr_.75fr]">
-                            <li className="row-span-2">
+                          <ul className="grid gap-3 px-6 py-4 w-full md:w-[300px] lg:w-[450px] lg:grid-cols-1">
+                            <li>
                               <NavigationMenuLink>
                                 <Link
                                   href="https://superuber.com/light-energy-museum-2/"
@@ -450,24 +450,24 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                                 </Link>
                               </NavigationMenuLink>
                             </li>
+                            <CustomListItem
+                              href="https://superuber.com/light-energy-museum-2/"
+                              title="SuperUber (Brasil)"
+                              className="pointer-events-none space-y-2 p-5 -mt-10"
+                            >
+                              Túnel da Light es un desarrollo de sonido espacial en 6 canales. Está integrado a Unity para trackear hasta 5 usuarios en simultáneo de manera que el sonido siga al visitante. 
+                             
+                            </CustomListItem>
                             <ListItem
                               href="https://superuber.com/light-energy-museum-2/"
-                              title="Stack"
-                              className="pointer-events-none mt-2"
+                              title="Teatro Colón (CETC, Argentina)"
+                              className="pointer-events-none space-y-2 p-5 -mt-10"
                             >
-                              Unity + Resolume + SuperCollider. Armo equipos
-                              para impulsar tu evento o instalación.
-                            </ListItem>
-                            <ListItem
-                              href="https://superuber.com/light-energy-museum-2/"
-                              title="Objetivos"
-                              className="pointer-events-none -mt-6"
-                            >
-                              Me interesa diseñar el sonido y la interactividad
-                              para incluir centralmente al usuario.
+                              Como director del espacio, lideré durante más de 10 años a los equipos técnicos y artísticos en el Centro de Experimentación del Teatro Colón (CETC).
                             </ListItem>
                           </ul>
                         </NavigationMenuContent>
+
                       </NavigationMenuItem>
                     </NavigationMenuList>
                   </NavigationMenu>
@@ -479,7 +479,7 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
         <DropdownMenuGroup>
           <DropdownMenuSub>
             <DropdownMenuSubTrigger>
-              <span>Cosas</span>
+              <span>Ahora</span>
             </DropdownMenuSubTrigger>
             <DropdownMenuPortal>
               <DropdownMenuSubContent className="overflow-visible">
@@ -487,8 +487,8 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                   <NavigationMenu>
                     <NavigationMenuList>
                       <NavigationMenuItem className="overflow-visible">
-                        <NavigationMenuTrigger className="dark:text-dracula-aro-200">
-                          Estoy siempre activo en GitHub
+                        <NavigationMenuTrigger className="text-black">
+                          Estoy trabajando (según) GitHub en...
                         </NavigationMenuTrigger>
                         <NavigationMenuContent className="overflow-visible">
                           <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
