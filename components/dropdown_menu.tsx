@@ -125,6 +125,48 @@ const CustomHoverCardContent = ({ children, ...props }) => {
   );
 };
 
+const CustomHoverCardContent2 = ({ children, ...props }) => {
+  const [side, setSide] = React.useState<SideType>("bottom");
+  const [sideOffset, setSideOffset] = React.useState<number | undefined>(0);
+  const [transform, setTransform] = React.useState<string | undefined>("");
+  const [style, setStyle] = React.useState<React.CSSProperties>({});
+
+  React.useEffect(() => {
+    const handleResize = () => {
+      if (window.matchMedia("(max-width: 1280px)").matches) {
+        setSide("right");
+        setSideOffset(-25);
+        setTransform("translateY(100px)");
+        setStyle({
+          backdropFilter: "blur(5px)",
+          backgroundColor: "rgba(255, 255, 255, 0.7)"
+        });
+      } else {
+        setSide("bottom");
+        setSideOffset(-50);
+        setTransform("translateX(125px)");
+        setStyle({
+          backdropFilter: "blur(5px)",
+          backgroundColor: "rgba(255, 255, 255, 0.7)"
+        });
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Call the function initially to set the state
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  return (
+    <HoverCardContent side={side} sideOffset={sideOffset} style={{...style, transform: transform}} {...props}>
+      {children}
+    </HoverCardContent>
+  );
+};
+
 const CustomHoverCard = ({ children, ...props }) => {
   const handleClick = (event) => {
     event.stopPropagation()
@@ -263,7 +305,7 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                                             </Link>
                                           </span>
                                         </p>
-                                        <div className="flex items-center pt-2">
+                                        <div className="flex items-center pt-6">
                                           <CalendarDays className="mr-2 h-4 w-4 opacity-70" />{" "}
                                           <span className="text-muted-foreground text-xs">
                                             Diciembre 2023
@@ -305,23 +347,18 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                                 </div>
                                 <CustomHoverCard>
                                   <HoverCardTrigger className="hover:brightness-0">
-                                    <div className="opacity-85 text-sm p-6 relative right-6 bottom-4 hover:opacity-50">
+                                    <div className="opacity-85 text-sm p-10 relative right-10 bottom-8 hover:opacity-50">
                                       Ver más
                                     </div>
                                   </HoverCardTrigger>
-                                  <CustomHoverCardContent
+                                  <CustomHoverCardContent2
                                     className="w-[550px] rounded-md p-4 shadow-md"
-                                    sideOffset={0}
                                   >
                                     <div className="flex space-x-4">
                                       {/* Left Column */}
                                       <div className="flex flex-col justify-between space-y-4 w-1/2">
-                                        <Avatar className="hidden">
-                                          <AvatarImage src="/Avatar_Opio_2.png" />
-                                          <AvatarFallback>OO</AvatarFallback>
-                                        </Avatar>
                                         <div className="space-y-1">
-                                          <h4 className="text-sm text-sm opacity-75 mt-10">
+                                          <h4 className="text-sm text-sm opacity-75">
                                             <Link href={"https://twitter-temperature.onrender.com/"} target="_blank">
                                               @OpioDeLosPueblos
                                             </Link>
@@ -350,7 +387,7 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                                         </div>
                                       </div>
                                       {/* Right Column */}
-                                      <div className="flex flex-col items-center justify-center w-1/2">
+                                      <div className="flex flex-col w-1/2">
                                         {imageLoading ? (
                                           <div className="flex h-32 items-center justify-center">
                                             <ClipLoader />{" "}
@@ -363,7 +400,7 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                                               width={500} // adjust as needed
                                               height={500} // adjust as needed
                                               objectFit="cover"
-                                              className="rounded-md mt-12"
+                                              className="rounded-md"
                                               priority
                                             />
                                           </Link>
@@ -371,7 +408,7 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                                       </div>
                                     </div>
 
-                                  </CustomHoverCardContent>
+                                  </CustomHoverCardContent2>
                                 </CustomHoverCard>
                               </CustomListItem>
                             </li>
