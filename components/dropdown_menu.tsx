@@ -106,7 +106,9 @@ const CustomHoverCardContent = ({ children, ...props }) => {
         setSide("bottom");
         setSideOffset(0);
         setTransform("");
-        setStyle({});
+        setStyle({
+          marginLeft: "100px"
+        });
       }
     };
 
@@ -491,37 +493,15 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                           Estoy trabajando (según) GitHub en...
                         </NavigationMenuTrigger>
                         <NavigationMenuContent className="overflow-visible">
-                          <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                            <li className="row-span-3">
-                              <NavigationMenuLink>
-                                <div className="relative bottom-3 left-12 h-full w-full overflow-visible bg-[url('/coderGIF.svg')] bg-contain bg-no-repeat"></div>
-                              </NavigationMenuLink>
-                            </li>
-                            <li className="row-span-3">
-                              <NavigationMenuLink>
-                                <a
-                                  className="flex h-full w-full select-none flex-col justify-end rounded-md p-6 no-underline outline-none focus:shadow-md"
-                                  href="https://www.semanticscholar.org/paper/Designing-Creative-AI-Partners-with-COFI%3A-A-for-in-Rezwana-Maher/864b8521239d722f4fb8ffe17e32abf2cef6f202"
-                                >
-                                  <div
-                                    style={{
-                                      position: "relative",
-                                      borderLeft: `2px solid ${theme === "dark" ? "white" : "black"
-                                        }`,
-                                      height: "50%",
-                                      top: "15px",
-                                    }}
-                                    className="flex w-full items-center"
-                                  >
-                                    <div className="relative -top-4 ml-11 text-lg font-medium">
-                                      Según mi API{" "}
-                                    </div>
-                                  </div>
-                                  <div className="-top-8 ml-12 mb-2">
+                          <ul className=" md:w-[400px] lg:w-[500px]">
+                            
+                            <li className="p-4 mt-2">
+                              
+                                  <div className="mb-2">
                                     <LatestRepo />
                                   </div>
-                                </a>
-                              </NavigationMenuLink>
+                                
+                            
                             </li>
                           </ul>
                         </NavigationMenuContent>
