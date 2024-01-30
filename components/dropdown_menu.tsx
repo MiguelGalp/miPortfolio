@@ -343,7 +343,7 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                             <li className="-mr-3">
                               <CustomListItem title="Back">
                                 <div className="mt-1 text-base font-semibold leading-4 tracking-tighter">
-                                  Desarrollo FullStack con Python
+                                  Servicio de desarrollo FullStack con Python
                                   (Django/Flask/Jinja) y Htmx. Hago MPVs y estoy
                                   estudiando Data Science de manera autónoma.
                                 </div>
@@ -490,7 +490,7 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                     <NavigationMenuList>
                       <NavigationMenuItem className="overflow-visible">
                         <NavigationMenuTrigger className="text-black">
-                          Estoy trabajando (según) GitHub en...
+                          Estoy trabajando en este repositorio
                         </NavigationMenuTrigger>
                         <NavigationMenuContent className="overflow-visible">
                           <ul className=" md:w-[400px] lg:w-[500px]">
