@@ -11,14 +11,14 @@ function LatestRepo() {
       const response = await fetch("/api/github")
       const data = await response.json()
     
-      // Check if data is an array and is not empty
-      if (Array.isArray(data) && data.length > 0) {
-        setLatestRepoName(data[0].name)
+      // Check if data is an object and has property latestRepoName
+      if (typeof data === 'object' && data.latestRepoName) {
+        setLatestRepoName(data.latestRepoName)
     
         // Fetch the social preview image of the latest repo
-        const repoResponse = await fetch(`https://api.github.com/repos/MiguelGalp/${data[0].name}`, {
+        const repoResponse = await fetch(`https://api.github.com/repos/MiguelGalp/${data.latestRepoName}`, {
           headers: {
-            Accept: 'application/vnd.github+json',
+            Accept: 'application/vnd.github.v3+json',
             Authorization: `token ${process.env.GITHUB_TOKEN}`
           }
         })
@@ -29,7 +29,7 @@ function LatestRepo() {
       }
     
       setIsLoading(false)
-    }
+    }    
     fetchData()
   }, [])
 
