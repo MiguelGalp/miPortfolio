@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { SyncLoader } from "react-spinners"
+import Link from "next/link"
 
 function LatestRepo() {
   const [latestRepoName, setLatestRepoName] = useState("")
@@ -22,15 +23,8 @@ function LatestRepo() {
         const repoImageURL = URL.createObjectURL(blob)
         setLatestRepoImage(repoImageURL)
 
-        // Fetch the URL of the latest repo
-        const repoDataResponse = await fetch(`https://api.github.com/repos/MiguelGalp/${data.latestRepoName}`, {
-          headers: {
-            Accept: 'application/vnd.github.v3+json',
-            Authorization: `token ${process.env.GITHUB_TOKEN}`
-          }
-        })
-        const repoData = await repoDataResponse.json()
-        setLatestRepoUrl(repoData.html_url)
+        // Set the URL of the latest repo
+        setLatestRepoUrl(`https://github.com/MiguelGalp/${data.latestRepoName}`)
       } else {
         console.error('Unexpected data from /api/github:', data)
       }
@@ -50,9 +44,9 @@ function LatestRepo() {
 
   return (
     <p className="relative ml-[0.5px]">
-      <a href={latestRepoUrl}>
-        <img src={latestRepoImage} alt={latestRepoName} />
-      </a>
+      <Link href={latestRepoUrl} target="_blank">
+        <img src={latestRepoImage} alt={latestRepoName} className="rounded-sm"/>
+      </Link>
     </p>
   )
 }
