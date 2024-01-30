@@ -8,21 +8,26 @@ function LatestRepo() {
 
   useEffect(() => {
     async function fetchData() {
-      // Fetch the latest repo
       const response = await fetch("/api/github")
       const data = await response.json()
-      setLatestRepoName(data.latestRepoName)
-
-      // Fetch the social preview image of the latest repo
-      const repoResponse = await fetch(`https://api.github.com/repos/MiguelGalp/${data.latestRepoName}`, {
-        headers: {
-          Accept: 'application/vnd.github+json',
-          Authorization: `token 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`
-        }
-      })
-      const repoData = await repoResponse.json()
-      setLatestRepoImage(repoData.open_graph_image)
-
+    
+      // Check if data is an array and is not empty
+      if (Array.isArray(data) && data.length > 0) {
+        setLatestRepoName(data[0].name)
+    
+        // Fetch the social preview image of the latest repo
+        const repoResponse = await fetch(`https://api.github.com/repos/{your_username}/${data[0].name}`, {
+          headers: {
+            Accept: 'application/vnd.github+json',
+            Authorization: `token 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`
+          }
+        })
+        const repoData = await repoResponse.json()
+        setLatestRepoImage(repoData.open_graph_image)
+      } else {
+        console.error('Unexpected data from /api/github:', data)
+      }
+    
       setIsLoading(false)
     }
     fetchData()
