@@ -84,11 +84,46 @@ const HoverCard = ({ children, ...props }) => (
   </HoverCardPrimitive.Root>
 )
 
-const CustomHoverCardContent = ({ children, ...props }) => (
-  <HoverCardContent side={"bottom"} {...props}>
-    {children}
-  </HoverCardContent>
-)
+type SideType = "bottom" | "right" | "top" | "left" | undefined;
+
+const CustomHoverCardContent = ({ children, ...props }) => {
+  const [side, setSide] = React.useState<SideType>("bottom");
+  const [sideOffset, setSideOffset] = React.useState<number | undefined>(0);
+  const [transform, setTransform] = React.useState<string | undefined>("");
+  const [style, setStyle] = React.useState<React.CSSProperties>({});
+
+  React.useEffect(() => {
+    const handleResize = () => {
+      if (window.matchMedia("(max-width: 1280px)").matches) {
+        setSide("right");
+        setSideOffset(-25);
+        setTransform("translateY(100px)");
+        setStyle({
+          backdropFilter: "blur(5px)",
+          backgroundColor: "rgba(255, 255, 255, 0.7)"
+        });
+      } else {
+        setSide("bottom");
+        setSideOffset(0);
+        setTransform("");
+        setStyle({});
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Call the function initially to set the state
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  return (
+    <HoverCardContent side={side} sideOffset={sideOffset} style={{...style, transform: transform}} {...props}>
+      {children}
+    </HoverCardContent>
+  );
+};
 
 const CustomHoverCard = ({ children, ...props }) => {
   const handleClick = (event) => {
@@ -202,11 +237,11 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
 
                                 <CustomHoverCard>
                                   <HoverCardTrigger className="hover:brightness-0">
-                                    <div className="opacity-85 mt-2 text-sm">
+                                    <div className="opacity-85 text-sm p-6 relative right-6 bottom-4 hover:opacity-50">
                                       Ver más
                                     </div>
                                   </HoverCardTrigger>
-                                  <CustomHoverCardContent className="flex space-x-4 w-[650px] rounded-md p-4 bg-white/75 shadow-md" sideOffset={0}>
+                                  <CustomHoverCardContent className="flex space-x-4 w-[650px] rounded-md p-4 bg-white/75 shadow-md">
                                     {/* Left Column */}
                                     <div className="flex flex-col justify-between space-y-4 w-1/2">
                                       <Avatar className="hidden">
@@ -224,15 +259,9 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                                           <span className="block mt-2">
                                             El diseño fue en colaboración, junto a{" "}
                                             <Link href={"https://ar.pinterest.com/doncorbi/"} target="_blank">
-                                              @DonCorbi. La página utiliza el SDK de TINA CMS que permite la edición live, colaborativa y online.
+                                              @DonCorbi. La página integra el front a GitHub y permite el trackeo de versiones colaborativas persistentes.
                                             </Link>
                                           </span>
-                                          
-                                            
-                                            <span className="block mt-2">
-                                              Desde su integración a GitHub, el backend permite en la app el trackeo persistente de las versiones y rollbacks(!) de los cambios realizados por los responsables de contenidos.
-                                            </span>
-                                         
                                         </p>
                                         <div className="flex items-center pt-2">
                                           <CalendarDays className="mr-2 h-4 w-4 opacity-70" />{" "}
