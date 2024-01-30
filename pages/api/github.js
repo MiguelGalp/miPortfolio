@@ -1,7 +1,7 @@
 export default async function handler(req, res) {
   const response = await fetch('https://api.github.com/users/{your_username}/repos', {
     headers: {
-      Authorization: `token YOUR_GITHUB_TOKEN`
+      Authorization: `token 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`
     }
   })
 
