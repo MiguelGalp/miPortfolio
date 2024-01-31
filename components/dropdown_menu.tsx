@@ -441,7 +441,7 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                           En instalaciones y obras inmersivas
                         </NavigationMenuTrigger>
                         <NavigationMenuContent className="overflow-visible">
-                          <ul className="grid gap-3 px-6 py-4 w-full w-[370px] md:w-[300px] lg:w-[450px] lg:grid-cols-1 -ml-24 mt-0 md:ml-0 md:mt-0 rounded-md md:rounded-none bg-transparent shadow-md md:shadow-none">
+                          <ul className="grid gap-3 px-6 py-4 w-[370px] md:w-[300px] lg:w-[450px] lg:grid-cols-1 -ml-24 mt-0 md:ml-0 md:mt-0 rounded-md md:rounded-none bg-transparent shadow-md md:shadow-none">
                             <li>
                               <NavigationMenuLink>
                                 <Link
