@@ -480,7 +480,7 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
             </DropdownMenuPortal>
           </DropdownMenuSub>
         </DropdownMenuGroup>
-        <DropdownMenuGroup>
+        <DropdownMenuGroup className="hidden md:block">
           <DropdownMenuSub>
             <DropdownMenuSubTrigger>
               <span>Ahora</span>
