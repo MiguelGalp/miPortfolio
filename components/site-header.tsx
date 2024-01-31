@@ -57,7 +57,7 @@ export function SiteHeader({ toggleDropdown, isDropdownOpen }: SiteHeaderProps) 
     <header className="sticky z-10 top-2 md:top-2 dark:text-dracula-nosferatu-100">
       <div className="container flex h-16 items-center space-x-2 w-auto">
         
-      <Dropdown_menu toggleDropdown={toggleDropdown} isDropdownOpen={isDropdownOpen} />
+      <Dropdown_menu toggleDropdown={toggleDropdown} isDropdownOpen={isDropdownOpen}/>
         
         <div className="flex flex-1 items-center justify-end space-x-4">
           <nav className="flex items-center space-x-1">

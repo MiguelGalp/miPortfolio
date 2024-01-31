@@ -235,7 +235,7 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
       <DropdownMenuTrigger asChild className="data-[state=open]:bg-pink">
         <Button
           variant="ghost"
-          className="w-17 h-17 relative right-2 hidden scale-110 p-1 md:mt-8 md:flex"
+          className="w-17 h-17 relative right-2 scale-110 p-1 mt-2 md:mt-8 md:flex"
         >
           <Avatar className="h-16 w-16">
             <AvatarImage
@@ -254,7 +254,7 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
         <DropdownMenuGroup>
           <DropdownMenuSub>
             <DropdownMenuSubTrigger className="hover:none">
-              <span>Apps</span>
+              <span>Servicios</span>
             </DropdownMenuSubTrigger>
             <DropdownMenuPortal>
               <DropdownMenuSubContent className="overflow-visible">
@@ -262,11 +262,11 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                   <CustomNavigationMenu open={true}>
                     <NavigationMenuList>
                       <NavigationMenuItem className="overflow-visible bg-transparent">
-                        <NavigationMenuTrigger className="text-black">
+                        <NavigationMenuTrigger className="text-black w-2/3 leading-tight md:w-full">
                           Desarrollos con Python, Javascript, SQL
                         </NavigationMenuTrigger>
                         <NavigationMenuContent className="overflow-visible">
-                          <ul className="grid grid-cols-[1fr,1fr] gap-0 p-3 md:w-[370px]">
+                          <ul className="grid md:grid-cols-[1fr,1fr] gap-0 p-4 md:p-3 w-[300px] md:w-[370px] -ml-10 mt-0 md:ml-0 md:mt-0 rounded-md md:rounded-none bg-transparent shadow-md md:shadow-none">
                             <li className="-mr-2">
                               <CustomListItem title="Front">
                                 <div className="mt-1 text-base font-semibold leading-4 tracking-tighter">
@@ -281,8 +281,11 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
 
                                 <CustomHoverCard>
                                   <HoverCardTrigger className="hover:brightness-0">
-                                    <div className="opacity-85 text-sm p-6 relative right-6 bottom-4 hover:opacity-50">
-                                      Ver más
+                                    <div className="opacity-85 text-sm p-6 relative right-6 bottom-4 md:hover:opacity-50">
+                                      <Link href={"https://www.atlanticx.org"} className="md:hidden">
+                                        <button className="w-full h-full">Ver más</button>
+                                      </Link>
+                                      <span className="hidden md:block">Ver más</span>
                                     </div>
                                   </HoverCardTrigger>
                                   <CustomHoverCardContent className="flex space-x-4 w-[600px] rounded-md p-4 bg-white/75 shadow-md">
@@ -304,7 +307,7 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                                             El diseño fue en colaboración, junto a{" "}
                                             <Link href={"https://ar.pinterest.com/doncorbi/"} target="_blank">
                                               <u>@DonCorbi.</u></Link> La página integra el front a GitHub y permite el trackeo de versiones colaborativas persistentes.
-                                            
+
                                           </span>
                                         </p>
                                         <div className="flex items-center pt-1">
@@ -340,7 +343,7 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                                 </CustomHoverCard>
                               </CustomListItem>
                             </li>
-                            <li className="-mr-3">
+                            <li className="-mr-3 -mt-12 md:mt-0">
                               <CustomListItem title="Back">
                                 <div className="mt-1 text-base font-semibold leading-4 tracking-tighter">
                                   Servicio de desarrollo FullStack con Python
@@ -349,8 +352,11 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                                 </div>
                                 <CustomHoverCard>
                                   <HoverCardTrigger className="hover:brightness-0">
-                                    <div className="opacity-85 text-sm p-10 relative right-10 bottom-8 hover:opacity-50">
-                                      Ver más
+                                    <div className="opacity-85 text-sm p-6 relative right-6 bottom-4 md:hover:opacity-50">
+                                      <Link href={"https://twitter-temperature.onrender.com/"} className="md:hidden">
+                                        <button className="w-full h-full">Ver más</button>
+                                      </Link>
+                                      <span className="hidden md:block">Ver más</span>
                                     </div>
                                   </HoverCardTrigger>
                                   <CustomHoverCardContent2
@@ -365,7 +371,7 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                                               <u>@OpioDeLosPueblos</u>
                                             </Link>
                                           </h4>
-                                          <p className="mb-4 text-base font-semibold font-semibold leading-4 tracking-tighter">
+                                          <p className="mb-4 text-base font-semibold leading-4 tracking-tighter">
                                             El proyecto{" "}
                                             <Link href={"https://twitter-temperature.onrender.com/"} target="_blank">
                                               {" "}
@@ -374,9 +380,9 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                                             será lanzado próximamente en{" "}
                                             <Link href={"https://frontend.cafe/"} target="_blank">
                                               <u>Frontend Café </u></Link>como un proyecto OSS con el objetivo generar métricas de
-                                              Twitter/X, en tiempo real y desde categorías LDA (Latent
-                                              Dirichlet allocation).
-                                            
+                                            Twitter/X, en tiempo real y desde categorías LDA (Latent
+                                            Dirichlet allocation).
+
                                           </p>
                                           <div className="flex items-center">
                                             <CalendarDays className="mr-2 h-3 w-3 opacity-70" />{" "}
@@ -428,14 +434,14 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
             <DropdownMenuPortal>
               <DropdownMenuSubContent className="overflow-visible">
                 <DropdownMenuItem className="overflow-visible">
-                  <NavigationMenu>
+                  <CustomNavigationMenu open={true}>
                     <NavigationMenuList>
                       <NavigationMenuItem className="overflow-visible">
-                        <NavigationMenuTrigger className="font-semibold text-black">
+                        <NavigationMenuTrigger className="font-semibold text-black w-2/3 leading-tight md:w-full">
                           En instalaciones y obras inmersivas
                         </NavigationMenuTrigger>
                         <NavigationMenuContent className="overflow-visible">
-                          <ul className="grid gap-3 px-6 py-4 w-full md:w-[300px] lg:w-[450px] lg:grid-cols-1">
+                          <ul className="grid gap-3 px-6 py-4 w-full w-[370px] md:w-[300px] lg:w-[450px] lg:grid-cols-1 -ml-24 mt-0 md:ml-0 md:mt-0 rounded-md md:rounded-none bg-transparent shadow-md md:shadow-none">
                             <li>
                               <NavigationMenuLink>
                                 <Link
@@ -453,8 +459,8 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                               title="SuperUber (Brasil)"
                               className="pointer-events-none space-y-2 p-5 -mt-10"
                             >
-                              <i>Túnel da Light</i> es un desarrollo de sonido espacial en 6 canales. Está integrado a Unity para trackear hasta 5 usuarios en simultáneo de manera que el sonido siga al visitante. 
-                             
+                              <i>Túnel da Light</i> es un desarrollo de sonido espacial en 6 canales. Está integrado a Unity para trackear hasta 5 usuarios en simultáneo de manera que el sonido siga al visitante.
+
                             </CustomListItem>
                             <ListItem
                               href="https://superuber.com/light-energy-museum-2/"
@@ -468,7 +474,7 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
 
                       </NavigationMenuItem>
                     </NavigationMenuList>
-                  </NavigationMenu>
+                  </CustomNavigationMenu>
                 </DropdownMenuItem>
               </DropdownMenuSubContent>
             </DropdownMenuPortal>
@@ -482,7 +488,7 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
             <DropdownMenuPortal>
               <DropdownMenuSubContent className="overflow-visible">
                 <DropdownMenuItem className="overflow-visible">
-                  <NavigationMenu>
+                  <CustomNavigationMenu open={true}>
                     <NavigationMenuList>
                       <NavigationMenuItem className="overflow-visible">
                         <NavigationMenuTrigger className="text-black">
@@ -490,20 +496,20 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                         </NavigationMenuTrigger>
                         <NavigationMenuContent className="overflow-visible">
                           <ul className=" md:w-[400px] lg:w-[500px]">
-                            
+
                             <li className="p-4 mt-2">
-                              
-                                  <div className="mb-2">
-                                    <LatestRepo />
-                                  </div>
-                                
-                            
+
+                              <div className="mb-2">
+                                <LatestRepo />
+                              </div>
+
+
                             </li>
                           </ul>
                         </NavigationMenuContent>
                       </NavigationMenuItem>
                     </NavigationMenuList>
-                  </NavigationMenu>
+                  </CustomNavigationMenu>
                 </DropdownMenuItem>
               </DropdownMenuSubContent>
             </DropdownMenuPortal>

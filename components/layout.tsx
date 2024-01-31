@@ -72,7 +72,7 @@ export function Layout({ children }: LayoutProps) {
           }}
         >
           <Dialog>
-            <DialogTrigger className="relative left-5 z-10">
+            <DialogTrigger className="relative md:left-5 z-10">
               <Button className="text-bold bg-opacity-50 text-base text-slate-100">
                 Contacto
               </Button>

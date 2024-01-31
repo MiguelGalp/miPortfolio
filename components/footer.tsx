@@ -10,7 +10,7 @@ export function SiteFooter() {
   return (
     <footer className="container">
       <div className="flex justify-center mb-2 ">
-        <div className="flex flex-row items-center relative left-5">
+        <div className="flex flex-row items-center relative md:left-5">
           <Copyright className="h-2 w-2 mr-2 font-bold text-black"/>
           <p className="text-center leading-normal tracking-tighter text-black font-bold opacity-75">
             {" "}
