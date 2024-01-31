@@ -3,6 +3,10 @@ import { useEffect, useState } from "react"
 import { SyncLoader } from "react-spinners"
 import Link from "next/link"
 
+interface RepoData {
+  latestRepoName?: string;
+}
+
 function LatestRepo() {
   const [latestRepoName, setLatestRepoName] = useState("")
   const [latestRepoImage, setLatestRepoImage] = useState("")
@@ -11,17 +15,15 @@ function LatestRepo() {
 
   useEffect(() => {
     async function fetchData() {
-      let data = localStorage.getItem('latestRepoData');
+      let data: RepoData | null = JSON.parse(localStorage.getItem('latestRepoData') || 'null');
       if (!data) {
         const response = await fetch("/api/github");
         data = await response.json();
         localStorage.setItem('latestRepoData', JSON.stringify(data));
-      } else {
-        data = JSON.parse(data);
       }
     
-      // Check if data is an object and has property latestRepoName
-      if (typeof data === 'object' && data.latestRepoName) {
+      // Check if data is not null, is an object and has property latestRepoName
+      if (data && typeof data === 'object' && data.latestRepoName) {
         setLatestRepoName(data.latestRepoName);
     
         // Fetch the social preview image of the latest repo
@@ -37,7 +39,7 @@ function LatestRepo() {
       }
     
       setIsLoading(false);
-    }
+    }  
     fetchData()
   }, [])
 
