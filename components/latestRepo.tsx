@@ -45,7 +45,7 @@ function LatestRepo() {
   return (
     <p className="relative ml-[0.5px]">
       <Link href={latestRepoUrl} target="_blank">
-        <img src={latestRepoImage} alt={latestRepoName} className="rounded-sm"/>
+        <img src={latestRepoImage} alt={latestRepoName} className="rounded-md filter invert"/>
       </Link>
     </p>
   )

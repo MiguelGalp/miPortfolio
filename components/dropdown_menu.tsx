@@ -295,7 +295,7 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                                       <div className="space-y-2 px-4 py-0">
                                         <h4 className="text-sm opacity-75">
                                           <Link href={"https://instagram.com/atlantic.x"} target="_blank">
-                                            @atlantic.x
+                                            <u>@atlantic.x</u>
                                           </Link>
                                         </h4>
                                         <p className="mb-2 text-base font-semibold leading-4 text-black">
@@ -303,8 +303,8 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                                           <span className="block mt-2">
                                             El diseño fue en colaboración, junto a{" "}
                                             <Link href={"https://ar.pinterest.com/doncorbi/"} target="_blank">
-                                              @DonCorbi. La página integra el front a GitHub y permite el trackeo de versiones colaborativas persistentes.
-                                            </Link>
+                                              <u>@DonCorbi.</u></Link> La página integra el front a GitHub y permite el trackeo de versiones colaborativas persistentes.
+                                            
                                           </span>
                                         </p>
                                         <div className="flex items-center pt-1">
@@ -362,21 +362,21 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                                         <div className="space-y-2">
                                           <h4 className="text-sm text-sm opacity-75">
                                             <Link href={"https://twitter-temperature.onrender.com/"} target="_blank">
-                                              @OpioDeLosPueblos
+                                              <u>@OpioDeLosPueblos</u>
                                             </Link>
                                           </h4>
                                           <p className="mb-4 text-base font-semibold font-semibold leading-4 tracking-tighter">
                                             El proyecto{" "}
                                             <Link href={"https://twitter-temperature.onrender.com/"} target="_blank">
                                               {" "}
-                                              El Opio de los Pueblos
+                                              <i>El Opio de los Pueblos</i>
                                             </Link>{" "}
                                             será lanzado próximamente en{" "}
                                             <Link href={"https://frontend.cafe/"} target="_blank">
-                                              Frontend Café como un proyecto OSS con el objetivo generar métricas de
+                                              <u>Frontend Café </u></Link>como un proyecto OSS con el objetivo generar métricas de
                                               Twitter/X, en tiempo real y desde categorías LDA (Latent
                                               Dirichlet allocation).
-                                            </Link>
+                                            
                                           </p>
                                           <div className="flex items-center">
                                             <CalendarDays className="mr-2 h-3 w-3 opacity-70" />{" "}
@@ -453,7 +453,7 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                               title="SuperUber (Brasil)"
                               className="pointer-events-none space-y-2 p-5 -mt-10"
                             >
-                              Túnel da Light es un desarrollo de sonido espacial en 6 canales. Está integrado a Unity para trackear hasta 5 usuarios en simultáneo de manera que el sonido siga al visitante. 
+                              <i>Túnel da Light</i> es un desarrollo de sonido espacial en 6 canales. Está integrado a Unity para trackear hasta 5 usuarios en simultáneo de manera que el sonido siga al visitante. 
                              
                             </CustomListItem>
                             <ListItem
