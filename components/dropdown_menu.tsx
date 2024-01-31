@@ -145,7 +145,7 @@ const CustomHoverCardContent2 = ({ children, ...props }) => {
         });
       } else {
         setSide("bottom");
-        setSideOffset(-50);
+        setSideOffset(-30);
         setTransform("translateX(125px)");
         setStyle({
           backdropFilter: "blur(5px)",
@@ -254,7 +254,7 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
         <DropdownMenuGroup>
           <DropdownMenuSub>
             <DropdownMenuSubTrigger className="hover:none">
-              <span>Servicios</span>
+              <span className="font-bold">Servicios</span>
             </DropdownMenuSubTrigger>
             <DropdownMenuPortal>
               <DropdownMenuSubContent className="overflow-visible">
@@ -262,14 +262,14 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                   <CustomNavigationMenu open={true}>
                     <NavigationMenuList>
                       <NavigationMenuItem className="overflow-visible bg-transparent">
-                        <NavigationMenuTrigger className="text-black w-2/3 leading-tight md:w-full">
+                        <NavigationMenuTrigger className="text-black w-2/3 leading-tight md:w-full font-bold">
                           Desarrollos con Python, Javascript, SQL
                         </NavigationMenuTrigger>
                         <NavigationMenuContent className="overflow-visible">
                           <ul className="grid md:grid-cols-[1fr,1fr] gap-0 p-4 md:p-3 w-[300px] md:w-[370px] -ml-10 mt-0 md:ml-0 md:mt-0 rounded-md md:rounded-none bg-transparent shadow-md md:shadow-none">
                             <li className="-mr-2">
                               <CustomListItem title="Front">
-                                <div className="mt-1 text-base font-semibold leading-4 tracking-tighter">
+                                <div className="mt-1 text-base font-bold leading-4 tracking-tighter">
                                   Servicio de desarrollo de Frontend utilizando
                                   el framework, las librerías y el manejo de
                                   contenidos más adecuado para cada proyecto.
@@ -301,7 +301,7 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                                             <u>@atlantic.x</u>
                                           </Link>
                                         </h4>
-                                        <p className="mb-2 text-base font-semibold leading-4 text-black">
+                                        <p className="mb-2 text-base font-bold leading-4 text-black">
                                           Como Lead Web Developer de la ONG Atlanticx, realicé el plan y la ejecución de la nueva web.
                                           <span className="block mt-2">
                                             El diseño fue en colaboración, junto a{" "}
@@ -345,7 +345,7 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                             </li>
                             <li className="-mr-3 -mt-12 md:mt-0">
                               <CustomListItem title="Back">
-                                <div className="mt-1 text-base font-semibold leading-4 tracking-tighter">
+                                <div className="mt-1 text-base font-bold leading-4 tracking-tighter">
                                   Servicio de desarrollo FullStack con Python
                                   (Django/Flask/Jinja) y Htmx. Hago MPVs y estoy
                                   estudiando Data Science de manera autónoma.
@@ -371,7 +371,7 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                                               <u>@OpioDeLosPueblos</u>
                                             </Link>
                                           </h4>
-                                          <p className="mb-4 text-base font-semibold leading-4 tracking-tighter">
+                                          <p className="mb-4 text-base font-bold leading-4 tracking-tighter">
                                             El proyecto{" "}
                                             <Link href={"https://twitter-temperature.onrender.com/"} target="_blank">
                                               {" "}
@@ -429,7 +429,7 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
         <DropdownMenuGroup>
           <DropdownMenuSub>
             <DropdownMenuSubTrigger>
-              <span>Sonido</span>
+              <span className="font-bold">Sonido</span>
             </DropdownMenuSubTrigger>
             <DropdownMenuPortal>
               <DropdownMenuSubContent className="overflow-visible">
@@ -437,7 +437,7 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                   <CustomNavigationMenu open={true}>
                     <NavigationMenuList>
                       <NavigationMenuItem className="overflow-visible">
-                        <NavigationMenuTrigger className="font-semibold text-black w-2/3 leading-tight md:w-full">
+                        <NavigationMenuTrigger className="font-bold text-black w-2/3 leading-tight md:w-full">
                           En instalaciones y obras inmersivas
                         </NavigationMenuTrigger>
                         <NavigationMenuContent className="overflow-visible">
@@ -457,7 +457,7 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                             <CustomListItem
                               href="https://superuber.com/light-energy-museum-2/"
                               title="SuperUber (Brasil)"
-                              className="pointer-events-none space-y-2 p-5 -mt-10"
+                              className="pointer-events-none space-y-2 p-5 -mt-10 font-bold"
                             >
                               <i>Túnel da Light</i> es un desarrollo de sonido espacial en 6 canales. Está integrado a Unity para trackear hasta 5 usuarios en simultáneo de manera que el sonido siga al visitante.
 
@@ -465,7 +465,7 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                             <ListItem
                               href="https://superuber.com/light-energy-museum-2/"
                               title="Teatro Colón (CETC, Argentina)"
-                              className="pointer-events-none space-y-2 p-5 -mt-10"
+                              className="pointer-events-none space-y-2 p-5 -mt-10 font-bold"
                             >
                               Como director del espacio, lideré durante más de 10 años a los equipos técnicos y artísticos en el Centro de Experimentación del Teatro Colón (CETC).
                             </ListItem>
@@ -483,7 +483,7 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
         <DropdownMenuGroup className="hidden md:block">
           <DropdownMenuSub>
             <DropdownMenuSubTrigger>
-              <span>Ahora</span>
+              <span className="font-bold">Ahora</span>
             </DropdownMenuSubTrigger>
             <DropdownMenuPortal>
               <DropdownMenuSubContent className="overflow-visible">
@@ -491,7 +491,7 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                   <CustomNavigationMenu open={true}>
                     <NavigationMenuList>
                       <NavigationMenuItem className="overflow-visible">
-                        <NavigationMenuTrigger className="text-black">
+                        <NavigationMenuTrigger className="text-black font-bold">
                           Estoy trabajando en este repositorio
                         </NavigationMenuTrigger>
                         <NavigationMenuContent className="overflow-visible">
