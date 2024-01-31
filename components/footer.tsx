@@ -12,7 +12,7 @@ export function SiteFooter() {
       <div className="flex justify-center mb-2 ">
         <div className="flex flex-row items-center relative left-5">
           <Copyright className="h-2 w-2 mr-2 font-bold text-black"/>
-          <p className="text-center leading-normal tracking-tighter text-black font-bold dark:text-dracula-nosferatu-100 md:text-left md:text-sm">
+          <p className="text-center leading-normal tracking-tighter text-black font-bold opacity-75">
             {" "}
             Miguel Galperin
             , derivado del UI{" "}
