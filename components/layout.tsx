@@ -33,10 +33,8 @@ export function Layout({ children }: LayoutProps) {
       element.style.background = '#b3a190';
     }
   
-    // Simulating data loading or any other initialization process
-    setTimeout(() => {
-      setLoaded(true);
-    }, 5); // Adjust the delay as needed
+    // Set loaded state to true immediately
+    setLoaded(true);
   }, []);
 
   return (
