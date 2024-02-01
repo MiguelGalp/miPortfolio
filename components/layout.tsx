@@ -30,13 +30,13 @@ export function Layout({ children }: LayoutProps) {
     // Simulating data loading or any other initialization process
     setTimeout(() => {
       setLoaded(true);
-    }, 100); // Adjust the delay as needed
+    }, 50); // Adjust the delay as needed
   }, []);
 
 
   return (
-    <div id="cuerpo" className={`transition-opacity duration-1000 ease-in-out ${loaded ? 'opacity-100' : 'opacity-0'}`}>
-      <div className="opacity-100" style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
+    <div id="cuerpo" className={`transition-opacity duration-1000 ease-in-out ${loaded ? 'opacity-100' : 'opacity-0'}`} style={{background: loaded ? 'transparent' : '#000'}}>
+      <div className="opacity-100" style={{ display: "flex", flexDirection: "column", minHeight: "100vh"}}>
         <div
           className=""
           style={{
@@ -50,9 +50,11 @@ export function Layout({ children }: LayoutProps) {
         >
           <video 
             id="myVideo"
+            preload='auto'
             autoPlay
             loop
             muted
+            playsInline
             style={{
               width: "100%",
               height: "100%",
