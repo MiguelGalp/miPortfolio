@@ -16,6 +16,9 @@ module.exports = {
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
       },
+      colors: {
+        body: '#b3a190',
+      },
       backgroundImage: theme => ({
         'light-hero': "url('/coderGIF_3.svg')",
         'dark-hero': "url('/Sin_Piso_2.svg')",
