@@ -235,7 +235,7 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
       <DropdownMenuTrigger asChild className="data-[state=open]:bg-pink">
         <Button
           variant="ghost"
-          className="w-17 h-17 relative right-2 scale-110 p-1 mt-2 md:mt-8 md:flex"
+          className="w-17 h-17 relative right-2 scale-75 md:scale-110 p-1 mt-2 md:mt-8 md:flex"
         >
           <Avatar className="h-16 w-16">
             <AvatarImage
