@@ -21,6 +21,7 @@ interface LayoutProps {
 export function Layout({ children }: LayoutProps) {
   const [loaded, setLoaded] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
@@ -32,9 +33,25 @@ export function Layout({ children }: LayoutProps) {
     if (element) {
       element.style.background = '#b3a190';
     }
-  
+
     // Set loaded state to true immediately
     setLoaded(true);
+
+    // Check if the code is running on the client side
+    if (typeof window !== 'undefined') {
+      setIsSmallScreen(window.innerWidth <= 640);
+
+      // Listen for window resize events
+      const handleResize = () => {
+        setIsSmallScreen(window.innerWidth <= 640);
+      };
+      window.addEventListener('resize', handleResize);
+
+      // Clean up the event listener when the component unmounts
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }
   }, []);
 
   return (
@@ -52,21 +69,21 @@ export function Layout({ children }: LayoutProps) {
           }}
         >
           <video 
-            id="myVideo"
-            preload='auto'
-            autoPlay
-            loop
-            muted
-            playsInline
-            style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-              }}
-          >
-          <source src="/TLDF-Background.mp4" type="video/mp4" />
-            Oops, tu navegador...uhm...
-          </video>
+        id="myVideo"
+        preload='auto'
+        autoPlay
+        loop
+        muted
+        playsInline
+        style={{
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+        }}
+      >
+        <source src={isSmallScreen ? "/Background_Mobile.mp4" : "/TLDF-Background.mp4"} type="video/mp4" />
+        Oops, tu navegador...uhm...
+      </video>
         </div>
         <div
           style={{
