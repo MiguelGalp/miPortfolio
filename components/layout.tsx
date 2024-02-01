@@ -27,15 +27,20 @@ export function Layout({ children }: LayoutProps) {
   };
 
   useEffect(() => {
+    // Change the background color immediately when the component mounts
+    const element = document.getElementById('cuerpo');
+    if (element) {
+      element.style.background = '#b3a190';
+    }
+  
     // Simulating data loading or any other initialization process
     setTimeout(() => {
       setLoaded(true);
-    }, 50); // Adjust the delay as needed
+    }, 5); // Adjust the delay as needed
   }, []);
 
-
   return (
-    <div id="cuerpo" className={`transition-opacity duration-1000 ease-in-out ${loaded ? 'opacity-100' : 'opacity-0'}`} style={{background: loaded ? 'transparent' : '#000'}}>
+    <div id="cuerpo" className={`transition-opacity duration-1000 ease-in-out ${loaded ? 'opacity-100' : 'opacity-0'}`} style={{background: loaded ? 'transparent' : '#b3a190'}}>
       <div className="opacity-100" style={{ display: "flex", flexDirection: "column", minHeight: "100vh"}}>
         <div
           className=""
