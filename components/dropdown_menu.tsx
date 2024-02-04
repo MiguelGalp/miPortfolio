@@ -97,7 +97,7 @@ const CustomHoverCardContent = ({ children, ...props }) => {
       if (window.matchMedia("(max-width: 1280px)").matches) {
         setSide("right");
         setSideOffset(-25);
-        setTransform("translateY(80px)");
+        setTransform("translateY(120px)");
         setStyle({
           backdropFilter: "blur(5px)",
           backgroundColor: "rgba(255, 255, 255, 0.7)"
@@ -270,13 +270,9 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                             <li className="-mr-2">
                               <CustomListItem title="Front">
                                 <div className="mt-1 text-base font-bold leading-4 tracking-tighter">
-                                  Servicio de desarrollo de Frontend utilizando
+                                  Servicio de desarrollo de Frontend. Utilizo
                                   el framework, las librerías y el manejo de
                                   contenidos más adecuado para cada proyecto.
-                                  <div className="mt-2">
-                                    Para Atlanticx utilicé Next.js, Mux,
-                                    Tailwind y Tina CMS.
-                                  </div>
                                 </div>
 
                                 <CustomHoverCard>
@@ -288,7 +284,7 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                                       <span className="hidden md:block">Ver más</span>
                                     </div>
                                   </HoverCardTrigger>
-                                  <CustomHoverCardContent className="flex space-x-4 w-[600px] rounded-md p-4 bg-white/75 shadow-md">
+                                  <CustomHoverCardContent className="flex space-x-4 w-[500px] rounded-md p-4 bg-white/75 shadow-md">
                                     {/* Left Column */}
                                     <div className="flex flex-col justify-between space-y-4 w-1/2">
                                       <Avatar className="hidden">
@@ -327,12 +323,12 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                                       ) : (
                                         <Link href={"https://atlanticx.org"} target="_blank">
                                           <Image
-                                            src="/Web_Atx_Wide_Transparent.png"
+                                            src="/Web_Atx.png"
                                             alt="Portada ATX"
-                                            width={300} // adjust as needed
-                                            height={300} // adjust as needed
+                                            width={500} // adjust as needed
+                                            height={500} // adjust as needed
                                             objectFit="cover"
-                                            className="rounded-md mt-6"
+                                            className="rounded-md mt-8"
                                             priority
                                           />
                                         </Link>
