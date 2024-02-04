@@ -318,7 +318,7 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                                     <div className="flex flex-col items-center justify-center w-1/2">
                                       {imageLoading ? (
                                         <div className="flex h-32 items-center justify-center">
-                                          <ClipLoader />{" "}
+                                          <ClipLoader />
                                         </div>
                                       ) : (
                                         <Link href={"https://atlanticx.org"} target="_blank">
@@ -329,7 +329,9 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                                             height={500} // adjust as needed
                                             objectFit="cover"
                                             className="rounded-md mt-8"
+                                            priority
                                             loading="eager"
+                                            onLoad={() => setImageLoading(false)}
                                           />
                                         </Link>
                                       )}
@@ -402,6 +404,7 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                                               objectFit="cover"
                                               className="rounded-md mt-4"
                                               loading="eager"
+                                              onLoad={() => setImageLoading(false)}
                                             />
                                           </Link>
                                         )}
