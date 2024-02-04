@@ -329,7 +329,7 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                                             height={500} // adjust as needed
                                             objectFit="cover"
                                             className="rounded-md mt-8"
-                                            priority
+                                            loading="eager"
                                           />
                                         </Link>
                                       )}
@@ -397,11 +397,11 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                                             <Image
                                               src="/Avatar_Negro.png"
                                               alt="Portada ATX"
-                                              width={750} // adjust as needed
-                                              height={750} // adjust as needed
+                                              width={500} // adjust as needed
+                                              height={500} // adjust as needed
                                               objectFit="cover"
                                               className="rounded-md mt-4"
-                                              priority
+                                              loading="eager"
                                             />
                                           </Link>
                                         )}
