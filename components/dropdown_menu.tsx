@@ -97,7 +97,7 @@ const CustomHoverCardContent = ({ children, ...props }) => {
       if (window.matchMedia("(max-width: 1280px)").matches) {
         setSide("right");
         setSideOffset(-25);
-        setTransform("translateY(100px)");
+        setTransform("translateY(80px)");
         setStyle({
           backdropFilter: "blur(5px)",
           backgroundColor: "rgba(255, 255, 255, 0.7)"
@@ -446,7 +446,7 @@ export function Dropdown_menu({ toggleDropdown, isDropdownOpen }) {
                               <NavigationMenuLink>
                                 <Link
                                   href="https://superuber.com/light-energy-museum-2/"
-                                  className="relative flex h-full min-h-[250px] w-full select-none flex-col justify-end rounded-md p-5 no-underline outline-none focus:shadow-md"
+                                  className="relative flex h-full min-h-[200px] w-full select-none flex-col justify-end rounded-md p-5 no-underline outline-none focus:shadow-md"
                                   rel="noopener noreferrer"
                                   target="_blank"
                                 >
