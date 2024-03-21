@@ -81,7 +81,7 @@ export function Layout({ children }: LayoutProps) {
           objectFit: "cover",
         }}
       >
-        <source src={isSmallScreen ? "/Background_Mobile.mp4" : "/TLDF-Background.mp4"} type="video/mp4" />
+        <source src={isSmallScreen ? "/nuevo_loop.mp4" : "/nuevo_loop.mp4"} type="video/mp4" />
         Oops, tu navegador...uhm...
       </video>
         </div>
